@@ -1,0 +1,11 @@
+## Interface: 30300
+## Version: 3.1.5 
+## Title: FinalFantasylization [|cff8ec3e6Steven2016Soundpack|r] |ff33003.1.5|r
+## Notes: Soundpack for FinalFantasylization based on different media that I like.
+## Original Author: Nackle on Shadowmoon(EU) - Alliance ; Renewed by: LorDestinY - Ad Aeternum.Horde@Frostmane.EU - http://www.ad-aeternum.org/	 WOTLK By Hellfox; Kilrogg EU - Alliance
+## Author: Hellfire and Darken5
+## This Soundpack: Stevenm281
+## SavedVariables:
+## Dependencies: FinalFantasylization 
+
+FinalFantasylization_Steven2016Soundpack.lua

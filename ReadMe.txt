@@ -1,7 +1,7 @@
 ============================
 >>>                      <<<
 >>> FinalFantasylization <<<
->>>  ReadMe for 3.1.9.1  <<<
+>>>  ReadMe for 3.2.0    <<<
 >>>                      <<<
 ============================
 
@@ -174,6 +174,11 @@ Add Mounted jump sound (Kweh!)
 Add more zone/subzone detections
 
 *********************
+05. November 2016 - FinalFantasylization 3.2.0 - More Stuff >> Darken5 <<
+	- Added LibBabble-Faction-3.0 
+	- - More localization work
+	- Fixed bug with Stranglethorn Vale that popped up.
+
 --. October 2016 - FinalFantasylization 3.1.9.1 - ...
 	- Added areas to DarkSwimming:
 		- "The Sludge Fen"in The Barrens

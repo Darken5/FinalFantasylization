@@ -2015,14 +2015,14 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --'  Horde Towns: Grom'gol Base Camp, Stranglethorn Vale
 --'==========================================================================================
-		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Stranglethorn Vale"] ) and (  SubZoneName == SZ["Grom'gol Base Camp"] or Z["Grom'Gol Base Camp"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Stranglethorn Vale"] ) and ( (  SubZoneName == SZ["Grom'gol Base Camp"] ) or ( SubZoneName == SZ["Grom'Gol Base Camp"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownGromgolBaseCamp == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
 				FinalFantasylization_HordeTownGromgolBaseCamp()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InHordeTownGromgolBaseCamp = true
-		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Stranglethorn Vale"] ) and (  SubZoneName == SZ["Grom'gol Base Camp"] or Z["Grom'Gol Base Camp"] ) and FinalFantasylization_IsPlaying == false then
+		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Stranglethorn Vale"] ) and ( (  SubZoneName == SZ["Grom'gol Base Camp"] ) or ( SubZoneName == SZ["Grom'Gol Base Camp"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownGromgolBaseCamp == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName.. PlayerInHostile)
 				FinalFantasylization_HostileTowns()  -- Music call for all towns you are hostile in.

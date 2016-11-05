@@ -1721,14 +1721,14 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --'  Horde Towns: Bor'gorok Outpost, Borean Tundra
 --'==========================================================================================
-		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Borean Tundra"] ) and (  SubZoneName == SZ["Bor'Gorok Outpost"] or Z["Bor'gorok Outpost"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Borean Tundra"] ) and ( ( SubZoneName == SZ["Bor'Gorok Outpost"] ) or ( SubZoneName == SZ["Bor'gorok Outpost"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownBorgorokOutpost == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
 				FinalFantasylization_HordeTownBorgorokOutpost()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InHordeTownBorgorokOutpost = true
-		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Borean Tundra"] ) and (  SubZoneName == SZ["Bor'Gorok Outpost"] or Z["Bor'gorok Outpost"] ) and FinalFantasylization_IsPlaying == false then
+		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Borean Tundra"] ) and ( ( SubZoneName == SZ["Bor'Gorok Outpost"] ) or ( SubZoneName == SZ["Bor'gorok Outpost"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownBorgorokOutpost == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName..PlayerInHostile)
 				FinalFantasylization_HostileTowns()  -- Music call for all towns you are hostile in.
@@ -1763,14 +1763,14 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --'  Horde Towns: Camp Oneqwah, Grizzly Hills
 --'==========================================================================================
-		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Grizzly Hills"] ) and (  SubZoneName == SZ["Camp Oneqwah"] or Z["Camp One'Qwah"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Grizzly Hills"] ) and ( ( SubZoneName == SZ["Camp Oneqwah"] ) or ( SubZoneName == SZ["Camp One'Qwah"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownCampOneqwah == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
 				FinalFantasylization_HordeTownCampOneqwah()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InHordeTownCampOneqwah = true
-		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Grizzly Hills"] ) and (  SubZoneName == SZ["Camp Oneqwah"] or Z["Camp One'Qwah"] ) and FinalFantasylization_IsPlaying == false then
+		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Grizzly Hills"] ) and ( ( SubZoneName == SZ["Camp Oneqwah"] ) or ( SubZoneName == SZ["Camp One'Qwah"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownCampOneqwah == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName..PlayerInHostile)
 				FinalFantasylization_HostileTowns()  -- Music call for all towns you are hostile in.
@@ -2078,14 +2078,14 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --'  Horde Towns: Kor'kron Vanguard,  Dragonblight
 --'==========================================================================================
-		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName ==Z["Dragonblight"] ) and (  SubZoneName == SZ["Kor'kron Vanguard"] or Z["Kor'Kron Vanguard"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName ==Z["Dragonblight"] ) and ( ( SubZoneName == SZ["Kor'kron Vanguard"] ) or ( SubZoneName == SZ["Kor'Kron Vanguard"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownKorkronVanguard == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
 				FinalFantasylization_HordeTownKorkronVanguard()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InHordeTownKorkronVanguard = true
-		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName ==Z["Dragonblight"] ) and (  SubZoneName == SZ["Kor'kron Vanguard"] or Z["Kor'Kron Vanguard"] ) and FinalFantasylization_IsPlaying == false then
+		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName ==Z["Dragonblight"] ) and ( ( SubZoneName == SZ["Kor'kron Vanguard"] ) or ( SubZoneName == SZ["Kor'Kron Vanguard"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownKorkronVanguard == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName..PlayerInHostile)
 				FinalFantasylization_HostileTowns()  -- Music call for all towns you are hostile in.
@@ -2991,14 +2991,14 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --'  Alliance Towns: Fort Wildervar, Howling Fjord
 --'==========================================================================================
-		if not ( IsResting() ) and (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Howling Fjord"] ) and (  SubZoneName == SZ["Fort Wildervar"] or Z["Fort Wildevar"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Howling Fjord"] ) and ( ( SubZoneName == SZ["Fort Wildervar"] ) or ( SubZoneName == SZ["Fort Wildevar"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownFortWildervar == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
 				FinalFantasylization_AllianceTownFortWildervar()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InAllianceTownFortWildervar = true
-		elseif (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Howling Fjord"] ) and (  SubZoneName == SZ["Fort Wildervar"] or Z["Fort Wildevar"] ) and FinalFantasylization_IsPlaying == false then
+		elseif (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Howling Fjord"] ) and ( ( SubZoneName == SZ["Fort Wildervar"] ) or ( SubZoneName == SZ["Fort Wildevar"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownFortWildervar == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName.. PlayerInHostile)
 				FinalFantasylization_HostileTowns()  -- Music call for all towns you are hostile in.
@@ -3306,7 +3306,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --'  Alliance Towns: Stars' Rest, Dragonblight
 --'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName ==Z["Dragonblight"] ) and ( SubZoneName == SZ["Star's Rest"] or Z["Stars' Rest"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName ==Z["Dragonblight"] ) and ( ( SubZoneName == SZ["Star's Rest"] ) or ( SubZoneName == SZ["Stars' Rest"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownStarsRest == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
 				FinalFantasylization_AllianceTownStarsRest()
@@ -3754,14 +3754,14 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --'  Alliance Towns: Rut'theran Village, Teldrassil
 --'==========================================================================================
-		if not ( IsResting() ) and (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Teldrassil"] ) and (  SubZoneName == SZ["Rut'theran Village"] or Z["Rut'Theran Village"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Teldrassil"] ) and ( ( SubZoneName == SZ["Rut'theran Village"] ) or ( SubZoneName == SZ["Rut'Theran Village"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownRuttheranVillage == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
 				FinalFantasylization_AllianceTownRuttheranVillage()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InAllianceTownRuttheranVillage = true
-		elseif (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Teldrassil"] ) and (  SubZoneName == SZ["Rut'theran Village"] or Z["Rut'Theran Village"] ) and FinalFantasylization_IsPlaying == false then
+		elseif (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Teldrassil"] ) and ( ( SubZoneName == SZ["Rut'theran Village"] ) or ( SubZoneName == SZ["Rut'Theran Village"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownRuttheranVillage == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName.. PlayerInHostile)
 				FinalFantasylization_HostileTowns()  -- Music call for all towns you are hostile in.

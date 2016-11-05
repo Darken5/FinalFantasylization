@@ -37,6 +37,7 @@ Elder's Scroll 5 - Skyrim
 Final Fantasy Brave Exvius
 Final Fantasy 4 Celtic Moon
 Final Fantasy Tactics
+Final Fantasy 6
 Final Fantasy 7
 Final Fantasy 7 Crisis Core
 Final Fantasy 8
@@ -70,6 +71,7 @@ Sword Coast Legends
 Tales of Xillia
 Tales of Zestiria
 The Last Remnant
+The Witcher 3
 Tomb Raider 2
 White Knight Chronicles
 World of Warcraft - Cataclysm
@@ -97,16 +99,16 @@ Tracklisting:
 -- Capital Cities Events --
 
 Horde:
-OrgrimmarSong = Dragon Age Origins - The Dwarven Nobles (stevenm281 edit)
+OrgrimmarSong = Dragon Age Origins - The Deep Roads
 SilvermoonCitySong = Arcania Gothic 4 - Silverlake 2
 ThunderBluffSong = LRFF13 - Monoculus
-UndercitySong = Dragon Age Origins - The Deep Roads
+UndercitySong = Kingdom Hearts - This is Halloween
 
 Alliance:
 DarnassusSong = Final Fantasy Brave Exvius - Tree of Tales
 ExodarSong = FF13 - Taejin's Tower
 IronforgeSong = Baldur's Gate Main Theme
-StormwindCitySong = Final Fantasy XI - Vanadiel March
+StormwindCitySong = Final Fantasy 11 - Vanadiel March
 
 Neutral:
 ShattrathCitySong = Baldur's Gate 2 - Romance 1
@@ -126,7 +128,7 @@ BloodvenomPostSong = Final Fantasy Tactics - The Pervert
 BrackenwallVillageSong = Breath of Fire 4 - Song of the Plains
 BrillSong = Breath of Fire 4 - Darkness
 BorgorokOutpostSong = Chrono Cross - Phantom Ship
-CampMojacheSong = Final Fantasy XI - Galka
+CampMojacheSong = Final Fantasy 11 - Galka
 CampOneqwahSong = Final Fantasy 12 - Jahara, Land of the Garif
 CampTaurajoSong = Kingdom Hearts 2 - The Home of Dragons
 CampTunkaloSong = Legaia 2 Duel Saga - Shriek of the Earth
@@ -141,7 +143,7 @@ FreewindPostSong = Legend of Zelda Ocarina of Time - Goron City
 GaradarSong = Final Fantasy 8 - Seed
 GromarshCrashSiteSong = Final Fantasy 8 - Starting Up
 GromgolBaseCampSong = Chrono Cross - Dragonrider
-HammerfallSong = Final Fantasy XI - Fury
+HammerfallSong = Final Fantasy 11 - Fury
 KargathSong = Kingdom Hearts 2 - The Underworld
 KorkronVanguardSong = Kingdom Hearts 2 - Sacred Moon
 MokNathalVillageSong = Legaia 2 Duel Saga - God's Fist
@@ -150,7 +152,7 @@ RazorHillSong = Final Fantasy 7 - Mako Reactor
 RevantuskVillageSong = Final Fantasy 9 - Tantalus theme
 SenjinVillageSong = Final Fantasy 7 - Fort Condor
 SepulcherSong = Final Fantasy 9 - Sword of Doubt
-ShadowmoonVillageSong = Final Fantasy XI - Shadow Lord
+ShadowmoonVillageSong = Final Fantasy 11 - Shadow Lord
 ShadowpreyVillageSong = Final Fantasy 7 - Barret's theme
 SplintertreePostSong = Final Fantasy 7 - Turk's theme
 StonardSong = Chrono Cross - Hydra's Swamp
@@ -165,7 +167,7 @@ ThunderlordStrongholdSong = Legend of Dragoon - Hellena Prison
 TranquillienSong = Final Fantasy 7 - Sending a Dream into the Universe
 ValormokSong = Legend of Dragoon - Imperial City Kazas
 VengeanceLandingSong = Final Fantasy 7 - Shinra Corporation
-VenomspiteSong = Final Fantasy XI Rise of the Zilart - Norg
+VenomspiteSong = Final Fantasy 11 Rise of the Zilart - Norg
 WarsongHoldSong = FF13-2 - Condition Omega
 ZabrajinSong = Kingdom Hearts 1 - Deep Jungle
 ZoramgarOutpostSong = Breath of Fire 3 - My favorite trick
@@ -203,7 +205,7 @@ RefugePointeSong = Legaia 2 Duel Saga - Everyday Tranquility
 SentinelHillSong = Breath of Fire 3 - Country Living
 SouthshoreSong = Lord of the Ring The Fellowship of the Ring - Concerning Hobbits
 StarsRestSong = Lord of the Ring The Two Towers - Evenstar
-StonetalonPeakSong = Final Fantasy XI Rise of the Zilart - Sanctuary
+StonetalonPeakSong = Final Fantasy 11 Rise of the Zilart - Sanctuary
 SylvanaarSong = Final Fantasy 9 - Bran Bal
 TalrendisPointSong = Final Fantasy 8 - My mind
 TalonbranchGladeSong = Legaia 2 Duel Saga Tanza
@@ -241,10 +243,10 @@ CosmowrenchSong = Final Fantasy 8 - Shuffle or Boogie
 CrusadersPinnacleSong = Final Fantasy 8 - Fithos Lusec Wecos Vinosec (orchestrated)
 DeathsRiseSong = Final Fantasy 7 - Parochial Town
 DunNiffelemSong = Breath of Fire 4 - Working Today Too
-EbonWatchSong = Final Fantasy XI - Sometime Somewhere
+EbonWatchSong = Final Fantasy 11 - Sometime Somewhere
 EmeraldSanctuarySong = Radiata Stories - The White Town of Deception
 EvergroveSong = Chrono Cross - Another Guldove
-FrenzyheartHillSong = Final Fantasy XI Rise of the Zilart - Kazham
+FrenzyheartHillSong = Final Fantasy 11 Rise of the Zilart - Kazham
 HalaaSong = Final Fantasy 7 - Stolen Materia
 K3Song = Breath of Fire 3 - Steam Locomotion
 KamaguaSong = Star Wars 6 - Jabba's Baroque Recital
@@ -262,7 +264,7 @@ ShadowVaultSong = Final Fantasy 7 - Lurking in the Darkness
 SporeggarSong = Final Fantasy 4 Celtic Moon - Palom & Polom
 StormspireSong = Breath of Fire 4 - Seagull Flies
 SunsReachSong = Breath of Fire 3 - Even the sun's happy
-ThoriumPointSong = Final Fantasy XI - Mithra
+ThoriumPointSong = Final Fantasy 11 - Mithra
 TransitusShieldSong = Kingdom Hearts 1 - Captain's Hook Pirate Ship
 UnupeSong = Legaia 2 Duel Saga - Wasteland of Far Away Places
 WyrmrestTempleSong = Legend of Zelda Ocarina of Time - Spirit Temple
@@ -318,7 +320,7 @@ StranglethornValeSong = Breath of Fire 4 - Echo
 SunstriderIsleSong = Final Fantasy 12 - Forgotten Capital
 SwampOfSorrowsSong = Jeff Van Dyck - Tension1
 TheHinterlandsSong = Final Fantasy 7 - Forested Temple
-TirisfalGladesSong = Final Fantasy XI - Anxiety
+TirisfalGladesSong = Final Fantasy 11 - Anxiety
 WesternPlaguelandsSong = Legaia 2 Duel Saga - End of The World
 WestfallSong = Breath of Fire 3 - Casually
 WetlandsSong = Diablo 2 - Wild
@@ -331,7 +333,7 @@ AzuremystIsleSong = Legend of Legaia - Night Requiem
 BloodmystIsleSong = Legaia 2 Duel Saga - God of The Evil Ones
 CampNaracheSong = Final Fantasy 9 - Crossing those Hills
 DarkshoreSong = Final Fantasy 7 - The Nightmare Beginning
-DesolaceSong = Final Fantasy XI - Hopelessness
+DesolaceSong = Final Fantasy 11 - Hopelessness
 DurotarSong = Final Fantasy 7 - Desert Wasteland
 DustwallowMarshSong = Final Fantasy 12 - The Feywood
 FelwoodSong = Chrono Cross - Shadow's End Forest
@@ -340,7 +342,7 @@ MoongladeSong = Legaia 2 Duel Saga - Advancing to Far Away Places
 MulgoreSong = Legend of Legaia - Barren fields of Mist
 ShadowglenSong = Breath of Fire 4 - Landscape
 SilithusSong = Chrono Cross - Earth Dragon Island
-StonetalonMountainsSong = Final Fantasy 9 - Kuja's theme
+StonetalonMountainsSong = Final Fantasy 14 - Whisper of the Land
 TanarisSong = Diablo 2 - Harem
 TeldrassilSong = Baldur's Gate 2 The Druid's Grove
 TheBarrensSong = Legend of Zelda Ocarina of Time - Hyrule Field Main Theme
@@ -403,11 +405,12 @@ Mounted6Song = Final Fantasy 8 - Chocobo
 Mounted7Song = Final Fantasy 13 - Chocobos of Pulse
 
 Escape1Song = Final Fantasy 9 - RUN !
-Escape2Song = Final Fantasy XI - Rise of The Zilart - Belief
+Escape2Song = Final Fantasy 11 - Rise of The Zilart - Belief
 Escape3Song = Final Fantasy 8 Retaliation
 Escape4Song = Final Fantasy 10 Enemy Attack
 Escape5Song = Tomb Raider 2 Incident Behind you
 Escape6Song = Shining Force 2 - Boss Attack
+Escape7Song = Dragon's Crown - A Decision has to be made
 		
 -- Flying Mount Events --
 FP1Song = Final Fantasy 7 - Steal the Tiny Bronco
@@ -415,9 +418,16 @@ FP2Song = Chrono Cross - Time of the Dreamwatch
 FP3Song = Kingdom Hearts - Blast Away! Gummi Ship I
 FP4Song = Final Fantasy 8 - Ride On
 FP5Song = Final Fantasy 9 - Hilda Garde
+FP6Song = Final Fantasy 6 - The Serpent Trench
+HordeFP1Song = Final Fantasy 6 - Wild West
+HordeFP2Song = Final Fantasy 9 - Kuja's theme
+HordeFP3Song = Final Fantasy 14 - Pennons Aloft
+HordeFP4Song = The Witcher 3 - Hunt or Be Hunted
+HordeFP5Song = Dragon's Crown - Mage's Tower
 FlyingMountSong = Final Fantasy 7 - Highwind Takes to the Sky
 FlyingMount2Song = Shining Force 2 - Battle 2
 FlyingMount3Song = Final Fantasy Type-0 - Soar
+FlyingMount4Song = Final Fantasy 6 - Terra
 
 -- Dead/Ghost Events --
 Dead1Song = Legend of Zelda Ocarina of Time - Temple of Time
@@ -458,6 +468,8 @@ Fighting13Song = Lunar 2 - Footsteps of Decisive Battle
 Fighting14Song = Dissidia Final Fantasy - Preparations for Battle
 Fighting15Song = White Knight Chronicles - Prelude to Battle
 Fighting16Song = Final Fantasy 13-2 - Knight of the Goddess
+Fighting17Song = Final Fantasy 6 - Battle Theme
+Fighting18Song = Baldur's Gate - Attacked by Assassins
 
 BossSong = LRFF13 - Chaos 
 Boss2Song = Final Fantasy 7 - Jenova Absolute
@@ -469,6 +481,7 @@ Boss7Song = Final Fantasy 9 - Battle 2
 Boss8Song = Dissidia Final Fantasy - Battle (FF1)
 Boss9Song = King of Dragons - To the Castle
 Boss10Song = Arcania Gothic 4 - Combat 1
+Boss11Song = Final Fantasy 6 - The Decisive Battle
 
 -- PvP Events --
 HostileSong = Legend of Dragoon - Boss Battle 3
@@ -478,9 +491,10 @@ Hostile2Song = Final Fantasy 15 - Enemy Approaching Theme
 SwimSong = FF7 - A Secret, Sleeping in the Deep Sea
 Swim2Song = Shining Force 2 - Mithril Diggers
 Swim3Song = Kingdom Hearts - Under the Sea
+DarkSwimSong = Final Fantasy 7 - Who Are You
 SleepSong = Arcania Gothic 4 - Tavern
 Sleep2Song = Derek Fiechter - The Captain's Inn
-Sleep3Song = Final Fantasy XI - Mog House
+Sleep3Song = Final Fantasy 11 - Mog House
 Sleep4Song = Justice Monsters Five - A Hero's Day Off
 Sleep5Song = Final Fantasy 14 - On Windy Meadows
 Sleep6Song = Radiata Stories - Artisan
@@ -489,11 +503,13 @@ Sleep8Song = Legend of Legaia - Mei
 Sleep9Song = Lunar 2 - Village Town
 Sleep10Song = Final Fantasy 15 - Camping Theme
 Sleep11Song = Elder's Scroll 5 (Skyrim) - Around the Fire
+Sleep12Song = Final Fantasy 6 - Johnny C Bad
+Sleep13Song = Rogue Galaxy - Swinging
 KillSound = Final Fantasy 7 Kill Sound
 CombatSound = Final Fantasy 7 Enter Combat Sound
 DeeprunTramSong = Resident Evil Main Theme
-ScarletMonasterySong = Final Fantasy XI - Repression Memoro de La Stono
+ScarletMonasterySong = Final Fantasy 11 - Repression Memoro de La Stono
 RazorfenSong = Final Fantasy 12 - Abyss
 WailingCavernsSong = Final Fantasy 12 - Dark Night (imperial version)
-TheDeadminesSong = Final Fantasy XI - Castle Zvahl
+TheDeadminesSong = Final Fantasy 11 - Castle Zvahl
 CavernsOfTimeSong = The Last Remnant - Dark Secrets

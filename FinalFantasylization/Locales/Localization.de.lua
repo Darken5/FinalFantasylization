@@ -83,6 +83,7 @@ if (GetLocale() == "deDE") then
 	FinalFantasylizationUIFrame_SwimCheck_Tooltip = "Wenn diese Option aktiviert ist. spielt FinalFantasylization w\195\164hrend des Schwimmens Musik ab. Wenn diese Option deaktiviert ist. wird die normale World-of-Warcraft-Musik abgespielt."
 	FinalFantasylizationUISP_Aero_Button_Text = "Aero's Gaming Mix" -- Requires localization
 	FinalFantasylizationUISP_AmbAlt_Button_Text = "Ambient Alternative" -- Requires localization
+	FinalFantasylizationUISP_Steven2016_Button_Text = "Steven 2016"
 	FinalFantasylizationUISP_AnimeHeaderLabel_Text = "Anime" -- Requires localization
 	FinalFantasylizationUISP_Bleach_Button_Text = "Bleach" -- Requires localization
 	FinalFantasylizationUISP_Bleukreuz_Button_Text = "Bleukreuz's" -- Requires localization

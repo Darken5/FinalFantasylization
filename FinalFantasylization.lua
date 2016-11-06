@@ -5892,11 +5892,32 @@ function FinalFantasylization_GetMusic()
 		else
 			FinalFantasylization_InNorthrendZulDrak = false
 		end
+		
 
 --###########################################################################################
 --###########################################################################################
 --##
 --##			DUNGEONS EVENTS
+--##
+--###########################################################################################
+--###########################################################################################
+
+		if IsInInstance("party") and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InDungeon == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInInstance.. ZoneName)
+				FinalFantasylization_RaidSong()  -- Change to DungeonSong
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InDungeon = true
+		else
+			FinalFantasylization_InDungeon = false
+		end
+		
+		
+--###########################################################################################
+--###########################################################################################
+--##
+--##			RAID EVENTS
 --##
 --###########################################################################################
 --###########################################################################################

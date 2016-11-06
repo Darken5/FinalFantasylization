@@ -174,9 +174,18 @@ Add Mounted jump sound (Kweh!)
 Add more zone/subzone detections
 
 *********************
+06. November 2016 - FinalFantasylization 3.2.1 - Soundpack Interface Update >> Darken5 <<
+	- Soundpack Interface pages reduced
+		- Removed Soundpack page 2
+		- Removed buttons for lost soundpacks
+		- Kept buttons for FF7, FF7 Universe, and Legend of Zelda soundpacks
+		- Added button for Steven 2016 soundpack
+	- Changed "DUNGEON EVENTS" to "RAID EVENTS" in core .lua
+		- just did this to pre-empt adding in Dungeon songs.
+
 05. November 2016 - FinalFantasylization 3.2.0 - More Stuff >> Darken5 <<
 	- Added LibBabble-Faction-3.0 
-	- - More localization work
+		- More localization work
 	- Fixed bug with Stranglethorn Vale that popped up.
 
 --. October 2016 - FinalFantasylization 3.1.9.1 - ...

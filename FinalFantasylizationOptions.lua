@@ -21,14 +21,10 @@ function FinalFantasylizationUI_OnLoad()
 	if Version then 
 		FinalFantasylizationUIFrame_AboutVersionLabel:SetText(string.format(FinalFantasylizationUIFrame_AboutVersionLabel_Text, Version))
 	end
-	-- Register the Interface Soundpack 1 page.
-	FinalFantasylizationUISPA.name = "Soundpack 1"; 
+	-- Register the Interface Soundpack  page.
+	FinalFantasylizationUISPA.name = "Soundpacks"; 
 	FinalFantasylizationUISPA.parent = "FinalFantasylization"; 
 	InterfaceOptions_AddCategory(FinalFantasylizationUISPA); 
-	-- Register the Interface Soundpack 2 page.
-	FinalFantasylizationUISPB.name = "Soundpack 2"; 
-	FinalFantasylizationUISPB.parent = "FinalFantasylization"; 
-	InterfaceOptions_AddCategory(FinalFantasylizationUISPB); 
 	-- Register the Interface Debug page.
 	FinalFantasylizationUIDebug.name = "Debug Menu"; 
 	FinalFantasylizationUIDebug.parent = "FinalFantasylization"; 
@@ -220,131 +216,18 @@ end
 -- SOUNDPACK MENU BUTTONS
 --------------------------------------------
 
--- Final Fantasy Packs
-function FinalFantasylizationUISP_FF6_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp ffvi")
-end
+-- Soundpacks
 function FinalFantasylizationUISP_FF7_Button_OnClick()
 	FFZlib.ExecuteChatCommand("/ffsp ff7")
 end
 function FinalFantasylizationUISP_FF7Universe_Button_OnClick()
 	FFZlib.ExecuteChatCommand("/ffsp ff7universe")
 end
-function FinalFantasylizationUISP_FF8_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp ff8")
-end
-function FinalFantasylizationUISP_FF9_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp ff9")
-end
-function FinalFantasylizationUISP_FF10_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp ff10")
-end
-function FinalFantasylizationUISP_FFTribute_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp fftribute")
-end
-function FinalFantasylizationUISP_SRebirth_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp srebirth")
-end
--- Chrono Trigger/Cross Packs
-function FinalFantasylizationUISP_CT_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp ct")
-end
-function FinalFantasylizationUISP_CC_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp cross")
-end
--- Star Ocean Packs
-function FinalFantasylizationUISP_SO2_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp starocean2")
-end
-function FinalFantasylizationUISP_SO3_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp starocean3")
-end
--- Anime Packs
-function FinalFantasylizationUISP_Bleach_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp bleach")
-end
--- Compilation Packs
-function FinalFantasylizationUISP_Aero_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp aero")
-end
-function FinalFantasylizationUISP_AmbAlt_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp ambient")
-end
-function FinalFantasylizationUISP_Bleukreuz_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp bleukreuz")
-end
-function FinalFantasylizationUISP_Heartless_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp ha")
-end
-function FinalFantasylizationUISP_MovTvDlx_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp movtvdlx")
-end
-function FinalFantasylizationUISP_StevenR_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp stevenremastered")
-end
-function FinalFantasylizationUISP_StevenC_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp stevencomplete")
-end
--- Other Games
-function FinalFantasylizationUISP_CodeGeass_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp geass")
-end
-function FinalFantasylizationUISP_DragonQuest_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp dragonquest")
-end
-function FinalFantasylizationUISP_Diablo_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp diablo")
-end
-function FinalFantasylizationUISP_GearsofWar_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp gearsofwar")
-end
-function FinalFantasylizationUISP_Goldeneye_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp eye")
-end
-function FinalFantasylizationUISP_GoldenSun_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp goldensun")
-end
-function FinalFantasylizationUISP_KingdomHearts_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp khearts")
-end
-function FinalFantasylizationUISP_LastRemnant_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp remnant")
+function FinalFantasylizationUISP_Steven2016_Button_OnClick()
+	FFZlib.ExecuteChatCommand("/ffsp steven2016")
 end
 function FinalFantasylizationUISP_LegendofZelda_Button_OnClick()
 	FFZlib.ExecuteChatCommand("/ffsp zelda")
-end
-function FinalFantasylizationUISP_MedalofHonor_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp honor")
-end
-function FinalFantasylizationUISP_MetalGearSolid_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp mgs")
-end
-function FinalFantasylizationUISP_MetroidPrime_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp metroid")
-end
-function FinalFantasylizationUISP_ParasiteEve_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp parasiteeve")
-end
-function FinalFantasylizationUISP_ResidentEvilT_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp ret")
-end
-function FinalFantasylizationUISP_SilentHillMix_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp silent")
-end
-function FinalFantasylizationUISP_SkiesofArcadia_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp arcadia")
-end
-function FinalFantasylizationUISP_TalesofVesperia_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp tov")
-end
-function FinalFantasylizationUISP_UnrealTournament_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp ut")
-end
-function FinalFantasylizationUISP_WildArms_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp wildarms")
-end
-function FinalFantasylizationUISP_Xenogears_Button_OnClick()
-	FFZlib.ExecuteChatCommand("/ffsp xenogears")
 end
 
 --------------------------------------------

@@ -1,12 +1,12 @@
 ﻿-- FinalFantasylization  by Hellfox and Darken5
--- Version 3.2.0
+-- Version 3.2.1
 ------------------------------------------------------------
 
 -- FinalFantasylization requires this version of FFZlib:
 local FinalFantasylizationFFZlibVersionRequired = 1.00
 local block = 0
 -- How often the OnUpdate code will run (in seconds)
-local FinalFantasylization_UpdateInterval = 1.0 
+local FinalFantasylization_UpdateInterval = 2.0 
 
 -- LibBabble Zone and SubZone code --
 local BZ = LibStub("LibBabble-Zone-3.0")

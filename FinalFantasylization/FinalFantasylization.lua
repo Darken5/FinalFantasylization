@@ -1700,14 +1700,14 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --'  Horde Towns: Brill, Tirisfal Glades : HORDE TERRITORY
 --'==========================================================================================
-		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Tirisfal Glades"] ) and (  SubZoneName == SZ["Brill"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Tirisfal Glades"] ) and ( ( SubZoneName == SZ["Brill"] ) or ( SubZoneName == SZ["Brill Town Hall"] ) )and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownBrill == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
 				FinalFantasylization_HordeTownBrill()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InHordeTownBrill = true
-		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Tirisfal Glades"] ) and (  SubZoneName == SZ["Brill"] ) and FinalFantasylization_IsPlaying == false then
+		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Tirisfal Glades"] ) and ( ( SubZoneName == SZ["Brill"] ) or ( SubZoneName == SZ["Brill Town Hall"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownBrill == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName.. PlayerInHostile)
 				FinalFantasylization_HostileTowns()  -- Music call for all towns you are hostile in.

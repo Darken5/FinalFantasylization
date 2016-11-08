@@ -174,6 +174,9 @@ Add Mounted jump sound (Kweh!)
 Add more zone/subzone detections
 
 *********************
+07. November 2016 - FinalFantasylization 3.2.2 - --Update-- >> Darken5 <<
+	- Added "Brill Town Hall" to Horde Towns: Brill, Tirisfal Glades detection
+	
 06. November 2016 - FinalFantasylization 3.2.1 - Soundpack Interface Update >> Darken5 <<
 	- Soundpack Interface pages reduced
 		- Removed Soundpack page 2

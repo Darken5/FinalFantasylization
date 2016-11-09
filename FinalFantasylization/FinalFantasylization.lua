@@ -1,5 +1,5 @@
 ﻿-- FinalFantasylization  by Hellfox and Darken5
--- Version 3.2.1
+-- Version 3.2.3
 ------------------------------------------------------------
 
 -- FinalFantasylization requires this version of FFZlib:
@@ -76,7 +76,6 @@ function FinalFantasylization_OnEvent()
 		FinalFantasylization_PlayerIsCombat = false
 		FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. LeaveCombat)
 	elseif event == "UNIT_AURA" then 
-		FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. AuraChange)
 	elseif event == "ZONE_CHANGED" then
 	elseif event == "ZONE_CHANGED_INDOORS" then
 	elseif event == "ZONE_CHANGED_NEW_AREA" then
@@ -437,6 +436,8 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_RegenGain = false
 	-- Dungeons Events --
 	FinalFantasylization_InDungeon = false
+	-- Raid Events --
+	FinalFantasylization_InRaid = false
 	-- Battleground Events --		
 	FinalFantasylization_InAlteracValley = false
 	FinalFantasylization_InArathiBasin = false
@@ -4804,7 +4805,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================
 		if not ( IsInInstance() ) and (  ZoneName == Z["Wailing Caverns"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InMiscAreaWailingCaverns == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn .. " " .. ZoneName)
 				FinalFantasylization_MiscAreaWailingCaverns()
 			end
 			FinalFantasylization_IsPlaying = true
@@ -5902,10 +5903,56 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################
 --###########################################################################################
 
-		if IsInInstance("party") and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then
+			-- 5 Man Dungeons
+		if IsInInstance("party") and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then 
 			if FinalFantasylization_InDungeon == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInInstance.. ZoneName)
-				FinalFantasylization_RaidSong()  -- Change to DungeonSong
+
+					-- Vanilla WoW Dungeons
+				if ( ZoneName == SZ["Ragefire Chasm"] ) then -- Ragefire Chasm Instance
+					FinalFantasylization_Dungeon_RagefireChasmSong()  -- NEW
+				elseif ( ZoneName == SZ["Wailing Caverns"] ) then -- Wailing Caverns Instance
+					FinalFantasylization_Dungeon_WailingCavernsSong()  -- NEW
+				elseif ( ZoneName == SZ["The Deadmines"] ) then -- The Deadmines Instance
+					FinalFantasylization_Dungeon_DeadminesSong()  -- NEW
+				elseif ( ZoneName == SZ["Shadowfang Keep"] ) then -- Shadowfang Keep Instance
+					FinalFantasylization_Dungeon_ShadowfangKeepSong()  -- NEW
+				elseif ( ZoneName == SZ["Blackfathom Deeps"] ) then -- Blackfathom Deeps Instance
+					FinalFantasylization_Dungeon_BlackfathomDeepsSong()  -- NEW
+				elseif ( ZoneName == SZ["The Stockade"] ) then -- Stormwind Stockade Instance (TEST THIS!)
+					FinalFantasylization_Dungeon_StormwindStockadeSong()  -- NEW
+				elseif ( ZoneName == SZ["Gnomeregan"] ) then -- Gnomeregan Instance
+					FinalFantasylization_Dungeon_GnomereganSong()  -- NEW
+				elseif ( ZoneName == SZ["Razorfen Kraul"] ) then -- Razorfen Kraul Instance
+					FinalFantasylization_Dungeon_RazorfenKraulSong()  -- NEW
+				elseif ( ZoneName == SZ["Scarlet Monastery"] ) then -- Scarlet Monastery Instance (TEST if works for all 4)
+					FinalFantasylization_Dungeon_ScarletMonasterySong()  -- NEW
+				elseif ( ZoneName == SZ["Razorfen Downs"] ) then -- Razorfen Downs Instance
+					FinalFantasylization_Dungeon_RazorfenDownsSong()  -- NEW
+				elseif ( ZoneName == SZ["Uldaman"] ) then -- Uldaman Instance
+					FinalFantasylization_Dungeon_UldamanSong()  -- NEW
+				elseif ( ZoneName == SZ["Zul'Farrak"] ) then -- Zul'Farrak Instance
+					FinalFantasylization_Dungeon_ZulFarrakSong()  -- NEW
+				elseif ( ZoneName == SZ["Maraudon"] ) then -- Maraudon Instance
+					FinalFantasylization_Dungeon_MaraudonSong()  -- NEW
+				elseif ( ZoneName == SZ["The Temple of Atal'Hakkar"] ) then -- The Temple of Atal'Hakkar Instance
+					FinalFantasylization_Dungeon_TempleofAtalHakkarSong()  -- NEW
+				elseif ( ZoneName == SZ["Blackrock Depths"] ) then -- Blackrock Depths Instance
+					FinalFantasylization_Dungeon_BlackrockDepthsSong()  -- NEW
+				elseif ( ZoneName == Z["Lower Blackrock Spire"] ) then -- Lower Blackrock Spire Instance
+					FinalFantasylization_Dungeon_LowerBlackrockSpireSong()  -- NEW
+				elseif ( ZoneName == Z["Upper Blackrock Spire"] ) then -- Upper Blackrock Spire Instance
+					FinalFantasylization_Dungeon_UpperBlackrockSpireSong()  -- NEW
+				elseif ( ZoneName == SZ["Dire Maul"] ) then -- Dire Maul Instance
+					FinalFantasylization_Dungeon_DireMaulSong()  -- NEW
+				elseif ( ZoneName == SZ["Stratholme"] ) then -- Stratholme Instance
+					FinalFantasylization_Dungeon_StratholmeSong()  -- NEW
+				elseif ( ZoneName == SZ["Scholomance"] ) then -- Scholomance Instance
+					FinalFantasylization_Dungeon_ScholomanceSong()  -- NEW
+					
+				else
+					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. "Instance not in FinalFantasylization")
+				end
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InDungeon = true
@@ -5923,14 +5970,14 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################
 
 		if IsInInstance("raid") and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InDungeon == false then
+			if FinalFantasylization_InRaid == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInInstance.. ZoneName)
 				FinalFantasylization_RaidSong()
 			end
 			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InDungeon = true
+			FinalFantasylization_InRaid = true
 		else
-			FinalFantasylization_InDungeon = false
+			FinalFantasylization_InRaid = false
 		end
 		
 		

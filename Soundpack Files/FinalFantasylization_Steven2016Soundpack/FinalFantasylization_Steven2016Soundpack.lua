@@ -1666,9 +1666,112 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_debugMsg("CavernsOfTimeSong The Last Remnant Dark Secrets")
 	end
 	
-
+	--################
+	--## DUNGEON SONGS
+	--################
+	
+	function FinalFantasylization_Dungeon_RagefireChasmSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_WailingCavernsSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_DeadminesSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_ShadowfangKeepSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_BlackfathomDeepsSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_StormwindStockadeSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_GnomereganSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_RazorfenKraulSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_ScarletMonasterySong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_RazorfenDownsSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_UldamanSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_ZulFarrakSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_MaraudonSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_TempleofAtalHakkarSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_BlackrockDepthsSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_LowerBlackrockSpireSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_UpperBlackrockSpireSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_DireMaulSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_StratholmeSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
+	function FinalFantasylization_Dungeon_ScholomanceSong()
+		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+	end
+	
 	--#############
-	-- ## RAID SONGS
+	--## RAID SONGS
 	--#############
 
 	function FinalFantasylization_RaidSong()

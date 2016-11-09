@@ -1,7 +1,7 @@
 ============================
 >>>                      <<<
 >>> FinalFantasylization <<<
->>>  ReadMe for 3.2.1    <<<
+>>>  ReadMe for 3.2.3    <<<
 >>>                      <<<
 ============================
 
@@ -136,16 +136,8 @@ Type /FFsoundpack or /FFsp and then the <command> that you wish to use:
      <command> 
 
 	ff7 	- switches to the Final Fantasy 7 soundpack (if installed)
-	ff8 	- switches to Final Fantasy 8 Soundpack (if installed)
-	ff9 	- switches to Final Fantasy 9 Soundpack (if installed)
-	ff10 	- switches to Final Fantasy 10 Soundpack (if installed)
 	ct 	- switches to the Chrono Trigger soundpack (if installed)
-	khearts - Switches to Kingdom Hearts Soundpack (if installed)
-	wildarms - Switches to Wild Arms Soundpack (if installed)
-	srebirth - Switches to Sephiroths Rebirth Soundpack (if installed)
-	fftribute - Switches to Tribute to the Fantasy Soundpack (if installed)
-	bleukreuz - Switches to Bleukreuz's Soundpack (if installed)
-	ambient	- Switches to Ambient Alternative Soundpack (if installed)
+	
 
 For soundpacks not listed, please see their download site for more info
 
@@ -174,6 +166,30 @@ Add Mounted jump sound (Kweh!)
 Add more zone/subzone detections
 
 *********************
+08. November 2016 - FinalFantasylization 3.2.3 - Vanilla Dungeons >> Darken5 <<
+	- Vanilla Dungeons added:
+		- Ragefire Chasm (Quick Test: Worked)
+		- Wailing Caverns (Quick Test: Worked)
+		- The Deadmines (Not Tested)
+		- Shadowfang Keep (Not Tested)
+		- Blackfathom Deeps (Not Tested)
+		- The Stockade (Not Tested)
+		- Gnomeregan (Full Run: Worked)
+		- Razorfen Kraul (Not Tested)
+		- Scarlet Monastery (Not Tested)
+		- Razorfen Downs (Not Tested)
+		- Uldaman (Not Tested)
+		- Zul'Farrak (Not Tested)
+		- Maraudon (Not Tested)
+		- The Temple of Atal'Hakkar (Not Tested)
+		- Blackrock Depths (Not Tested)
+		- Lower Blackrock Spire (Not Tested)
+		- Upper Blackrock Spire (Not Tested)
+		- Dire Maul (Not Tested)
+		- Stratholme (Not Tested)
+		- Scholomance (Not Tested)
+	
+
 07. November 2016 - FinalFantasylization 3.2.2 - --Update-- >> Darken5 <<
 	- Added "Brill Town Hall" to Horde Towns: Brill, Tirisfal Glades detection
 	

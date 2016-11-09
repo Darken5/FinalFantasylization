@@ -515,7 +515,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_debugMsg("ExodarSong FF13 Taejin's Tower")
 	end
 	function FinalFantasylization_IronforgeSong()
-		FFinalFantasylization_PlayMusic( S .. IronforgeSong);
+		FinalFantasylization_PlayMusic( S .. IronforgeSong);
 		FinalFantasylization_debugMsg("IronforgeSong Baldur's Gate Main Theme")
 	end
 	function FinalFantasylization_StormwindCitySong()

@@ -166,7 +166,7 @@ Add Mounted jump sound (Kweh!)
 Add more zone/subzone detections
 
 *********************
-08. November 2016 - FinalFantasylization 3.2.3 - Vanilla Dungeons >> Darken5 <<
+08. November 2016 - FinalFantasylization 3.2.3 - Vanilla Dungeons & Starter Area Expansion >> Darken5 <<
 	- Vanilla Dungeons added:
 		- Ragefire Chasm (Quick Test: Worked)
 		- Wailing Caverns (Quick Test: Worked)
@@ -188,7 +188,22 @@ Add more zone/subzone detections
 		- Dire Maul (Not Tested)
 		- Stratholme (Not Tested)
 		- Scholomance (Not Tested)
-	
+	- Fixed Ironforge when using Steven 2016 Soundpack
+
+	- Starter Area Expansions
+		- Fixed "Anvilmar" in Dwarf/Gnome Starter Area
+		- Added "Silverline Lake" to Draenei Starter Area
+		- Added "Nestlewood Hills" to Draenei Starter Area
+		- Added "Nestlewood Thicket" to Draenei Starter Area
+		- Added "Shadow Ridge" to Draenei Starter Area	
+		- Added "Red Cloud Mesa" to Tauren Starting Area
+		- Added "Northshire Vineyards" to Human Starter Area
+		- Added "The Den" to Orc/Troll Starter Area
+		- Added "Burning Blade Coven" to Orc/Troll Starter Area
+		- Added "Night Web's Hollow" to Undead Starter Area
+		- Added "The Sunspire" to Blood Elf Starter Area
+		- Added "Falthrien Academy" to Blood Elf Starter Area
+		- Added "Shrine of Dath'Remar" to Blood Elf Starter Area
 
 07. November 2016 - FinalFantasylization 3.2.2 - --Update-- >> Darken5 <<
 	- Added "Brill Town Hall" to Horde Towns: Brill, Tirisfal Glades detection

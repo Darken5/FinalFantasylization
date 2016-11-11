@@ -23,6 +23,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		--#######################################
 
 		S = "Interface\\AddOns\\FinalFantasylization_Steven2016Soundpack\\Sounds\\"
+		SS = "Interface\\AddOns\\FinalFantasylization_Steven2016Soundpack\\Dance\\"
 		-- Capital Cities Events --
 		OrgrimmarSong = "OrgrimmarSong.mp3" -- 
 		SilvermoonCitySong = "SilvermoonCitySong.mp3" --
@@ -413,6 +414,33 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		HostileSong = "HostileSong.mp3" --
 		Hostile2Song = "Hostile2Song.mp3" --
 
+		-- Dance Event
+		BloodElfFemaleDanceSong = "BloodElfFemale.mp3" -- 
+		BloodElfMaleDanceSong = "BloodElfMale.mp3" -- 
+		DraeneiFemaleDanceSong = "DraeneiFemale.mp3" -- 
+		DraeneiMaleDanceSong = "DraeneiMale.mp3" -- 
+		DwarfFemaleDanceSong = "DwarfFemale.mp3" -- 
+		DwarfMaleDanceSong = "DwarfMale.mp3" -- 
+		GnomeFemaleDanceSong = "GnomeFemale.mp3" -- 
+		GnomeMaleDanceSong = "GnomeMale.mp3" -- 
+		HumanFemaleDanceSong = "HumanFemale.mp3" -- 
+		HumanMaleDanceSong = "HumanMale.mp3" -- 
+		NightElfFemaleDanceSong = "NightElfFemale.mp3" -- 
+		NightElfMaleDanceSong = "NightElfMale.mp3" -- 
+		OrcFemaleDanceSong = "OrcFemale.mp3" -- 
+		OrcMaleDanceSong = "OrcMale.mp3" -- 
+		TaurenFemaleDanceSong = "TaurenFemale.mp3" -- 
+		TaurenMaleDanceSong = "TaurenMale.mp3" -- 
+		TrollFemaleDanceSong = "TrollFemale.mp3" -- 
+		TrollMaleDanceSong = "TrollMale.mp3" -- 
+		UndeadFemaleDanceSong = "UndeadFemale.mp3" -- 
+		UndeadMaleDanceSong = "UndeadMale.mp3" -- 
+		DruidBearDanceSong = "DruidBear.mp3" -- 
+		DruidCatDanceSong = "DruidCat.mp3" -- 
+		DruidOwlBearDanceSong = "DruidOwlBear.mp3" -- 
+		DruidTreeFormDanceSong = "DruidTreeForm.mp3" -- 
+		WolfDanceSong = "Wolf.mp3" -- 
+		
 		-- Misc Events --
 		SwimSong = "SwimSong.mp3" --
 		Swim2Song = "Swim2Song.mp3" --
@@ -2467,7 +2495,137 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Escape7Song Dragons Crown A Decision Has To Be Made")
 			end
 	end
-		
+
+	--###############
+	-- ## DANCE MUSIC
+	--###############
+	
+	function FinalFantasylization_BloodElfFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. BloodElfFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_BloodElfMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. BloodElfMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_DraeneiFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DraeneiFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_DraeneiMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DraeneiMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_DwarfFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DwarfFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_DwarfMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DwarfMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_GnomeFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. GnomeFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_GnomeMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. GnomeMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_HumanFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. HumanFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_HumanMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. HumanMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_NightElfFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. NightElfFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_NightElfMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. NightElfMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_OrcFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. OrcFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_OrcMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. OrcMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_TaurenFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. TaurenFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_TaurenMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. TaurenMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_TrollFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. TrollFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_TrollMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. TrollMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_UndeadFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. UndeadFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_UndeadMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. UndeadMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_DruidBearDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DruidBearDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_DruidCatDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DruidCatDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_DruidOwlBearDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DruidOwlBearDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_DruidTreeFormDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DruidTreeFormDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+	function FinalFantasylization_WolfDanceSong()
+		FinalFantasylization_PlayMusic( SS .. WolfDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+
+
 --END of music calls
         CoreSavedVariable = soundPackID
         for i = 1, NUM_SOUND_PACKS do -- set NUM_SOUND_PACKS in the Core

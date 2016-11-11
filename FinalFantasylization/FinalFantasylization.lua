@@ -1,5 +1,5 @@
 ﻿-- FinalFantasylization  by Hellfox and Darken5
--- Version 3.2.3
+-- Version 3.2.5
 ------------------------------------------------------------
 
 -- FinalFantasylization requires this version of FFZlib:
@@ -19,6 +19,10 @@ local SZR = BSZ:GetReverseLookupTable()
 local F = BF:GetLookupTable()
 local FR = BF:GetReverseLookupTable()
 -------------------------------------
+local FinalFantasylization_RightClick = false;
+local FinalFantasylization_LeftClick = false;
+local FinalFantasylization_RightTurn = false;
+local FinalFantasylization_LeftTurn = false;
 
 NUM_SOUND_PACKS = 0
 for i = 1, GetNumAddOns() do
@@ -82,6 +86,9 @@ function FinalFantasylization_OnEvent()
 	elseif event == "PLAYER_UPDATE_RESTING" then
 	elseif event == "PLAYER_CAMPING" then
 		FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. PlayerCamping)
+		if (DanceSongPlaying) then 
+			FinalFantasylization_StopDanceSong() 
+		end
 	elseif event == "CHAT_MSG_COMBAT_FACTION_CHANGE" then
 		if FinalFantasylization_PlayerIsCombat == true then
 			FinalFantasylization_RegenGain = true
@@ -110,6 +117,7 @@ function FinalFantasylization_OnEvent()
 end 
 
 function FinalFantasylization_OnLoad()
+	playermodel = CreateFrame("PlayerModel")
 	-- Check the current version of FFZlib.
 	if (not FFZlib) or (not FFZlib.Version) or (FFZlib.Version < FinalFantasylizationFFZlibVersionRequired) then
 		if DEFAULT_CHAT_FRAME then DEFAULT_CHAT_FRAME:AddMessage("|cfffe8460" .. NeedNewerFFZlibMessage) end
@@ -6015,6 +6023,155 @@ function FinalFantasylization_GetMusic()
 	end
 end
 
+--'==========================================================================================		
+--'  World event: /DANCE
+--'==========================================================================================
+
+function FinalFantasylization_DoEmote(emote, msg)
+	FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. 'FinalFantasylization_DoEmote '..emote);
+
+	--emote is DANCE when "/dance" is used.
+	
+	if (emote=="DANCE" and UnitIsDeadOrGhost("player")==nil ) then
+		DanceSongPlaying = true
+		FinalFantasylization_IsPlaying = true
+		DanceOnMount = false;
+		playermodel:SetUnit("player");
+		modelname = playermodel:GetModel();
+		savedname = modelname;
+		race = UnitRace("player");
+
+		revmodel = strrev(modelname);
+		namestart = strlen(modelname) - strfind(revmodel,'\\') +2;
+		songname = strsub(modelname,namestart);
+
+		songname = gsub(songname,'scourgefemale','undeadfemale');
+		songname = gsub(songname,'scourgemale','undeadmale');
+	
+		if (strmatch(songname,'druidbear') ~= nil) then
+			songname = 'druidbear';
+		elseif (strmatch(songname,'druidcat') ~= nil or strmatch(songname,'tiger') ~= nil) then
+			songname = 'druidcat';
+		elseif (strmatch(songname,'druidowlbear') ~= nil) then
+			songname = 'druidowlbear';
+		end;
+
+		FinalFantasylization_DanceSong = gsub(songname,'.m2','');
+	
+		FinalFantasylization_debugMsg(FinalFantasylization_DanceSong);
+
+		if FinalFantasylization_DanceSong == "bloodelffemale" then FinalFantasylization_BloodElfFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "bloodelfmale" then FinalFantasylization_BloodElfMaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "draeneifemale" then FinalFantasylization_DraeneiFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "draeneimale" then FinalFantasylization_DraeneiMaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "dwarffemale" then	FinalFantasylization_DwarfFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "dwarfmale" then FinalFantasylization_DwarfMaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "gnomefemale" then	FinalFantasylization_GnomeFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "gnomemale" then FinalFantasylization_GnomeMaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "humanfemale" then	FinalFantasylization_HumanFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "humanmale" then FinalFantasylization_HumanMaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "nightelffemale" then FinalFantasylization_NightElfFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "nightelfmale" then FinalFantasylization_NightElfMaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "orcfemale" then FinalFantasylization_OrcFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "orcmale" then	FinalFantasylization_OrcMaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "taurenfemale" then FinalFantasylization_TaurenFemaleDanceSong()
+		elseif FinalFantasylization_DanceSong == "taurenmale" then FinalFantasylization_TaurenMaleDanceSong()
+		elseif FinalFantasylization_DanceSong == "trollfemale" then	FinalFantasylization_TrollFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "trollmale" then FinalFantasylization_TrollMaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "undeadfemale" then FinalFantasylization_UndeadFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "undeadmale" then FinalFantasylization_UndeadMaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "druidbear" then FinalFantasylization_DruidBearDanceSong();
+		elseif FinalFantasylization_DanceSong == "druidcat" then FinalFantasylization_DruidCatDanceSong();
+		elseif FinalFantasylization_DanceSong == "druidowlbear" then FinalFantasylization_DruidOwlBearDanceSong();
+		elseif FinalFantasylization_DanceSong == "druidtreeform" then FinalFantasylization_DruidTreeFormDanceSong()
+		elseif FinalFantasylization_DanceSong == "wolf" then FinalFantasylization_WolfDanceSong();
+		else FinalFantasylization_debugMsg("Dance Music error");
+		end
+	end 
+end
+
+function FinalFantasylization_PlayerMove()
+	DanceOnMount = false
+	DanceSongLastMove = GetTime();
+	FinalFantasylization_StopDanceSong();
+end
+
+-- Stop the music
+function FinalFantasylization_StopDanceSong()
+	--FinalFantasylization_Debug('Stop song when playing');
+
+	-- Only stop the music when DanceSong was playing
+	if (DanceSongPlaying) then
+		StopMusic();
+		DanceSongPlaying = false;
+		FinalFantasylization_IsPlaying = false;
+		FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. 'Dance music is stopped');
+		FinalFantasylization_ClearMusicState()
+		FinalFantasylization_GetMusic()
+	end;
+end;
+
+function FinalFantasylization_TurnOrActionStart()
+	FinalFantasylization_RightClick = true;
+	FinalFantasylization_MouseMove();
+end
+
+function FinalFantasylization_TurnOrActionStop()
+	FinalFantasylization_RightClick = false;
+	FinalFantasylization_MouseMove();
+end
+
+function FinalFantasylization_CameraOrSelectOrMoveStart()
+	FinalFantasylization_LeftClick = true;
+	FinalFantasylization_MouseMove();
+end
+
+function FinalFantasylization_CameraOrSelectOrMoveStop()
+	FinalFantasylization_LeftClick = false;
+	FinalFantasylization_MouseMove();
+end
+
+function FinalFantasylization_TurnLeftStart()
+	FinalFantasylization_LeftTurn = true;
+	FinalFantasylization_MouseMove();
+end
+
+function FinalFantasylization_TurnLeftStop()
+	FinalFantasylization_LeftTurn = false;
+	FinalFantasylization_MouseMove();
+end
+
+function FinalFantasylization_TurnRightStart()
+	FinalFantasylization_RightTurn = true;
+	FinalFantasylization_MouseMove();
+end
+
+function FinalFantasylization_TurnRightStop()
+	FinalFantasylization_RightTurn = false;
+	FinalFantasylization_MouseMove();
+end
+
+function FinalFantasylization_MouseMove()
+	if (DanceSongPlaying) then
+		if (FinalFantasylization_LeftClick and FinalFantasylization_RightClick) then
+			FinalFantasylization_StopDanceSong();
+		elseif (FinalFantasylization_RightClick and FinalFantasylization_RightTurn) then
+			FinalFantasylization_StopDanceSong();
+		elseif (FinalFantasylization_RightClick and FinalFantasylization_LeftTurn) then
+			FinalFantasylization_StopDanceSong();
+		elseif (FinalFantasylization_RightTurn) then
+			FinalFantasylization_StopDanceSong();
+		elseif (FinalFantasylization_LeftTurn) then
+			FinalFantasylization_StopDanceSong();
+		end;
+	end;
+end
+
+--'==========================================================================================
+--'    END OF EVENTS
+--'==========================================================================================
+
+
 
 -- Initializes FinalFantasylization after all saved variables have been loaded.
 
@@ -6113,4 +6270,22 @@ FinalFantasylizationCoreFrame:SetScript("OnEvent", function() FinalFantasylizati
 	FinalFantasylizationCoreFrame:RegisterEvent("CHAT_MSG_TEXT_EMOTE") -- Fires when a chat emote is used (aka /dance)	
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_GAINS_VEHICLE_DATA") -- Fires when the player gains vehicle-related attributes without necessarily entering a vehicle.
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_LOSES_VEHICLE_DATA"); -- Fires when the player loses vehicle-related attributes without necessarily having been in a vehicle.
+	
+	hooksecurefunc("DoEmote", FinalFantasylization_DoEmote);
+	
+	hooksecurefunc("MoveForwardStart"	, FinalFantasylization_PlayerMove);
+	hooksecurefunc("MoveBackwardStart"	, FinalFantasylization_PlayerMove);
+	hooksecurefunc("StrafeLeftStart"	, FinalFantasylization_PlayerMove);
+	hooksecurefunc("StrafeRightStart"	, FinalFantasylization_PlayerMove);
+	hooksecurefunc("JumpOrAscendStart"	, FinalFantasylization_PlayerMove);
+	hooksecurefunc("ToggleAutoRun"		, FinalFantasylization_PlayerMove);
+	
+	hooksecurefunc("TurnOrActionStart"			, FinalFantasylization_TurnOrActionStart);
+	hooksecurefunc("TurnOrActionStop"			, FinalFantasylization_TurnOrActionStop);
+	hooksecurefunc("CameraOrSelectOrMoveStart"	, FinalFantasylization_CameraOrSelectOrMoveStart);
+	hooksecurefunc("CameraOrSelectOrMoveStop"	, FinalFantasylization_CameraOrSelectOrMoveStop);
+	hooksecurefunc("TurnLeftStart"				, FinalFantasylization_TurnLeftStart);
+	hooksecurefunc("TurnLeftStop"				, FinalFantasylization_TurnLeftStop);
+	hooksecurefunc("TurnRightStart"				, FinalFantasylization_TurnRightStart);
+	hooksecurefunc("TurnRightStop"				, FinalFantasylization_TurnRightStop);	
 	

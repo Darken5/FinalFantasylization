@@ -160,9 +160,6 @@ Fix the Fanfare sound issue on battlegrounds (bugged)
 Fix the Fanfare sound issue on dungeons (bosses only)
 Fix the Fanfare sound issue on world (sometimes doesn't play)
 Fix Dungeon bosses music events (only play on "Skull" and "Rare Elite")
-Add Dungeons music events.
-Add /Dance emote song
-Add Mounted jump sound (Kweh!)
 Add more zone/subzone detections
 
 *********************

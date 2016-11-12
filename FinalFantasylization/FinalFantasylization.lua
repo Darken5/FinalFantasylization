@@ -6,7 +6,7 @@
 local FinalFantasylizationFFZlibVersionRequired = 1.00
 local block = 0
 -- How often the OnUpdate code will run (in seconds)
-local FinalFantasylization_UpdateInterval = 2.0 
+local FinalFantasylization_UpdateInterval = 2.5 
 
 -- LibBabble Zone and SubZone code --
 local BZ = LibStub("LibBabble-Zone-3.0")
@@ -6171,7 +6171,7 @@ function FinalFantasylization_JumpOrAscendStart()
 			local creatureID, creatureName, spellID, icon, active, mountFlags = GetCompanionInfo("MOUNT", i)
 			i = i + 1
 			mountName = strlower(creatureName)
-		until ( (active) or ( i >= mountcount) )
+		until ( active ~= nil ) 
 		if string.match(mountName,'strider') then 
 			FinalFantasylization_ChocoboKweh();
 		end

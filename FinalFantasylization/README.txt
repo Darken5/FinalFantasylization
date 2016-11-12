@@ -1,7 +1,7 @@
 ============================
 >>>                      <<<
 >>> FinalFantasylization <<<
->>>  ReadMe for 3.2.3    <<<
+>>>  ReadMe for 3.2.6    <<<
 >>>                      <<<
 ============================
 
@@ -166,6 +166,39 @@ Add Mounted jump sound (Kweh!)
 Add more zone/subzone detections
 
 *********************
+11. November 2016 - FinalFantasylization 3.2.6 - Chocobo Kweh!!! >> Darken5 <<
+	- Finally got the kweh on jump working again!
+		- only works for mounts with "strider" in their name. Mechanostrider, Hawkstrider, etc
+
+10. November 2016 - FinalFantasylization 3.2.5 - Dance Music >> Darken5 <<
+	- Got Dance music working
+	- 25 Dance Events (Each able to have their own song):
+		- Blood Elf Female 
+		- Blood Elf Male 
+		- Draenei Female 
+		- Draenei Male 
+		- Dwarf Female 
+		- Dwarf Male 
+		- Gnome Female 
+		- Gnome Male 
+		- Human Female 
+		- Human Male 
+		- Night Elf Female 
+		- Night Elf Male 
+		- Orc Female 
+		- Orc Male 
+		- Tauren Female 
+		- Tauren Male 
+		- Troll Female 
+		- Troll Male 
+		- Undead Female 
+		- Undead Male 
+		- Druid Bear Form 
+		- Druid Cat Form 
+		- Druid Moonkin Form 
+		- Druid Tree of Life Form 
+		- Shaman Ghost Wolf Form 
+
 08. November 2016 - FinalFantasylization 3.2.3 - Vanilla Dungeons & Starter Area Expansion >> Darken5 <<
 	- Vanilla Dungeons added:
 		- Ragefire Chasm (Quick Test: Worked)

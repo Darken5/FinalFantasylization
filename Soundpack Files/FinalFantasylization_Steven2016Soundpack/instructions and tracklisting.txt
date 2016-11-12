@@ -86,7 +86,7 @@ Resident Evil
 
 Artists:
 Derek Fiechter
-FantÃ´me DÃ©connectÃ©
+Fantôme Déconnecté
 Final Fantasy Best Collection 1987-1994
 Jeff Van Dyck
 Joanie Meden
@@ -148,7 +148,7 @@ KargathSong = Kingdom Hearts 2 - The Underworld
 KorkronVanguardSong = Kingdom Hearts 2 - Sacred Moon
 MokNathalVillageSong = Legaia 2 Duel Saga - God's Fist
 NewAgamandSong = Lord of the Ring The Two Towers - Treebeard
-RazorHillSong = Final Fantasy 7 - Mako Reactor
+RazorHillSong = Final Fantasy 6 - Troops March On
 RevantuskVillageSong = Final Fantasy 9 - Tantalus theme
 SenjinVillageSong = Final Fantasy 7 - Fort Condor
 SepulcherSong = Final Fantasy 9 - Sword of Doubt
@@ -363,7 +363,7 @@ ZangarmarshSong = Star Ocean 4 (The Last Hope) - Shattered Dreams
 -- Northrend Zones Events --
 BoreanTundraSong = Final Fantasy 4 Celtic Moon - Welcome to Our Town
 ColdarraSong = Final Fantasy 7 - Great Northen Cave
-CrystalsongForestSong = FantÃ´me DÃ©connectÃ© - Espace sans casque
+CrystalsongForestSong = Fantôme Déconnecté - Espace sans casque
 DragonblightSong = Final Fantasy 7 - Buried in the Snow
 GrizzlyHillsSong = Final Fantasy 4 Celtic Moon - Rydia's theme
 HowlingFjordSong = Final Fantasy 4 Celtic Moon - Troian Beauty
@@ -372,6 +372,28 @@ SholazarBasinSong = Final Fantasy Tactics - Character Creation
 StormPeaksSong = Dragon Age Inquisition - Adamant Fortress
 WintergraspSong = Battlegrounds
 ZulDrakSong = Chrono Cross - Lizard Dance
+
+-- Dungeons Events --
+RagefireChasmSong = 
+WailingCavernsSong = 
+DeadminesSong = 
+ShadowfangKeepSong = 
+BlackfathomDeepsSong = 
+StormwindStockadeSong = 
+GnomereganSong = Final Fantasy 7 - Mako Reactor
+RazorfenKraulSong = 
+ScarletMonasterySong = 
+RazorfenDownsSong = 
+UldamanSong = 
+ZulFarrakSong = 
+MaraudonSong = 
+TempleofAtalHakkarSong = 
+BlackrockDepthsSong = 
+LowerBlackrockSpireSong = 
+UpperBlackrockSpireSong = 
+DireMaulSong = 
+StratholmeSong = 
+ScholomanceSong = 
 
 -- Battlegrounds Events --
 BattleGround1 = Dragon Age Origins - The Circle Tower
@@ -485,7 +507,6 @@ Boss11Song = Final Fantasy 6 - The Decisive Battle
 
 -- PvP Events --
 HostileSong = Legend of Dragoon - Boss Battle 3
-Hostile2Song = Final Fantasy 15 - Enemy Approaching Theme
 
 -- Misc Events --
 SwimSong = FF7 - A Secret, Sleeping in the Deep Sea
@@ -503,13 +524,14 @@ Sleep8Song = Legend of Legaia - Mei
 Sleep9Song = Lunar 2 - Village Town
 Sleep10Song = Final Fantasy 15 - Camping Theme
 Sleep11Song = Elder's Scroll 5 (Skyrim) - Around the Fire
-Sleep12Song = Final Fantasy 6 - Johnny C Bad
+Sleep12Song = The Witcher 3 - The VagaBond
 Sleep13Song = Rogue Galaxy - Swinging
 KillSound = Final Fantasy 7 Kill Sound
 CombatSound = Final Fantasy 7 Enter Combat Sound
 DeeprunTramSong = Resident Evil Main Theme
+CavernsOfTimeSong = The Last Remnant - Dark Secrets
 ScarletMonasterySong = Final Fantasy 11 - Repression Memoro de La Stono
 RazorfenSong = Final Fantasy 12 - Abyss
 WailingCavernsSong = Final Fantasy 12 - Dark Night (imperial version)
 TheDeadminesSong = Final Fantasy 11 - Castle Zvahl
-CavernsOfTimeSong = The Last Remnant - Dark Secrets
+

@@ -1,5 +1,5 @@
 ﻿-- FinalFantasylization  by Hellfox and Darken5
--- Version 3.2.5
+-- Version 3.2.6
 ------------------------------------------------------------
 
 -- FinalFantasylization requires this version of FFZlib:
@@ -953,7 +953,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --'  World event: Player is Mounted.. Chocobo!
 --'==========================================================================================
-		if IsMounted() and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Mount == true then
+		if IsMounted("player") and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Mount == true then
 			if FinalFantasylization_PlayerIsMounting == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. Mounted)
 				FinalFantasylization_Mounted()
@@ -6091,25 +6091,12 @@ function FinalFantasylization_DoEmote(emote, msg)
 end
 
 function FinalFantasylization_PlayerMove()
-	DanceOnMount = false
-	DanceSongLastMove = GetTime();
-	FinalFantasylization_StopDanceSong();
-end
-
--- Stop the music
-function FinalFantasylization_StopDanceSong()
-	--FinalFantasylization_Debug('Stop song when playing');
-
-	-- Only stop the music when DanceSong was playing
 	if (DanceSongPlaying) then
-		StopMusic();
-		DanceSongPlaying = false;
-		FinalFantasylization_IsPlaying = false;
-		FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. 'Dance music is stopped');
-		FinalFantasylization_ClearMusicState()
-		FinalFantasylization_GetMusic()
-	end;
-end;
+		DanceOnMount = false
+		DanceSongLastMove = GetTime();
+		FinalFantasylization_StopDanceSong();
+	end
+end
 
 function FinalFantasylization_TurnOrActionStart()
 	FinalFantasylization_RightClick = true;
@@ -6166,6 +6153,46 @@ function FinalFantasylization_MouseMove()
 		end;
 	end;
 end
+
+function FinalFantasylization_JumpOrAscendStart()
+	if (DanceSongPlaying) then
+		DanceOnMount = false
+		DanceSongLastMove = GetTime();
+		FinalFantasylization_StopDanceSong();
+	end
+--'==========================================================================================		
+--'  World event: Chocobo Kweh!!
+--'==========================================================================================	
+	if IsMounted("player") then
+		local mountcount = GetNumCompanions("MOUNT")
+		local mountName = nil
+		i = 1
+		repeat 
+			local creatureID, creatureName, spellID, icon, active, mountFlags = GetCompanionInfo("MOUNT", i)
+			i = i + 1
+			mountName = strlower(creatureName)
+		until ( (active) or ( i >= mountcount) )
+		if string.match(mountName,'strider') then 
+			FinalFantasylization_ChocoboKweh();
+		end
+	end
+end
+
+-- Stop the music
+function FinalFantasylization_StopDanceSong()
+	--FinalFantasylization_Debug('Stop song when playing');
+
+	-- Only stop the music when DanceSong was playing
+	if (DanceSongPlaying) then
+		StopMusic();
+		DanceSongPlaying = false;
+		FinalFantasylization_IsPlaying = false;
+		FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. 'Dance music is stopped');
+		FinalFantasylization_ClearMusicState()
+		FinalFantasylization_GetMusic()
+	end;
+end;
+
 
 --'==========================================================================================
 --'    END OF EVENTS
@@ -6277,7 +6304,7 @@ FinalFantasylizationCoreFrame:SetScript("OnEvent", function() FinalFantasylizati
 	hooksecurefunc("MoveBackwardStart"	, FinalFantasylization_PlayerMove);
 	hooksecurefunc("StrafeLeftStart"	, FinalFantasylization_PlayerMove);
 	hooksecurefunc("StrafeRightStart"	, FinalFantasylization_PlayerMove);
-	hooksecurefunc("JumpOrAscendStart"	, FinalFantasylization_PlayerMove);
+	hooksecurefunc("JumpOrAscendStart"	, FinalFantasylization_JumpOrAscendStart);
 	hooksecurefunc("ToggleAutoRun"		, FinalFantasylization_PlayerMove);
 	
 	hooksecurefunc("TurnOrActionStart"			, FinalFantasylization_TurnOrActionStart);

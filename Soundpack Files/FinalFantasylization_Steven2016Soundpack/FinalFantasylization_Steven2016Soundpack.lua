@@ -24,6 +24,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 
 		S = "Interface\\AddOns\\FinalFantasylization_Steven2016Soundpack\\Sounds\\"
 		SS = "Interface\\AddOns\\FinalFantasylization_Steven2016Soundpack\\Dance\\"
+		
 		-- Capital Cities Events --
 		OrgrimmarSong = "OrgrimmarSong.mp3" -- 
 		SilvermoonCitySong = "SilvermoonCitySong.mp3" --
@@ -298,6 +299,8 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		VentureBaySong = "VentureBaySong.mp3" --
 		ZulDrakSong = "ZulDrakSong.mp3" --
 
+		-- Dungeons Events --
+		GnomereganSong = "GnomereganSong.mp3" --
 		-- Battlegrounds Events --
 		BattleGround1 = "BattleGround1.mp3" -- 
 		BattleGround2 = "BattleGround2.mp3" -- 
@@ -442,6 +445,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		WolfDanceSong = "Wolf.mp3" -- 
 		
 		-- Misc Events --
+		ChocoboKweh = "kweh.mp3" -- Chocobo Kweh Sound
 		SwimSong = "SwimSong.mp3" --
 		Swim2Song = "Swim2Song.mp3" --
 		Swim3Song = "Swim3Song.mp3" -- 
@@ -485,6 +489,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_CombatSound()
 		FinalFantasylization_PlayFile( S ..  CombatSound );
 		FinalFantasylization_debugMsg("CombatSound")
+	end
+	function FinalFantasylization_ChocoboKweh()
+		FinalFantasylization_PlayFile( S ..  ChocoboKweh );
+		FinalFantasylization_debugMsg("Chocobo Kweh!")
 	end
 
 	--########################
@@ -698,7 +706,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_HordeTownRazorHill()
 		FinalFantasylization_PlayMusic( S .. RazorHillSong);
-		FinalFantasylization_debugMsg("RazorHillSong Final Fantasy 7 Mako Reactor")
+		FinalFantasylization_debugMsg("RazorHillSong Final Fantasy 6 Troops March On")
 	end
 	function FinalFantasylization_HordeTownRevantuskVillage()
 		FinalFantasylization_PlayMusic( S .. RevantuskVillageSong);
@@ -1729,8 +1737,8 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	
 	function FinalFantasylization_Dungeon_GnomereganSong()
-		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
-		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+		FinalFantasylization_PlayMusic( S .. GnomereganSong);
+		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 7 Mako Reactor")
 	end
 	
 	function FinalFantasylization_Dungeon_RazorfenKraulSong()
@@ -2175,14 +2183,8 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--###############	
 	
 	function FinalFantasylization_HostileTowns()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_PlayMusic( S .. HostileSong);
-				FinalFantasylization_debugMsg("HostileSong Legend of Dragoon Boss Battle 3")
-			else
-				FinalFantasylization_PlayMusic( S .. Hostile2Song);
-				FinalFantasylization_debugMsg("Hostile2Song Final Fantasy 15 Enemy Approaching Theme")
-			end
+		FinalFantasylization_PlayMusic( S .. HostileSong);
+		FinalFantasylization_debugMsg("HostileSong Legend of Dragoon Boss Battle 3")
 	end
 
 	--###############
@@ -2324,7 +2326,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Sleep11Song Elders Scroll 5 Skyrim Around the Fire")
 			elseif x == 12 then
 				FinalFantasylization_PlayMusic( S .. Sleep12Song);
-				FinalFantasylization_debugMsg("Sleep12Song Final Fantasy 6 Johnny C Bad")
+				FinalFantasylization_debugMsg("Sleep12Song The Witcher 3 The VagaBond")
 			else
 				FinalFantasylization_PlayMusic( S .. Sleep13Song);
 				FinalFantasylization_debugMsg("Sleep13Song Rogue Galaxy Swinging")
@@ -2344,13 +2346,13 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			local x = math.random(1, 3);
 				if x == 1 then
 					FinalFantasylization_PlayMusic(S .. SwimSong);  -- Normal Swim song
-					FinalFantasylization_debugMsg("SwimSong") -- Normal Swim song
+					FinalFantasylization_debugMsg("SwimSong FF7 A Secret Sleeping in the Deep Sea") -- Normal Swim song
 				elseif x == 2 then 
 					FinalFantasylization_PlayMusic(S .. Swim2Song); -- Normal Swim song
-					FinalFantasylization_debugMsg("Swim2Song") -- Normal Swim song
+					FinalFantasylization_debugMsg("Swim2Song Shining Force 2 Mithril Diggers") -- Normal Swim song
 				else 
 					FinalFantasylization_PlayMusic(S .. Swim3Song); -- Normal Swim song
-					FinalFantasylization_debugMsg("Swim3Song") -- Normal Swim song
+					FinalFantasylization_debugMsg("Swim3Song Kingdom Hearts Under the Sea") -- Normal Swim song
 				end		
 		end
 	end

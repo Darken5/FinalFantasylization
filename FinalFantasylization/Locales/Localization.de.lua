@@ -141,7 +141,7 @@ if (GetLocale() == "deDE") then
 	InCombatBGBoss = "Spieler im Kampf, Schlacht! - Schlachtfeld Boss!..."
 	InCombatBGPVP = "Spieler im Kampf, Schlacht! - Schlachtfeld PvP!"
 	InCombatDungeonBoss = "Spieler im Kampf, Schlacht. - Instanz PvE! - Boss!..."
-	InCombatDungeonElite = "Spieler im Kampf, Schlacht. - Instanz PvE! - Elite!..."
+	InCombatDungeonPVE = "Spieler im Kampf, Schlacht. - Instanz PvE!"
 	InCombatWorldBoss = "Spieler im Kampf, Schlacht! - Welt PvE! - Boss!..."
 	InCombatWorldPVE = "Spieler im Kampf, Schlacht. - Welt PvE!"
 	InCombatWorldPVP = "Spieler im Kampf, Schlacht. - Welt PvP!"

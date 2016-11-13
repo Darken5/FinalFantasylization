@@ -163,6 +163,14 @@ Fix Dungeon bosses music events (only play on "Skull" and "Rare Elite")
 Add more zone/subzone detections
 
 *********************
+13. November 2016 - FinalFantasylization 3.2.7 - Instance & Combat Code Rewrite  >> Darken5 <<
+	- Added "LibBossIDs-1.0" to libs	
+	- Combined Battlegrounds, Raids and Dungeons into one section
+		- changed Battleground detection to be like new Dungeon detection
+	- Rewrote "World event: Player in Combat" section completly... (TWICE!)
+		- Added in "LibBossIDs-1.0" to detect if youre fighting a boss. (because while 1st rewrite "worked", didnt properly detect the Boss, had to use UnitGUID instead of UnitClassification)
+		- Now properly detects Bosses!!!! In Dungeons, Battlegrounds, Raids, and in the over world!!!!
+
 11. November 2016 - FinalFantasylization 3.2.6 - Chocobo Kweh!!! >> Darken5 <<
 	- Finally got the kweh on jump working again!
 		- only works for mounts with "strider" in their name. Mechanostrider, Hawkstrider, etc

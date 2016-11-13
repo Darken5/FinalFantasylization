@@ -59,7 +59,7 @@ function FinalFantasylizationUI_OnShow()
 	FinalFantasylizationUIFrame_MusicCheck:SetChecked(FinalFantasylizationOptions.Music)
 	FinalFantasylizationUIFrame_CombatCheck:SetChecked(FinalFantasylizationOptions.Combat)
 	FinalFantasylizationUIFrame_MountCheck:SetChecked(FinalFantasylizationOptions.Mount)
-	FinalFantasylizationUIFrame_DungeonCheck:SetChecked(FinalFantasylizationOptions.Dungeon)
+	FinalFantasylizationUIFrame_DungeonCheck:SetChecked(FinalFantasylizationOptions.Instance)
 	FinalFantasylizationUIFrame_SleepCheck:SetChecked(FinalFantasylizationOptions.Sleep)
 	FinalFantasylizationUIFrame_SwimCheck:SetChecked(FinalFantasylizationOptions.Swim)
 	FinalFantasylizationUIFrame_DeadCheck:SetChecked(FinalFantasylizationOptions.Dead)
@@ -74,7 +74,7 @@ function FinalFantasylizationUI_OnShow()
 	FinalFantasylizationUICancelOptions.Music = FinalFantasylizationOptions.Music
 	FinalFantasylizationUICancelOptions.Combat = FinalFantasylizationOptions.Combat
 	FinalFantasylizationUICancelOptions.Mount = FinalFantasylizationOptions.Mount
-	FinalFantasylizationUICancelOptions.Dungeon = FinalFantasylizationOptions.Dungeon
+	FinalFantasylizationUICancelOptions.Dungeon = FinalFantasylizationOptions.Instance
 	FinalFantasylizationUICancelOptions.Sleep = FinalFantasylizationOptions.Sleep
 	FinalFantasylizationUICancelOptions.Swim = FinalFantasylizationOptions.Swim
 	FinalFantasylizationUICancelOptions.Dead = FinalFantasylizationOptions.Dead
@@ -92,7 +92,7 @@ function FinalFantasylizationUI_OnCancel()
 	FinalFantasylizationOptions.Music = FinalFantasylizationUICancelOptions.Music
 	FinalFantasylizationOptions.Combat = FinalFantasylizationUICancelOptions.Combat
 	FinalFantasylizationOptions.Mount = FinalFantasylizationUICancelOptions.Mound
-	FinalFantasylizationOptions.Dungeon = FinalFantasylizationUICancelOptions.Dungeon
+	FinalFantasylizationOptions.Instance = FinalFantasylizationUICancelOptions.Dungeon
 	FinalFantasylizationOptions.Sleep = FinalFantasylizationUICancelOptions.Sleep
 	FinalFantasylizationOptions.Swim = FinalFantasylizationUICancelOptions.Swim
 	FinalFantasylizationOptions.Dead = FinalFantasylizationUICancelOptions.Dead
@@ -632,7 +632,7 @@ FinalFantasylizationDropDownMenu.initialize = function(self, level)
 			info.text = FinalFantasylizationUIFrame_DungeonCheck_Text
 			info.hasArrow = nil
 			info.notCheckable = nil
-			info.checked = FinalFantasylizationOptions.Dungeon
+			info.checked = FinalFantasylizationOptions.Instance
 			info.func = function() FinalFantasylizationUIFrame_DungeonCheck_OnClick() end
             UIDropDownMenu_AddButton(info, level)
 				-- Sleep Toggle

@@ -25,11 +25,14 @@ Baldur's Gate 2
 Breath of Fire 3
 Breath of Fire 4
 Chrono Cross
+Chrono Trigger
 Diablo
 Diablo 2
 Dragon Age Origins
+Dragon Age 2
 Dragon Age Inquisition
 Dragon's Crown
+Dragon's Dogma
 Dragon Quest VIII
 Dissidia Final Fantasy
 Elder's Scroll 4 - Oblivion
@@ -213,7 +216,7 @@ TelaarSong = Lunar 2 - Promenade
 TelredorSong = Final Fantasy 9 - Kingdom of Burmecia
 TempleOfTelhamatSong = Legend of Dragoon - Hokes Village
 ThalanaarSong = Final Fantasy 7 - Descendant of Shinobi
-ThelsamarSong = Breath of Fire 3 - These Little Things
+ThelsamarSong = Final Fantasy 7 - Ahead on our Way
 TheramoreIsleSong = Final Fantasy 7 - Rufus's Welcoming Ceremony
 ToshleysStationSong = Final Fantasy 7 - Wall Market
 ValianceKeepSong = Final Fantasy 8 - Balamb Garden
@@ -279,7 +282,7 @@ ProtectorateWatchPostSong = Dissidia Final Fantasy - Main theme (FF4)
 DawnsReachSong = Derek Fiechter - Knights of the Round Table
 LightsTrustSong = Final Fantasy 7 - The Flow of Life
 GraniteSpringsSong = Final Fantasy 7 - If you open your Heart
-VentureBaySong = Final Fantasy 7 - Ahead on our Way
+VentureBaySong = Final Fantast 14 - Saltswept
 ScalawagPointSong = Legend of Legaia - Earth of Joy
 BlackwatchSong = Final Fantasy 7 - Off the Edge of Despair
 DoriansOutpostSong = Legend of Dragoon - Jeek's theme
@@ -311,7 +314,7 @@ EversongWoodsSong = Final Fantasy 7 - You can Hear the Cry of the Planet
 GhostlandsSong = Breath of Fire 4 - Freefall
 HillsbradFoothillsSong = Dragon Quest VIII - Strange World
 IsleofQuelDanasSong = Final Fantasy 9 - Crystal World
-LochModanSong = Lunar 2 - Field Towards Tomorrow
+LochModanSong = Guild Wars 2 - Call of the Raven
 NorthshireValleySong = Elder's Scroll 4: Oblivion - Watchman's Ease
 RedridgeMountainsSong = Chrono Cross - Drowning Valley
 SearingGorgeSong = Final Fantasy 7 - Trail of Blood
@@ -374,9 +377,9 @@ WintergraspSong = Battlegrounds
 ZulDrakSong = Chrono Cross - Lizard Dance
 
 -- Dungeons Events --
-RagefireChasmSong = 
-WailingCavernsSong = 
-DeadminesSong = 
+RagefireChasmSong = Dragon Age 2 - Blightlands
+WailingCavernsDungeonSong = Rogue Galaxy - Insectron (Strategy)
+DeadminesSong = Dragon's Crown - Bilbaron Subterranean Fortress
 ShadowfangKeepSong = 
 BlackfathomDeepsSong = 
 StormwindStockadeSong = 
@@ -433,6 +436,8 @@ Escape4Song = Final Fantasy 10 Enemy Attack
 Escape5Song = Tomb Raider 2 Incident Behind you
 Escape6Song = Shining Force 2 - Boss Attack
 Escape7Song = Dragon's Crown - A Decision has to be made
+Escape8Song = Dragon's Dogma - Tense Combat
+Escape9Song = Chrono Trigger - A Shot of Crisis
 		
 -- Flying Mount Events --
 FP1Song = Final Fantasy 7 - Steal the Tiny Bronco
@@ -443,7 +448,7 @@ FP5Song = Final Fantasy 9 - Hilda Garde
 FP6Song = Final Fantasy 6 - The Serpent Trench
 HordeFP1Song = Final Fantasy 6 - Wild West
 HordeFP2Song = Final Fantasy 9 - Kuja's theme
-HordeFP3Song = Final Fantasy 14 - Pennons Aloft
+HordeFP3Song = Assassin Creed 4 Black Flag - Pyrates Beware
 HordeFP4Song = The Witcher 3 - Hunt or Be Hunted
 HordeFP5Song = Dragon's Crown - Mage's Tower
 FlyingMountSong = Final Fantasy 7 - Highwind Takes to the Sky
@@ -459,6 +464,7 @@ Dead4Song = Final Fantasy 7 - Who am I
 Dead5Song = Tomb Raider 2 Incident Glory of Nature
 Dead6Song = Shining Force 2 Sad Theme
 Dead7Song = Shining Force 2 Sad Theme 2
+Dead8Song = Chrono Trigger - Manoria Cathedral
 DieSong = Legend of Zelda Ocarina of Time - Title theme
 Die2Song = Legend of Zelda Ocarina of Time - Deku Tree
 Die3Song = Final Fantasy 7 - Great Warrior
@@ -472,6 +478,7 @@ Die8Song = Shining Force 2 - Shrine
 LevelUpSong = Final Fantasy 12 - LevelUp
 LevelUp2Song = Shining Force 2 - Attack
 LevelUp3Song = Legend of Zelda Ocarina of Time - Item Catch
+LevelUp4Song = Chrono Cross - Victory
 Fanfare = Dissidia Final Fantasy - Victory Fanfare Chaos
 Fanfare2 = Dissidia Final Fantasy - Victory Fanfare Cosmos
 Fighting1Song = Legend of Legaia - Brand of the Holy Knuckles
@@ -492,6 +499,7 @@ Fighting15Song = White Knight Chronicles - Prelude to Battle
 Fighting16Song = Final Fantasy 13-2 - Knight of the Goddess
 Fighting17Song = Final Fantasy 6 - Battle Theme
 Fighting18Song = Baldur's Gate - Attacked by Assassins
+Fighting19Song = Chrono Trigger - Battle 1
 
 BossSong = LRFF13 - Chaos 
 Boss2Song = Final Fantasy 7 - Jenova Absolute
@@ -504,6 +512,7 @@ Boss8Song = Dissidia Final Fantasy - Battle (FF1)
 Boss9Song = King of Dragons - To the Castle
 Boss10Song = Arcania Gothic 4 - Combat 1
 Boss11Song = Final Fantasy 6 - The Decisive Battle
+Boss12Song = Chrono Trigger - Boss Battle 1
 
 -- PvP Events --
 HostileSong = Legend of Dragoon - Boss Battle 3
@@ -519,8 +528,8 @@ Sleep3Song = Final Fantasy 11 - Mog House
 Sleep4Song = Justice Monsters Five - A Hero's Day Off
 Sleep5Song = Final Fantasy 14 - On Windy Meadows
 Sleep6Song = Radiata Stories - Artisan
-Sleep7Song = Final Fantasy 8 - Waltz of the Moon
-Sleep8Song = Legend of Legaia - Mei
+Sleep7Song = Dragon's Crown - Memories To Be Told
+Sleep8Song = Dragon's Dogma - Witch Selene
 Sleep9Song = Lunar 2 - Village Town
 Sleep10Song = Final Fantasy 15 - Camping Theme
 Sleep11Song = Elder's Scroll 5 (Skyrim) - Around the Fire

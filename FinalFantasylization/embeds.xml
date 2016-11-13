@@ -5,6 +5,7 @@
 	<Include file="libs\LibBabble-Zone-3.0\lib.xml"/>
     <Include file="libs\LibBabble-SubZone-3.0\lib.xml"/>
 	<Include file="libs\LibBabble-Faction-3.0\lib.xml"/>
+	<Include file="libs\LibBossIDs-1.0\lib.xml"/>
     <Script file="libs\libdatabroker-1-1\LibDataBroker-1.1.lua"/>
 	<Script file="libs\FFZlib\FFZlib.lua"/>
 </Ui>

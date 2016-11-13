@@ -215,7 +215,7 @@ bleukreuz - Switches to Bleukreuz's Soundpack
 	InCombat = "Player In combat, Battle!"
 	InCombatWorldBoss = "Player In combat, Battle! - World PVE! - Boss!.. "
 	InCombatDungeonBoss = "Player In combat, Battle! - Dungeon PvE! - Boss!.. "
-	InCombatDungeonElite = "Player In combat, Battle! - Dungeon PvE! - Elite!.. "
+	InCombatDungeonPVE = "Player In combat, Battle! - Dungeon PvE!"
 	InCombatBGBoss = "Player In combat, Battle! - Battleground Boss!.. "
 	InCombatBGPVP = "Player In combat, Battle! - Battleground PvP!"
 	InCombatWorldPVP = "Player In combat, Battle! - World PvP!"
@@ -226,7 +226,8 @@ bleukreuz - Switches to Bleukreuz's Soundpack
 	PlayerInHostileCity = "Player in HOSTILE City: "
 	PlayerInHostileTown = "Player in HOSTILE Town: "
 	PlayerInBattleground = "Player in Battleground: "
-	PlayerInInstance = "Player in Instance: "
+	PlayerInDungeon = "Player in Dungeon: "
+	PlayerInRaid = "Player in Raid: "
 	AllianceRest = "Alliance player resting. zZz..."
 	HordeRest = "Horde player resting. zZz..."
 	

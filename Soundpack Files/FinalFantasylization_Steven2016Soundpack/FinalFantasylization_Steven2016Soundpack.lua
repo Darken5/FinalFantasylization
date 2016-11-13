@@ -300,7 +300,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		ZulDrakSong = "ZulDrakSong.mp3" --
 
 		-- Dungeons Events --
+		RagefireChasmSong = "RagefireChasmSong.mp3" --
+		WailingCavernsDungeonSong = "WailingCavernsDungeonSong.mp3" --
+		DeadminesSong = "DeadminesSong.mp3" --
 		GnomereganSong = "GnomereganSong.mp3" --
+
 		-- Battlegrounds Events --
 		BattleGround1 = "BattleGround1.mp3" -- 
 		BattleGround2 = "BattleGround2.mp3" -- 
@@ -337,9 +341,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		Escape3Song = "Escape3Song.mp3" -- 
 		Escape4Song = "Escape4Song.mp3" -- 
 		Escape5Song = "Escape5Song.mp3" --
- 
-		Escape6Song = "Escape6Song.mp3" --
+ 		Escape6Song = "Escape6Song.mp3" --
 		Escape7Song = "Escape7Song.mp3" --
+		Escape8Song = "Escape8Song.mp3" --
+		Escape9Song = "Escape9Song.mp3" --
 		
 		-- Flying Mount Events --
 		FP1Song = "FP1Song.mp3" -- 
@@ -365,7 +370,8 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		Dead4Song = "Dead4Song.mp3" --
 		Dead5Song = "Dead5Song.mp3" --
 		Dead6Song = "Dead6Song.mp3" --
-		Dead7Song = "Dead7Song.mp3" -- 
+		Dead7Song = "Dead7Song.mp3" --
+		Dead8Song = "Dead8Song.mp3" --
 
 		DieSong = "DieSong.mp3" --
 		Die2Song = "Die2Song.mp3" --
@@ -380,6 +386,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		LevelUpSong = "LevelUpSong.mp3" --
 		LevelUp2Song = "LevelUp2Song.mp3" --
 		LevelUp3Song = "LevelUp3Song.mp3" --
+		LevelUp4Song = "LevelUp4Song.mp3" --
 		Fanfare = "Fanfare.mp3" -- Fanfare
 		Fanfare2 = "Fanfare2.mp3" -- Fanfare
 		Fighting1Song = "Fighting1Song.mp3" -- 
@@ -400,6 +407,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		Fighting16Song = "Fighting16Song.mp3" --
 		Fighting17Song = "Fighting17Song.mp3" --
 		Fighting18Song = "Fighting18Song.mp3" --
+		Fighting19Song = "Fighting19Song.mp3" --
 
 		BossSong = "BossSong.mp3" -- 
 		Boss2Song = "Boss2Song.mp3" -- 
@@ -412,10 +420,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		Boss9Song = "Boss9Song.mp3" --
 		Boss10Song = "Boss10Song.mp3" --
 		Boss11Song = "Boss11Song.mp3" --
+		Boss12Song = "Boss12Song.mp3" --
 
 		-- PvP Events --
 		HostileSong = "HostileSong.mp3" --
-		Hostile2Song = "Hostile2Song.mp3" --
 
 		-- Dance Event
 		BloodElfFemaleDanceSong = "BloodElfFemale.mp3" -- 
@@ -967,7 +975,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_AllianceTownThelsamar()
 		FinalFantasylization_PlayMusic( S .. ThelsamarSong);
-		FinalFantasylization_debugMsg("ThelsamarSong Breath of Fire 3 These Little Things")
+		FinalFantasylization_debugMsg("ThelsamarSong Final Fantasy 7 Ahead on our Way")
 	end
 	function FinalFantasylization_AllianceTownTheramoreIsle()
 		FinalFantasylization_PlayMusic( S .. TheramoreIsleSong);
@@ -1286,7 +1294,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end		
 	function FinalFantasylization_NeutralTownVentureBay()
 		FinalFantasylization_PlayMusic( S .. VentureBaySong);
-		FinalFantasylization_debugMsg("VentureBaySong Final Fantasy 7 Ahead on our Way")
+		FinalFantasylization_debugMsg("VentureBaySong Final Fantasy 14 Saltswept")
 	end		
 	
 
@@ -1407,7 +1415,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_EasternKingdomsLochModan()
 		FinalFantasylization_PlayMusic( S .. LochModanSong);
-		FinalFantasylization_debugMsg("LochModanSong Lunar 2 Field Towards Tomorrow")
+		FinalFantasylization_debugMsg("LochModanSong Guild Wars 2 Call of the Raven")
 	end
 	function FinalFantasylization_EasternKingdomsLochModanHostile()
 		FinalFantasylization_PlayMusic( S .. LochModanSong);
@@ -1707,18 +1715,18 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--################
 	
 	function FinalFantasylization_Dungeon_RagefireChasmSong()
-		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
-		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+		FinalFantasylization_PlayMusic( S .. RagefireChasmSong);
+		FinalFantasylization_debugMsg("RagefireChasmSong Dragon Age 2 Blightlands")
 	end
 	
 	function FinalFantasylization_Dungeon_WailingCavernsSong()
-		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
-		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+		FinalFantasylization_PlayMusic( S .. WailingCavernsDungeonSong);
+		FinalFantasylization_debugMsg("WailingCavernsDungeonSong Rogue Galaxy Insectron Strategy")
 	end
 	
 	function FinalFantasylization_Dungeon_DeadminesSong()
-		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
-		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+		FinalFantasylization_PlayMusic( S .. DeadminesSong);
+		FinalFantasylization_debugMsg("DeadminesSong Dragons Crown Bilbaron Subterranean Fortress")
 	end
 	
 	function FinalFantasylization_Dungeon_ShadowfangKeepSong()
@@ -1854,16 +1862,19 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			end
 	end
 	function FinalFantasylization_LevelUpSong()
- 		local x = math.random(1, 3);
+ 		local x = math.random(1, 4);
 			if x == 1 then
 				FinalFantasylization_PlayFile( S .. LevelUpSong);
  				FinalFantasylization_debugMsg("LevelUpSong Final Fantasy 12 Level UP Sound")
 			elseif x == 2 then
 				FinalFantasylization_PlayFile( S .. LevelUp2Song);
  				FinalFantasylization_debugMsg("LevelUp2Song Shining Force 2 Attack")
-			else
+			elseif x == 3 then
 				FinalFantasylization_PlayFile( S .. LevelUp3Song);
  				FinalFantasylization_debugMsg("LevelUp3Song Legend of Zelda Ocarina of Time Item Catch")
+			else
+				FinalFantasylization_PlayFile( S .. LevelUp4Song);
+ 				FinalFantasylization_debugMsg("LevelUp4Song Chrono Cross Victory")
 			end
 	end
 
@@ -1873,7 +1884,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--################
 
 	function FinalFantasylization_WorldBoss()
-		local x = math.random(1, 11);
+		local x = math.random(1, 12);
 			if x == 1 then
 				FinalFantasylization_PlayMusic( S .. BossSong);
 				FinalFantasylization_debugMsg("BossSong LRFF13 Chaos")
@@ -1904,14 +1915,17 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			elseif x == 10 then
 				FinalFantasylization_PlayMusic( S .. Boss10Song);
 				FinalFantasylization_debugMsg("Boss10Song Arcania Gothic 4 Combat 1")
-			else
+			elseif x == 11 then
 				FinalFantasylization_PlayMusic( S .. Boss11Song);
 				FinalFantasylization_debugMsg("Boss11Song Final Fantasy 6 The Decisive Battle")
+			else
+				FinalFantasylization_PlayMusic( S .. Boss12Song);
+				FinalFantasylization_debugMsg("Boss12Song Chrono Trigger Boss Battle 1")
 			end
 	end
 
 	function FinalFantasylization_DungeonBoss()
-		local x = math.random(1, 11);
+		local x = math.random(1, 12);
 			if x == 1 then
 				FinalFantasylization_PlayMusic( S .. BossSong);
 				FinalFantasylization_debugMsg("BossSong LRFF13 Chaos")
@@ -1942,14 +1956,17 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			elseif x == 10 then
 				FinalFantasylization_PlayMusic( S .. Boss10Song);
 				FinalFantasylization_debugMsg("Boss10Song Arcania Gothic 4 Combat 1")
-			else
+			elseif x == 11 then
 				FinalFantasylization_PlayMusic( S .. Boss11Song);
 				FinalFantasylization_debugMsg("Boss11Song Final Fantasy 6 The Decisive Battle")
+			else
+				FinalFantasylization_PlayMusic( S .. Boss12Song);
+				FinalFantasylization_debugMsg("Boss12Song Chrono Trigger Boss Battle 1")
 			end
 	end
 
 	function FinalFantasylization_WorldElite()
-		local x = math.random(1, 11);
+		local x = math.random(1, 12);
 			if x == 1 then
 				FinalFantasylization_PlayMusic( S .. BossSong);
 				FinalFantasylization_debugMsg("BossSong LRFF13 Chaos")
@@ -1980,14 +1997,17 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			elseif x == 10 then
 				FinalFantasylization_PlayMusic( S .. Boss10Song);
 				FinalFantasylization_debugMsg("Boss10Song Arcania Gothic 4 Combat 1")
-			else
+			elseif x == 11 then
 				FinalFantasylization_PlayMusic( S .. Boss11Song);
 				FinalFantasylization_debugMsg("Boss11Song Final Fantasy 6 The Decisive Battle")
+			else
+				FinalFantasylization_PlayMusic( S .. Boss12Song);
+				FinalFantasylization_debugMsg("Boss12Song Chrono Trigger Boss Battle 1")
 			end
 	end
 
 	function FinalFantasylization_BattlegroundBoss()
-		local x = math.random(1, 11);
+		local x = math.random(1, 12);
 			if x == 1 then
 				FinalFantasylization_PlayMusic( S .. BossSong);
 				FinalFantasylization_debugMsg("BossSong LRFF13 Chaos")
@@ -2018,9 +2038,12 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			elseif x == 10 then
 				FinalFantasylization_PlayMusic( S .. Boss10Song);
 				FinalFantasylization_debugMsg("Boss10Song Arcania Gothic 4 Combat 1")
-			else
+			elseif x == 11 then
 				FinalFantasylization_PlayMusic( S .. Boss11Song);
 				FinalFantasylization_debugMsg("Boss11Song Final Fantasy 6 The Decisive Battle")
+			else
+				FinalFantasylization_PlayMusic( S .. Boss12Song);
+				FinalFantasylization_debugMsg("Boss12Song Chrono Trigger Boss Battle 1")
 			end
 	end
 
@@ -2061,7 +2084,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 
 
 	function FinalFantasylization_WorldPVP()
-		local x = math.random(1, 18);
+		local x = math.random(1, 19);
 			if x == 1 then
 				FinalFantasylization_PlayMusic( S .. Fighting1Song);
 				FinalFantasylization_debugMsg("Fighting1Song Legend of Legaia Brand of the Holy Knuckles")
@@ -2113,14 +2136,17 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			elseif x == 17 then
 				FinalFantasylization_PlayMusic( S .. Fighting17Song);
 				FinalFantasylization_debugMsg("Fighting17Song Final Fantasy 6 Battle Theme")
-			else
+			elseif x == 18 then
 				FinalFantasylization_PlayMusic( S .. Fighting18Song);
 				FinalFantasylization_debugMsg("Fighting18Song Baldurs Gate Attacked By Assassins")
+			else
+				FinalFantasylization_PlayMusic( S .. Fighting19Song);
+				FinalFantasylization_debugMsg("Fighting19Song Chrono Trigger Battle 1")
 			end
 	end
 
 	function FinalFantasylization_WorldNormalPVE()
-		local x = math.random(1, 18);
+		local x = math.random(1, 19);
 			if x == 1 then
 				FinalFantasylization_PlayMusic( S .. Fighting1Song);
 				FinalFantasylization_debugMsg("Fighting1Song Legend of Legaia Brand of the Holy Knuckles")
@@ -2172,9 +2198,12 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			elseif x == 17 then
 				FinalFantasylization_PlayMusic( S .. Fighting17Song);
 				FinalFantasylization_debugMsg("Fighting17Song Final Fantasy 6 Battle Theme")
-			else
+			elseif x == 18 then
 				FinalFantasylization_PlayMusic( S .. Fighting18Song);
 				FinalFantasylization_debugMsg("Fighting18Song Baldurs Gate Attacked By Assassins")
+			else
+				FinalFantasylization_PlayMusic( S .. Fighting19Song);
+				FinalFantasylization_debugMsg("Fighting19Song Chrono Trigger Battle 1")
 			end
 	end
 
@@ -2260,7 +2289,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 
 	function FinalFantasylization_PlayerGhost()
-		local x = math.random(1, 7);
+		local x = math.random(1, 8);
 			if x == 1 then
 				FinalFantasylization_PlayMusic( S .. Dead1Song);
 				FinalFantasylization_debugMsg("Dead1Song Legend of Zelda Ocarina of Time Temple of Time")
@@ -2279,9 +2308,12 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			elseif x == 6 then
 				FinalFantasylization_PlayMusic( S .. Dead6Song);
 				FinalFantasylization_debugMsg("Dead6Song Shining Force 2 Sad Theme")
-			else
+			elseif x == 7 then
 				FinalFantasylization_PlayMusic( S .. Dead7Song);
 				FinalFantasylization_debugMsg("Dead7Song Shining Force 2 Sad Theme 2")
+			else
+				FinalFantasylization_PlayMusic( S .. Dead8Song);
+				FinalFantasylization_debugMsg("Dead8Song Chrono Trigger Manoria Cathedral")
 			end
 	end
 
@@ -2311,10 +2343,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Sleep6Song Radiata Stories Artisan")
 			elseif x == 7 then
 				FinalFantasylization_PlayMusic( S .. Sleep7Song);
-				FinalFantasylization_debugMsg("Sleep7Song Final Fantasy 8 Waltz of the Moon")
+				FinalFantasylization_debugMsg("Sleep7Song Dragons Crown Memories To Be Told")
 			elseif x == 8 then
 				FinalFantasylization_PlayMusic( S .. Sleep8Song);
-				FinalFantasylization_debugMsg("Sleep8Song Legend of Legaia Mei")
+				FinalFantasylization_debugMsg("Sleep8Song Dragons Dogma Witch Selene")
 			elseif x == 9 then
 				FinalFantasylization_PlayMusic( S .. Sleep9Song);
 				FinalFantasylization_debugMsg("Sleep9Song Lunar 2 Village Town")
@@ -2371,7 +2403,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("HordeFP2Song Final Fantasy 9 Kuja Theme")
 			elseif x == 3 then
 				FinalFantasylization_PlayMusic( S .. HordeFP3Song);
-				FinalFantasylization_debugMsg("HordeFP3Song Final Fantasy 14 Pennons Aloft")
+				FinalFantasylization_debugMsg("HordeFP3Song Assassin Creed 4 Black Flag Pyrates Beware")
 			elseif x == 4 then
 				FinalFantasylization_PlayMusic( S .. HordeFP4Song);
 				FinalFantasylization_debugMsg("HordeFP4Song The Witcher 3 Hunt or Be Hunted")
@@ -2473,7 +2505,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 
 	function FinalFantasylization_MountedEscape()		
-		local x = math.random(1, 7);
+		local x = math.random(1, 9);
 			if x == 1 then
 				FinalFantasylization_PlayMusic( S .. Escape1Song);
 				FinalFantasylization_debugMsg("Escape1Song Final Fantasy 9 RUN")
@@ -2492,9 +2524,15 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			elseif x == 6 then
 				FinalFantasylization_PlayMusic( S .. Escape6Song);
 				FinalFantasylization_debugMsg("Escape6Song Shining Force 2 Boss Attack")
-			else
+			elseif x == 7 then
 				FinalFantasylization_PlayMusic( S .. Escape7Song);
 				FinalFantasylization_debugMsg("Escape7Song Dragons Crown A Decision Has To Be Made")
+			elseif x == 8 then
+				FinalFantasylization_PlayMusic( S .. Escape8Song);
+				FinalFantasylization_debugMsg("Escape8Song Dragons Dogma Tense Combat")
+			else
+				FinalFantasylization_PlayMusic( S .. Escape9Song);
+				FinalFantasylization_debugMsg("Escape9Song Chrono Trigger A Shot of Crisis")
 			end
 	end
 

@@ -443,16 +443,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_EventLoad = false
 	FinalFantasylization_RegenGain = false
 	-- Dungeons Events --
-	FinalFantasylization_InDungeon = false
-	-- Raid Events --
-	FinalFantasylization_InRaid = false
-	-- Battleground Events --		
-	FinalFantasylization_InAlteracValley = false
-	FinalFantasylization_InArathiBasin = false
-	FinalFantasylization_InEyeoftheStorm = false
-	FinalFantasylization_InStrandsoftheAncients = false
-	FinalFantasylization_InWarsongGulch = false
-	FinalFantasylization_InIsleOfConquest = false
+	FinalFantasylization_InInstance = false
 end
 
 function FinalFantasylization_Msg(msg)
@@ -508,7 +499,7 @@ function FinalFantasylization_Command(Command)
 			FFZlib.Message(FFZlib.Color.Yellow .. SoundOnMessage)
 		end
 	elseif Lower == DungeonCommand then
-		if FinalFantasylizationOptions.Dungeon == true then
+		if FinalFantasylizationOptions.Instance == true then
 			FinalFantasylizationEnableDungeon(false)
 			FFZlib.Message(FFZlib.Color.Yellow .. DungeonOffMessage)
 		else
@@ -672,7 +663,7 @@ end
 	
 function FinalFantasylizationEnableDungeon(Dungeon)
 	FFZlib.Assert(Dungeon == true or Dungeon == false, "New value should be true or false.")
-	FinalFantasylizationOptions.Dungeon = Dungeon
+	FinalFantasylizationOptions.Instance = Dungeon
 	FinalFantasylization_ClearMusicState()
 end	
 
@@ -873,42 +864,40 @@ function FinalFantasylization_GetMusic()
 			--FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombat)
 			local classification = UnitClassification("target"); --'classification: "worldboss", "rareelite", "elite", "rare", "normal" or "trivial"
 			local inInstance, instanceType = IsInInstance();
-			if not IsInInstance() and not UnitInBattleground("player") and ( classification == "worldboss" or classification == "rareelite" or classification == "rare" ) then
-				if FinalFantasylization_PlayerIsBattling == false then
-					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldBoss ..classification)
+			local GUID = UnitGUID("target")
+			local name = UnitName("target")
+			local mobID = tonumber(GUID:sub(9, 12), 16)
+			if FinalFantasylization_PlayerIsBattling == false then
+				if IsInInstance() then
+					if instanceType == "party" then
+						if LibStub("LibBossIDs-1.0").BossIDs[mobID] then
+							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatDungeonBoss .. name)
+							FinalFantasylization_DungeonBoss()
+						else
+							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatDungeonPVE)
+							FinalFantasylization_WorldNormalPVE()
+						end
+					elseif instanceType == "pvp" then
+						if LibStub("LibBossIDs-1.0").BossIDs[mobID] then
+							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatBGBoss .. name)
+							FinalFantasylization_BattlegroundBoss()
+						elseif UnitIsPlayer("target") and UnitIsEnemy("player", "target") and UnitHealth("target") > 0 then
+							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVP)
+							FinalFantasylization_BattlegroundPVP()
+						end
+					end
+				elseif LibStub("LibBossIDs-1.0").BossIDs[mobID] then
+					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldBoss .. name)
 					FinalFantasylization_WorldBoss()
-				end
-			elseif IsInInstance() and ( classification == "worldboss" or classification == "rareelite" or classification == "rare" ) then
-				if FinalFantasylization_PlayerIsBattling == false then
-					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatDungeonBoss ..classification)
-					FinalFantasylization_DungeonBoss()
-				end	
-			elseif not ( IsInInstance() ) and not UnitInBattleground("player") and classification == "elite" then
-				if FinalFantasylization_PlayerIsBattling == false then
-					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldBoss ..classification)
-					FinalFantasylization_WorldElite()
-				end	
-			elseif instanceType == "pvp" and UnitInBattleground("player") and ( classification == "worldboss" or classification == "rareelite" or classification == "rare" or classification == "elite" ) then
-				if FinalFantasylization_PlayerIsBattling == false then
-					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatBGBoss ..classification)
-					FinalFantasylization_BattlegroundBoss()
-				end		
-			elseif not ( IsInInstance() ) and not UnitInBattleground("player") and UnitIsPlayer("target") and UnitIsEnemy("player", "target") and UnitHealth("target") > 0 then
-				if FinalFantasylization_PlayerIsBattling == false then
+				elseif 	UnitIsPlayer("target") and UnitIsEnemy("player", "target") and UnitHealth("target") > 0 then
 					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatBGPVP)
 					FinalFantasylization_WorldPVP()
-				end
-			elseif UnitInBattleground("player") and UnitIsPlayer("target") and UnitIsEnemy("player", "target") and UnitHealth("target") > 0 then
-				if FinalFantasylization_PlayerIsBattling == false then
-					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVP)
-					FinalFantasylization_BattlegroundPVP()
-				end
-			else
-				if FinalFantasylization_PlayerIsBattling == false then
+				else
 					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVE)
 					FinalFantasylization_WorldNormalPVE()
 				end
 			end
+
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_PlayerIsBattling = true
 		else
@@ -983,98 +972,6 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_PlayerIsSwimming = false
 		end
 
---###########################################################################################
---###########################################################################################
---##
---##			BATTLEGROUNDS
---##
---###########################################################################################
---###########################################################################################
-		
---'==========================================================================================		
---'  Battleground: Alterac Valley
---'==========================================================================================		
-		if (  ZoneName == Z["Alterac Valley"] ) and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InAlteracValley == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInBattleground ..ZoneName)
-				FinalFantasylization_AlteracValleyBG()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InAlteracValley = true
-		else
-			FinalFantasylization_InAlteracValley = false
-		end
-
---'==========================================================================================		
---'  Battleground: Arathi Basin
---'==========================================================================================
-		if (  ZoneName == Z["Arathi Basin"] ) and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InArathiBasin == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInBattleground ..ZoneName)
-				FinalFantasylization_ArathiBasinBG()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InArathiBasin = true
-		else
-			FinalFantasylization_InArathiBasin = false
-		end
-
---'==========================================================================================		
---'  Battleground: Eye of the Storm
---'==========================================================================================
-		if (  ZoneName == Z["Eye of the Storm"] ) and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InEyeoftheStorm == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInBattleground ..ZoneName)
-				FinalFantasylization_EyeoftheStormBG()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InEyeoftheStorm = true
-		else
-			FinalFantasylization_InEyeoftheStorm = false
-		end
-
---'==========================================================================================		
---'  Battleground: Strands of the Ancients
---'==========================================================================================
-
-	if (  ZoneName == Z["Strand of the Ancients"] ) and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InStrandsoftheAncients == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInBattleground ..ZoneName)
-				FinalFantasylization_StrandsoftheAncientsBG()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InStrandsoftheAncients = true
-		else
-			FinalFantasylization_InStrandsoftheAncients = false
-		end
-
---'==========================================================================================		
---'  Battleground: Warsong Gulsh
---'==========================================================================================
-		if (  ZoneName == Z["Warsong Gulch"] ) and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InWarsongGulch == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInBattleground ..ZoneName)
-				FinalFantasylization_WarsongGulchBG()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InWarsongGulch = true
-		else
-			FinalFantasylization_InWarsongGulch = false
-		end
-		
---'==========================================================================================		
---'  Battleground: Isle of Conquest
---'==========================================================================================
-		if (  ZoneName == Z["Isle of Conquest"] ) and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InIsleOfConquest == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInBattleground ..ZoneName)
-				FinalFantasylization_IsleOfConquestBG()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InIsleOfConquest = true
-		else
-			FinalFantasylization_InIsleOfConquest = false
-		end
 
 --###########################################################################################
 --###########################################################################################
@@ -5912,9 +5809,11 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################
 
 			-- 5 Man Dungeons
-		if IsInInstance("party") and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then 
-			if FinalFantasylization_InDungeon == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInInstance.. ZoneName)
+		if IsInInstance() and FinalFantasylizationOptions.Instance == true and FinalFantasylization_IsPlaying == false then 
+			local inInstance, instanceType = IsInInstance();
+			if instanceType == "party" and FinalFantasylization_InInstance == false then
+				 
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInDungeon.. ZoneName)
 
 					-- Vanilla WoW Dungeons
 				if ( ZoneName == SZ["Ragefire Chasm"] ) then -- Ragefire Chasm Instance
@@ -5961,14 +5860,8 @@ function FinalFantasylization_GetMusic()
 				else
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. "Instance not in FinalFantasylization")
 				end
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InDungeon = true
-		else
-			FinalFantasylization_InDungeon = false
-		end
-		
-		
+				
+				
 --###########################################################################################
 --###########################################################################################
 --##
@@ -5976,16 +5869,41 @@ function FinalFantasylization_GetMusic()
 --##
 --###########################################################################################
 --###########################################################################################
-
-		if IsInInstance("raid") and FinalFantasylizationOptions.Dungeon == true and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InRaid == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInInstance.. ZoneName)
+				
+			elseif instanceType == "raid" and FinalFantasylization_InInstance == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInRaid.. ZoneName)
 				FinalFantasylization_RaidSong()
+				
+--###########################################################################################
+--###########################################################################################
+--##
+--##			BATTLEGROUNDS
+--##
+--###########################################################################################
+--###########################################################################################			
+			
+			elseif instanceType == "pvp" and FinalFantasylization_InInstance == false then
+				
+				if ( ZoneName == Z["Alterac Valley"] ) then -- Alterac Valley Battleground
+					FinalFantasylization_AlteracValleyBG()  
+				elseif ( ZoneName == Z["Arathi Basin"] ) then -- Arathi Basin Battleground
+					FinalFantasylization_ArathiBasinBG()
+				elseif ( ZoneName == Z["Eye of the Storm"] ) then -- Eye of the Storm Battleground
+					FinalFantasylization_EyeoftheStormBG()
+				elseif ( ZoneName == Z["Strand of the Ancients"] ) then -- Strand of the Ancients Battleground
+					FinalFantasylization_StrandsoftheAncientsBG()
+				elseif ( ZoneName == Z["Warsong Gulch"] ) then -- Warsong Gulch Battleground
+					FinalFantasylization_WarsongGulchBG()
+				elseif ( ZoneName == Z["Isle of Conquest"] ) then -- Isle of Conquest Battleground
+					FinalFantasylization_IsleOfConquestBG()
+				else
+					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. "Battleground not in FinalFantasylization")
+				end
 			end
 			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InRaid = true
+			FinalFantasylization_InInstance = true
 		else
-			FinalFantasylization_InRaid = false
+			FinalFantasylization_InInstance = false
 		end
 		
 		
@@ -6231,7 +6149,7 @@ function FinalFantasylizationFillMissingOptions()
 	if FinalFantasylizationOptions.Music == nil then FinalFantasylizationOptions.Music = true end
 	if FinalFantasylizationOptions.Combat == nil then FinalFantasylizationOptions.Combat = true end
 	if FinalFantasylizationOptions.Mount == nil then FinalFantasylizationOptions.Mount = true end
-	if FinalFantasylizationOptions.Dungeon == nil then FinalFantasylizationOptions.Dungeon = true end
+	if FinalFantasylizationOptions.Instance == nil then FinalFantasylizationOptions.Instance = true end
 	if FinalFantasylizationOptions.Sleep == nil then FinalFantasylizationOptions.Sleep = true end
 	if FinalFantasylizationOptions.Swim == nil then FinalFantasylizationOptions.Swim = true end
 	if FinalFantasylizationOptions.Dead == nil then FinalFantasylizationOptions.Dead = true end

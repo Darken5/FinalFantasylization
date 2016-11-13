@@ -1,5 +1,5 @@
 ﻿-- FinalFantasylization  by Hellfox and Darken5
--- Version 3.2.6
+-- Version 3.2.7
 ------------------------------------------------------------
 
 -- FinalFantasylization requires this version of FFZlib:
@@ -862,12 +862,11 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================
 		if FinalFantasylization_PlayerIsCombat == true and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Combat == true then
 			--FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombat)
-			local classification = UnitClassification("target"); --'classification: "worldboss", "rareelite", "elite", "rare", "normal" or "trivial"
 			local inInstance, instanceType = IsInInstance();
-			local GUID = UnitGUID("target")
-			local name = UnitName("target")
-			local mobID = tonumber(GUID:sub(9, 12), 16)
 			if FinalFantasylization_PlayerIsBattling == false then
+				local GUID = UnitGUID("target")
+				local name = UnitName("target")
+				local mobID = tonumber(GUID:sub(9, 12), 16)
 				if IsInInstance() then
 					if instanceType == "party" then
 						if LibStub("LibBossIDs-1.0").BossIDs[mobID] then

@@ -1,6 +1,6 @@
 ## Interface: 30300
-## Version: 3.2.6
-## Title: FinalFantasylization 3.2.6
+## Version: 3.2.7
+## Title: FinalFantasylization 3.2.7
 ## Notes: FinalFantasylization plays music and sounds based on different in-game events
 ## Author: Hellfire and Darken5
 ## SavedVariablesPerCharacter: FinalFantasylizationOptions, CoreSavedVariable

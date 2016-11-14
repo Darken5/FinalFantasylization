@@ -984,14 +984,14 @@ function FinalFantasylization_GetMusic()
 --'  Starting Areas: Sunstrider Isle, Eversong Woods ( Blood Elf Starting Area )
 --'==========================================================================================
 				
-		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Eversong Woods"] ) and ( ( SubZoneName == SZ["The Sunspire"] ) or ( SubZoneName == SZ["Sunstrider Isle"] ) or ( SubZoneName == SZ["Falthrien Academy"] ) or ( SubZoneName == SZ["Shrine of Dath'Remar"] ) ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and (  factionEnglish == F["Horde"] ) and (  ZoneName == Z["Eversong Woods"] ) and ( ( MinimapZoneName == SZ["The Sunspire"] ) or ( SubZoneName == SZ["Sunstrider Isle"] ) or ( SubZoneName == SZ["Falthrien Academy"] ) or ( SubZoneName == SZ["Shrine of Dath'Remar"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InStarterAreaSunstriderIsle == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
 				FinalFantasylization_StarterAreaSunstriderIsle()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InStarterAreaSunstriderIsle = true
-		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Eversong Woods"] ) and ( ( SubZoneName == SZ["The Sunspire"] ) or ( SubZoneName == SZ["Sunstrider Isle"] ) or ( SubZoneName == SZ["Falthrien Academy"] ) or ( SubZoneName == SZ["Shrine of Dath'Remar"] ) ) and FinalFantasylization_IsPlaying == false then
+		elseif (  factionEnglish == F["Alliance"] ) and (  ZoneName == Z["Eversong Woods"] ) and ( ( MinimapZoneName == SZ["The Sunspire"] ) or ( SubZoneName == SZ["Sunstrider Isle"] ) or ( SubZoneName == SZ["Falthrien Academy"] ) or ( SubZoneName == SZ["Shrine of Dath'Remar"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InStarterAreaSunstriderIsle == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName.. PlayerInHostile)
 				FinalFantasylization_HostileTowns()  -- Music call for all towns you are hostile in.

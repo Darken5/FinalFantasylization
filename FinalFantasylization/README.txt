@@ -14,7 +14,7 @@
 - Enaress 	- Edited Slightly. (Enaress@GMail.com) 
 - LorDestinY 	- Full Renovation. (lorddestiny@hotmail.com) - http://www.ad-aeternum.org/ 
 - Hellfox 	- Northrend additions and WoW 3.0 support 
-- Darken5 	- GUI, Code renovation, improved soundpack support, and Chrono Trigger Soundpack. (darken5@verizon.net) 
+- Darken5 	- Current Author, GUI, Code renovation, improved soundpack support, and Chrono Trigger Soundpack. (darken5@verizon.net) 
 - egingell 	- Made it so soundpacks could be switched in FinalFantasylization 
 
 
@@ -46,46 +46,51 @@ Shattrath City
 Dalaran
 	
 -- Horde Towns Events --
-10x "horde" musics chosen randomly 
+ :Too many to list:
 
 -- Alliance Towns Events --
-10x "alliance" musics chosen randomly
+ :Too many to list:
 
 -- Neutral Towns Events --
-20x musics chosen randomly
+ :Too many to list:
 
 -- Zones and Subzones Change Events --
-10x musics chosen randomly
+ :Too many to list:
 	
 -- Battlegrounds Events --
-5x "battleground" musics chosen randomly
+ "battleground" music
 
 -- Normal Mount Events --
-3x "mounted" musics chosen randomly
+ "mounted" music
 
 -- Escape Mount Events --
-5x "escape while mounted" musics chosen randomly
+ "escape while mounted" music
 
 -- Flying Mount/Taxi Events --
-2x "flying" musics chosen randomly
+ "flying" music (faction dependant)
+ "taxi" music (faction dependant)
+
 
 -- Dead/Ghost Events --
-1x "dead" music
-2x "ghost" musics chosen randomly
+ "dead" music
+ "ghost" music
 
 -- Fighting Events--
-4x "fighting" musics chosen depending NPC/PC classification
+ "fighting" musics chosen depending NPC/PC classification
 
 -- Misc Events --
-1x "swim" music 	 
-1x "resting" music	
+ "swim" music 
+ "dark swim" music (area dependant)	 
+ "resting" music	
 
 
 Will play sounds in the following events:
 
-Fanfare sound
-Kill sound
-Enter combat sound
+ Fanfare sound
+ Kill sound
+ Enter combat sound
+ /dance (race, sex, and form dependant)
+ chocobo kweh when jumping on "strider" mounts
 
 
 *************************************************************
@@ -155,11 +160,9 @@ This is mostly for disabling and enabling it while in Raids (or when your tired 
 
 [b]>> ToDo List <<[/b]
 Fix Resting event song on Normal servers (only work on PvP servers)
-Fix the Battle Music issue (it sometimes stops in middle of fight)
 Fix the Fanfare sound issue on battlegrounds (bugged)
 Fix the Fanfare sound issue on dungeons (bosses only)
 Fix the Fanfare sound issue on world (sometimes doesn't play)
-Fix Dungeon bosses music events (only play on "Skull" and "Rare Elite")
 Add more zone/subzone detections
 
 *********************

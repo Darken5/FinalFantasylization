@@ -1,7 +1,7 @@
 ============================
 >>>                      <<<
 >>> FinalFantasylization <<<
->>>  ReadMe for 3.2.7    <<<
+>>>  ReadMe for 3.2.8    <<<
 >>>                      <<<
 ============================
 
@@ -166,6 +166,12 @@ Fix the Fanfare sound issue on world (sometimes doesn't play)
 Add more zone/subzone detections
 
 *********************
+15. November 2016 - FinalFantasylization 3.2.7 - The "Holy Hell" Zone/Subzone Code Rewrite  >> Darken5 <<
+	- Rewrote nearly all of the Zone/SubZone detection code.
+		- Shaved off 352 lines of code, 42,055 individual characters. (Finalfantasylization.lua went from 361kb to 326kb) 
+	- Alphabetized the Towns (again)
+	- Lot of misc cleanup
+
 13. November 2016 - FinalFantasylization 3.2.7 - Instance & Combat Code Rewrite  >> Darken5 <<
 	- Added "LibBossIDs-1.0" to libs	
 	- Combined Battlegrounds, Raids and Dungeons into one section

@@ -1,6 +1,6 @@
 ## Interface: 30300
-## Version: 3.1.0 
-## Title: FinalFantasylization [|cff8ec3e6FF7UniverseSoundpack|r] |ff33003.1.0|r
+## Version: 3.3.0 
+## Title: FinalFantasylization [|cff8ec3e6FF7UniverseSoundpack|r] |ff33003.3.0|r
 ## Notes: Soundpack for FinalFantasylization based on the Final Fantasy 7 Saga.
 ## Original Author: Nackle on Shadowmoon(EU) - Alliance ; Renewed by: LorDestinY - Ad Aeternum.Horde@Frostmane.EU - http://www.ad-aeternum.org/	 WOTLK By Hellfox; Kilrogg EU - Alliance
 ## Author: Hellfire and Darken5

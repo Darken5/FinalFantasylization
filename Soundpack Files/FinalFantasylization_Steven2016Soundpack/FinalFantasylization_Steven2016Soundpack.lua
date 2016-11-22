@@ -1,6 +1,6 @@
 --#######################################
 --##
---##	   FinalFantasylization 3.1.9
+--##	   FinalFantasylization 3.3.0
 --##
 --##	     Steven 2016
 --##
@@ -489,7 +489,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## SOUNDS
 	--#############
-
 	function FinalFantasylization_KillSound()
 		FinalFantasylization_PlayFile( S ..  KillSound );
 		FinalFantasylization_debugMsg("KillSound")
@@ -511,24 +510,23 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_ArathiBasinBG()
 		FinalFantasylization_BattleGround()
-	end	
+	end
 	function FinalFantasylization_EyeoftheStormBG()
 		FinalFantasylization_BattleGround()
-	end	
+	end
 	function FinalFantasylization_StrandsoftheAncientsBG()
 		FinalFantasylization_BattleGround()
-	end	
+	end
 	function FinalFantasylization_WarsongGulchBG()
 		FinalFantasylization_BattleGround()
 	end
 	function FinalFantasylization_IsleOfConquestBG()
 		FinalFantasylization_BattleGround()
-	end	
+	end
 	
 	--########################
 	-- ## HORDE CAPITAL CITIES
 	--########################
-
 	function FinalFantasylization_OrgrimmarSong()
 		FinalFantasylization_PlayMusic( S .. OrgrimmarSong);
 		FinalFantasylization_debugMsg("OrgrimmarSong Dragon Age Origins The Deep Roads")
@@ -549,7 +547,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--########################
 	-- ## ALLIANCE CAPITAL CITIES
 	--########################
-
 	function FinalFantasylization_DarnassusSong()
 		FinalFantasylization_PlayMusic( S .. DarnassusSong);
 		FinalFantasylization_debugMsg("DarnassusSong FFBE Tree of Tales")
@@ -570,7 +567,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--########################
 	-- ## NEUTRAL CAPITAL CITIES
 	--########################
-
 	function FinalFantasylization_CityArea52()
 		FinalFantasylization_PlayMusic( S .. Area52Song);
 		FinalFantasylization_debugMsg("Area52Song Legend of Dragoon City of Commerce Lohan")
@@ -599,7 +595,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. RatchetSong);
 		FinalFantasylization_debugMsg("RatchetSong Final Fantasy 7 Costa Del Sol")
 	end
-	function FinalFantasylization_CityShattrathCitySong()
+	function FinalFantasylization_ShattrathCitySong()
 		FinalFantasylization_PlayMusic( S .. ShattrathCitySong);
 		FinalFantasylization_debugMsg("ShattrathCitySong Baldur's Gate 2 Romance 1")
 	end
@@ -607,7 +603,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--########################
 	-- ##   HORDE TOWNS
 	--########################
-
 	function FinalFantasylization_HordeTownAgmarsHammer()
 		FinalFantasylization_PlayMusic( S .. AgmarsHammerSong);
 		FinalFantasylization_debugMsg("AgmarsHammerSong Jeff Van Dyck Barbarian")
@@ -687,7 +682,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_HordeTownGromarshCrashSite()
 		FinalFantasylization_PlayMusic( S .. GromarshCrashSiteSong);
 		FinalFantasylization_debugMsg("GromarshCrashSiteSong Final Fantasy 8 Starting Up")
-	end	
+	end
 	function FinalFantasylization_HordeTownGromgolBaseCamp()
 		FinalFantasylization_PlayMusic( S .. GromgolBaseCampSong);
 		FinalFantasylization_debugMsg("GromgolBaseCampSong Chrono Cross Dragonrider")
@@ -703,7 +698,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_HordeTownKorkronVanguard()
 		FinalFantasylization_PlayMusic( S .. KorkronVanguardSong);
 		FinalFantasylization_debugMsg("KorkronVanguardSong Kingdom Hearts 2 Sacred Moon")
-	end	
+	end
 	function FinalFantasylization_HordeTownMokNathalVillage()
 		FinalFantasylization_PlayMusic( S .. MokNathalVillageSong);
 		FinalFantasylization_debugMsg("MokNathalVillageSong Legaia 2 Duel Saga God Fist")
@@ -767,7 +762,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_HordeTownTaunkaleVillage()
 		FinalFantasylization_PlayMusic( S .. TaunkaleVillageSong);
 		FinalFantasylization_debugMsg("TaunkaleVillageSong Legend of Legaia Mist")
-	end	
+	end
 	function FinalFantasylization_HordeTownCrossroads()
 		FinalFantasylization_PlayMusic( S .. CrossroadsSong);
 		FinalFantasylization_debugMsg("CrossroadsSong Legend of Legaia Rim Elm")
@@ -791,15 +786,15 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_HordeTownVengeanceLanding()
 		FinalFantasylization_PlayMusic( S .. VengeanceLandingSong);
 		FinalFantasylization_debugMsg("VengeanceLandingSong Final Fantasy 7 Shinra Corporation")
-	end	
+	end
 	function FinalFantasylization_HordeTownVenomspite()
 		FinalFantasylization_PlayMusic( S .. VenomspiteSong);
 		FinalFantasylization_debugMsg("VenomspiteSong Final Fantasy XI Rise of the Zilart Norg")
-	end	
+	end
 	function FinalFantasylization_HordeTownWarsongHold()
 		FinalFantasylization_PlayMusic( S .. WarsongHoldSong);
 		FinalFantasylization_debugMsg("WarsongHoldSong FF 13 2 Condition Omega")
-	end	
+	end
 	function FinalFantasylization_HordeTownZabrajin()
 		FinalFantasylization_PlayMusic( S .. ZabrajinSong);
 		FinalFantasylization_debugMsg("ZabrajinSong Kingdom Hearts Deep Jungle")
@@ -812,7 +807,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. GhostWalkerPostSong);
 		FinalFantasylization_debugMsg("GhostWalkerPostSong Final Fantasy 7 Mining Town")
 	end
-	
 
 	--########################
 	-- ##   ALLIANCE TOWNS
@@ -844,11 +838,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_AllianceTownBloodWatch()
 		FinalFantasylization_PlayMusic( S .. BloodWatchSong);
 		FinalFantasylization_debugMsg("BloodWatchSong Final Fantasy 7 Judgment Day")
-	end	
+	end
 	function FinalFantasylization_AllianceTownBrackwellPumpkinPatch()
 		FinalFantasylization_PlayMusic( S .. ElwynnForestSong);
 		FinalFantasylization_debugMsg("ElwynnForestSong - Brackwell Pumpkin Patch")
-	end	
+	end
 	function FinalFantasylization_AllianceTownChillwindCamp()
 		FinalFantasylization_PlayMusic( S .. ChillwindCampSong);
 		FinalFantasylization_debugMsg("ChillwindCampSong Kingdom Hearts Dearly Beloved")
@@ -872,11 +866,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_AllianceTownFizzcrankAirstrip()
 		FinalFantasylization_PlayMusic( S .. FizzcrankAirstripSong);
 		FinalFantasylization_debugMsg("FizzcrankAirstripSong Final Fantasy 7 Oppressed People")
-	end	
+	end
 	function FinalFantasylization_AllianceTownFordragonHold()
 		FinalFantasylization_PlayMusic( S .. FordragonHoldSong);
 		FinalFantasylization_debugMsg("FordragonHoldSong Kingdom Hearts End of the World")
-	end	
+	end
 	function FinalFantasylization_AllianceTownForestSong()
 		FinalFantasylization_PlayMusic( S .. ForestSongSong);
 		FinalFantasylization_debugMsg("ForestSongSong Radiata Stories Sending Feelings over the Distance")
@@ -884,11 +878,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_AllianceTownFortWildervar()
 		FinalFantasylization_PlayMusic( S .. FortWildervarSong);
 		FinalFantasylization_debugMsg("FortWildervarSong Legend of Legaia Lively Imperial Palace")
-	end	
+	end
 	function FinalFantasylization_AllianceTownFrosthold()
 		FinalFantasylization_PlayMusic( S .. FrostholdSong);
 		FinalFantasylization_debugMsg("FrostholdSong Legend of Legaia Light of the Town")
-	end	
+	end
 	function FinalFantasylization_AllianceTownGoldshire()
 		FinalFantasylization_PlayMusic( S .. GoldshireSong);
 		FinalFantasylization_debugMsg("GoldshireSong Kingdom Hearts Traverse Town")
@@ -944,15 +938,15 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_AllianceTownStarsRest()
 		FinalFantasylization_PlayMusic( S .. StarsRestSong);
 		FinalFantasylization_debugMsg("StarsRestSong Lord of The Ring The Two Towers Evenstar")	
-	end	
+	end
 	function FinalFantasylization_AllianceTownSteelgrillsDepot()
 		FinalFantasylization_PlayMusic( S .. DunMoroghSong);
 		FinalFantasylization_debugMsg("DunMoroghSong")	
-	end	
+	end
 	function FinalFantasylization_AllianceTownStonefieldFarm()
 		FinalFantasylization_PlayMusic( S .. ElwynnForestSong);
 		FinalFantasylization_debugMsg("ElwynnForestSong - StonefieldFarm")	
-	end	
+	end
 	function FinalFantasylization_AllianceTownStonetalonPeak()
 		FinalFantasylization_PlayMusic( S .. StonetalonPeakSong);
 		FinalFantasylization_debugMsg("StonetalonPeakSong Final Fantasy XI Rise of the Zilart Sanctuary")
@@ -1000,19 +994,19 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_AllianceTownValianceKeep()
 		FinalFantasylization_PlayMusic( S .. ValianceKeepSong);
 		FinalFantasylization_debugMsg("ValianceKeepSong Final Fantasy 8 Balamb Garden")
-	end	
+	end
 	function FinalFantasylization_AllianceTownValgarde()
 		FinalFantasylization_PlayMusic( S .. ValgardeSong);
 		FinalFantasylization_debugMsg("ValgardeSong Kingdom Hearts Under the Sea")
-	end	
+	end
 	function FinalFantasylization_AllianceTownWestfallBrigadeEncampment()
 		FinalFantasylization_PlayMusic( S .. WestfallBrigadeEncampmentSong);
 		FinalFantasylization_debugMsg("WestfallBrigadeEncampmentSong Breath of Fire 4 Brave Heart")
-	end	
+	end
 	function FinalFantasylization_AllianceTownWestguardKeep()
 		FinalFantasylization_PlayMusic( S .. WestguardKeepSong);
 		FinalFantasylization_debugMsg("WestguardKeepSong Legend of Dragoon Royal Castle")
-	end	
+	end
 	function FinalFantasylization_AllianceTownWildhammerStronghold()
 		FinalFantasylization_PlayMusic( S .. WildhammerStrongholdSong);
 		FinalFantasylization_debugMsg("WildhammerStrongholdSong Final Fantasy 7 Crisis Core A Closed off Village")
@@ -1020,10 +1014,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_AllianceTownWindrunnersOverlook()
 		FinalFantasylization_PlayMusic( S .. WindrunnersOverlookSong);
 		FinalFantasylization_debugMsg("WindrunnersOverlookSong Joanie Meden Woman of Ireland")
-	end	
+	end
 	function FinalFantasylization_AllianceTownWintergardeKeep()
 		FinalFantasylization_BattleGround();
-	end	
+	end
 	function FinalFantasylization_AllianceTownBrewnallVillage()
 		FinalFantasylization_PlayMusic( S .. BrewnallVillageSong);
 		FinalFantasylization_debugMsg("BrewnallVillageSong Final Fantasy Best Collection 1987 1994 Legend of the Great Forest from Final Fantasy 5 Dear Friends")
@@ -1056,7 +1050,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. StarfallVillageSong);
 		FinalFantasylization_debugMsg("StarfallVillageSong Legend of Dragoon Whispering of the Trees")
 	end
-	
 
 	--########################
 	-- ##   NEUTRAL TOWNS
@@ -1068,19 +1061,19 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_NeutralTownAmberLedge()
 		FinalFantasylization_PlayMusic( S .. AmberLedgeSong);
 		FinalFantasylization_debugMsg("AmberledgeSong Final Fantasy 4 Celtic Moon Mystic Mysidia")
-	end	
+	end
 	function FinalFantasylization_NeutralTownArgentTournamentGrounds()
 		FinalFantasylization_PlayMusic( S .. ArgentTournamentGroundsSong);
 		FinalFantasylization_debugMsg("ArgentTournamentGroundsSong Legaia 2 Duel Saga Barracks")
-	end	
+	end
 	function FinalFantasylization_NeutralTownArgentVanguard()
 		FinalFantasylization_PlayMusic( S .. ArgentVanguardSong);
 		FinalFantasylization_debugMsg("ArgentVanguardSong Lord of the Ring The Two Towers The Hornburg")
-	end	
+	end
 	function FinalFantasylization_NeutralTownBouldercragsRefuge()
 		FinalFantasylization_PlayMusic( S .. BouldercragsRefugeSong);
 		FinalFantasylization_debugMsg("BouldercragsRefugeSong Breath of Fire 4 Tiny Village in the Desert")
-	end	
+	end
 	function FinalFantasylization_NeutralTownCenarionHold()
 		FinalFantasylization_PlayMusic( S .. CenarionHoldSong);
 		FinalFantasylization_debugMsg("CenarionHoldSong Breath of Fire 3 Guild")
@@ -1100,15 +1093,15 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_NeutralTownDeathsRise()
 		FinalFantasylization_PlayMusic( S .. DeathsRiseSong);
 		FinalFantasylization_debugMsg("DeathsRiseSong Final Fantasy 7 Parochial Town")
-	end	
+	end
 	function FinalFantasylization_NeutralTownDunNiffelem()
 		FinalFantasylization_PlayMusic( S .. DunNiffelemSong);
 		FinalFantasylization_debugMsg("DunNiffelemSong Breath of Fire 4 Working Today Too")
-	end	
+	end
 	function FinalFantasylization_NeutralTownEbonWatch()
 		FinalFantasylization_PlayMusic( S .. EbonWatchSong);
 		FinalFantasylization_debugMsg("EbonWatchSong Final Fantasy XI Sometime Somewhere")
-	end	
+	end
 	function FinalFantasylization_NeutralTownEmeraldSanctuary()
 		FinalFantasylization_PlayMusic( S .. EmeraldSanctuarySong);
 		FinalFantasylization_debugMsg("EmeraldSanctuarySong Radiata Stories The White Town of Deception")
@@ -1120,7 +1113,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_NeutralTownFrenzyheartHill()
 		FinalFantasylization_PlayMusic( S .. FrenzyheartHillSong);
 		FinalFantasylization_debugMsg("FrenzyheartHillSong Final Fantasy XI Rise of the Zilart Kazham")
-	end	
+	end
 	function FinalFantasylization_NeutralTownHalaa()
 		FinalFantasylization_PlayMusic( S .. HalaaSong);
 		FinalFantasylization_debugMsg("HalaaSong Final Fantasy 7 Stolen Materia")
@@ -1128,15 +1121,15 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_NeutralTownK3()
 		FinalFantasylization_PlayMusic( S .. K3Song);
 		FinalFantasylization_debugMsg("K3Song Breath of Fire 3 Steam Locomotion")
-	end	
+	end
 	function FinalFantasylization_NeutralTownKamagua()
 		FinalFantasylization_PlayMusic( S .. KamaguaSong);
 		FinalFantasylization_debugMsg("KamaguaSong Star Wars 6 Jabba Baroque Recital")
-	end	
+	end
 	function FinalFantasylization_NeutralTownLightsBreach()
 		FinalFantasylization_PlayMusic( S .. LightsBreachSong);
 		FinalFantasylization_debugMsg("LightsBreachSong Breath of Fire 3 Island")
-	end	
+	end
 	function FinalFantasylization_NeutralTownLightsHopeChapel()
 		FinalFantasylization_PlayMusic( S .. LightsHopeChapelSong);
 		FinalFantasylization_debugMsg("LightsHopeChapelSong Kingdom Hearts 2 A Day in Agrabah")
@@ -1148,7 +1141,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_NeutralTownMoakiHarbor()
 		FinalFantasylization_PlayMusic( S .. MoakiHarborSong);
 		FinalFantasylization_debugMsg("MoakiHarborSong Legend of Zelda Ocarina of Time Zora Domain")
-	end	
+	end
 	function FinalFantasylization_NeutralTownMudsprocket()
 		FinalFantasylization_PlayMusic( S .. MudsprocketSong);
 		FinalFantasylization_debugMsg("MudsprocketSong Breath of Fire 4 Watch your Step")
@@ -1168,11 +1161,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_NeutralTownRainspeakerCanopy()
 		FinalFantasylization_PlayMusic( S .. RainspeakerCanopySong);
 		FinalFantasylization_debugMsg("RainspeakerCanopySong Breath of Fire 4 Pabu Pabu Puka Puka")
-	end	
+	end
 	function FinalFantasylization_NeutralTownRiversHeart()
 		FinalFantasylization_PlayMusic( S .. RiversHeartSong);
 		FinalFantasylization_debugMsg("RiversHeartSong Chrono Cross Another Termina")
-	end	
+	end
 	function FinalFantasylization_NeutralTownSanctumOfTheStars()
 		FinalFantasylization_PlayMusic( S .. SanctumOfTheStarsSong);
 		FinalFantasylization_debugMsg("SanctumOfTheStarsSong Final Fantasy 7 Its hard to stand on both feet")
@@ -1195,7 +1188,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_NeutralTownTheArgentStand()
 		FinalFantasylization_BattleGround()
-	end	
+	end
 	function FinalFantasylization_NeutralTownThoriumPoint()
 		FinalFantasylization_PlayMusic( S .. ThoriumPointSong);
 		FinalFantasylization_debugMsg("ThoriumPointSong Final Fantasy XI Mithra")
@@ -1203,19 +1196,19 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_NeutralTownTransitusShield()
 		FinalFantasylization_PlayMusic( S .. TransitusShieldSong);
 		FinalFantasylization_debugMsg("TransitusShieldSong Kingdom Hearts Captain Hook Pirate Ship")
-	end	
+	end
 	function FinalFantasylization_NeutralTownUnupe()
 		FinalFantasylization_PlayMusic( S .. UnupeSong);
 		FinalFantasylization_debugMsg("UnupeSong Legaia 2 Duel Saga Wasteland of Far Away Places")
-	end	
+	end
 	function FinalFantasylization_NeutralTownWyrmrestTemple()
 		FinalFantasylization_PlayMusic( S .. WyrmrestTempleSong);
 		FinalFantasylization_debugMsg("WyrmrestTempleSong Legend of Zelda Ocarina of Time Spirit Temple")
-	end	
+	end
 	function FinalFantasylization_NeutralTownZimTorga()
 		FinalFantasylization_PlayMusic( S .. ZimTorgaSong);
 		FinalFantasylization_debugMsg("ZimTorgaSong Dragon's Crown Canaan Temple")
-	end	
+	end
 	function FinalFantasylization_NeutralTownDarrowshire()
 		FinalFantasylization_PlayMusic( S .. DarrowshireSong);
 		FinalFantasylization_debugMsg("DarrowshireSong Rogue Galaxy The Lost Gene")
@@ -1283,36 +1276,35 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_NeutralTownKartaksHold()
 		FinalFantasylization_PlayMusic( S .. KartaksHoldSong);
 		FinalFantasylization_debugMsg("KartaksHoldSong Final Fantasy 7 Infiltrating Shinra Building")
-	end		
+	end
 	function FinalFantasylization_NeutralTownLakesideLanding()
 		FinalFantasylization_PlayMusic( S .. LakesideLandingSong);
 		FinalFantasylization_debugMsg("LakesideLandingSong Legaia 2 Duel Saga Status Change")
-	end		
+	end
 	function FinalFantasylization_NeutralTownLightsTrust()
 		FinalFantasylization_PlayMusic( S .. LightsTrustSong);
 		FinalFantasylization_debugMsg("LightsTrustSong Final Fantasy 7 The Flow of Life")
-	end		
+	end
 	function FinalFantasylization_NeutralTownMistwhisperRefuge()
 		FinalFantasylization_PlayMusic( S .. MistwhisperRefugeSong);
 		FinalFantasylization_debugMsg("MistwhisperRefugeSong Legend of Zelda Ocarina of Time Windmill Hut")
-	end		
+	end
 	function FinalFantasylization_NeutralTownScalawagPoint()
 		FinalFantasylization_PlayMusic( S .. ScalawagPointSong);
 		FinalFantasylization_debugMsg("ScalawagPointSong Legend of Legaia Earth of Joy")
-	end		
+	end
 	function FinalFantasylization_NeutralTownSparktouchedHaven()
 		FinalFantasylization_PlayMusic( S .. SparktouchedHavenSong);
 		FinalFantasylization_debugMsg("SparktouchedHavenSong Final Fantasy Best Collection 1987 1994 Aeria the Prophet of Water from Final Fantasy 3 Legend of Eternal Wind")
-	end		
+	end
 	function FinalFantasylization_NeutralTownSpearbornEncampment()
 		FinalFantasylization_PlayMusic( S .. KartaksHoldSong);
 		FinalFantasylization_debugMsg("KartaksHoldSong Final Fantasy 7 Infiltrating Shinra Building")
-	end		
+	end
 	function FinalFantasylization_NeutralTownVentureBay()
 		FinalFantasylization_PlayMusic( S .. VentureBaySong);
 		FinalFantasylization_debugMsg("VentureBaySong Final Fantasy 14 Saltswept")
-	end		
-	
+	end
 
 	--########################
 	-- ##   STARTER AREA ZONES
@@ -1324,7 +1316,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_StarterAreaDeathknell()
 		FinalFantasylization_PlayMusic( S .. DeathknellSong);
 		FinalFantasylization_debugMsg("DeathknellSong Legend of Zelda A Link to the Past Sanctuary Dungeon")
-	end				
+	end
 	function FinalFantasylization_StarterAreaNorthshireValley()
 		FinalFantasylization_PlayMusic( S .. NorthshireValleySong);
 		FinalFantasylization_debugMsg("NorthshireValleySong Elders Scroll 4 Oblivion Watchmans Ease")
@@ -1353,7 +1345,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_BattleGround()
 	end
 
-
 	--########################
 	-- ##   EASTERN KINGDOMS ZONES
 	--########################
@@ -1380,15 +1371,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_EasternKingdomsDeadwindPass()
 		FinalFantasylization_PlayMusic( S .. DeadwindPassSong);
 		FinalFantasylization_debugMsg("DeadwindPassSong Final Fantasy 8 Find your Way")
-	end				
+	end
 	function FinalFantasylization_EasternKingdomsDunMorogh()
 		FinalFantasylization_PlayMusic( S .. DunMoroghSong);
 		FinalFantasylization_debugMsg("DunMoroghSong Legend of Dragoon Silver Land")	
 	end
-	function FinalFantasylization_EasternKingdomsDunMoroghHostile()
-		FinalFantasylization_PlayMusic( S .. DunMoroghSong);
-		FinalFantasylization_debugMsg("DunMoroghSong Legend of Dragoon Silver Land")
-	end				
 	function FinalFantasylization_EasternKingdomsDuskwood()
 		FinalFantasylization_PlayMusic( S .. DuskwoodSong);
 		FinalFantasylization_debugMsg("DuskwoodSong Legend of Legaia Quiet Destruction")
@@ -1401,23 +1388,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. ElwynnForestSong);
 		FinalFantasylization_debugMsg("ElwynnForestSong Legend of Zelda Ocarina of Time Kokiri Forest")
 	end
-	function FinalFantasylization_EasternKingdomsElwynnForestHostile()
-		FinalFantasylization_PlayMusic( S .. ElwynnForestSong);
-		FinalFantasylization_debugMsg("ElwynnForestSong Legend of Zelda Ocarina of Time Kokiri Forest")
-	end
 	function FinalFantasylization_EasternKingdomsEversongWoods()
-		FinalFantasylization_PlayMusic( S .. EversongWoodsSong);
-		FinalFantasylization_debugMsg("EversongWoodsSong Final Fantasy 7 You can Hear the Cry of the Planet")
-	end				
-	function FinalFantasylization_EasternKingdomsEversongWoodsHostile()
 		FinalFantasylization_PlayMusic( S .. EversongWoodsSong);
 		FinalFantasylization_debugMsg("EversongWoodsSong Final Fantasy 7 You can Hear the Cry of the Planet")
 	end
 	function FinalFantasylization_EasternKingdomsGhostlands()
-		FinalFantasylization_PlayMusic( S .. GhostlandsSong);
-		FinalFantasylization_debugMsg("GhostlandsSong Breath of Fire 4 Freefall")
-	end
-	function FinalFantasylization_EasternKingdomsGhostlandsHostile()
 		FinalFantasylization_PlayMusic( S .. GhostlandsSong);
 		FinalFantasylization_debugMsg("GhostlandsSong Breath of Fire 4 Freefall")
 	end
@@ -1433,23 +1408,15 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. LochModanSong);
 		FinalFantasylization_debugMsg("LochModanSong Guild Wars 2 Call of the Raven")
 	end
-	function FinalFantasylization_EasternKingdomsLochModanHostile()
-		FinalFantasylization_PlayMusic( S .. LochModanSong);
-		FinalFantasylization_debugMsg("LochModanSong Lunar 2 Field Towards Tomorrow")
-	end
 	function FinalFantasylization_EasternKingdomsRedridgeMountains()
 		FinalFantasylization_PlayMusic( S .. RedridgeMountainsSong);
 		FinalFantasylization_debugMsg("RedridgeMountainsSong Chrono Cross Drowning Valley")
-	end				
+	end
 	function FinalFantasylization_EasternKingdomsSearingGorge()
 		FinalFantasylization_PlayMusic( S .. SearingGorgeSong);
 		FinalFantasylization_debugMsg("SearingGorgeSong Final Fantasy 7 Trail of Blood")
 	end
 	function FinalFantasylization_EasternKingdomsSilverpineForest()
-		FinalFantasylization_PlayMusic( S .. SilverpineForestSong);
-		FinalFantasylization_debugMsg("SilverpineForestSong Legend of Legaia Young Nobleman of the Mist")
-	end
-	function FinalFantasylization_EasternKingdomsSilverpineForestHostile()
 		FinalFantasylization_PlayMusic( S .. SilverpineForestSong);
 		FinalFantasylization_debugMsg("SilverpineForestSong Legend of Legaia Young Nobleman of the Mist")
 	end
@@ -1473,10 +1440,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. TirisfalGladesSong);
 		FinalFantasylization_debugMsg("TirisfalGladesSong Final Fantasy XI Anxiety")
 	end
-	function FinalFantasylization_EasternKingdomsTirisfalGladesHostile()
-		FinalFantasylization_PlayMusic( S .. TirisfalGladesSong);
-		FinalFantasylization_debugMsg("TirisfalGladesSong Final Fantasy XI Anxiety")
-	end
 	function FinalFantasylization_EasternKingdomsWesternPlaguelands()
 		FinalFantasylization_PlayMusic( S .. WesternPlaguelandsSong);
 		FinalFantasylization_debugMsg("WesternPlaguelandsSong Legaia 2 Duel Saga End of the World")
@@ -1485,16 +1448,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. WestfallSong);
 		FinalFantasylization_debugMsg("WestfallSong Breath of Fire 3 Casually")
 	end
-	function FinalFantasylization_EasternKingdomsWestfallHostile()
-		FinalFantasylization_PlayMusic( S .. WestfallSong);
-		FinalFantasylization_debugMsg("WestfallSong Breath of Fire 3 Casually")
-	end
 	function FinalFantasylization_EasternKingdomsWetlands()
 		FinalFantasylization_PlayMusic( S .. WetlandsSong);
 		FinalFantasylization_debugMsg("WetlandsSong Diablo 2 Wild")
 	end
 
-					
 	--########################
 	-- ##   KALIMDOR ZONES
 	--########################
@@ -1510,23 +1468,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. AzuremystIsleSong);
 		FinalFantasylization_debugMsg("AzuremystIsleSong Legend of Legaia Night Requiem")
 	end
-	function FinalFantasylization_KalimdorAzuremystIsleHostile()
-		FinalFantasylization_PlayMusic( S .. AzuremystIsleSong);
-		FinalFantasylization_debugMsg("AzuremystIsleSong Legend of Legaia Night Requiem")
-	end
 	function FinalFantasylization_KalimdorBloodmystIsle()
 		FinalFantasylization_PlayMusic( S .. BloodmystIsleSong);
 		FinalFantasylization_debugMsg("BloodmystIsleSong Legaia 2 Duel Saga God of the Evil Ones")
 	end
-	function FinalFantasylization_KalimdorBloodmystIsleHostile()
-		FinalFantasylization_PlayMusic( S .. BloodmystIsleSong);
-		FinalFantasylization_debugMsg("BloodmystIsleSong Legaia 2 Duel Saga God of the Evil Ones")
-	end
 	function FinalFantasylization_KalimdorDarkshore()
-		FinalFantasylization_PlayMusic( S .. DarkshoreSong);
-		FinalFantasylization_debugMsg("DarkshoreSong Final Fantasy 7 The Nightmare Beginning")
-	end
-	function FinalFantasylization_KalimdorDarkshoreHostile()
 		FinalFantasylization_PlayMusic( S .. DarkshoreSong);
 		FinalFantasylization_debugMsg("DarkshoreSong Final Fantasy 7 The Nightmare Beginning")
 	end
@@ -1535,10 +1481,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_debugMsg("DesolaceSong Final Fantasy XI Hopelessness")
 	end
 	function FinalFantasylization_KalimdorDurotar()
-		FinalFantasylization_PlayMusic( S .. DurotarSong);
-		FinalFantasylization_debugMsg("DurotarSong Final Fantasy 7 Desert Wasteland")
-	end
-	function FinalFantasylization_KalimdorDurotarHostile()
 		FinalFantasylization_PlayMusic( S .. DurotarSong);
 		FinalFantasylization_debugMsg("DurotarSong Final Fantasy 7 Desert Wasteland")
 	end
@@ -1562,10 +1504,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. MulgoreSong);
 		FinalFantasylization_debugMsg("MulgoreSong Legend of Legaia Barren fields of Mist")
 	end
-	function FinalFantasylization_KalimdorMulgoreHostile()
-		FinalFantasylization_PlayMusic( S .. MulgoreSong);
-		FinalFantasylization_debugMsg("MulgoreSong Legend of Legaia Barren fields of Mist")
-	end
 	function FinalFantasylization_KalimdorSilithus()
 		FinalFantasylization_PlayMusic( S .. SilithusSong);
 		FinalFantasylization_debugMsg("SilithusSong Chrono Cross Earth Dragon Island")
@@ -1582,15 +1520,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. TeldrassilSong);
 		FinalFantasylization_debugMsg("TeldrassilSong Baldur's Gate 2 The Druid's Grove")
 	end
-	function FinalFantasylization_KalimdorTeldrassilHostile()
-		FinalFantasylization_PlayMusic( S .. TeldrassilSong);
-		FinalFantasylization_debugMsg("TeldrassilSong Baldur's Gate 2 The Druid's Grove")
-	end
 	function FinalFantasylization_KalimdorTheBarrens()
-		FinalFantasylization_PlayMusic( S .. TheBarrensSong);
-		FinalFantasylization_debugMsg("TheBarrensSong Legend of Zelda Ocarina of Time Hyrule Field Main theme")
-	end
-	function FinalFantasylization_KalimdorTheBarrensHostile()
 		FinalFantasylization_PlayMusic( S .. TheBarrensSong);
 		FinalFantasylization_debugMsg("TheBarrensSong Legend of Zelda Ocarina of Time Hyrule Field Main theme")
 	end
@@ -1606,7 +1536,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. WinterspringSong);
 		FinalFantasylization_debugMsg("WinterspringSong Chrono Cross Garden of the Gods")
 	end
-
 
 	--########################
 	-- ##   OUTLAND ZONES
@@ -1640,7 +1569,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_debugMsg("ZangarmarshSong Star Ocean 4 The Last Hope Shattered Dreams")
 	end
 
-
 	--########################
 	-- ##   NORTHREND ZONES
 	--########################
@@ -1671,61 +1599,54 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_NorthrendIcecrown()
 		FinalFantasylization_PlayMusic( S .. IcecrownSong);
 		FinalFantasylization_debugMsg("IcecrownSong Final Fantasy 10 The Deceased Laugh")
-	end		
+	end
 	function FinalFantasylization_NorthrendSholazarBasin()
 		FinalFantasylization_PlayMusic( S .. SholazarBasinSong);
 		FinalFantasylization_debugMsg("SholazarBasinSong Final Fantasy Tactics Character Creation")
-	end		
+	end
 	function FinalFantasylization_NorthrendStormPeaks()
 		FinalFantasylization_PlayMusic( S .. StormPeaksSong);
 		FinalFantasylization_debugMsg("StormPeaksSong Dragon Age Inquisition Adamant Fortress")
-	end		
+	end
 	function FinalFantasylization_NorthrendWintergrasp()
 		FinalFantasylization_BattleGround()
-	end		
+	end
 	function FinalFantasylization_NorthrendZulDrak()
 		FinalFantasylization_PlayMusic( S .. ZulDrakSong);
 		FinalFantasylization_debugMsg("ZulDrakSong Chrono Cross Lizard Dance")
-	end		
+	end
 
-	
 	--########################
 	-- ##   MISCELANEOUS ZONES
 	--########################
 	function FinalFantasylization_MiscAreaGnomeregan()
 		FinalFantasylization_PlayMusic( S .. ScarletMonasterySong);
 		FinalFantasylization_debugMsg("ScarletMonasterySong Final Fantasy XI Repression Memoro de la Stono")
-
-	end	
+	end
 	function FinalFantasylization_MiscAreaScarletMonastery()
 		FinalFantasylization_PlayMusic( S .. ScarletMonasterySong);
 		FinalFantasylization_debugMsg("ScarletMonasterySong Final Fantasy XI Repression Memoro de la Stono")
-
-	end	
+	end
 	function FinalFantasylization_MiscAreaRazorfenKraul()
 		FinalFantasylization_PlayMusic( S .. RazorfenSong);
 		FinalFantasylization_debugMsg("RazorfenSong Final Fantasy 12 Abyss")
-
-	end	
+	end
 	function FinalFantasylization_MiscAreaRazorfenDowns()
 		FinalFantasylization_PlayMusic( S .. RazorfenSong);
 		FinalFantasylization_debugMsg("RazorfenSong Final Fantasy 12 Abyss")
-
-	end	
+	end
 	function FinalFantasylization_MiscAreaWailingCaverns()
 		FinalFantasylization_PlayMusic( S .. WailingCavernsSong);
 		FinalFantasylization_debugMsg("WailingCavernsSong Final Fantasy 12 Dark Night imperial version")
-
-	end	
+	end
 	function FinalFantasylization_MiscAreaTheDeadmines()
 		FinalFantasylization_PlayMusic( S .. TheDeadminesSong);
 		FinalFantasylization_debugMsg("TheDeadminesSong Final Fantasy XI Castle Zvahl")
-
-	end	
+	end
 	function FinalFantasylization_MiscAreaDeeprunTram()
 		FinalFantasylization_PlayMusic( S .. DeeprunTramSong);
 		FinalFantasylization_debugMsg("DeeprunTramSong Resident Evil Main Theme")
-	end	
+	end
 	function FinalFantasylization_MiscAreaCavernsOfTime()
 		FinalFantasylization_PlayMusic( S .. CavernsOfTimeSong);
 		FinalFantasylization_debugMsg("CavernsOfTimeSong The Last Remnant Dark Secrets")
@@ -1738,185 +1659,185 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_Dungeon_RagefireChasmSong()
 		FinalFantasylization_PlayMusic( S .. RagefireChasmSong);
 		FinalFantasylization_debugMsg("RagefireChasmSong Dragon Age 2 Blightlands")
-	end	
+	end
 	function FinalFantasylization_Dungeon_WailingCavernsSong()
 		FinalFantasylization_PlayMusic( S .. WailingCavernsDungeonSong);
 		FinalFantasylization_debugMsg("WailingCavernsDungeonSong Rogue Galaxy Insectron Strategy")
-	end	
+	end
 	function FinalFantasylization_Dungeon_DeadminesSong()
 		FinalFantasylization_PlayMusic( S .. DeadminesSong);
 		FinalFantasylization_debugMsg("DeadminesSong Dragons Crown Bilbaron Subterranean Fortress")
-	end	
+	end
 	function FinalFantasylization_Dungeon_ShadowfangKeepSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_BlackfathomDeepsSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_StormwindStockadeSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_GnomereganSong()
 		FinalFantasylization_PlayMusic( S .. GnomereganSong);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 7 Mako Reactor")
-	end	
+	end
 	function FinalFantasylization_Dungeon_RazorfenKraulSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_ScarletMonasterySong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_RazorfenDownsSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_UldamanSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_ZulFarrakSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_MaraudonSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_TempleofAtalHakkarSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_BlackrockDepthsSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_LowerBlackrockSpireSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_UpperBlackrockSpireSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_DireMaulSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_StratholmeSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_ScholomanceSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 		-- Burning Crusade Dungeons
 	function FinalFantasylization_Dungeon_HellfireRampartsSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_BloodFurnaceSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_SlavePensSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_UnderbogSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_ManaTombsSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_AuchenaiCryptsSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_SethekkHallsSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_SteamvaultSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_ShatteredHallsSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_ShadowLabyrinthSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_EscapefromDurnholdeKeepSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_OpeningtheDarkPortalSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_BotanicaSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_ArcatrazSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_OpeningtheDarkPortalSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_MagistersTerraceSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 		-- Wrath of the Lich King Dungeons	
 	function FinalFantasylization_Dungeon_UtgardeKeepSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_TheNexusSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_AzjolNerubSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_AhnkahetTheOldKingdomSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_DrakTharonKeepSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_VioletHoldSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_GundrakSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_HallsofStoneSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_TheOculusSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_HallsofLightningSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
@@ -1924,23 +1845,23 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_Dungeon_UtgardePinnacleSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_TheCullingofStratholmeSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_TrialoftheChampionSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_ForgeofSoulsSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_PitofSaronSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
-	end	
+	end
 	function FinalFantasylization_Dungeon_HallsofReflectionSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
@@ -1981,7 +1902,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--##########################
 	-- ## FANFARE / LEVEL UP
 	--##########################
-
 	function FinalFantasylization_Fanfare()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -2008,12 +1928,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
  				FinalFantasylization_debugMsg("LevelUp4Song Chrono Cross Victory")
 			end
 	end
-
 	
 	--################
 	-- ## FIGHTING SONGS
 	--################
-
 	function FinalFantasylization_WorldBoss()
 		local x = math.random(1, 12);
 			if x == 1 then
@@ -2334,7 +2252,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--###############
 	-- ## PvP Events
 	--###############	
-	
 	function FinalFantasylization_HostileTowns()
 		FinalFantasylization_PlayMusic( S .. HostileSong);
 		FinalFantasylization_debugMsg("HostileSong Legend of Dragoon Boss Battle 3")
@@ -2343,7 +2260,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--###############
 	-- ## BATTLEGROUNDS
 	--###############
-
 	function FinalFantasylization_BattleGround()
 		local x = math.random(1, 10);
 			if x == 1 then
@@ -2382,7 +2298,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## DIE/DEAD
 	--#############
-
 	function FinalFantasylization_PlayerDie()
 		local x = math.random(1, 8);
 			if x == 1 then
@@ -2443,7 +2358,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## SLEEPING
 	--#############
-
 	function FinalFantasylization_Sleeping()
 		local x = math.random(1, 13);
 			if x == 1 then
@@ -2491,7 +2405,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## SWIMMING
 	--#############
-
 	function FinalFantasylization_Swimming(Zone)
 		if Zone == 1 then
 			FinalFantasylization_PlayMusic(S .. DarkSwimSong);  -- alt Swim song
@@ -2508,14 +2421,13 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				else 
 					FinalFantasylization_PlayMusic(S .. Swim3Song); -- Normal Swim song
 					FinalFantasylization_debugMsg("Swim3Song Kingdom Hearts Under the Sea") -- Normal Swim song
-				end		
+				end
 		end
 	end
 
 	--#############
 	-- ## TAXI
 	--#############
-
 	function FinalFantasylization_HordeTaxi()
 		local x = math.random(1, 5);
 			if x == 1 then
@@ -2534,7 +2446,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_PlayMusic( S .. HordeFP5Song);
 				FinalFantasylization_debugMsg("HordeFP5Song Dragons Crown Mages Tower")
 			end
-	end	
+	end
 	function FinalFantasylization_AllianceTaxi()
 		local x = math.random(1, 6);
 			if x == 1 then
@@ -2561,7 +2473,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## FLYING
 	--#############
-	
 	function FinalFantasylization_HordeFlying()
 		local x = math.random(1, 4);
 			if x == 1 then
@@ -2577,7 +2488,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_PlayMusic( S .. FlyingMount4Song);
 				FinalFantasylization_debugMsg("FlyingMount4Song Final Fantasy 6 Terra")
 			end
-	end	
+	end
 	function FinalFantasylization_AllianceFlying()
 		local x = math.random(1, 4);
 			if x == 1 then
@@ -2598,7 +2509,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## MOUNTED
 	--#############
-
 	function FinalFantasylization_Mounted()					
 		local x = math.random(1, 7);
 			if x == 1 then
@@ -2659,7 +2569,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--###############
 	-- ## DANCE MUSIC
 	--###############
-	
 	function FinalFantasylization_BloodElfFemaleDanceSong()
 		FinalFantasylization_PlayMusic( SS .. BloodElfFemaleDanceSong);
 		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")

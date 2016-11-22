@@ -23,6 +23,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		--#######################################
 		
 		S = "Interface\\AddOns\\FinalFantasylization_FF7UniverseSoundpack\\Sounds\\"
+		SS = "Interface\\AddOns\\FinalFantasylization_FF7UniverseSoundpack\\Dance\\"
 
 		-- Capital Cities Events --
 		BonusCapitalCitySong = "BonusCapitalCitySong.mp3" --
@@ -167,6 +168,32 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		Boss4Song = "Boss4Song.mp3" -- 
 		Boss5Song = "Boss5Song.mp3" -- 
 		Boss6Song = "Boss6Song.mp3" -- 
+		-- Dance Event --
+		BloodElfFemaleDanceSong = "BloodElfFemale.mp3" -- 
+		BloodElfMaleDanceSong = "BloodElfMale.mp3" -- 
+		DraeneiFemaleDanceSong = "DraeneiFemale.mp3" -- 
+		DraeneiMaleDanceSong = "DraeneiMale.mp3" -- 
+		DwarfFemaleDanceSong = "DwarfFemale.mp3" -- 
+		DwarfMaleDanceSong = "DwarfMale.mp3" -- 
+		GnomeFemaleDanceSong = "GnomeFemale.mp3" -- 
+		GnomeMaleDanceSong = "GnomeMale.mp3" -- 
+		HumanFemaleDanceSong = "HumanFemale.mp3" -- 
+		HumanMaleDanceSong = "HumanMale.mp3" -- 
+		NightElfFemaleDanceSong = "NightElfFemale.mp3" -- 
+		NightElfMaleDanceSong = "NightElfMale.mp3" -- 
+		OrcFemaleDanceSong = "OrcFemale.mp3" -- 
+		OrcMaleDanceSong = "OrcMale.mp3" -- 
+		TaurenFemaleDanceSong = "TaurenFemale.mp3" -- 
+		TaurenMaleDanceSong = "TaurenMale.mp3" -- 
+		TrollFemaleDanceSong = "TrollFemale.mp3" -- 
+		TrollMaleDanceSong = "TrollMale.mp3" -- 
+		UndeadFemaleDanceSong = "UndeadFemale.mp3" -- 
+		UndeadMaleDanceSong = "UndeadMale.mp3" -- 
+		DruidBearDanceSong = "DruidBear.mp3" -- 
+		DruidCatDanceSong = "DruidCat.mp3" -- 
+		DruidOwlBearDanceSong = "DruidOwlBear.mp3" -- 
+		DruidTreeFormDanceSong = "DruidTreeForm.mp3" -- 
+		WolfDanceSong = "Wolf.mp3" -- 
 
 		-- Misc Events --
 		SwimSong = "SwimSong.mp3" --
@@ -195,7 +222,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## SOUNDS
 	--#############
-
 	function FinalFantasylization_KillSound()
 		FinalFantasylization_PlayFile(S ..  KillSound );
 		FinalFantasylization_debugMsg("KillSound")
@@ -217,13 +243,13 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_ArathiBasinBG()
 		FinalFantasylization_BattleGround();
-	end	
+	end
 	function FinalFantasylization_EyeoftheStormBG()
 		FinalFantasylization_BattleGround();
-	end	
+	end
 	function FinalFantasylization_StrandsoftheAncientsBG()
 		FinalFantasylization_BattleGround();
-	end	
+	end
 	function FinalFantasylization_WarsongGulchBG()
 		FinalFantasylization_BattleGround();
 	end
@@ -231,7 +257,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_BattleGround();
 	end
 
-	
 	--########################
 	-- ## STARTING AREAS
 	--########################
@@ -271,7 +296,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--########################
 	-- ## HORDE CAPITAL CITIES
 	--########################
-
 	function FinalFantasylization_OrgrimmarSong()
 		local x = math.random(1, 3);
 			if x == 1 then
@@ -328,7 +352,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--########################
 	-- ## ALLIANCE CAPITAL CITIES
 	--########################
-
 	function FinalFantasylization_DarnassusSong()
 		local x = math.random(1, 3);
 			if x == 1 then
@@ -385,7 +408,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--########################
 	-- ## NEUTRAL CAPITAL CITIES
 	--########################
-
 	function FinalFantasylization_CityArea52()
 		FinalFantasylization_NeutralTowns();
 	end
@@ -400,7 +422,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_PlayMusic(S .. Dalaran2Song);
 				FinalFantasylization_debugMsg("Dalaran2Song")
-			end				
+			end
 	end
 	function FinalFantasylization_EbonHoldSong()
 			FinalFantasylization_PlayMusic(S .. EbonHoldSong);
@@ -423,7 +445,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--########################
 	-- ##   HORDE TOWNS
 	--########################
-
 	function FinalFantasylization_HordeTownAgmarsHammer()
 		FinalFantasylization_HordeTowns();
 	end
@@ -483,7 +504,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_HordeTownGromarshCrashSite()
 		FinalFantasylization_HordeTowns();
-	end	
+	end
 	function FinalFantasylization_HordeTownGromgolBaseCamp()
 		FinalFantasylization_HordeTowns();
 	end
@@ -495,7 +516,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_HordeTownKorkronVanguard()
 		FinalFantasylization_HordeTowns();
-	end	
+	end
 	function FinalFantasylization_HordeTownMokNathalVillage()
 		FinalFantasylization_HordeTowns();
 	end
@@ -543,7 +564,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_HordeTownTaunkaleVillage()
 		FinalFantasylization_HordeTowns();
-	end	
+	end
 	function FinalFantasylization_HordeTownCrossroads()
 		FinalFantasylization_HordeTowns();
 	end
@@ -561,13 +582,13 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_HordeTownVengeanceLanding()
 		FinalFantasylization_HordeTowns();
-	end	
+	end
 	function FinalFantasylization_HordeTownVenomspite()
 		FinalFantasylization_HordeTowns();
-	end	
+	end
 	function FinalFantasylization_HordeTownWarsongHold()
 		FinalFantasylization_HordeTowns();
-	end	
+	end
 	function FinalFantasylization_HordeTownZabrajin()
 		FinalFantasylization_HordeTowns();
 	end
@@ -619,19 +640,19 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_AllianceTownFizzcrankAirstrip()
 		FinalFantasylization_AllianceTowns();
-	end	
+	end
 	function FinalFantasylization_AllianceTownFordragonHold()
 		FinalFantasylization_AllianceTowns();
-	end	
+	end
 	function FinalFantasylization_AllianceTownForestSong()
 		FinalFantasylization_AllianceTowns();
 	end
 	function FinalFantasylization_AllianceTownFortWildervar()
 		FinalFantasylization_AllianceTowns();
-	end	
+	end
 	function FinalFantasylization_AllianceTownFrosthold()
 		FinalFantasylization_AllianceTowns();
-	end	
+	end
 	function FinalFantasylization_AllianceTownGoldshire()
 		FinalFantasylization_AllianceTowns();
 	end
@@ -673,7 +694,13 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_AllianceTownStarsRest()
 		FinalFantasylization_AllianceTowns();
-	end	
+	end
+	function FinalFantasylization_AllianceTownSteelgrillsDepot()
+		FinalFantasylization_AllianceTowns()	
+	end
+	function FinalFantasylization_AllianceTownStonefieldFarm()
+		FinalFantasylization_AllianceTowns()	
+	end
 	function FinalFantasylization_AllianceTownStonetalonPeak()
 		FinalFantasylization_AllianceTowns();
 	end
@@ -709,22 +736,22 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_AllianceTownValianceKeep()
 		FinalFantasylization_AllianceTowns();
-	end	
+	end
 	function FinalFantasylization_AllianceTownValgarde()
 		FinalFantasylization_AllianceTowns();
-	end	
+	end
 	function FinalFantasylization_AllianceTownWestfallBrigadeEncampment()
 		FinalFantasylization_AllianceTowns();
-	end	
+	end
 	function FinalFantasylization_AllianceTownWestguardKeep()
 		FinalFantasylization_AllianceTowns();
-	end	
+	end
 	function FinalFantasylization_AllianceTownWildhammerStronghold()
 		FinalFantasylization_AllianceTowns();
 	end
 	function FinalFantasylization_AllianceTownWindrunnersOverlook()
 		FinalFantasylization_AllianceTowns();
-	end	
+	end
 	function FinalFantasylization_AllianceTownWintergardeKeep()
 		FinalFantasylization_BattleGround();
 	end
@@ -753,7 +780,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_AllianceTowns();
 	end
 
-
 	--########################
 	-- ##   NEUTRAL TOWNS
 	--########################
@@ -762,16 +788,16 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_NeutralTownAmberLedge()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownArgentTournamentGrounds()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownArgentVanguard()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownBouldercragsRefuge()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownCenarionHold()
 		FinalFantasylization_NeutralTowns();
 	end
@@ -783,16 +809,16 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_NeutralTownCrusadersPinnacle()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownDeathsRise()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownDunNiffelem()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownEbonWatch()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownEmeraldSanctuary()
 		FinalFantasylization_NeutralTowns();
 	end
@@ -801,19 +827,19 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_NeutralTownFrenzyheartHill()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownHalaa()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownK3()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownKamagua()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownLightsBreach()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownLightsHopeChapel()
 		FinalFantasylization_NeutralTowns();
 	end
@@ -822,28 +848,31 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_NeutralTownMoakiHarbor()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownMudsprocket()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownNesingwaryBaseCamp()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
+	function FinalFantasylization_NeutralTownNesingwaryExpedition()
+		FinalFantasylization_NeutralTowns();
+	end
 	function FinalFantasylization_NeutralTownNighthaven()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownRainspeakerCanopy()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownRiversHeart()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownSanctumOfTheStars()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownShadowVault()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownSporeggar()
 		FinalFantasylization_NeutralTowns();
 	end
@@ -855,96 +884,98 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_NeutralTownTheArgentStand()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownThoriumPoint()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownTransitusShield()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownUnupe()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownWyrmrestTemple()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownZimTorga()
+		FinalFantasylization_NeutralTowns();
+	end
+	function FinalFantasylization_NeutralTownDarrowshire()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownTheHarborage()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownValorsRest()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownSteamwheedlePort()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownMirageRaceway()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownAerisLanding()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownMidrealmPost()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownProtectorateWatchPost()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownDawnsReach()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownLightsTrust()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownGraniteSprings()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownVentureBay()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownScalawagPoint()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownBlackwatch()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownDoriansOutpost()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownKartaksHold()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownLakesideLanding()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownMistwhisperRefuge()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownSparktouchedHaven()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownSpearbornEncampment()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownDubraJin()
 		FinalFantasylization_NeutralTowns();
 	end
 	function FinalFantasylization_NeutralTownOgrila()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownTimbermawHold()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownDarrowshire()
 		FinalFantasylization_NeutralTowns();
-	end	
+	end
 	function FinalFantasylization_NeutralTownKirinVarVillage()
 		FinalFantasylization_NeutralTowns();
 	end
 
-	
 	--########################
 	-- ##   MISCELANEOUS ZONES
 	--########################
@@ -955,7 +986,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_HostileSong()
 			end
-	end	
+	end
 	function FinalFantasylization_MiscAreaRazorfenKraul()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -963,7 +994,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_HostileSong()
 			end
-	end	
+	end
 	function FinalFantasylization_MiscAreaWailingCaverns()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -971,7 +1002,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_HostileSong()
 			end
-	end	
+	end
 	function FinalFantasylization_MiscAreaTheDeadmines()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -979,10 +1010,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_HostileSong()
 			end
-	end	
+	end
 	function FinalFantasylization_MiscAreaDeeprunTram()
 		FinalFantasylization_ContestedSong()
-	end	
+	end
 	function FinalFantasylization_MiscAreaCavernsOfTime()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -990,9 +1021,8 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_ContestedSong()
 			end
-	end	
-	
-	
+	end
+
 	--########################
 	-- ##   EASTERN KINGDOMS ZONES
 	--########################
@@ -1043,7 +1073,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_ContestedSong()
 			end
-	end				
+	end
 	function FinalFantasylization_EasternKingdomsDunMorogh()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1052,14 +1082,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_FriendlySong()
 			end
 	end
-	function FinalFantasylization_EasternKingdomsDunMoroghHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_SnowSong()
-			else
-				FinalFantasylization_HostileSong()
-			end
-	end				
 	function FinalFantasylization_EasternKingdomsDuskwood()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1084,28 +1106,12 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_FriendlySong()
 			end
 	end
-	function FinalFantasylization_EasternKingdomsElwynnForestHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_ForestSong()
-			else
-				FinalFantasylization_HostileSong()
-			end
-	end
 	function FinalFantasylization_EasternKingdomsEversongWoods()
 		local x = math.random(1, 2);
 			if x == 1 then
 				FinalFantasylization_ForestSong()
 			else
 				FinalFantasylization_FriendlySong()
-			end
-	end				
-	function FinalFantasylization_EasternKingdomsEversongWoodsHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_ForestSong()
-			else
-				FinalFantasylization_HostileSong()
 			end
 	end
 	function FinalFantasylization_EasternKingdomsGhostlands()
@@ -1114,14 +1120,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_PlagueSong()
 			else
 				FinalFantasylization_FriendlySong()
-			end
-	end
-	function FinalFantasylization_EasternKingdomsGhostlandsHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_PlagueSong()
-			else
-				FinalFantasylization_HostileSong()
 			end
 	end
 	function FinalFantasylization_EasternKingdomsHillsbradFoothills()
@@ -1148,14 +1146,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_FriendlySong()
 			end
 	end
-	function FinalFantasylization_EasternKingdomsLochModanHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_SwampSong()
-			else
-				FinalFantasylization_HostileSong()
-			end
-	end
 	function FinalFantasylization_EasternKingdomsRedridgeMountains()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1163,7 +1153,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_ContestedSong()
 			end
-	end				
+	end
 	function FinalFantasylization_EasternKingdomsSearingGorge()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1178,14 +1168,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_ForestSong()
 			else
 				FinalFantasylization_FriendlySong()
-			end
-	end
-	function FinalFantasylization_EasternKingdomsSilverpineForestHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_ForestSong()
-			else
-				FinalFantasylization_HostileSong()
 			end
 	end
 	function FinalFantasylization_EasternKingdomsStranglethornVale()
@@ -1228,14 +1210,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_FriendlySong()
 			end
 	end
-	function FinalFantasylization_EasternKingdomsTirisfalGladesHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_ForestSong()
-			else
-				FinalFantasylization_HostileSong()
-			end
-	end
 	function FinalFantasylization_EasternKingdomsWesternPlaguelands()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1252,14 +1226,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_FriendlySong()
 			end
 	end
-	function FinalFantasylization_EasternKingdomsWestfallHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_SandSong()
-			else
-				FinalFantasylization_HostileSong()
-			end
-	end
 	function FinalFantasylization_EasternKingdomsWetlands()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1269,7 +1235,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			end
 	end
 
-					
 	--########################
 	-- ##   KALIMDOR ZONES
 	--########################
@@ -1297,14 +1262,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_FriendlySong()
 			end
 	end
-	function FinalFantasylization_KalimdorAzuremystIsleHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_PlagueSong()
-			else
-				FinalFantasylization_HostileSong()
-			end
-	end
 	function FinalFantasylization_KalimdorBloodmystIsle()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1313,28 +1270,12 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_FriendlySong()
 			end
 	end
-	function FinalFantasylization_KalimdorBloodmystIsleHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_PlagueSong()
-			else
-				FinalFantasylization_HostileSong()
-			end
-	end
 	function FinalFantasylization_KalimdorDarkshore()
 		local x = math.random(1, 2);
 			if x == 1 then
 				FinalFantasylization_PlagueSong()
 			else
 				FinalFantasylization_FriendlySong()
-			end
-	end
-	function FinalFantasylization_KalimdorDarkshoreHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_PlagueSong()
-			else
-				FinalFantasylization_HostileSong()
 			end
 	end
 	function FinalFantasylization_KalimdorDesolace()
@@ -1351,14 +1292,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_LandSong()
 			else
 				FinalFantasylization_FriendlySong()
-			end
-	end
-	function FinalFantasylization_KalimdorDurotarHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_LandSong()
-			else
-				FinalFantasylization_HostileSong()
 			end
 	end
 	function FinalFantasylization_KalimdorDustwallowMarsh()
@@ -1401,14 +1334,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_FriendlySong()
 			end
 	end
-	function FinalFantasylization_KalimdorMulgoreHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_ForestSong()
-			else
-				FinalFantasylization_HostileSong()
-			end
-	end
 	function FinalFantasylization_KalimdorSilithus()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1441,28 +1366,12 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_FriendlySong()
 			end
 	end
-	function FinalFantasylization_KalimdorTeldrassilHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_ForestSong()
-			else
-				FinalFantasylization_HostileSong()
-			end
-	end
 	function FinalFantasylization_KalimdorTheBarrens()
 		local x = math.random(1, 2);
 			if x == 1 then
 				FinalFantasylization_SandSong()
 			else
 				FinalFantasylization_FriendlySong()
-			end
-	end
-	function FinalFantasylization_KalimdorTheBarrensHostile()
-		local x = math.random(1, 2);
-			if x == 1 then
-				FinalFantasylization_SandSong()
-			else
-				FinalFantasylization_HostileSong()
 			end
 	end
 	function FinalFantasylization_KalimdorThousandNeedles()
@@ -1489,7 +1398,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_ContestedSong()
 			end
 	end
-
 
 	--########################
 	-- ##   OUTLAND ZONES
@@ -1551,7 +1459,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			end
 	end
 
-
 	--########################
 	-- ##   NORTHREND ZONES
 	--########################
@@ -1610,7 +1517,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_ContestedSong()
 			end
-	end		
+	end
 	function FinalFantasylization_NorthrendSholazarBasin()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1618,7 +1525,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_ContestedSong()
 			end
-	end		
+	end
 	function FinalFantasylization_NorthrendStormPeaks()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1626,10 +1533,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_ContestedSong()
 			end
-	end		
+	end
 	function FinalFantasylization_NorthrendWintergrasp()
 			FinalFantasylization_BattleGround()
-	end		
+	end
 	function FinalFantasylization_NorthrendZulDrak()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1637,12 +1544,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			else
 				FinalFantasylization_ContestedSong()
 			end
-	end		
+	end
 
 	--#############
 	-- ## PVP ZONES
 	--#############
-
 	function FinalFantasylization_FriendlySong()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1653,7 +1559,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Friendly2Song")
 			end
 	end
-
 	function FinalFantasylization_ContestedSong()
 		local x = math.random(1, 5);
 			if x == 1 then
@@ -1673,7 +1578,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Contested5Song")
 			end
 	end
-
 	function FinalFantasylization_HostileSong()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1688,7 +1592,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## ZONE SONGS
 	--#############
-
 	function FinalFantasylization_SnowSong()
 		local x = math.random(1, 3);
 			if x == 1 then
@@ -1702,7 +1605,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Snow3Song")
 			end
 	end
-
 	function FinalFantasylization_ForestSong()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1713,12 +1615,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Forest2Song")
 			end
 	end
-
 	function FinalFantasylization_SandSong()
 		FinalFantasylization_PlayMusic(S .. SandSong);
 		FinalFantasylization_debugMsg("SandSong")
 	end
-
 	function FinalFantasylization_PlagueSong()
 		local x = math.random(1, 3);
 			if x == 1 then
@@ -1732,7 +1632,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Plague3Song")
 			end
 	end
-
 	function FinalFantasylization_SwampSong()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1743,12 +1642,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Swamp2Song")
 			end
 	end
-
 	function FinalFantasylization_BeachSong()
 		FinalFantasylization_PlayMusic(S .. BeachSong);
 		FinalFantasylization_debugMsg("BeachSong")
 	end
-
 	function FinalFantasylization_LandSong()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1760,10 +1657,172 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 			end
 	end
 
+	--################
+	--## DUNGEON SONGS
+	--################
+		-- Vanilla WoW Dungeons
+	function FinalFantasylization_Dungeon_RagefireChasmSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_WailingCavernsSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_DeadminesSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_ShadowfangKeepSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_BlackfathomDeepsSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_StormwindStockadeSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_GnomereganSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_RazorfenKraulSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_ScarletMonasterySong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_RazorfenDownsSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_UldamanSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_ZulFarrakSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_MaraudonSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_TempleofAtalHakkarSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_BlackrockDepthsSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_LowerBlackrockSpireSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_UpperBlackrockSpireSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_DireMaulSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_StratholmeSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_ScholomanceSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+		-- Burning Crusade Dungeons
+	function FinalFantasylization_Dungeon_HellfireRampartsSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_BloodFurnaceSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_SlavePensSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_UnderbogSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_ManaTombsSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_AuchenaiCryptsSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_SethekkHallsSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_SteamvaultSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_ShatteredHallsSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_ShadowLabyrinthSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_EscapefromDurnholdeKeepSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_OpeningtheDarkPortalSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_BotanicaSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_ArcatrazSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_OpeningtheDarkPortalSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_MagistersTerraceSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+		-- Wrath of the Lich King Dungeons	
+	function FinalFantasylization_Dungeon_UtgardeKeepSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_TheNexusSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_AzjolNerubSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_AhnkahetTheOldKingdomSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_DrakTharonKeepSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_VioletHoldSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_GundrakSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_HallsofStoneSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_TheOculusSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_HallsofLightningSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_UtgardePinnacleSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_TheCullingofStratholmeSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_TrialoftheChampionSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_ForgeofSoulsSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_PitofSaronSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+	function FinalFantasylization_Dungeon_HallsofReflectionSong()
+		FinalFantasylization_PlayMusic(S .. ContestedSong);
+	end
+
 	--#############
 	-- ## RAID SONGS
 	--#############
-
 	function FinalFantasylization_RaidSong()
 		local x = math.random(1, 7);
 			if x == 1 then
@@ -1793,7 +1852,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## FANFARE
 	--#############
-
 	function FinalFantasylization_Fanfare()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -1808,7 +1866,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--################
 	-- ## FIGHTING SONGS
 	--################
-
 	function FinalFantasylization_WorldBoss()
 		local x = math.random(1, 6);
 			if x == 1 then
@@ -1831,7 +1888,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Boss6Song")
 			end
 	end
-
 	function FinalFantasylization_DungeonBoss()
 		local x = math.random(1, 6);
 			if x == 1 then
@@ -1854,7 +1910,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Boss6Song")
 			end
 	end
-
 	function FinalFantasylization_WorldElite()
 		local x = math.random(1, 6);
 			if x == 1 then
@@ -1877,7 +1932,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Boss6Song")
 			end
 	end
-
 	function FinalFantasylization_BattlegroundBoss()
 		local x = math.random(1, 6);
 			if x == 1 then
@@ -1900,7 +1954,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Boss6Song")
 			end
 	end
-
 	function FinalFantasylization_BattlegroundPVP()
 		local x = math.random(1, 8);
 			if x == 1 then
@@ -1929,7 +1982,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Fighting11Song")
 			end
 	end
-
 	function FinalFantasylization_WorldPVP()
 		local x = math.random(1, 8);
 			if x == 1 then
@@ -1958,7 +2010,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Fighting11Song")
 			end
 	end
-
 	function FinalFantasylization_WorldNormalPVE()
 		local x = math.random(1, 8);
 			if x == 1 then
@@ -1991,11 +2042,9 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## TOWN SONGS
 	--#############
-
 	function FinalFantasylization_HostileTowns()
 		FinalFantasylization_HostileSong();
 	end
-
 	function FinalFantasylization_NeutralTowns()
 		local x = math.random(1, 10);
 			if x == 1 then
@@ -2030,7 +2079,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Neutral10Town")
 			end
 	end
-
 	function FinalFantasylization_AllianceTowns()
 		local x = math.random(1, 11);
 			if x == 1 then
@@ -2068,7 +2116,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Alliance11Town")
 			end
 	end
-			
 	function FinalFantasylization_HordeTowns()
 		local x = math.random(1, 11);
 			if x == 1 then
@@ -2105,12 +2152,11 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_PlayMusic(S .. Horde11Town);
 				FinalFantasylization_debugMsg("Horde11Town")
 			end
-	end		
+	end
 
 	--###############
 	-- ## BATTLEGROUNDS
 	--###############
-
 	function FinalFantasylization_BattleGround()
 		local x = math.random(1, 7);
 			if x == 1 then
@@ -2140,7 +2186,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## DIE/DEAD
 	--#############
-
 	function FinalFantasylization_PlayerDie()
 		local x = math.random(1, 3);
 			if x == 1 then
@@ -2154,7 +2199,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Die3Song")
 			end
 	end
-
 	function FinalFantasylization_PlayerGhost()
 		local x = math.random(1, 7);
 			if x == 1 then
@@ -2184,7 +2228,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## SLEEPING
 	--#############
-
 	function FinalFantasylization_Sleeping()
 		local x = math.random(1, 6);
 			if x == 1 then
@@ -2211,7 +2254,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## SWIMMING
 	--#############
-
 	function FinalFantasylization_Swimming(Zone)
 		if Zone == 1 then
 			local x = math.random(1, 3);
@@ -2237,14 +2279,13 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				else 
 					FinalFantasylization_PlayMusic(S .. Swim3Song); -- Normal Swim song
 					FinalFantasylization_debugMsg("Swim3Song") -- Normal Swim song
-				end		
+				end
 		end
 	end
 
 	--#############
 	-- ## TAXI
 	--#############
-
 	function FinalFantasylization_HordeTaxi()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -2255,7 +2296,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Taxi2Song")
 			end
 	end
-	
 	function FinalFantasylization_AllianceTaxi()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -2270,7 +2310,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## FLYING
 	--#############
-	
 	function FinalFantasylization_HordeFlying()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -2281,7 +2320,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Flying2Song")
 			end
 	end
-	
 	function FinalFantasylization_AllianceFlying()
 		local x = math.random(1, 2);
 			if x == 1 then
@@ -2296,7 +2334,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	--#############
 	-- ## MOUNTED
 	--#############
-
 	function FinalFantasylization_Mounted()					
 		local x = math.random(1, 5);
 			if x == 1 then
@@ -2316,7 +2353,6 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_debugMsg("Mounted5Song")
 			end
 	end
-
 	function FinalFantasylization_MountedEscape()		
 		local x = math.random(1, 3);
 			if x == 1 then

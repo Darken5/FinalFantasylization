@@ -1,0 +1,13 @@
+## Interface: 30300
+## Version: 3.3.1
+## Title: FinalFantasylization 3.3.1
+## Notes: FinalFantasylization plays music and sounds based on different in-game events
+## Author: Hellfire and Darken5
+## SavedVariablesPerCharacter: FinalFantasylizationOptions, CoreSavedVariable
+
+embeds.xml
+
+Locales\Locales.xml
+FinalFantasylization.lua
+FinalFantasylizationOptions.lua
+FinalFantasylizationOptions.xml

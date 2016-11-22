@@ -59,7 +59,10 @@ function FinalFantasylizationUI_OnShow()
 	FinalFantasylizationUIFrame_MusicCheck:SetChecked(FinalFantasylizationOptions.Music)
 	FinalFantasylizationUIFrame_CombatCheck:SetChecked(FinalFantasylizationOptions.Combat)
 	FinalFantasylizationUIFrame_MountCheck:SetChecked(FinalFantasylizationOptions.Mount)
-	FinalFantasylizationUIFrame_DungeonCheck:SetChecked(FinalFantasylizationOptions.Instance)
+	FinalFantasylizationUIFrame_DungeonCheck:SetChecked(FinalFantasylizationOptions.Dungeon)
+	FinalFantasylizationUIFrame_RaidCheck:SetChecked(FinalFantasylizationOptions.Raid)
+	FinalFantasylizationUIFrame_BattlegroundCheck:SetChecked(FinalFantasylizationOptions.Battleground)
+	FinalFantasylizationUIFrame_DanceCheck:SetChecked(FinalFantasylizationOptions.Dance)
 	FinalFantasylizationUIFrame_SleepCheck:SetChecked(FinalFantasylizationOptions.Sleep)
 	FinalFantasylizationUIFrame_SwimCheck:SetChecked(FinalFantasylizationOptions.Swim)
 	FinalFantasylizationUIFrame_DeadCheck:SetChecked(FinalFantasylizationOptions.Dead)
@@ -67,6 +70,7 @@ function FinalFantasylizationUI_OnShow()
 	FinalFantasylizationUIFrame_CapitalCheck:SetChecked(FinalFantasylizationOptions.Capital)
 	FinalFantasylizationUIFrame_SoundCheck:SetChecked(FinalFantasylizationOptions.Sound)
 	FinalFantasylizationUIFrame_FanfareCheck:SetChecked(FinalFantasylizationOptions.Fanfare)
+	FinalFantasylizationUIFrame_ChocoboKwehCheck:SetChecked(FinalFantasylizationOptions.ChocoboKweh)
 	FinalFantasylizationUIFrame_LevelUpCheck:SetChecked(FinalFantasylizationOptions.LevelUp)
 	FinalFantasylizationUIFrame_DebugCheck:SetChecked(FinalFantasylizationOptions.Debug)
 	-- Also, save a copy of their current options so that they can be reset if the user clicks Cancel.
@@ -74,7 +78,10 @@ function FinalFantasylizationUI_OnShow()
 	FinalFantasylizationUICancelOptions.Music = FinalFantasylizationOptions.Music
 	FinalFantasylizationUICancelOptions.Combat = FinalFantasylizationOptions.Combat
 	FinalFantasylizationUICancelOptions.Mount = FinalFantasylizationOptions.Mount
-	FinalFantasylizationUICancelOptions.Dungeon = FinalFantasylizationOptions.Instance
+	FinalFantasylizationUICancelOptions.Dungeon = FinalFantasylizationOptions.Dungeon
+	FinalFantasylizationUICancelOptions.Raid = FinalFantasylizationOptions.Raid
+	FinalFantasylizationUICancelOptions.Battleground = FinalFantasylizationOptions.Battleground
+	FinalFantasylizationUICancelOptions.Dance = FinalFantasylizationOptions.Dance
 	FinalFantasylizationUICancelOptions.Sleep = FinalFantasylizationOptions.Sleep
 	FinalFantasylizationUICancelOptions.Swim = FinalFantasylizationOptions.Swim
 	FinalFantasylizationUICancelOptions.Dead = FinalFantasylizationOptions.Dead
@@ -82,6 +89,7 @@ function FinalFantasylizationUI_OnShow()
 	FinalFantasylizationUICancelOptions.Capital = FinalFantasylizationOptions.Capital
 	FinalFantasylizationUICancelOptions.Sound = FinalFantasylizationOptions.Sound
 	FinalFantasylizationUICancelOptions.Fanfare = FinalFantasylizationOptions.Fanfare
+	FinalFantasylizationUICancelOptions.ChocoboKweh = FinalFantasylizationOptions.ChocoboKweh
 	FinalFantasylizationUICancelOptions.LevelUp = FinalFantasylizationOptions.LevelUp
 	FinalFantasylizationUICancelOptions.Debug = FinalFantasylizationOptions.Debug
 end
@@ -91,8 +99,11 @@ function FinalFantasylizationUI_OnCancel()
 	FinalFantasylizationOptions.Enabled = FinalFantasylizationUICancelOptions.Enabled
 	FinalFantasylizationOptions.Music = FinalFantasylizationUICancelOptions.Music
 	FinalFantasylizationOptions.Combat = FinalFantasylizationUICancelOptions.Combat
-	FinalFantasylizationOptions.Mount = FinalFantasylizationUICancelOptions.Mound
-	FinalFantasylizationOptions.Instance = FinalFantasylizationUICancelOptions.Dungeon
+	FinalFantasylizationOptions.Mount = FinalFantasylizationUICancelOptions.Mount
+	FinalFantasylizationOptions.Dungeon = FinalFantasylizationUICancelOptions.Dungeon
+	FinalFantasylizationOptions.Raid = FinalFantasylizationUICancelOptions.Raid
+	FinalFantasylizationOptions.Battleground = FinalFantasylizationUICancelOptions.Battleground
+	FinalFantasylizationOptions.Dance = FinalFantasylizationUICancelOptions.Dance
 	FinalFantasylizationOptions.Sleep = FinalFantasylizationUICancelOptions.Sleep
 	FinalFantasylizationOptions.Swim = FinalFantasylizationUICancelOptions.Swim
 	FinalFantasylizationOptions.Dead = FinalFantasylizationUICancelOptions.Dead
@@ -100,6 +111,7 @@ function FinalFantasylizationUI_OnCancel()
 	FinalFantasylizationOptions.Capital = FinalFantasylizationUICancelOptions.Capital
 	FinalFantasylizationOptions.Sound = FinalFantasylizationUICancelOptions.Sound
 	FinalFantasylizationOptions.Fanfare = FinalFantasylizationUICancelOptions.Fanfare
+	FinalFantasylizationOptions.ChocoboKweh = FinalFantasylizationUICancelOptions.ChocoboKweh
 	FinalFantasylizationOptions.LevelUp = FinalFantasylizationUICancelOptions.LevelUp
 	FinalFantasylizationOptions.Debug = FinalFantasylizationUICancelOptions.Debug
 end
@@ -149,8 +161,17 @@ end
 function FinalFantasylizationUIFrame_DungeonCheck_OnClick()
 	FFZlib.ExecuteChatCommand("/ffs " .. DungeonCommand)
 end
+function FinalFantasylizationUIFrame_RaidCheck_OnClick()
+	FFZlib.ExecuteChatCommand("/ffs " .. RaidCommand)
+end
+function FinalFantasylizationUIFrame_BattlegroundCheck_OnClick()
+	FFZlib.ExecuteChatCommand("/ffs " .. BattlegroundCommand)
+end
 function FinalFantasylizationUIFrame_SleepCheck_OnClick()
 	FFZlib.ExecuteChatCommand("/ffs " .. SleepCommand)
+end
+function FinalFantasylizationUIFrame_DanceCheck_OnClick()
+	FFZlib.ExecuteChatCommand("/ffs " .. DanceCommand)
 end
 function FinalFantasylizationUIFrame_SwimCheck_OnClick()
 	FFZlib.ExecuteChatCommand("/ffs " .. SwimCommand)
@@ -170,6 +191,9 @@ end
 function FinalFantasylizationUIFrame_FanfareCheck_OnClick()
 	FFZlib.ExecuteChatCommand("/ffs " .. FanfareCommand)
 end
+function FinalFantasylizationUIFrame_ChocoboKwehCheck_OnClick()
+	FFZlib.ExecuteChatCommand("/ffs " .. ChocoboKwehCommand)
+end
 function FinalFantasylizationUIFrame_LevelUpCheck_OnClick()
 	FFZlib.ExecuteChatCommand("/ffs " .. LevelUpCommand)
 end
@@ -183,13 +207,17 @@ function FinalFantasylizationUIFrame_EnableAll_Button_OnClick()
 	FinalFantasylizationUIFrame_CombatCheck:SetChecked(true);
 	FinalFantasylizationUIFrame_MountCheck:SetChecked(true);
 	FinalFantasylizationUIFrame_DungeonCheck:SetChecked(true);
+	FinalFantasylizationUIFrame_RaidCheck:SetChecked(true);
+	FinalFantasylizationUIFrame_BattlegroundCheck:SetChecked(true);
 	FinalFantasylizationUIFrame_SleepCheck:SetChecked(true);
+	FinalFantasylizationUIFrame_DanceCheck:SetChecked(true);
 	FinalFantasylizationUIFrame_SwimCheck:SetChecked(true);
 	FinalFantasylizationUIFrame_DeadCheck:SetChecked(true);
 	FinalFantasylizationUIFrame_FlightCheck:SetChecked(true);
 	FinalFantasylizationUIFrame_CapitalCheck:SetChecked(true);
 	FinalFantasylizationUIFrame_SoundCheck:SetChecked(true);
 	FinalFantasylizationUIFrame_FanfareCheck:SetChecked(true);
+	FinalFantasylizationUIFrame_ChocoboKwehCheck:SetChecked(true);
 	FinalFantasylizationUIFrame_LevelUpCheck:SetChecked(true);
 	FinalFantasylization_ClearMusicState();
 	FinalFantasylization_GetMusic()
@@ -200,13 +228,17 @@ function FinalFantasylizationUIFrame_DisableAll_Button_OnClick()
 	FinalFantasylizationUIFrame_CombatCheck:SetChecked(false);
 	FinalFantasylizationUIFrame_MountCheck:SetChecked(false);
 	FinalFantasylizationUIFrame_DungeonCheck:SetChecked(false);
+	FinalFantasylizationUIFrame_RaidCheck:SetChecked(false);
+	FinalFantasylizationUIFrame_BattlegroundCheck:SetChecked(false);
 	FinalFantasylizationUIFrame_SleepCheck:SetChecked(false);
+	FinalFantasylizationUIFrame_DanceCheck:SetChecked(false);
 	FinalFantasylizationUIFrame_SwimCheck:SetChecked(false);
 	FinalFantasylizationUIFrame_DeadCheck:SetChecked(false);
 	FinalFantasylizationUIFrame_FlightCheck:SetChecked(false);
 	FinalFantasylizationUIFrame_CapitalCheck:SetChecked(false);
 	FinalFantasylizationUIFrame_SoundCheck:SetChecked(false);
 	FinalFantasylizationUIFrame_FanfareCheck:SetChecked(false);
+	FinalFantasylizationUIFrame_ChocoboKwehCheck:SetChecked(false);
 	FinalFantasylizationUIFrame_LevelUpCheck:SetChecked(false);
 	StopMusic()
 	FinalFantasylization_ClearMusicState();
@@ -632,7 +664,7 @@ FinalFantasylizationDropDownMenu.initialize = function(self, level)
 			info.text = FinalFantasylizationUIFrame_DungeonCheck_Text
 			info.hasArrow = nil
 			info.notCheckable = nil
-			info.checked = FinalFantasylizationOptions.Instance
+			info.checked = FinalFantasylizationOptions.Dungeon
 			info.func = function() FinalFantasylizationUIFrame_DungeonCheck_OnClick() end
             UIDropDownMenu_AddButton(info, level)
 				-- Sleep Toggle

@@ -175,7 +175,7 @@
 		<Frames>
 			<!-- Enable -->
 			<CheckButton name="FinalFantasylizationUIFrame_EnableCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-				<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="5" y="-115" /></Offset></Anchor></Anchors>
+				<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="5" y="-110" /></Offset></Anchor></Anchors>
 				<Layers><Layer level="ARTWORK">
 					<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_EnableCheck_Text" />
 				</Layer></Layers>
@@ -184,15 +184,39 @@
 			
 				<!-- Music Toggles -->
 				<CheckButton name="FinalFantasylizationUIFrame_MusicCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-					<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="25" y="-140" /></Offset></Anchor></Anchors>
+					<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="25" y="-135" /></Offset></Anchor></Anchors>
 					<Layers><Layer level="ARTWORK">
 						<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_MusicCheck_Text" />
 					</Layer></Layers>
 					<Scripts><OnClick>FinalFantasylizationUIFrame_MusicCheck_OnClick()</OnClick></Scripts>
 				</CheckButton>
 
+					<CheckButton name="FinalFantasylizationUIFrame_CapitalCheck" inherits="FinalFantasylizationUICheckboxTemplate">
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-160" /></Offset></Anchor></Anchors>
+						<Layers><Layer level="ARTWORK">
+							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_CapitalCheck_Text" />
+						</Layer></Layers>
+						<Scripts><OnClick>FinalFantasylizationUIFrame_CapitalCheck_OnClick()</OnClick></Scripts>
+					</CheckButton>
+					
+					<CheckButton name="FinalFantasylizationUIFrame_SleepCheck" inherits="FinalFantasylizationUICheckboxTemplate">
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-180" /></Offset></Anchor></Anchors>
+						<Layers><Layer level="ARTWORK">
+							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_SleepCheck_Text" />
+						</Layer></Layers>
+						<Scripts><OnClick>FinalFantasylizationUIFrame_SleepCheck_OnClick()</OnClick></Scripts>
+					</CheckButton>
+					
+					<CheckButton name="FinalFantasylizationUIFrame_DanceCheck" inherits="FinalFantasylizationUICheckboxTemplate">
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-200" /></Offset></Anchor></Anchors>
+						<Layers><Layer level="ARTWORK">
+							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_DanceCheck_Text" />
+						</Layer></Layers>
+						<Scripts><OnClick>FinalFantasylizationUIFrame_DanceCheck_OnClick()</OnClick></Scripts>
+					</CheckButton>
+					
 					<CheckButton name="FinalFantasylizationUIFrame_CombatCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-165" /></Offset></Anchor></Anchors>
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-220" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_CombatCheck_Text" />
 						</Layer></Layers>
@@ -200,31 +224,23 @@
 					</CheckButton>
 
 					<CheckButton name="FinalFantasylizationUIFrame_MountCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-190" /></Offset></Anchor></Anchors>
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-240" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_MountCheck_Text" />
 						</Layer></Layers>
 						<Scripts><OnClick>FinalFantasylizationUIFrame_MountCheck_OnClick()</OnClick></Scripts>
-					</CheckButton>					
-
-					<CheckButton name="FinalFantasylizationUIFrame_DungeonCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-215" /></Offset></Anchor></Anchors>
-						<Layers><Layer level="ARTWORK">
-							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_DungeonCheck_Text" />
-						</Layer></Layers>
-						<Scripts><OnClick>FinalFantasylizationUIFrame_DungeonCheck_OnClick()</OnClick></Scripts>
 					</CheckButton>
 					
-					<CheckButton name="FinalFantasylizationUIFrame_SleepCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-240" /></Offset></Anchor></Anchors>
+					<CheckButton name="FinalFantasylizationUIFrame_FlightCheck" inherits="FinalFantasylizationUICheckboxTemplate">
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-260" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
-							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_SleepCheck_Text" />
+							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_FlightCheck_Text" />
 						</Layer></Layers>
-						<Scripts><OnClick>FinalFantasylizationUIFrame_SleepCheck_OnClick()</OnClick></Scripts>
+						<Scripts><OnClick>FinalFantasylizationUIFrame_FlightCheck_OnClick()</OnClick></Scripts>
 					</CheckButton>
 					
 					<CheckButton name="FinalFantasylizationUIFrame_SwimCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-265" /></Offset></Anchor></Anchors>
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-280" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_SwimCheck_Text" />
 						</Layer></Layers>
@@ -232,32 +248,41 @@
 					</CheckButton>
 					
 					<CheckButton name="FinalFantasylizationUIFrame_DeadCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-290" /></Offset></Anchor></Anchors>
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-300" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_DeadCheck_Text" />
 						</Layer></Layers>
 						<Scripts><OnClick>FinalFantasylizationUIFrame_DeadCheck_OnClick()</OnClick></Scripts>
 					</CheckButton>
 					
-					<CheckButton name="FinalFantasylizationUIFrame_FlightCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-315" /></Offset></Anchor></Anchors>
+					<CheckButton name="FinalFantasylizationUIFrame_DungeonCheck" inherits="FinalFantasylizationUICheckboxTemplate">
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-320" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
-							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_FlightCheck_Text" />
+							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_DungeonCheck_Text" />
 						</Layer></Layers>
-						<Scripts><OnClick>FinalFantasylizationUIFrame_FlightCheck_OnClick()</OnClick></Scripts>
+						<Scripts><OnClick>FinalFantasylizationUIFrame_DungeonCheck_OnClick()</OnClick></Scripts>
 					</CheckButton>
 					
-					<CheckButton name="FinalFantasylizationUIFrame_CapitalCheck" inherits="FinalFantasylizationUICheckboxTemplate">
+					<CheckButton name="FinalFantasylizationUIFrame_RaidCheck" inherits="FinalFantasylizationUICheckboxTemplate">
 						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-340" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
-							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_CapitalCheck_Text" />
+							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_RaidCheck_Text" />
 						</Layer></Layers>
-						<Scripts><OnClick>FinalFantasylizationUIFrame_CapitalCheck_OnClick()</OnClick></Scripts>
+						<Scripts><OnClick>FinalFantasylizationUIFrame_RaidCheck_OnClick()</OnClick></Scripts>
 					</CheckButton>
+					
+					<CheckButton name="FinalFantasylizationUIFrame_BattlegroundCheck" inherits="FinalFantasylizationUICheckboxTemplate">
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="35" y="-360" /></Offset></Anchor></Anchors>
+						<Layers><Layer level="ARTWORK">
+							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_BattlegroundCheck_Text" />
+						</Layer></Layers>
+						<Scripts><OnClick>FinalFantasylizationUIFrame_BattlegroundCheck_OnClick()</OnClick></Scripts>
+					</CheckButton>
+					
 					
 				<!-- Sound Toggles -->
 				<CheckButton name="FinalFantasylizationUIFrame_SoundCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-					<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="230" y="-140" /></Offset></Anchor></Anchors>
+					<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="230" y="-135" /></Offset></Anchor></Anchors>
 					<Layers><Layer level="ARTWORK">
 						<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_SoundCheck_Text" />
 					</Layer></Layers>
@@ -265,15 +290,23 @@
 				</CheckButton>
 
 					<CheckButton name="FinalFantasylizationUIFrame_FanfareCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="245" y="-165" /></Offset></Anchor></Anchors>
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="245" y="-160" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_FanfareCheck_Text" />
 						</Layer></Layers>
 						<Scripts><OnClick>FinalFantasylizationUIFrame_FanfareCheck_OnClick()</OnClick></Scripts>
 					</CheckButton>
 					
+					<CheckButton name="FinalFantasylizationUIFrame_ChocoboKwehCheck" inherits="FinalFantasylizationUICheckboxTemplate">
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="245" y="-180" /></Offset></Anchor></Anchors>
+						<Layers><Layer level="ARTWORK">
+							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_ChocoboKwehCheck_Text" />
+						</Layer></Layers>
+						<Scripts><OnClick>FinalFantasylizationUIFrame_ChocoboKwehCheck_OnClick()</OnClick></Scripts>
+					</CheckButton>
+					
 					<CheckButton name="FinalFantasylizationUIFrame_LevelUpCheck" inherits="FinalFantasylizationUICheckboxTemplate">
-						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="245" y="-190" /></Offset></Anchor></Anchors>
+						<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="245" y="-200" /></Offset></Anchor></Anchors>
 						<Layers><Layer level="ARTWORK">
 							<FontString name="$parent_Label" inherits="FinalFantasylizationUICheckboxLabelTemplate" text="FinalFantasylizationUIFrame_LevelUpCheck_Text" />
 						</Layer></Layers>

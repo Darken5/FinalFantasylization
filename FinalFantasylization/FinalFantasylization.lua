@@ -1,5 +1,5 @@
 ﻿-- FinalFantasylization  by Hellfox and Darken5
--- Version 3.2.8
+-- Version 3.3.1
 ------------------------------------------------------------
 
 -- FinalFantasylization requires this version of FFZlib:
@@ -181,21 +181,21 @@ function FinalFantasylization_ClearMusicState()
 	-- Horde Towns --
 	FinalFantasylization_InHordeTownAgmarsHammer = false
 	FinalFantasylization_InHordeTownApothecaryCamp = false	
-	FinalFantasylization_InHordeTownBloodhoofVillage = false --' Horde Territory
+	FinalFantasylization_InHordeTownBloodhoofVillage = false
 	FinalFantasylization_InHordeTownBloodvenomPost = false
 	FinalFantasylization_InHordeTownBrackenwallVillage = false
-	FinalFantasylization_InHordeTownBrill = false --' Horde Territory
+	FinalFantasylization_InHordeTownBrill = false
 	FinalFantasylization_InHordeTownBorgorokOutpost = false	
 	FinalFantasylization_InHordeTownCampMojache = false
 	FinalFantasylization_InHordeTownCampOneqwah = false
-	FinalFantasylization_InHordeTownCampTaurajo = false --' Horde Territory
+	FinalFantasylization_InHordeTownCampTaurajo = false
 	FinalFantasylization_InHordeTownCampTunkalo = false
 	FinalFantasylization_InHordeTownCampWinterhoof = false
 	FinalFantasylization_InHordeTownConquestHold = false
-	FinalFantasylization_InHordeTownCrossroads = false --' Horde Territory
-	FinalFantasylization_InHordeTownFairbreezeVillage = false --' Horde Territory
+	FinalFantasylization_InHordeTownCrossroads = false
+	FinalFantasylization_InHordeTownFairbreezeVillage = false
 	FinalFantasylization_InHordeTownFalconWatch = false
-	FinalFantasylization_InHordeTownFalconwingSquare = false --' Horde Territory
+	FinalFantasylization_InHordeTownFalconwingSquare = false
 	FinalFantasylization_InHordeTownFlameCrest = false
 	FinalFantasylization_InHordeTownFreewindPost = false
 	FinalFantasylization_InHordeTownGaradar = false
@@ -206,10 +206,10 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InHordeTownKorkronVanguard = false
 	FinalFantasylization_InHordeTownMokNathalVillage = false
 	FinalFantasylization_InHordeTownNewAgamand = false
-	FinalFantasylization_InHordeTownRazorHill = false --' Horde Territory
+	FinalFantasylization_InHordeTownRazorHill = false
 	FinalFantasylization_InHordeTownRevantuskVillage = false
-	FinalFantasylization_InHordeTownSenjinVillage = false --' Horde Territory
-	FinalFantasylization_InHordeTownSepulcher = false --' Horde Territory
+	FinalFantasylization_InHordeTownSenjinVillage = false
+	FinalFantasylization_InHordeTownSepulcher = false
 	FinalFantasylization_InHordeTownShadowmoonVillage = false
 	FinalFantasylization_InHordeTownShadowpreyVillage = false
 	FinalFantasylization_InHordeTownSplintertreePost = false
@@ -222,7 +222,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InHordeTownTaunkaleVillage = false
 	FinalFantasylization_InHordeTownThrallmar = false
 	FinalFantasylization_InHordeTownThunderlordStronghold = false
-	FinalFantasylization_InHordeTownTranquillien = false --' Horde Territory
+	FinalFantasylization_InHordeTownTranquillien = false
 	FinalFantasylization_InHordeTownValormok = false
 	FinalFantasylization_InHordeTownVengeanceLanding = false
 	FinalFantasylization_InHordeTownVenomspite = false
@@ -235,12 +235,13 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InAllianceTownAllerianStronghold = false
 	FinalFantasylization_InAllianceTownAmberpineLodge = false
 	FinalFantasylization_InAllianceTownAstranaar = false
-	FinalFantasylization_InAllianceTownAuberdine = false --' Alliance Territory
-	FinalFantasylization_InAllianceTownAzureWatch = false --' Alliance Territory
-	FinalFantasylization_InAllianceTownBloodWatch = false --' Alliance Territory
+	FinalFantasylization_InAllianceTownAuberdine = false
+	FinalFantasylization_InAllianceTownAzureWatch = false
+	FinalFantasylization_InAllianceTownBloodWatch = false
+	FinalFantasylization_InAllianceTownBrackwellPumpkinPatch = false
 	FinalFantasylization_InAllianceTownChillwindCamp = false
 	FinalFantasylization_InAllianceTownDarkshire = false
-	FinalFantasylization_InAllianceTownDolanaar = false --' Alliance Territory
+	FinalFantasylization_InAllianceTownDolanaar = false
 	FinalFantasylization_InAllianceTownExplorersLeagueOutpost = false
 	FinalFantasylization_InAllianceTownFeathermoonStronghold = false
 	FinalFantasylization_InAllianceTownFizzcrankAirstrip = false
@@ -248,9 +249,9 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InAllianceTownForestSong = false
 	FinalFantasylization_InAllianceTownFortWildervar = false
 	FinalFantasylization_InAllianceTownFrosthold = false
-	FinalFantasylization_InAllianceTownGoldshire = false --' Alliance Territory
+	FinalFantasylization_InAllianceTownGoldshire = false
 	FinalFantasylization_InAllianceTownHonorHold = false
-	FinalFantasylization_InAllianceTownKharanos = false --' Alliance Territory
+	FinalFantasylization_InAllianceTownKharanos = false
 	FinalFantasylization_InAllianceTownLakeshire = false
 	FinalFantasylization_InAllianceTownMenethilHarbor = false
 	FinalFantasylization_InAllianceTownMorgansVigil = false
@@ -259,9 +260,11 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InAllianceTownOreborHarborage = false
 	FinalFantasylization_InAllianceTownRebelCamp = false
 	FinalFantasylization_InAllianceTownRefugePointe = false
-	FinalFantasylization_InAllianceTownSentinelHill = false --' Alliance Territory
+	FinalFantasylization_InAllianceTownSentinelHill = false
 	FinalFantasylization_InAllianceTownSouthshore = false
 	FinalFantasylization_InAllianceTownStarsRest = false
+	FinalFantasylization_InAllianceTownSteelgrillsDepot = false
+	FinalFantasylization_InAllianceTownStonefieldFarm = false
 	FinalFantasylization_InAllianceTownStonetalonPeak = false
 	FinalFantasylization_InAllianceTownSylvanaar = false
 	FinalFantasylization_InAllianceTownTalonbranchGlade = false
@@ -270,7 +273,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InAllianceTownTelredor = false
 	FinalFantasylization_InAllianceTownTempleOfTelhamat = false
 	FinalFantasylization_InAllianceTownThalanaar = false
-	FinalFantasylization_InAllianceTownThelsamar = false --' Alliance Territory
+	FinalFantasylization_InAllianceTownThelsamar = false
 	FinalFantasylization_InAllianceTownTheramoreIsle = false
 	FinalFantasylization_InAllianceTownToshleysStation = false
 	FinalFantasylization_InAllianceTownValianceKeep = false
@@ -313,6 +316,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InNeutralTownMoakiHarbor = false
 	FinalFantasylization_InNeutralTownMudsprocket = false
 	FinalFantasylization_InNeutralTownNesingwaryBaseCamp = false
+	FinalFantasylization_InNeutralTownNesingwaryExpedition = false
 	FinalFantasylization_InNeutralTownNighthaven = false
 	FinalFantasylization_InNeutralTownRainspeakerCanopy = false  -- at odds with the Frenzyheart Tribe in Frenzyheart Hill
 	FinalFantasylization_InNeutralTownRiversHeart = false
@@ -424,7 +428,8 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InMiscAreaRazorfenKraul = false	-- area directly before Razorfen Kraul instance.
 	FinalFantasylization_InMiscAreaRazorfenDowns = false    -- area before the instance
 	FinalFantasylization_InMiscAreaWailingCaverns = false	-- cave before instance
-	FinalFantasylization_InMiscAreaTheDeadmines = false	-- cave before instance
+	FinalFantasylization_InMiscAreaTheDeadmines = false		-- cave before instance
+	FinalFantasylization_InMiscAreaGnomeregan = false		-- area before the instance
 	FinalFantasylization_InMiscAreaDeeprunTram = false
 	FinalFantasylization_InMiscEbonHold = false
 	FinalFantasylization_InMiscAreaCavernsOfTime = false
@@ -503,7 +508,7 @@ function FinalFantasylization_Command(Command)
 			FFZlib.Message(FFZlib.Color.Yellow .. SoundOnMessage)
 		end
 	elseif Lower == DungeonCommand then
-		if FinalFantasylizationOptions.Instance == true then
+		if FinalFantasylizationOptions.Dungeon == true then
 			FinalFantasylizationEnableDungeon(false)
 			FFZlib.Message(FFZlib.Color.Yellow .. DungeonOffMessage)
 		else
@@ -582,6 +587,38 @@ function FinalFantasylization_Command(Command)
 			FinalFantasylizationEnableLevelUp(true)
 			FFZlib.Message(FFZlib.Color.Yellow .. LevelUpOnMessage)
 		end
+		elseif Lower == RaidCommand then
+		if FinalFantasylizationOptions.Raid == true then
+			FinalFantasylizationEnableRaid(false)
+			FFZlib.Message(FFZlib.Color.Yellow .. RaidOffMessage)
+		else
+			FinalFantasylizationEnableRaid(true)
+			FFZlib.Message(FFZlib.Color.Yellow .. RaidOnMessage)
+		end
+	elseif Lower == DanceCommand then
+		if FinalFantasylizationOptions.Dance == true then
+			FinalFantasylizationEnableDance(false)
+			FFZlib.Message(FFZlib.Color.Yellow .. DanceOffMessage)
+		else
+			FinalFantasylizationEnableDance(true)
+			FFZlib.Message(FFZlib.Color.Yellow .. DanceOnMessage)
+		end
+	elseif Lower == ChocoboKwehCommand then
+		if FinalFantasylizationOptions.ChocoboKweh == true then
+			FinalFantasylizationEnableChocoboKweh(false)
+			FFZlib.Message(FFZlib.Color.Yellow .. ChocoboKwehOffMessage)
+		else
+			FinalFantasylizationEnableChocoboKweh(true)
+			FFZlib.Message(FFZlib.Color.Yellow .. ChocoboKwehOnMessage)
+		end
+	elseif Lower == BattlegroundCommand then
+		if FinalFantasylizationOptions.Battleground == true then
+			FinalFantasylizationEnableBattleground(false)
+			FFZlib.Message(FFZlib.Color.Yellow .. BattlegroundOffMessage)
+		else
+			FinalFantasylizationEnableBattleground(true)
+			FFZlib.Message(FFZlib.Color.Yellow .. BattlegroundOnMessage)
+		end
 	elseif Lower == TestCommand then
 		ZoneName = GetRealZoneText();
 		MinimapZoneName = GetMinimapZoneText()  
@@ -637,13 +674,12 @@ end
 
 function FinalFantasylizationEnable(Enabled)
 	FFZlib.Assert(Enabled == true or Enabled == false, "New value should be true or false.")
+	FinalFantasylizationOptions.Enabled = Enabled
 	if Enabled == true then
-		FinalFantasylizationOptions.Enabled = Enabled
 		FinalFantasylization_ClearMusicState()
 		FinalFantasylization_debugMsg(FFZlib.Color.Red .. "FinalFantasylizationEnable...")
-		FinalFantasylization_GetMusic()
-	else
-		FinalFantasylizationOptions.Enabled = Enabled
+		onUpdate()
+	elseif Enabled == false then
 		StopMusic()
 		FinalFantasylization_ClearMusicState()
 	end
@@ -652,6 +688,13 @@ end
 function FinalFantasylizationEnableMusic(Music)
 	FFZlib.Assert(Music == true or Music == false, "New value should be true or false.")
 	FinalFantasylizationOptions.Music = Music
+	if Music == false then StopMusic() end
+	FinalFantasylization_ClearMusicState()
+end
+
+function FinalFantasylizationEnableDance(Dance)
+	FFZlib.Assert(Dance == true or Dance == false, "New value should be true or false.")
+	FinalFantasylizationOptions.Dance = Dance
 	FinalFantasylization_ClearMusicState()
 end
 	
@@ -669,37 +712,57 @@ end
 	
 function FinalFantasylizationEnableDungeon(Dungeon)
 	FFZlib.Assert(Dungeon == true or Dungeon == false, "New value should be true or false.")
-	FinalFantasylizationOptions.Instance = Dungeon
+	FinalFantasylizationOptions.Dungeon = Dungeon
+	if Dungeon == false then StopMusic() end
+	FinalFantasylization_ClearMusicState()
+end
+
+function FinalFantasylizationEnableRaid(Raid)
+	FFZlib.Assert(Raid == true or Raid == false, "New value should be true or false.")
+	FinalFantasylizationOptions.Raid = Raid
+	if Raid == false then StopMusic() end
+	FinalFantasylization_ClearMusicState()
+end
+
+function FinalFantasylizationEnableBattleground(Battleground)
+	FFZlib.Assert(Battleground == true or Battleground == false, "New value should be true or false.")
+	FinalFantasylizationOptions.Battleground = Battleground
+	if Battleground == false then StopMusic() end
 	FinalFantasylization_ClearMusicState()
 end
 
 function FinalFantasylizationEnableSleep(Sleep)
 	FFZlib.Assert(Sleep == true or Sleep == false, "New value should be true or false.")
 	FinalFantasylizationOptions.Sleep = Sleep
+	if Sleep == false then StopMusic() end
 	FinalFantasylization_ClearMusicState()
 end
 
 function FinalFantasylizationEnableSwim(Swim)
 	FFZlib.Assert(Swim == true or Swim == false, "New value should be true or false.")
 	FinalFantasylizationOptions.Swim = Swim
+	if Swim == false then StopMusic() end
 	FinalFantasylization_ClearMusicState()
 end
 
 function FinalFantasylizationEnableDead(Dead)
 	FFZlib.Assert(Dead == true or Dead == false, "New value should be true or false.")
 	FinalFantasylizationOptions.Dead = Dead
+	if Dead == false then StopMusic() end
 	FinalFantasylization_ClearMusicState()
 end
 
 function FinalFantasylizationEnableFlight(Flight)
 	FFZlib.Assert(Flight == true or Flight == false, "New value should be true or false.")
 	FinalFantasylizationOptions.Flight = Flight
+	if Flight == false then StopMusic() end
 	FinalFantasylization_ClearMusicState()
 end
 
 function FinalFantasylizationEnableCapital(Capital)
 	FFZlib.Assert(Capital == true or Capital == false, "New value should be true or false.")
 	FinalFantasylizationOptions.Capital = Capital
+	if Capital == false then StopMusic() end
 	FinalFantasylization_ClearMusicState()
 end
 	
@@ -712,6 +775,12 @@ end
 function FinalFantasylizationEnableFanfare(Fanfare)
 	FFZlib.Assert(Fanfare == true or Fanfare == false, "New value should be true or false.")
 	FinalFantasylizationOptions.Fanfare = Fanfare
+	FinalFantasylization_ClearMusicState()
+end
+
+function FinalFantasylizationEnableChocoboKweh(ChocoboKweh)
+	FFZlib.Assert(ChocoboKweh == true or ChocoboKweh == false, "New value should be true or false.")
+	FinalFantasylizationOptions.ChocoboKweh = ChocoboKweh
 	FinalFantasylization_ClearMusicState()
 end
 
@@ -880,7 +949,7 @@ function FinalFantasylization_GetMusic()
 							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatBGBoss .. name)
 							FinalFantasylization_BattlegroundBoss()
 						elseif UnitIsPlayer("target") and UnitIsEnemy("player", "target") and UnitHealth("target") > 0 then
-							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVP)
+							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatBGPVP)
 							FinalFantasylization_BattlegroundPVP()
 						end
 					end
@@ -888,7 +957,7 @@ function FinalFantasylization_GetMusic()
 					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldBoss .. name)
 					FinalFantasylization_WorldBoss()
 				elseif 	UnitIsPlayer("target") and UnitIsEnemy("player", "target") and UnitHealth("target") > 0 then
-					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatBGPVP)
+					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVP)
 					FinalFantasylization_WorldPVP()
 				else
 					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVE)
@@ -915,7 +984,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_PlayerIsHostileMounting = false
 		end
 --'==========================================================================================		
---'  World event: Player in Flying Mount
+--'  World event: Player on Flying Mount "Horde and Alliance Varyiant"
 --'==========================================================================================
 		if IsFlying() and (  factionEnglish == F["Horde"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Flight == true then
 			if FinalFantasylization_PlayerIsFlying == false then 
@@ -1127,7 +1196,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InStarterAreaShadowglen = false
 		end
 --'==========================================================================================		
---' Starting Areas: Acherus: The Ebon Hold : DEATH KNIGHTS STARTING AREA
+--' Starting Areas: Acherus: The Ebon Hold ( Death Knight Starting Area )
 --'==========================================================================================
 		if ( ZoneName == Z["Plaguelands: The Scarlet Enclave"] ) and ( ( SubZoneName == SZ["Acherus: The Ebon Hold"] ) or ( SubZoneName == SZ["The Heart of Acherus"] ) or ( SubZoneName == SZ["Hall of Command"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InMiscEbonHold == false then
@@ -1376,7 +1445,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InCityDalaran = false
 		end
 --'==========================================================================================		
---' Neutral Capital Cities: Acherus: The Ebon Hold
+--' Neutral Capital Cities: Acherus: The Ebon Hold, Eastern Plaguelands
 --'==========================================================================================
 		if ( ZoneName == Z["Eastern Plaguelands"] ) and ( SubZoneName == SZ["Acherus: The Ebon Hold"] ) and FinalFantasylizationOptions.Capital == true and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InCityEbonHold == false then
@@ -1493,7 +1562,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InHordeTownApothecaryCamp = false
 		end
 --'==========================================================================================		
---' Horde Towns: Bloodhoof Village, Mulgore : HORDE TERRITORY
+--' Horde Towns: Bloodhoof Village, Mulgore
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Mulgore"] ) and ( SubZoneName == SZ["Bloodhoof Village"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownBloodhoofVillage == false then
@@ -1550,7 +1619,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InHordeTownBrackenwallVillage = false
 		end
 --'==========================================================================================		
---' Horde Towns: Brill, Tirisfal Glades : HORDE TERRITORY
+--' Horde Towns: Brill, Tirisfal Glades
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Tirisfal Glades"] ) and ( ( SubZoneName == SZ["Brill"] ) or ( SubZoneName == SZ["Brill Town Hall"] ) )and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownBrill == false then
@@ -1626,7 +1695,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InHordeTownCampOneqwah = false
 		end
 --'==========================================================================================		
---' Horde Towns: Camp Taurajo, The Barrens : HORDE TERRITORY
+--' Horde Towns: Camp Taurajo, The Barrens
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["The Barrens"] ) and ( SubZoneName == SZ["Camp Taurajo"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownCampTaurajo == false then
@@ -1702,7 +1771,26 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InHordeTownConquestHold = false
 		end
 --'==========================================================================================		
---' Horde Towns: Fairbreeze Village, Eversong Woods : HORDE TERRITORY
+--' Horde Towns: The Crossroads, The Barrens
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["The Barrens"] ) and ( SubZoneName == SZ["The Crossroads"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InHordeTownCrossroads == false then
+				if ( factionEnglish == F["Horde"] ) then
+					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+					FinalFantasylization_HordeTownCrossroads()
+				else
+					FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName..PlayerInHostile)
+					FinalFantasylization_HostileTowns() -- Music call for all towns you are hostile in.
+				end
+				FinalFantasylization_IsPlaying = true
+				FinalFantasylization_InHordeTownCrossroads = true
+			end
+			return
+		else
+			FinalFantasylization_InHordeTownCrossroads = false
+		end
+--'==========================================================================================		
+--' Horde Towns: Fairbreeze Village, Eversong Woods
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Eversong Woods"] ) and ( SubZoneName == SZ["Fairbreeze Village"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownFairbreezeVillage == false then
@@ -1740,7 +1828,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InHordeTownFalconWatch = false
 		end
 --'==========================================================================================		
---' Horde Towns: Falconwing Square, Eversong Woods : HORDE TERRITORY
+--' Horde Towns: Falconwing Square, Eversong Woods
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Eversong Woods"] ) and ( SubZoneName == SZ["Falconwing Square"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownFalconwingSquare == false then
@@ -1968,7 +2056,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InHordeTownNewAgamand = false
 		end
 --'==========================================================================================		
---' Horde Towns: Razor Hill, Durotar : HORDE TERRITORY
+--' Horde Towns: Razor Hill, Durotar
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Durotar"] ) and ( SubZoneName == SZ["Razor Hill"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownRazorHill == false then
@@ -2006,7 +2094,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InHordeTownRevantuskVillage = false
 		end
 --'==========================================================================================		
---' Horde Towns: Sen'jin Village, Durotar : HORDE TERRITORY
+--' Horde Towns: Sen'jin Village, Durotar
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Durotar"] ) and ( SubZoneName == SZ["Sen'jin Village"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownSenjinVillage == false then
@@ -2025,7 +2113,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InHordeTownSenjinVillage = false
 		end
 --'==========================================================================================		
---' Horde Towns: Sepulcher, Silverpine Forest : HORDE TERRITORY
+--' Horde Towns: The Sepulcher, Silverpine Forest
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Silverpine Forest"] ) and ( SubZoneName == SZ["The Sepulcher"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownSepulcher == false then
@@ -2046,7 +2134,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Horde Towns: Shadowmoon Village, Shadowmoon Valley
 --'==========================================================================================
-		if not ( IsResting() ) and ( factionEnglish == F["Horde"] ) and ( ZoneName == Z["Shadowmoon Valley"] ) and ( SubZoneName == SZ["Shadowmoon Village"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Shadowmoon Valley"] ) and ( SubZoneName == SZ["Shadowmoon Village"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownShadowmoonVillage == false then
 				if ( factionEnglish == F["Horde"] ) then
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
@@ -2234,25 +2322,6 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InHordeTownTaunkaleVillage = false
 		end
 --'==========================================================================================		
---' Horde Towns: The Crossroads, The Barrens : HORDE TERRITORY
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["The Barrens"] ) and ( SubZoneName == SZ["The Crossroads"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InHordeTownCrossroads == false then
-				if ( factionEnglish == F["Horde"] ) then
-					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-					FinalFantasylization_HordeTownCrossroads()
-				else
-					FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName..PlayerInHostile)
-					FinalFantasylization_HostileTowns() -- Music call for all towns you are hostile in.
-				end
-				FinalFantasylization_IsPlaying = true
-				FinalFantasylization_InHordeTownCrossroads = true
-			end
-			return
-		else
-			FinalFantasylization_InHordeTownCrossroads = false
-		end
---'==========================================================================================		
 --' Horde Towns: Thrallmar, Hellfire Peninsula
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Hellfire Peninsula"] ) and ( SubZoneName == SZ["Thrallmar"] ) and FinalFantasylization_IsPlaying == false then
@@ -2291,7 +2360,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InHordeTownThunderlordStronghold = false
 		end
 --'==========================================================================================		
---' Horde Towns: Tranquillien, Ghostlands : HORDE TERRITORY
+--' Horde Towns: Tranquillien, Ghostlands
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Ghostlands"] ) and ( SubZoneName == SZ["Tranquillien"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InHordeTownTranquillien == false then
@@ -2509,7 +2578,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InAllianceTownAstranaar = false
 		end
 --'==========================================================================================		
---' Alliance Towns: Auberdine, Darkshore : ALLIANCE TERRITORY
+--' Alliance Towns: Auberdine, Darkshore
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Darkshore"] ) and ( SubZoneName == SZ["Auberdine"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownAuberdine == false then
@@ -2528,7 +2597,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InAllianceTownAuberdine = false
 		end
 --'==========================================================================================		
---' Alliance Towns: Azure Watch, Azuremyst Isle : ALLIANCE TERRITORY
+--' Alliance Towns: Azure Watch, Azuremyst Isle
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Azuremyst Isle"] ) and ( SubZoneName == SZ["Azure Watch"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownAzureWatch == false then
@@ -2566,7 +2635,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InAllianceTownBaelModan = false
 		end
 --'==========================================================================================		
---' Alliance Towns: Blood Watch, Bloodmyst Isle : ALLIANCE TERRITORY
+--' Alliance Towns: Blood Watch, Bloodmyst Isle
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Bloodmyst Isle"] ) and ( SubZoneName == SZ["Blood Watch"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownBloodWatch == false then
@@ -2583,6 +2652,25 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InAllianceTownBloodWatch = false
+		end
+--'==========================================================================================		
+--' Alliance Towns: Brackwell Pumpkin Patch, Elwynn Forest
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and ( SubZoneName == SZ["Brackwell Pumpkin Patch"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InAllianceTownBrackwellPumpkinPatch == false then
+				if ( factionEnglish == F["Alliance"] ) then
+					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+					FinalFantasylization_AllianceTownBrackwellPumpkinPatch()
+				else
+					FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName..PlayerInHostile)
+					FinalFantasylization_HostileTowns() -- Music call for all towns you are hostile in.
+				end
+				FinalFantasylization_IsPlaying = true
+				FinalFantasylization_InAllianceTownBrackwellPumpkinPatch = true
+			end
+			return
+		else
+			FinalFantasylization_InAllianceTownBrackwellPumpkinPatch = false
 		end
 --'==========================================================================================		
 --' Alliance Towns: Brewnall Village, Dun Morogh
@@ -2642,7 +2730,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InAllianceTownDarkshire = false
 		end
 --'==========================================================================================		
---' Alliance Towns: Dolanaar, Teldrassil : ALLIANCE TERRITORY
+--' Alliance Towns: Dolanaar, Teldrassil
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Teldrassil"] ) and ( SubZoneName == SZ["Dolanaar"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownDolanaar == false then
@@ -2813,7 +2901,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InAllianceTownFrosthold = false
 		end
 --'==========================================================================================		
---' Alliance Towns: Goldshire, Elwynn Forest : ALLIANCE TERRITORY
+--' Alliance Towns: Goldshire, Elwynn Forest
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and ( SubZoneName == SZ["Goldshire"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownGoldshire == false then
@@ -2870,7 +2958,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InAllianceTownHonorHold = false
 		end
 --'==========================================================================================		
---' Alliance Towns: Kharanos, Dun Morogh : ALLIANCE TERRITORY
+--' Alliance Towns: Kharanos, Dun Morogh
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Dun Morogh"] ) and ( SubZoneName == SZ["Kharanos"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownKharanos == false then
@@ -3098,7 +3186,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InAllianceTownRuttheranVillage = false
 		end
 --'==========================================================================================		
---' Alliance Towns: Sentinel Hill, Westfall : ALLIANCE TERRITORY
+--' Alliance Towns: Sentinel Hill, Westfall
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Westfall"] ) and ( SubZoneName == SZ["Sentinel Hill"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownSentinelHill == false then
@@ -3172,6 +3260,44 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InAllianceTownStarsRest = false
+		end
+--'==========================================================================================		
+--' Alliance Towns: Steelgrill's Depot, Dun Morogh
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Dun Morogh"] ) and ( SubZoneName == SZ["Steelgrill's Depot"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InAllianceTownSteelgrillsDepot == false then
+				if ( factionEnglish == F["Alliance"] ) then
+					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+					FinalFantasylization_AllianceTownSteelgrillsDepot()
+				else
+					FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName..PlayerInHostile)
+					FinalFantasylization_HostileTowns() -- Music call for all towns you are hostile in.
+				end
+				FinalFantasylization_IsPlaying = true
+				FinalFantasylization_InAllianceTownSteelgrillsDepot = true
+			end
+			return
+		else
+			FinalFantasylization_InAllianceTownSteelgrillsDepot = false
+		end
+--'==========================================================================================		
+--' Alliance Towns: Stonefield Farm, Elwynn Forest
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and ( SubZoneName == SZ["Stonefield Farm"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InAllianceTownStonefieldFarm == false then
+				if ( factionEnglish == F["Alliance"] ) then
+					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+					FinalFantasylization_AllianceTownStonefieldFarm()
+				else
+					FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName..PlayerInHostile)
+					FinalFantasylization_HostileTowns() -- Music call for all towns you are hostile in.
+				end
+				FinalFantasylization_IsPlaying = true
+				FinalFantasylization_InAllianceTownStonefieldFarm = true
+			end
+			return
+		else
+			FinalFantasylization_InAllianceTownStonefieldFarm = false
 		end
 --'==========================================================================================		
 --' Alliance Towns: Stonetalon Peak, Stonetalon Mountains
@@ -3326,7 +3452,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InAllianceTownThalanaar = false
 		end
 --'==========================================================================================		
---' Alliance Towns: Thelsamar, Loch Modan : ALLIANCE TERRITORY
+--' Alliance Towns: Thelsamar, Loch Modan
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Loch Modan"] ) and ( SubZoneName == SZ["Thelsamar"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownThelsamar == false then
@@ -3525,6 +3651,20 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################
 
 --'==========================================================================================		
+--' Neutral Towns: Aeris Landing, Nagrand
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Nagrand"] ) and ( SubZoneName == SZ["Aeris Landing"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownAerisLanding == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownAerisLanding()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownAerisLanding = true
+			return
+		else
+			FinalFantasylization_InNeutralTownAerisLanding = false
+		end
+--'==========================================================================================		
 --' Neutral Towns: Altar of Sha'tar, Shadowmoon Valley
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Shadowmoon Valley"] ) and ( SubZoneName == SZ["Altar of Sha'tar"] ) and FinalFantasylization_IsPlaying == false then
@@ -3553,6 +3693,20 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InNeutralTownAmberLedge = false
 		end
 --'==========================================================================================		
+--' Neutral Towns: The Argent Stand, Zul'drak
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Zul'Drak"] ) and ( SubZoneName == SZ["The Argent Stand"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownTheArgentStand == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownTheArgentStand()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownTheArgentStand = true
+			return
+		else
+			FinalFantasylization_InNeutralTownTheArgentStand = false
+		end
+--'==========================================================================================		
 --' Neutral Towns: Argent Tournament Grounds, Icecrown
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Icecrown"] ) and ( SubZoneName == SZ["Argent Tournament Grounds"] ) and FinalFantasylization_IsPlaying == false then
@@ -3567,7 +3721,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InNeutralTownArgentTournamentGrounds = false
 		end
 --'==========================================================================================		
---' Neutral Towns: Argent Vanguard , Icecrown
+--' Neutral Towns: Argent Vanguard, Icecrown
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Icecrown"] ) and ( SubZoneName == SZ["Argent Vanguard"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNeutralTownArgentVanguard == false then
@@ -3579,6 +3733,20 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InNeutralTownArgentVanguard = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Blackwatch, Icecrown
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Icecrown"] ) and ( SubZoneName == SZ["Blackwatch"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownBlackwatch == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownBlackwatch()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownBlackwatch = true
+			return
+		else
+			FinalFantasylization_InNeutralTownBlackwatch = false
 		end
 --'==========================================================================================		
 --' Neutral Towns: Bouldercrag's Refuge, The Storm Peaks
@@ -3651,6 +3819,34 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InNeutralTownCrusadersPinnacle = false
 		end
 --'==========================================================================================		
+--' Neutral Towns: Darrowshire, Eastern Plaguelands
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Eastern Plaguelands"] ) and ( SubZoneName == SZ["Darrowshire"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownDarrowshire == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownDarrowshire()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownDarrowshire = true
+			return
+		else
+			FinalFantasylization_InNeutralTownDarrowshire = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Dawn's Reach, Dragonblight
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName ==Z["Dragonblight"] ) and ( SubZoneName == SZ["Dawn's Reach"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownDawnsReach == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownDawnsReach()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownDawnsReach = true
+			return
+		else
+			FinalFantasylization_InNeutralTownDawnsReach = false
+		end
+--'==========================================================================================		
 --' Neutral Towns: Death's Rise, Icecrown
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Icecrown"] ) and ( SubZoneName == SZ["Death's Rise"] ) and FinalFantasylization_IsPlaying == false then
@@ -3663,6 +3859,34 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InNeutralTownDeathsRise = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Dorian's Outpost, Sholazar Basin
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Dorian's Outpost"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownDoriansOutpost == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownDoriansOutpost()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownDoriansOutpost = true
+			return
+		else
+			FinalFantasylization_InNeutralTownDoriansOutpost = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Dubra'Jin, Zul'Drak
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Zul'Drak"] ) and ( SubZoneName == SZ["Dubra'Jin"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownDubraJin == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownDubraJin()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownDubraJin = true
+			return
+		else
+			FinalFantasylization_InNeutralTownDubraJin = false
 		end
 --'==========================================================================================		
 --' Neutral Towns: Dun Niffelem, The Storm Peaks
@@ -3735,6 +3959,20 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InNeutralTownFrenzyheartHill = false
 		end
 --'==========================================================================================		
+--' Neutral Towns: Granite Springs, Grizzly Hills
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Grizzly Hills"] ) and ( SubZoneName == SZ["Granite Springs"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownGraniteSprings == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownGraniteSprings()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownGraniteSprings = true
+			return
+		else
+			FinalFantasylization_InNeutralTownGraniteSprings = false
+		end
+--'==========================================================================================		
 --' Neutral Towns: Halaa, Nagrand
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Nagrand"] ) and ( SubZoneName == SZ["Halaa"] ) and FinalFantasylization_IsPlaying == false then
@@ -3747,6 +3985,20 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InNeutralTownHalaa = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: The Harborage, Swamp of Sorrows
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Swamp of Sorrows"] ) and ( SubZoneName == SZ["The Harborage"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownTheHarborage == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownTheHarborage()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownTheHarborage = true
+			return
+		else
+			FinalFantasylization_InNeutralTownTheHarborage = false
 		end
 --'==========================================================================================		
 --' Neutral Towns: K3, The Storm Peaks
@@ -3777,6 +4029,48 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InNeutralTownKamagua = false
 		end
 --'==========================================================================================		
+--' Neutral Towns: Kartak's Hold, Sholazar Basin
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Kartak's Hold"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownKartaksHold == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownKartaksHold()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownKartaksHold = true
+			return
+		else
+			FinalFantasylization_InNeutralTownKartaksHold = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Kirin'Var Village, Netherstorm
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Netherstorm"] ) and ( ( SubZoneName == SZ["Wizard Row"] ) or ( SubZoneName == SZ["Town Square"] ) or ( SubZoneName == SZ["Chapel Yard"] ) or ( SubZoneName == SZ["The Violet Tower"] ) ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownKirinVarVillage == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownKirinVarVillage()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownKirinVarVillage = true
+			return
+		else
+			FinalFantasylization_InNeutralTownKirinVarVillage = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Lakeside Landing, Sholazar Basin
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Lakeside Landing"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownLakesideLanding == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownLakesideLanding()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownLakesideLanding = true
+			return
+		else
+			FinalFantasylization_InNeutralTownLakesideLanding = false
+		end
+--'==========================================================================================		
 --' Neutral Towns: Light's Breach, Zul'drak
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Zul'Drak"] ) and ( SubZoneName == SZ["Light's Breach"] ) and FinalFantasylization_IsPlaying == false then
@@ -3805,6 +4099,20 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InNeutralTownLightsHopeChapel = false
 		end
 --'==========================================================================================		
+--' Neutral Towns: Light's Trust, Dragonblight
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName ==Z["Dragonblight"] ) and ( SubZoneName == SZ["Light's Trust"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownLightsTrust == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownLightsTrust()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownLightsTrust = true
+			return
+		else
+			FinalFantasylization_InNeutralTownLightsTrust = false
+		end
+--'==========================================================================================		
 --' Neutral Towns: Marshal's Refuge, Un'Goro Crater
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Un'Goro Crater"] ) and ( SubZoneName == SZ["Marshal's Refuge"] ) and FinalFantasylization_IsPlaying == false then
@@ -3817,6 +4125,48 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InNeutralTownMarshalsRefuge = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Midrealm Post, Netherstorm
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Netherstorm"] ) and ( ( SubZoneName == SZ["Midrealm Post"] ) or ( SubZoneName == SZ["Eco-Dome Midrealm"] ) ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownMidrealmPost == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownMidrealmPost()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownMidrealmPost = true
+			return
+		else
+			FinalFantasylization_InNeutralTownMidrealmPost = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Mirage Raceway, Thousand Needles
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Thousand Needles"] ) and ( ( SubZoneName == SZ["Mirage Raceway"] ) or ( SubZoneName == SZ["The Shimmering Flats"] ) ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownMirageRaceway == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownMirageRaceway()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownMirageRaceway = true
+			return
+		else
+			FinalFantasylization_InNeutralTownMirageRaceway = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Mistwhisper Refuge, Sholazar Basin
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Mistwhisper Refuge"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownMistwhisperRefuge == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownMistwhisperRefuge()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownMistwhisperRefuge = true
+			return
+		else
+			FinalFantasylization_InNeutralTownMistwhisperRefuge = false
 		end
 --'==========================================================================================		
 --' Neutral Towns: Moa'ki Harbor, Dragonblight
@@ -3861,6 +4211,20 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InNeutralTownNesingwaryBaseCamp = false
 		end
 --'==========================================================================================		
+--' Neutral Towns: Nesingwary's Expedition, Stranglethorn Vale
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Stranglethorn Vale"] ) and ( SubZoneName == SZ["Nesingwary's Expedition"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownNesingwaryExpedition == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownNesingwaryExpedition()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownNesingwaryExpedition = true
+			return
+		else
+			FinalFantasylization_InNeutralTownNesingwaryExpedition = false
+		end
+--'==========================================================================================		
 --' Neutral Towns: Nighthaven, Moonglade
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Moonglade"] ) and ( SubZoneName == SZ["Nighthaven"] ) and FinalFantasylization_IsPlaying == false then
@@ -3873,6 +4237,34 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InNeutralTownNighthaven = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Ogri'la, Blade's Edge Mountains
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Blade's Edge Mountains"] ) and ( SubZoneName == SZ["Ogri'la"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownOgrila == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownOgrila()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownOgrila = true
+			return
+		else
+			FinalFantasylization_InNeutralTownOgrila = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Protectorate Watch Post, Netherstorm
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Netherstorm"] ) and ( SubZoneName == SZ["Protectorate Watch Post"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownProtectorateWatchPost == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownProtectorateWatchPost()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownProtectorateWatchPost = true
+			return
+		else
+			FinalFantasylization_InNeutralTownProtectorateWatchPost = false
 		end
 --'==========================================================================================		
 --' Neutral Towns: Rainspeaker Canopy, Sholazar Basin (at odds with the Frenzyheart Tribe in Frenzyheart Hill)
@@ -3918,6 +4310,20 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InNeutralTownSanctumOfTheStars = false
 		end
 --'==========================================================================================		
+--' Neutral Towns: Scalawag Point, Howling Fjord
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Howling Fjord"] ) and ( SubZoneName == SZ["Scalawag Point"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownScalawagPoint == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownScalawagPoint()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownScalawagPoint = true
+			return
+		else
+			FinalFantasylization_InNeutralTownScalawagPoint = false
+		end
+--'==========================================================================================		
 --' Neutral Towns: The Shadow Vault, Icecrown
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Icecrown"] ) and ( SubZoneName == SZ["The Shadow Vault"] ) and FinalFantasylization_IsPlaying == false then
@@ -3932,6 +4338,34 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InNeutralTownShadowVault = false
 		end
 --'==========================================================================================		
+--' Neutral Towns: Sparktouched Haven, Sholazar Basin
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Sparktouched Haven"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownSparktouchedHaven == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownSparktouchedHaven()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownSparktouchedHaven = true
+			return
+		else
+			FinalFantasylization_InNeutralTownSparktouchedHaven = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Spearborn Encampment, Sholazar Basin
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Spearborn Encampment"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownSpearbornEncampment == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownSpearbornEncampment()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownSpearbornEncampment = true
+			return
+		else
+			FinalFantasylization_InNeutralTownSpearbornEncampment = false
+		end
+--'==========================================================================================		
 --' Neutral Towns: Sporeggar, Zangarmarsh
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Zangarmarsh"] ) and ( SubZoneName == SZ["Sporeggar"] ) and FinalFantasylization_IsPlaying == false then
@@ -3944,6 +4378,20 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InNeutralTownSporeggar = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Steamwheedle Port, Tanaris
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Tanaris"] ) and ( SubZoneName == SZ["Steamwheedle Port"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownSteamwheedlePort == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownSteamwheedlePort()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownSteamwheedlePort = true
+			return
+		else
+			FinalFantasylization_InNeutralTownSteamwheedlePort = false
 		end
 --'==========================================================================================		
 --' Neutral Towns: The Stormspire, Netherstorm
@@ -3974,18 +4422,18 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_InNeutralTownSunsReach = false
  		end
 --'==========================================================================================		
---' Neutral Towns: The Argent Stand, Zul'drak
+--' Neutral Towns: Timbermaw Hold, Azshara/Felwood/Moonglade/Winterspring
 --'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Zul'Drak"] ) and ( SubZoneName == SZ["The Argent Stand"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownTheArgentStand == false then
+		if not ( IsResting() ) and ( ( ZoneName == Z["Azshara"] ) or ( ZoneName == Z["Felwood"] ) or ( ZoneName == Z["Moonglade"] ) or ( ZoneName == Z["Winterspring"] ) ) and ( SubZoneName == SZ["Timbermaw Hold"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownTimbermawHold == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownTheArgentStand()
+				FinalFantasylization_NeutralTownTimbermawHold()
 			end
 			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownTheArgentStand = true
+			FinalFantasylization_InNeutralTownTimbermawHold = true
 			return
 		else
-			FinalFantasylization_InNeutralTownTheArgentStand = false
+			FinalFantasylization_InNeutralTownTimbermawHold = false
 		end
 --'==========================================================================================		
 --' Neutral Towns: Thorium Point, Searing Gorge
@@ -4030,6 +4478,34 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InNeutralTownUnupe = false
 		end
 --'==========================================================================================		
+--' Neutral Towns: Valor's Rest, Silithus
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Silithus"] ) and ( SubZoneName == SZ["Valor's Rest"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownValorsRest == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownValorsRest()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownValorsRest = true
+			return
+		else
+			FinalFantasylization_InNeutralTownValorsRest = false
+		end
+--'==========================================================================================		
+--' Neutral Towns: Venture Bay, Grizzly Hills
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Grizzly Hills"] ) and ( SubZoneName == SZ["Venture Bay"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InNeutralTownVentureBay == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_NeutralTownVentureBay()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InNeutralTownVentureBay = true
+			return
+		else
+			FinalFantasylization_InNeutralTownVentureBay = false
+		end
+--'==========================================================================================		
 --' Neutral Towns: Wyrmrest Temple, Dragonblight
 --'==========================================================================================
 		if ( ZoneName ==Z["Dragonblight"] ) and ( SubZoneName == SZ["Wyrmrest Temple"] ) and FinalFantasylization_IsPlaying == false then
@@ -4057,342 +4533,6 @@ function FinalFantasylization_GetMusic()
 		else
 			FinalFantasylization_InNeutralTownZimTorga = false
 		end
---'==========================================================================================		
---' Neutral Towns: The Harborage, Swamp of Sorrows
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Swamp of Sorrows"] ) and ( SubZoneName == SZ["The Harborage"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownTheHarborage == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownTheHarborage()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownTheHarborage = true
-			return
-		else
-			FinalFantasylization_InNeutralTownTheHarborage = false
-		end
---'==========================================================================================		
---' Neutral Towns: Valor's Rest, Silithus
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Silithus"] ) and ( SubZoneName == SZ["Valor's Rest"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownValorsRest == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownValorsRest()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownValorsRest = true
-			return
-		else
-			FinalFantasylization_InNeutralTownValorsRest = false
-		end
---'==========================================================================================		
---' Neutral Towns: Steamwheedle Port, Tanaris
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Tanaris"] ) and ( SubZoneName == SZ["Steamwheedle Port"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownSteamwheedlePort == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownSteamwheedlePort()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownSteamwheedlePort = true
-			return
-		else
-			FinalFantasylization_InNeutralTownSteamwheedlePort = false
-		end
---'==========================================================================================		
---' Neutral Towns: Mirage Raceway, Thousand Needles
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Thousand Needles"] ) and ( SubZoneName == SZ["Mirage Raceway"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownMirageRaceway == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownMirageRaceway()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownMirageRaceway = true
-			return
-		else
-			FinalFantasylization_InNeutralTownMirageRaceway = false
-		end
---'==========================================================================================		
---' Neutral Towns: Aeris Landing, Nagrand
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Nagrand"] ) and ( SubZoneName == SZ["Aeris Landing"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownAerisLanding == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownAerisLanding()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownAerisLanding = true
-			return
-		else
-			FinalFantasylization_InNeutralTownAerisLanding = false
-		end
---'==========================================================================================		
---' Neutral Towns: Midrealm Post, Netherstorm
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Netherstorm"] ) and ( ( SubZoneName == SZ["Midrealm Post"] ) or ( SubZoneName == SZ["Eco-Dome Midrealm"] ) ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownMidrealmPost == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownMidrealmPost()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownMidrealmPost = true
-			return
-		else
-			FinalFantasylization_InNeutralTownMidrealmPost = false
-		end
---'==========================================================================================		
---' Neutral Towns: Protectorate Watch Post, Netherstorm
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Netherstorm"] ) and ( SubZoneName == SZ["Protectorate Watch Post"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownProtectorateWatchPost == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownProtectorateWatchPost()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownProtectorateWatchPost = true
-			return
-		else
-			FinalFantasylization_InNeutralTownProtectorateWatchPost = false
-		end
---'==========================================================================================		
---' Neutral Towns: Dawn's Reach, Dragonblight
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName ==Z["Dragonblight"] ) and ( SubZoneName == SZ["Dawn's Reach"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownDawnsReach == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownDawnsReach()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownDawnsReach = true
-			return
-		else
-			FinalFantasylization_InNeutralTownDawnsReach = false
-		end
---'==========================================================================================		
---' Neutral Towns: Light's Trust, Dragonblight
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName ==Z["Dragonblight"] ) and ( SubZoneName == SZ["Light's Trust"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownLightsTrust == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownLightsTrust()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownLightsTrust = true
-			return
-		else
-			FinalFantasylization_InNeutralTownLightsTrust = false
-		end
---'==========================================================================================		
---' Neutral Towns: Granite Springs, Grizzly Hills
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Grizzly Hills"] ) and ( SubZoneName == SZ["Granite Springs"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownGraniteSprings == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownGraniteSprings()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownGraniteSprings = true
-			return
-		else
-			FinalFantasylization_InNeutralTownGraniteSprings = false
-		end
---'==========================================================================================		
---' Neutral Towns: Venture Bay, Grizzly Hills
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Grizzly Hills"] ) and ( SubZoneName == SZ["Venture Bay"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownVentureBay == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownVentureBay()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownVentureBay = true
-			return
-		else
-			FinalFantasylization_InNeutralTownVentureBay = false
-		end
---'==========================================================================================		
---' Neutral Towns: Scalawag Point, Howling Fjord
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Howling Fjord"] ) and ( SubZoneName == SZ["Scalawag Point"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownScalawagPoint == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownScalawagPoint()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownScalawagPoint = true
-			return
-		else
-			FinalFantasylization_InNeutralTownScalawagPoint = false
-		end
---'==========================================================================================		
---' Neutral Towns: Blackwatch, Icecrown
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Icecrown"] ) and ( SubZoneName == SZ["Blackwatch"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownBlackwatch == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownBlackwatch()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownBlackwatch = true
-			return
-		else
-			FinalFantasylization_InNeutralTownBlackwatch = false
-		end
---'==========================================================================================		
---' Neutral Towns: Dorian's Outpost, Sholazar Basin
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Dorian's Outpost"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownDoriansOutpost == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownDoriansOutpost()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownDoriansOutpost = true
-			return
-		else
-			FinalFantasylization_InNeutralTownDoriansOutpost = false
-		end
---'==========================================================================================		
---' Neutral Towns: Kartak's Hold, Sholazar Basin
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Kartak's Hold"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownKartaksHold == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownKartaksHold()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownKartaksHold = true
-			return
-		else
-			FinalFantasylization_InNeutralTownKartaksHold = false
-		end
---'==========================================================================================		
---' Neutral Towns: Lakeside Landing, Sholazar Basin
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Lakeside Landing"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownLakesideLanding == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownLakesideLanding()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownLakesideLanding = true
-			return
-		else
-			FinalFantasylization_InNeutralTownLakesideLanding = false
-		end
---'==========================================================================================		
---' Neutral Towns: Mistwhisper Refuge, Sholazar Basin
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Mistwhisper Refuge"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownMistwhisperRefuge == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownMistwhisperRefuge()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownMistwhisperRefuge = true
-			return
-		else
-			FinalFantasylization_InNeutralTownMistwhisperRefuge = false
-		end
---'==========================================================================================		
---' Neutral Towns: Sparktouched Haven, Sholazar Basin
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Sparktouched Haven"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownSparktouchedHaven == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownSparktouchedHaven()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownSparktouchedHaven = true
-			return
-		else
-			FinalFantasylization_InNeutralTownSparktouchedHaven = false
-		end
---'==========================================================================================		
---' Neutral Towns: Spearborn Encampment, Sholazar Basin
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and ( SubZoneName == SZ["Spearborn Encampment"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownSpearbornEncampment == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownSpearbornEncampment()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownSpearbornEncampment = true
-			return
-		else
-			FinalFantasylization_InNeutralTownSpearbornEncampment = false
-		end
---'==========================================================================================		
---' Neutral Towns: Dubra'Jin, Zul'Drak
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Zul'Drak"] ) and ( SubZoneName == SZ["Dubra'Jin"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownDubraJin == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownDubraJin()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownDubraJin = true
-			return
-		else
-			FinalFantasylization_InNeutralTownDubraJin = false
-		end
---'==========================================================================================		
---' Neutral Towns: Ogri'la, Blade's Edge Mountains
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Blade's Edge Mountains"] ) and ( SubZoneName == SZ["Ogri'la"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownOgrila == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownOgrila()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownOgrila = true
-			return
-		else
-			FinalFantasylization_InNeutralTownOgrila = false
-		end
---'==========================================================================================		
---' Neutral Towns: Timbermaw Hold
---'==========================================================================================
-		if not ( IsResting() ) and ( ( ZoneName == Z["Azshara"] ) or ( ZoneName == Z["Felwood"] ) or ( ZoneName == Z["Moonglade"] ) or ( ZoneName == Z["Winterspring"] ) ) and ( SubZoneName == SZ["Timbermaw Hold"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownTimbermawHold == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownTimbermawHold()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownTimbermawHold = true
-			return
-		else
-			FinalFantasylization_InNeutralTownTimbermawHold = false
-		end
---'==========================================================================================		
---' Neutral Towns: Darrowshire, Eastern Plaguelands
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Eastern Plaguelands"] ) and ( SubZoneName == SZ["Darrowshire"] ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownDarrowshire == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownDarrowshire()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownDarrowshire = true
-			return
-		else
-			FinalFantasylization_InNeutralTownDarrowshire = false
-		end
---'==========================================================================================		
---' Neutral Towns: Kirin'Var Village, Netherstorm
---'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Netherstorm"] ) and ( ( SubZoneName == SZ["Wizard Row"] ) or ( SubZoneName == SZ["Town Square"] ) or ( SubZoneName == SZ["Chapel Yard"] ) or ( SubZoneName == SZ["The Violet Tower"] ) ) and FinalFantasylization_IsPlaying == false then
-			if FinalFantasylization_InNeutralTownKirinVarVillage == false then
-				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_NeutralTownKirinVarVillage()
-			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InNeutralTownKirinVarVillage = true
-			return
-		else
-			FinalFantasylization_InNeutralTownKirinVarVillage = false
-		end
 	
 --###########################################################################################
 --###########################################################################################
@@ -4403,9 +4543,9 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################	
 
 --'==========================================================================================		
---' Misc Areas: Deeprun Tram, Between Stormwing City and Ironforge
+--' Misc Areas: 
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Deeprun Tram"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Deeprun Tram"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InMiscAreaDeeprunTram == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_MiscAreaDeeprunTram()
@@ -4492,13 +4632,13 @@ function FinalFantasylization_GetMusic()
 		if not ( IsInInstance() ) and ( ZoneName == Z["Gnomeregan"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InMiscAreaTheDeadmines == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
-				FinalFantasylization_MiscAreaTheDeadmines()
+				FinalFantasylization_MiscAreaGnomeregan()
 			end
 			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_InMiscAreaTheDeadmines = true
+			FinalFantasylization_InMiscAreaGnomeregan = true
 			return
 		else
-			FinalFantasylization_InMiscAreaTheDeadmines = false
+			FinalFantasylization_InMiscAreaGnomeregan = false
 		end
 --'==========================================================================================		
 --' Misc Areas: Caverns of Time, Tanaris
@@ -4526,7 +4666,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Alterac Mountains
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Alterac Mountains"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Alterac Mountains"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsAlteracMountains == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsAlteracMountains()
@@ -4539,7 +4679,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Arathi Highlands
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Arathi Highlands"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Arathi Highlands"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsArathiHighlands == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsArathiHighlands()
@@ -4565,7 +4705,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Blackrock Mountain
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Blackrock Mountain"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Blackrock Mountain"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsBlackrockMountain == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsBlackrockMountain()
@@ -4578,7 +4718,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Blasted Lands
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Blasted Lands"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Blasted Lands"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsTheBlastedLands == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsBlastedLands()
@@ -4591,7 +4731,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Burning Steppes
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Burning Steppes"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Burning Steppes"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsBurningSteppes == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsBurningSteppes()
@@ -4604,7 +4744,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Deadwind Pass
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Deadwind Pass"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Deadwind Pass"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsDeadwindPass == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsDeadwindPass()
@@ -4615,7 +4755,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InEasternKingdomsDeadwindPass = false
 		end
 --'==========================================================================================		
---' Eastern Kingdoms Zones: Dun Morogh : ALLIANCE TERRITORY
+--' Eastern Kingdoms Zones: Dun Morogh : Alliance
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Dun Morogh"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsDunMorogh == false then
@@ -4635,7 +4775,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Duskwood
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Duskwood"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Duskwood"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsDuskwood == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsDuskwood()
@@ -4648,7 +4788,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Eastern Plaguelands
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Eastern Plaguelands"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Eastern Plaguelands"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsEasternPlaguelands == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsEasternPlaguelands()
@@ -4659,7 +4799,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InEasternKingdomsEasternPlaguelands = false
 		end
 --'==========================================================================================		
---' Eastern Kingdoms Zones: Elwynn Forest : ALLIANCE TERRITORY
+--' Eastern Kingdoms Zones: Elwynn Forest : Alliance
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsElwynnForest == false then
@@ -4677,7 +4817,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InEasternKingdomsElwynnForest = false
 		end
 --'==========================================================================================		
---' Eastern Kingdoms Zones: Eversong Woods : HORDE TERRITORY
+--' Eastern Kingdoms Zones: Eversong Woods : Horde
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Eversong Woods"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsEversongWoods == false then
@@ -4695,7 +4835,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InEasternKingdomsEversongWoods = false
 		end
 --'==========================================================================================		
---' Eastern Kingdoms Zones: Ghostlands : HORDE TERRITORY
+--' Eastern Kingdoms Zones: Ghostlands : Horde
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Ghostlands"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsGhostlands == false then
@@ -4715,7 +4855,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Hillsbrad Foothills
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Hillsbrad Foothills"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Hillsbrad Foothills"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsHillsbradFoothills == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsHillsbradFoothills()
@@ -4728,7 +4868,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Isle of Quel'Danas
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Isle of Quel'Danas"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Isle of Quel'Danas"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsIsleofQuelDanas == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsIsleofQuelDanas()
@@ -4739,7 +4879,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InEasternKingdomsIsleofQuelDanas = false
 		end
 --'==========================================================================================		
---' Eastern Kingdoms Zones: Loch Modan : ALLIANCE TERRITORY
+--' Eastern Kingdoms Zones: Loch Modan : Alliance
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Loch Modan"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsLochModan == false then
@@ -4759,7 +4899,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Redridge Mountains
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Redridge Mountains"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Redridge Mountains"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsRedridgeMountains == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsRedridgeMountains()
@@ -4772,7 +4912,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Searing Gorge
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Searing Gorge"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Searing Gorge"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsSearingGorge == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsSearingGorge()
@@ -4783,7 +4923,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InEasternKingdomsSearingGorge = false
 		end
 --'==========================================================================================		
---' Eastern Kingdoms Zones: Silverpine Forest : HORDE TERRITORY
+--' Eastern Kingdoms Zones: Silverpine Forest : Horde
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Silverpine Forest"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsSilverpineForest == false then
@@ -4803,7 +4943,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Stranglethorn Vale
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Stranglethorn Vale"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Stranglethorn Vale"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsStranglethornVale == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsStranglethornVale()
@@ -4816,7 +4956,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Swamp of Sorrows
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Swamp of Sorrows"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Swamp of Sorrows"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsSwampOfSorrows == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsSwampOfSorrows()
@@ -4827,9 +4967,9 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InEasternKingdomsSwampOfSorrows = false
 		end
 --'==========================================================================================		
---' Eastern Kingdoms Zones: The Hinterlands 
+--' Eastern Kingdoms Zones: The Hinterlands
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["The Hinterlands"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["The Hinterlands"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsTheHinterlands == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsTheHinterlands()
@@ -4840,7 +4980,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InEasternKingdomsTheHinterlands = false
 		end
 --'==========================================================================================		
---' Eastern Kingdoms Zones: Tirisfal Glades : HORDE TERRITORY
+--' Eastern Kingdoms Zones: Tirisfal Glades : Horde
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Tirisfal Glades"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsTirisfalGlades == false then
@@ -4860,7 +5000,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Western Plaguelands
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Western Plaguelands"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Western Plaguelands"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsWesternPlaguelands == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsWesternPlaguelands()
@@ -4871,7 +5011,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InEasternKingdomsWesternPlaguelands = false
 		end
 --'==========================================================================================		
---' Eastern Kingdoms Zones: Westfall : ALLIANCE TERRITORY
+--' Eastern Kingdoms Zones: Westfall : Alliance
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Westfall"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsWestfall == false then
@@ -4891,7 +5031,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Eastern Kingdoms Zones: Wetlands
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Wetlands"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Wetlands"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InEasternKingdomsWetlands == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_EasternKingdomsWetlands()
@@ -4913,7 +5053,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Ashenvale 
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Ashenvale"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Ashenvale"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorAshenvale == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorAshenvale()
@@ -4926,7 +5066,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Azshara
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Azshara"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Azshara"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorAzshara == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorAzshara()
@@ -4937,7 +5077,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InKalimdorAzshara = false
 		end
 --'==========================================================================================		
---' Kalimdor Zones: Azuremyst Isle : ALLIANCE TERRITORY
+--' Kalimdor Zones: Azuremyst Isle : Alliance
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Azuremyst Isle"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorAzuremystIsle == false then
@@ -4955,7 +5095,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InKalimdorAzuremystIsle = false
 		end
 --'==========================================================================================		
---' Kalimdor Zones: Bloodmyst Isle : ALLIANCE TERRITORY
+--' Kalimdor Zones: Bloodmyst Isle : Alliance
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Bloodmyst Isle"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorBloodmystIsle == false then
@@ -4973,7 +5113,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InKalimdorBloodmystIsle = false
 		end
 --'==========================================================================================		
---' Kalimdor Zones: Darkshore : ALLIANCE TERRITORY
+--' Kalimdor Zones: Darkshore : Alliance
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Darkshore"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorDarkshore == false then
@@ -4993,7 +5133,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Desolace
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Desolace"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Desolace"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorDesolace == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorDesolace()
@@ -5004,7 +5144,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InKalimdorDesolace = false
 		end
 --'==========================================================================================		
---' Kalimdor Zones: Durotar : HORDE TERRITORY
+--' Kalimdor Zones: Durotar : Horde
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Durotar"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorDurotar == false then
@@ -5024,7 +5164,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Dustwallow Marsh
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Dustwallow Marsh"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Dustwallow Marsh"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorDustwallowMarsh == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorDustwallowMarsh()
@@ -5035,9 +5175,9 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InKalimdorDustwallowMarsh = false
 		end
 --'==========================================================================================		
---' Kalimdor Zones: Felwood 
+--' Kalimdor Zones: Felwood
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Felwood"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Felwood"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorFelwood == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorFelwood()
@@ -5050,7 +5190,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Feralas
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Feralas"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Feralas"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorFeralas == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorFeralas()
@@ -5063,7 +5203,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Moonglade
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Moonglade"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Moonglade"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorMoonglade == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorMoonglade()
@@ -5074,7 +5214,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InKalimdorMoonglade = false
 		end
 --'==========================================================================================		
---' Kalimdor Zones: Mulgore : HORDE TERRITORY
+--' Kalimdor Zones: Mulgore : Horde
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Mulgore"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorMulgore == false then
@@ -5094,7 +5234,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Silithus
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Silithus"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Silithus"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorSilithus == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorSilithus()
@@ -5107,7 +5247,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Stonetalon Mountains
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Stonetalon Mountains"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Stonetalon Mountains"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorStonetalonMountains == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorStonetalonMountains()
@@ -5120,7 +5260,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Tanaris 
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Tanaris"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Tanaris"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorTanaris == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorTanaris()
@@ -5131,7 +5271,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InKalimdorTanaris = false
 		end
 --'==========================================================================================		
---' Kalimdor Zones: Teldrassil : ALLIANCE TERRITORY
+--' Kalimdor Zones: Teldrassil : Alliance
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["Teldrassil"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorTeldrassil == false then
@@ -5149,7 +5289,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InKalimdorTeldrassil = false
 		end
 --'==========================================================================================		
---' Kalimdor Zones: The Barrens : HORDE TERRITORY
+--' Kalimdor Zones: The Barrens : Horde
 --'==========================================================================================
 		if not ( IsResting() ) and ( ZoneName == Z["The Barrens"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorTheBarrens == false then
@@ -5167,9 +5307,9 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InKalimdorTheBarrens = false
 		end
 --'==========================================================================================		
---' Kalimdor Zones: Thousand Needles 
+--' Kalimdor Zones: Thousand Needles
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Thousand Needles"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Thousand Needles"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorThousandNeedles == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorThousandNeedles()
@@ -5182,7 +5322,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Un'Goro Crater
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Un'Goro Crater"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Un'Goro Crater"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorUngoroCrater == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorUngoroCrater()
@@ -5195,7 +5335,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Kalimdor Zones: Winterspring
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Winterspring"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Winterspring"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InKalimdorWinterspring == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_KalimdorWinterspring()
@@ -5330,7 +5470,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Northrend Zones: Borean Tundra
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Borean Tundra"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Borean Tundra"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNorthrendBoreanTundra == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_NorthrendBoreanTundra()
@@ -5343,7 +5483,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Northrend Zones: Crystalsong Forest
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Crystalsong Forest"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Crystalsong Forest"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNorthrendCrystalsongForest == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_NorthrendCrystalsongForest()
@@ -5356,7 +5496,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Northrend Zones: Dragonblight
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName ==Z["Dragonblight"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName ==Z["Dragonblight"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNorthrendDragonblight == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_NorthrendDragonblight()
@@ -5369,7 +5509,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Northrend Zones: Grizzly Hills
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Grizzly Hills"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Grizzly Hills"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNorthrendGrizzlyHills == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_NorthrendGrizzlyHills()
@@ -5382,7 +5522,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Northrend Zones: Howling Fjord
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Howling Fjord"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Howling Fjord"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNorthrendHowlingFjord == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_NorthrendHowlingFjord()
@@ -5395,7 +5535,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Northrend Zones: Icecrown
 --'==========================================================================================
-			if not ( IsResting () ) and ( ZoneName == Z["Icecrown"] ) and FinalFantasylization_IsPlaying == false then
+			if not ( IsResting() ) and ( ZoneName == Z["Icecrown"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNorthrendIcecrown == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_NorthrendIcecrown()
@@ -5408,7 +5548,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Northrend Zones: Sholazar Basin
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Sholazar Basin"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Sholazar Basin"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNorthrendSholazarBasin == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_NorthrendSholazarBasin()
@@ -5421,7 +5561,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Northrend Zones: The Storm Peaks
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["The Storm Peaks"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["The Storm Peaks"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNorthrendStormPeaks == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_NorthrendStormPeaks()
@@ -5434,7 +5574,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Northrend Zones: Wintergrasp
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Wintergrasp"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Wintergrasp"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNorthrendWintergrasp == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_NorthrendWintergrasp()
@@ -5447,7 +5587,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Northrend Zones: Zul'Drak
 --'==========================================================================================
-		if not ( IsResting () ) and ( ZoneName == Z["Zul'Drak"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Zul'Drak"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InNorthrendZulDrak == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
 				FinalFantasylization_NorthrendZulDrak()
@@ -5467,12 +5607,11 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################
 
 			-- 5 Man Dungeons
-		if IsInInstance() and FinalFantasylizationOptions.Instance == true and FinalFantasylization_IsPlaying == false then 
+		if IsInInstance() and FinalFantasylization_IsPlaying == false then 
 			local inInstance, instanceType = IsInInstance();
-			if instanceType == "party" and FinalFantasylization_InInstance == false then
-				 
+			
+			if instanceType == "party" and FinalFantasylization_InInstance == false and FinalFantasylizationOptions.Dungeon == true then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInDungeon.. ZoneName)
-
 					-- Vanilla WoW Dungeons
 				if ( ZoneName == SZ["Ragefire Chasm"] ) then -- Ragefire Chasm Instance
 					FinalFantasylization_Dungeon_RagefireChasmSong()  -- NEW
@@ -5514,6 +5653,74 @@ function FinalFantasylization_GetMusic()
 					FinalFantasylization_Dungeon_StratholmeSong()  -- NEW
 				elseif ( ZoneName == SZ["Scholomance"] ) then -- Scholomance Instance
 					FinalFantasylization_Dungeon_ScholomanceSong()  -- NEW
+
+					-- Burning Crusade Dungeons
+				elseif ( ZoneName == SZ["Hellfire Ramparts"] ) then -- Hellfire Ramparts Instance
+					FinalFantasylization_Dungeon_HellfireRampartsSong()  -- NEW
+				elseif ( ZoneName == SZ["The Blood Furnace"] ) then -- The Blood Furnace Instance
+					FinalFantasylization_Dungeon_BloodFurnaceSong()  -- NEW
+				elseif ( ZoneName == SZ["The Slave Pens"] ) then -- The Slave Pens Instance
+					FinalFantasylization_Dungeon_SlavePensSong()  -- NEW
+				elseif ( ZoneName == SZ["The Underbog"] ) then -- The Underbog Instance
+					FinalFantasylization_Dungeon_UnderbogSong()  -- NEW
+				elseif ( ZoneName == SZ["Mana-Tombs"] ) then -- Mana-Tombs Instance
+					FinalFantasylization_Dungeon_ManaTombsSong()  -- NEW
+				elseif ( ZoneName == SZ["Auchenai Crypts"] ) then -- Auchenai Crypts Instance
+					FinalFantasylization_Dungeon_AuchenaiCryptsSong()  -- NEW
+				elseif ( ZoneName == SZ["Sethekk Halls"] ) then -- Sethekk Halls Instance
+					FinalFantasylization_Dungeon_SethekkHallsSong()  -- NEW
+				elseif ( ZoneName == SZ["The Steamvault"] ) then -- The Steamvault Instance
+					FinalFantasylization_Dungeon_SteamvaultSong()  -- NEW
+				elseif ( ZoneName == SZ["The Shattered Halls"] ) then -- The Shattered Halls Instance
+					FinalFantasylization_Dungeon_ShatteredHallsSong()  -- NEW
+				elseif ( ZoneName == SZ["Shadow Labyrinth"] ) then -- Shadow Labyrinth Instance
+					FinalFantasylization_Dungeon_ShadowLabyrinthSong()  -- NEW
+				elseif ( ZoneName == SZ["Old Hillsbrad Foothills"] ) then -- The Escape from Durnholde Keep Instance
+					FinalFantasylization_Dungeon_EscapefromDurnholdeKeepSong()  -- NEW
+				elseif ( ZoneName == SZ["The Mechanar"] ) then -- The Mechanar Instance
+					FinalFantasylization_Dungeon_MechanarSong()  -- NEW
+				elseif ( ZoneName == SZ["The Botanica"] ) then -- The Botanica Instance
+					FinalFantasylization_Dungeon_BotanicaSong()  -- NEW
+				elseif ( ZoneName == SZ["The Arcatraz"] ) then -- The Arcatraz Instance
+					FinalFantasylization_Dungeon_ArcatrazSong()  -- NEW
+				elseif ( ZoneName == SZ["The Black Morass"] ) then -- Opening the Dark Portal Instance
+					FinalFantasylization_Dungeon_OpeningtheDarkPortalSong()  -- NEW
+				elseif ( ZoneName == SZ["Magisters' Terrace"] ) then -- Magisters' Terrace Instance
+					FinalFantasylization_Dungeon_MagistersTerraceSong()  -- NEW
+				
+					-- Wrath of the Lich King Dungeons
+				elseif ( ZoneName == SZ["Utgarde Keep"] ) then -- Utgarde Keep Instance
+					FinalFantasylization_Dungeon_UtgardeKeepSong()  -- NEW
+				elseif ( ZoneName == SZ["The Nexus"] ) then -- The Nexus Instance
+					FinalFantasylization_Dungeon_TheNexusSong()  -- NEW
+				elseif ( ZoneName == SZ["Azjol-Nerub"] ) then -- Azjol-Nerub Instance
+					FinalFantasylization_Dungeon_AzjolNerubSong()  -- NEW
+				elseif ( ZoneName == SZ["Ahn'kahet: The Old Kingdom"] ) then -- Ahn'kahet: The Old Kingdom Instance
+					FinalFantasylization_Dungeon_AhnkahetTheOldKingdomSong()  -- NEW
+				elseif ( ZoneName == SZ["Drak'Tharon Keep"] ) then -- Drak'Tharon Keep Instance
+					FinalFantasylization_Dungeon_DrakTharonKeepSong()  -- NEW
+				elseif ( ZoneName == SZ["The Violet Hold"] ) then -- The Violet Hold Instance
+					FinalFantasylization_Dungeon_VioletHoldSong()  -- NEW
+				elseif ( ZoneName == SZ["Gundrak"] ) then -- Gundrak Instance
+					FinalFantasylization_Dungeon_GundrakSong()  -- NEW
+				elseif ( ZoneName == SZ["Halls of Stone"] ) then -- Ulduar: Halls of Stone Instance
+					FinalFantasylization_Dungeon_HallsofStoneSong()  -- NEW
+				elseif ( ZoneName == SZ["Ulduar: Halls of Stone"] ) then -- The Oculus Instance
+					FinalFantasylization_Dungeon_TheOculusSong()  -- NEW
+				elseif ( ZoneName == SZ["Halls of Lightning"] ) then -- Ulduar: Halls of Lightning Instance
+					FinalFantasylization_Dungeon_HallsofLightningSong()  -- NEW
+				elseif ( ZoneName == SZ["Utgarde Pinnacle"] ) then -- Utgarde Pinnacle Instance
+					FinalFantasylization_Dungeon_UtgardePinnacleSong()  -- NEW
+				elseif ( ZoneName == SZ["The Culling of Stratholme"] ) then -- The Culling of Stratholme Instance
+					FinalFantasylization_Dungeon_TheCullingofStratholmeSong()  -- NEW
+				elseif ( ZoneName == SZ["Trial of the Champion"] ) then -- Trial of the Champion Instance
+					FinalFantasylization_Dungeon_TrialoftheChampionSong()  -- NEW
+				elseif ( ZoneName == SZ["The Forge of Souls"] ) then -- The Forge of Souls Instance
+					FinalFantasylization_Dungeon_ForgeofSoulsSong()  -- NEW
+				elseif ( ZoneName == SZ["Pit of Saron"] ) then -- Pit of Saron Instance
+					FinalFantasylization_Dungeon_PitofSaronSong()  -- NEW
+				elseif ( ZoneName == SZ["Halls of Reflection"] ) then -- Halls of Reflection Instance
+					FinalFantasylization_Dungeon_HallsofReflectionSong()  -- NEW
 -- More Instances go here					
 				else
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. "Instance not in FinalFantasylization")
@@ -5527,7 +5734,7 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################
 --###########################################################################################
 
-			elseif instanceType == "raid" and FinalFantasylization_InInstance == false then
+			elseif instanceType == "raid" and FinalFantasylization_InInstance == false and FinalFantasylizationOptions.Raid == true then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInRaid.. ZoneName)
 				FinalFantasylization_RaidSong()
 
@@ -5539,8 +5746,8 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################
 --###########################################################################################			
 
-			elseif instanceType == "pvp" and FinalFantasylization_InInstance == false then
-				
+			elseif instanceType == "pvp" and FinalFantasylization_InInstance == false and FinalFantasylizationOptions.Battleground == true then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInBattleground.. ZoneName)
 				if ( ZoneName == Z["Alterac Valley"] ) then -- Alterac Valley Battleground
 					FinalFantasylization_AlteracValleyBG()  
 				elseif ( ZoneName == Z["Arathi Basin"] ) then -- Arathi Basin Battleground
@@ -5600,11 +5807,11 @@ end
 --'  World event: /DANCE
 --'==========================================================================================
 function FinalFantasylization_DoEmote(emote, msg)
-	FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. 'FinalFantasylization_DoEmote '..emote);
+	FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. 'FinalFantasylization_DoEmote: '..emote);
 
 	--emote is DANCE when "/dance" is used.
 	
-	if (emote=="DANCE" and UnitIsDeadOrGhost("player")==nil ) then
+	if (emote=="DANCE" and UnitIsDeadOrGhost("player")==nil ) and FinalFantasylizationOptions.Dance == true then
 		DanceSongPlaying = true
 		FinalFantasylization_IsPlaying = true
 		DanceOnMount = false;
@@ -5636,19 +5843,19 @@ function FinalFantasylization_DoEmote(emote, msg)
 		elseif FinalFantasylization_DanceSong == "bloodelfmale" then FinalFantasylization_BloodElfMaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "draeneifemale" then FinalFantasylization_DraeneiFemaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "draeneimale" then FinalFantasylization_DraeneiMaleDanceSong();
-		elseif FinalFantasylization_DanceSong == "dwarffemale" thenFinalFantasylization_DwarfFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "dwarffemale" then FinalFantasylization_DwarfFemaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "dwarfmale" then FinalFantasylization_DwarfMaleDanceSong();
-		elseif FinalFantasylization_DanceSong == "gnomefemale" thenFinalFantasylization_GnomeFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "gnomefemale" then FinalFantasylization_GnomeFemaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "gnomemale" then FinalFantasylization_GnomeMaleDanceSong();
-		elseif FinalFantasylization_DanceSong == "humanfemale" thenFinalFantasylization_HumanFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "humanfemale" then FinalFantasylization_HumanFemaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "humanmale" then FinalFantasylization_HumanMaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "nightelffemale" then FinalFantasylization_NightElfFemaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "nightelfmale" then FinalFantasylization_NightElfMaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "orcfemale" then FinalFantasylization_OrcFemaleDanceSong();
-		elseif FinalFantasylization_DanceSong == "orcmale" thenFinalFantasylization_OrcMaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "orcmale" then FinalFantasylization_OrcMaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "taurenfemale" then FinalFantasylization_TaurenFemaleDanceSong()
 		elseif FinalFantasylization_DanceSong == "taurenmale" then FinalFantasylization_TaurenMaleDanceSong()
-		elseif FinalFantasylization_DanceSong == "trollfemale" thenFinalFantasylization_TrollFemaleDanceSong();
+		elseif FinalFantasylization_DanceSong == "trollfemale" then FinalFantasylization_TrollFemaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "trollmale" then FinalFantasylization_TrollMaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "undeadfemale" then FinalFantasylization_UndeadFemaleDanceSong();
 		elseif FinalFantasylization_DanceSong == "undeadmale" then FinalFantasylization_UndeadMaleDanceSong();
@@ -5735,7 +5942,7 @@ function FinalFantasylization_JumpOrAscendStart()
 --'==========================================================================================		
 --'  World event: Chocobo Kweh!!
 --'==========================================================================================	
-	if IsMounted("player") then
+	if IsMounted("player") and FinalFantasylizationOptions.ChocoboKweh == true then
 		local mountcount = GetNumCompanions("MOUNT")
 		local mountName = nil
 		i = 1
@@ -5799,14 +6006,18 @@ function FinalFantasylizationFillMissingOptions()
 	if FinalFantasylizationOptions.Music == nil then FinalFantasylizationOptions.Music = true end
 	if FinalFantasylizationOptions.Combat == nil then FinalFantasylizationOptions.Combat = true end
 	if FinalFantasylizationOptions.Mount == nil then FinalFantasylizationOptions.Mount = true end
-	if FinalFantasylizationOptions.Instance == nil then FinalFantasylizationOptions.Instance = true end
+	if FinalFantasylizationOptions.Dungeon == nil then FinalFantasylizationOptions.Dungeon = true end
+	if FinalFantasylizationOptions.Raid == nil then FinalFantasylizationOptions.Raid = true end
+	if FinalFantasylizationOptions.Battleground == nil then FinalFantasylizationOptions.Battleground = true end
 	if FinalFantasylizationOptions.Sleep == nil then FinalFantasylizationOptions.Sleep = true end
 	if FinalFantasylizationOptions.Swim == nil then FinalFantasylizationOptions.Swim = true end
+	if FinalFantasylizationOptions.Dance == nil then FinalFantasylizationOptions.Dance = true end
 	if FinalFantasylizationOptions.Dead == nil then FinalFantasylizationOptions.Dead = true end
 	if FinalFantasylizationOptions.Flight == nil then FinalFantasylizationOptions.Flight = true end
 	if FinalFantasylizationOptions.Capital == nil then FinalFantasylizationOptions.Capital = true end
 	if FinalFantasylizationOptions.Sound == nil then FinalFantasylizationOptions.Sound = true end
 	if FinalFantasylizationOptions.Fanfare == nil then FinalFantasylizationOptions.Fanfare = true end
+	if FinalFantasylizationOptions.ChocoboKweh == nil then FinalFantasylizationOptions.ChocoboKweh = true end
 	if FinalFantasylizationOptions.LevelUp == nil then FinalFantasylizationOptions.LevelUp = true end
 	if FinalFantasylizationOptions.Debug == nil then FinalFantasylizationOptions.Debug = false end
 end

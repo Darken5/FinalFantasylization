@@ -30,7 +30,7 @@ if( GetLocale() == "esES" ) then
 	DisabledCommand = "apagado"
 	DisabledMessage = "FinalFantasylization est\195\161 desactivado."
 	DungeonCommand = "mazmorra"
-	DungeonOffMessage = "La m\195\186sica de las mazmorras de FinalFantasylization est\195\161 desactivada, para activarla escriba: /FFsound dungeon."
+	DungeonOffMessage = "La m\195\186sica de las mazmorras de FinalFantasylization est\195\161 desactivada, para activarla escriba: /FFsound mazmorra."
 	DungeonOnMessage = "La m\195\186sica de las mazmorras de FinalFantasylization est\195\161 activada."
 	EnabledCommand = "encendido"
 	EnabledMessage = "FinalFantasylization esta activado."

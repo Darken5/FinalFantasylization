@@ -1,7 +1,7 @@
 ============================
 >>>                      <<<
 >>> FinalFantasylization <<<
->>>  ReadMe for 3.2.8    <<<
+>>>  ReadMe for 3.3.1    <<<
 >>>                      <<<
 ============================
 
@@ -166,6 +166,33 @@ Fix the Fanfare sound issue on world (sometimes doesn't play)
 Add more zone/subzone detections
 
 *********************
+21. November 2016 - FinalFantasylization 3.3.1 - New Zones & More Typo's  >> Darken5 <<
+	- Found a typo with "IsResting()" (41 instances of "IsResting ()" changed to "IsResting()" without the space)
+	- Towns Added:
+		- Mirage Raceway, Thousand Needles (added Shimmering Flats to Mirage Raceway as it's so different from Thousand Needles, but there is so much overlap with Mirage Raceway.
+		- Nesingwary's Expedition, Stranglethorn Vale
+		- Brackwell Pumpkin Patch, Elwynn Forest
+		- Steelgrill's Depot, Dun Morogh
+		- Stonefield Farm, Elwynn Forest
+	- Fixed the PVP debug message, had WorldPVP and BGPVP mixed up
+	- Fixed a mistake in "Horde Towns: Shadowmoon Village, Shadowmoon Valley" left over from the 3.2.8 Update
+	- More cleanup
+	- More Alphebetizing of Zones...........
+
+17. November 2016 - FinalFantasylization 3.3.0 - The Final?  >> Darken5 <<
+	- Updated/Rearanged Interface
+		- Enable Checkbox now properly restarts the music.
+		- Added Dungeon Checkbox
+		- Added Raid Checkbox
+		- Added Battleground Checkbox
+		- Added Dance Checkbox
+		- Added Chocobo Kweh Checkbox
+	- Pretty much finished everything I wanted to do with FFz short of adding individual Raid Zone calls (can't really do that till I can get the proper zone names or mapID's)
+
+17. November 2016 - FinalFantasylization 3.2.9 - Dungeons  >> Darken5 <<
+	- Finished adding Burning Crusade and Wrath of the Lich King 5-Man Dungeons
+	- Added Gnomeregan as a misc area before the instance.
+
 15. November 2016 - FinalFantasylization 3.2.8 - The "Holy Hell" Zone/Subzone Code Rewrite  >> Darken5 <<
 	- Rewrote nearly all of the Zone/SubZone detection code.
 		- Shaved off 352 lines of code, 42,055 individual characters. (Finalfantasylization.lua went from 361kb to 326kb) 

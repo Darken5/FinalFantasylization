@@ -240,6 +240,8 @@ bleukreuz - Switches to Bleukreuz's Soundpack
 	InCombatWorldBoss = "Player In combat, Battle! - World PVE! - Boss!.. "
 	InCombatDungeonBoss = "Player In combat, Battle! - Dungeon PvE! - Boss!.. "
 	InCombatDungeonPVE = "Player In combat, Battle! - Dungeon PvE!"
+	InCombatRaidBoss = "Player In combat, Battle! - Raid PvE! - Boss! "
+	InCombatRaidPVE = "Player In combat, Battle! - Raid PvE!"
 	InCombatBGBoss = "Player In combat, Battle! - Battleground Boss!.. "
 	InCombatBGPVP = "Player In combat, Battle! - Battleground PvP!"
 	InCombatWorldPVP = "Player In combat, Battle! - World PvP!"

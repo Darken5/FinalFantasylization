@@ -1,5 +1,5 @@
-﻿-- FinalFantasylization  by Hellfox and Darken5
--- Version 3.3.1
+﻿-- FinalFantasylization by Hellfox and Darken5
+-- Version 3.3.2
 ------------------------------------------------------------
 
 -- FinalFantasylization requires this version of FFZlib:
@@ -28,11 +28,11 @@ local FinalFantasylization_IsPlaying = false
 
 NUM_SOUND_PACKS = 0
 for i = 1, GetNumAddOns() do
-    local name = GetAddOnInfo(i)
-    if strmatch(name, "SoundPack%d*") then
-	print (GetAddOnInfo(i))
-        NUM_SOUND_PACKS = NUM_SOUND_PACKS + 1
-    end
+	local name = GetAddOnInfo(i)
+	if strmatch(name, "SoundPack%d*") then
+		print (GetAddOnInfo(i))
+		NUM_SOUND_PACKS = NUM_SOUND_PACKS + 1
+	end
 end
 
 LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject("FinalFantasylization", {
@@ -51,15 +51,15 @@ local startingFunc
 local startFinalfantasylization = false
 function FinalFantasylization_OnEvent()
 	if event == "PLAYER_ENTERING_WORLD" then
-        CoreSavedVariable = (CoreSavedVariable or "Final Fantasy 7")
-        startingFunc = _G["SoundPack" .. CoreSavedVariable  .. "_SetEnabled"]
-        if startingFunc then
-            startingFunc(true)
+		CoreSavedVariable = (CoreSavedVariable or "Final Fantasy 7")
+		startingFunc = _G["SoundPack" .. CoreSavedVariable .. "_SetEnabled"]
+		if startingFunc then
+			startingFunc(true)
 			FinalFantasylization_Msg("Loaded sound pack " .. CoreSavedVariable .. ".")
 			startFinalfantasylization = true
-        else
-            FinalFantasylization_Msg("Can't find sound pack " .. CoreSavedVariable .. ".")
-        end
+		else
+			FinalFantasylization_Msg("Can't find sound pack " .. CoreSavedVariable .. ".")
+		end
 	elseif event =="COMBAT_LOG_EVENT_UNFILTERED" and arg2 == "PARTY_KILL" and arg3 == UnitGUID("player") and FinalFantasylizationOptions.Enabled == true then
 		if FinalFantasylization_PlayerIsCombat == true and FinalFantasylizationOptions.Enabled == true then
 			FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. TargetKilled)
@@ -75,7 +75,7 @@ function FinalFantasylization_OnEvent()
 	elseif event == "PLAYER_REGEN_DISABLED" then
 		FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. EnterCombat)
 		if FinalFantasylizationOptions.Enabled == true then
-				FinalFantasylization_CombatSound()
+			FinalFantasylization_CombatSound()
 			FinalFantasylization_PlayerIsCombat = true
 		end
 	elseif event == "PLAYER_REGEN_ENABLED" then
@@ -88,7 +88,7 @@ function FinalFantasylization_OnEvent()
 	elseif event == "PLAYER_UPDATE_RESTING" then
 	elseif event == "PLAYER_CAMPING" then
 		FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. PlayerCamping)
-		if (DanceSongPlaying) then 
+		if (DanceSongPlaying) then
 			FinalFantasylization_StopDanceSong() 
 		end
 	elseif event == "CHAT_MSG_COMBAT_FACTION_CHANGE" then
@@ -106,10 +106,10 @@ function FinalFantasylization_OnEvent()
 	elseif event == "PLAYER_DEAD" then
 	elseif event == "CHAT_MSG_TEXT_EMOTE" then
 	elseif event == "PLAYER_LEVEL_UP" then
-  		if ( FinalFantasylization_RegenGain == true or FinalFantasylization_RegenGain == false ) and FinalFantasylizationOptions.LevelUp == true then
+		if ( FinalFantasylization_RegenGain == true or FinalFantasylization_RegenGain == false ) and FinalFantasylizationOptions.LevelUp == true then
 			FinalFantasylization_RegenGain = false
 			FinalFantasylization_LevelUpSong()
-   		end
+		end
 	end
 	if block == 0 then
 		FinalFantasylization_OnLoad()
@@ -118,7 +118,7 @@ function FinalFantasylization_OnEvent()
 	onUpdate()
 --	FinalFantasylization_debugMsg(FFZlib.Color.Red .. "Event...")
 --	FinalFantasylization_GetMusic()
-end 
+end
 
 function FinalFantasylization_OnLoad()
 	playermodel = CreateFrame("PlayerModel")
@@ -139,7 +139,7 @@ function FinalFantasylization_OnLoad()
 	
 	FinalFantasylizationMapIcon:Show()
 	
-	-- If they don't have any options set yet (no saved variable), reset them.  If they upgraded
+	-- If they don't have any options set yet (no saved variable), reset them. If they upgraded
 	-- from a previous version and are missing one or more options, fill them in with defaults.
 	FinalFantasylizationFillMissingOptions()
 	
@@ -306,7 +306,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InNeutralTownEbonWatch = false
 	FinalFantasylization_InNeutralTownEmeraldSanctuary = false
 	FinalFantasylization_InNeutralTownEvergrove = false
-	FinalFantasylization_InNeutralTownFrenzyheartHill = false  --at odds with the Oracles in Rainspeaker Canopy
+	FinalFantasylization_InNeutralTownFrenzyheartHill = false	--at odds with the Oracles in Rainspeaker Canopy
 	FinalFantasylization_InNeutralTownHalaa = false
 	FinalFantasylization_InNeutralTownK3 = false
 	FinalFantasylization_InNeutralTownKamagua = false
@@ -318,7 +318,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InNeutralTownNesingwaryBaseCamp = false
 	FinalFantasylization_InNeutralTownNesingwaryExpedition = false
 	FinalFantasylization_InNeutralTownNighthaven = false
-	FinalFantasylization_InNeutralTownRainspeakerCanopy = false  -- at odds with the Frenzyheart Tribe in Frenzyheart Hill
+	FinalFantasylization_InNeutralTownRainspeakerCanopy = false	-- at odds with the Frenzyheart Tribe in Frenzyheart Hill
 	FinalFantasylization_InNeutralTownRiversHeart = false
 	FinalFantasylization_InNeutralTownSanctumOfTheStars = false
 	FinalFantasylization_InNeutralTownShadowVault = false
@@ -409,8 +409,8 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InOutlandNagrand = false	
 	FinalFantasylization_InOutlandNetherstorm = false
 	FinalFantasylization_InOutlandShadowmoonValley = false	
-	FinalFantasylization_InOutlandTerokkarForest  = false	
-	FinalFantasylization_InOutlandZangarmarsh  = false	
+	FinalFantasylization_InOutlandTerokkarForest = false	
+	FinalFantasylization_InOutlandZangarmarsh = false	
 	-- Northrend Zones --
 	FinalFantasylization_InNorthrendBoreanTundra = false
 	FinalFantasylization_InNorthrendColdarra = false
@@ -426,7 +426,7 @@ function FinalFantasylization_ClearMusicState()
 	-- Miscelaneous Zones --
 	FinalFantasylization_InMiscAreaScarletMonastery = false	-- the building in Tirisfal Glades, not the instance itself.
 	FinalFantasylization_InMiscAreaRazorfenKraul = false	-- area directly before Razorfen Kraul instance.
-	FinalFantasylization_InMiscAreaRazorfenDowns = false    -- area before the instance
+	FinalFantasylization_InMiscAreaRazorfenDowns = false	-- area before the instance
 	FinalFantasylization_InMiscAreaWailingCaverns = false	-- cave before instance
 	FinalFantasylization_InMiscAreaTheDeadmines = false		-- cave before instance
 	FinalFantasylization_InMiscAreaGnomeregan = false		-- area before the instance
@@ -456,13 +456,13 @@ function FinalFantasylization_ClearMusicState()
 end
 
 function FinalFantasylization_Msg(msg)
-    if( DEFAULT_CHAT_FRAME ) then
-        FFZlib.Message(FFZlib.Color.White .. (msg))
-    end
+	if( DEFAULT_CHAT_FRAME ) then
+		FFZlib.Message(FFZlib.Color.White .. (msg))
+	end
 end
 
 function FinalFantasylization_debugMsg(msg)
-    if( DEFAULT_CHAT_FRAME ) and FinalFantasylizationOptions.Debug == true then
+	if( DEFAULT_CHAT_FRAME ) and FinalFantasylizationOptions.Debug == true then
 		FFZlib.Message(FFZlib.Color.Teal .. (msg))
 	end
 end
@@ -621,7 +621,7 @@ function FinalFantasylization_Command(Command)
 		end
 	elseif Lower == TestCommand then
 		ZoneName = GetRealZoneText();
-		MinimapZoneName = GetMinimapZoneText()  
+		MinimapZoneName = GetMinimapZoneText()
 		SubZoneName = GetSubZoneText()
 		areaID = GetCurrentMapAreaID()
 		local realm = GetRealmName();
@@ -631,13 +631,13 @@ function FinalFantasylization_Command(Command)
 		local inInstance, instanceType = IsInInstance();
 		local classification = UnitClassification("target"); --'classification: "worldboss", "rareelite", "elite", "rare", "normal" or "trivial"
 			FFZlib.Message(FFZlib.Color.Grey..TestMessage1..FFZlib.Color.Crimson..realm)
-         	FFZlib.Message(FFZlib.Color.Grey..TestMessage2..FFZlib.Color.Crimson..factionEnglish)
-         	FFZlib.Message(FFZlib.Color.Grey..TestMessage3..FFZlib.Color.Crimson..ZoneName)
+			FFZlib.Message(FFZlib.Color.Grey..TestMessage2..FFZlib.Color.Crimson..factionEnglish)
+			FFZlib.Message(FFZlib.Color.Grey..TestMessage3..FFZlib.Color.Crimson..ZoneName)
 			FFZlib.Message(FFZlib.Color.Grey..TestMessage8..FFZlib.Color.Crimson..areaID)
-         	FFZlib.Message(FFZlib.Color.Grey..TestMessage4..FFZlib.Color.Crimson..instanceType)
-         	FFZlib.Message(FFZlib.Color.Grey..TestMessage5..FFZlib.Color.Crimson..SubZoneName)
-         	FFZlib.Message(FFZlib.Color.Grey..TestMessage6..FFZlib.Color.Crimson..MinimapZoneName)
-         	FFZlib.Message(FFZlib.Color.Grey..TestMessage7..FFZlib.Color.Crimson..classification)
+			FFZlib.Message(FFZlib.Color.Grey..TestMessage4..FFZlib.Color.Crimson..instanceType)
+			FFZlib.Message(FFZlib.Color.Grey..TestMessage5..FFZlib.Color.Crimson..SubZoneName)
+			FFZlib.Message(FFZlib.Color.Grey..TestMessage6..FFZlib.Color.Crimson..MinimapZoneName)
+			FFZlib.Message(FFZlib.Color.Grey..TestMessage7..FFZlib.Color.Crimson..classification)
 	else
 		FinalFantasylizationUsage()
 	end
@@ -653,23 +653,23 @@ function FinalFantasylization_SPCommand(Command)
 end
 
 function SwitchTo(soundPackID)
-    soundPackID = (soundPackID)
-    local func = _G["SoundPack" .. soundPackID .. "_SetEnabled"]
-    if func then
-        func(true)
-        startingFunc = func
+	soundPackID = (soundPackID)
+	local func = _G["SoundPack" .. soundPackID .. "_SetEnabled"]
+	if func then
+		func(true)
+		startingFunc = func
 		FinalFantasylization_ClearMusicState()
 		StopMusic()
 		FinalFantasylization_debugMsg(FFZlib.Color.Red .. "SwitchTo...")
 		FinalFantasylization_GetMusic()
 		print("Loaded sound pack " .. soundPackID .. ".")
-    elseif startingFunc then
-        startingFunc(true)
+	elseif startingFunc then
+		startingFunc(true)
 		print("Can't find sound pack " .. soundPackID .. ".")
 		print(CoreSavedVariable .. " still loaded.")
-    else
-        print("Can't find sound pack " .. soundPackID .. ".")
-    end
+	else
+		print("Can't find sound pack " .. soundPackID .. ".")
+	end
 end
 
 function FinalFantasylizationEnable(Enabled)
@@ -812,9 +812,9 @@ end
 function FinalFantasylization_PlayMusic( file )
 	if( FinalFantasylizationOptions.Enabled == true ) and ( FinalFantasylizationOptions.Music == true ) then
 		if( file ~= nil ) then
-			PlaySound("GAMEHIGHLIGHTFRIENDLYUNIT") 
+			PlaySound("GAMEHIGHLIGHTFRIENDLYUNIT")
 			PlayMusic( file )
-			PlaySound("GAMEHIGHLIGHTFRIENDLYUNIT") 
+			PlaySound("GAMEHIGHLIGHTFRIENDLYUNIT")
 		end
 	end
 end
@@ -833,26 +833,26 @@ function FinalFantasylization_GetMusic()
 
 	if FinalFantasylizationOptions.Enabled == true and startFinalfantasylization == true then
 		ZoneName = GetRealZoneText();
-		MinimapZoneName = GetMinimapZoneText()   
+		MinimapZoneName = GetMinimapZoneText()
 		SubZoneName = GetSubZoneText()
 		local factionEnglish, factionLocale = UnitFactionGroup("player"); --'Horde, Alliance
 		local classification = UnitClassification("target"); --'classification: "worldboss", "rareelite", "elite", "rare", "normal" or "trivial"
 		local pvpType, isFFA, faction = GetZonePVPInfo(); --'("friendly";"contested";"hostile";"sanctuary") (1;nil) (F["Alliance"];F["Horde"])
 		ZoneText = GetZoneText()
 
---'==========================================================================================      
---'  Sounds
 --'==========================================================================================
-	if  FinalFantasylization_PlayerIsCombat == false and FinalFantasylization_RegenGain == true and FinalFantasylizationOptions.Fanfare == true then
+--'	Sounds
+--'==========================================================================================
+	if FinalFantasylization_PlayerIsCombat == false and FinalFantasylization_RegenGain == true and FinalFantasylizationOptions.Fanfare == true then
 		FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. Victory)
 		FinalFantasylization_Fanfare() -- Battle fanfare call
 		FinalFantasylization_RegenGain = false
 		if FinalFantasylization_PlayerIsCombat == true then
-            StopMusic();
+			StopMusic();
 		end
 	end
 --'==========================================================================================		
---'  Music
+--'	Music
 --'==========================================================================================
 		FinalFantasylization_IsPlaying = false
 --###########################################################################################
@@ -864,7 +864,7 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################
 		
 --'==========================================================================================		
---'  World event: Player is Ghost
+--'	World event: Player is Ghost
 --'==========================================================================================
 		if ( UnitIsGhost("player") ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Dead == true then
 			if FinalFantasylization_PlayerIsGhosting == false then
@@ -878,7 +878,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_PlayerIsGhosting = false
 		end
 --'==========================================================================================		
---'  World event: Player is Dead
+--'	World event: Player is Dead
 --'==========================================================================================
 		if ( UnitIsDead("player") ) and FinalFantasylizationOptions.Dead == true then
 			if FinalFantasylization_PlayerIsDead == false then
@@ -893,16 +893,16 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_PlayerIsDead = false
 		end
 --'==========================================================================================		
---'  World event: Player is On Taxi "Horde and Alliance Varyiant"
+--'	World event: Player is On Taxi "Horde and Alliance Varyiant"
 --'==========================================================================================
-		if ( UnitOnTaxi("player") ) and (  factionEnglish == F["Horde"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Flight == true then
+		if ( UnitOnTaxi("player") ) and ( factionEnglish == F["Horde"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Flight == true then
 			if FinalFantasylization_PlayerIsTaxi == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. F["Horde"] .. " " .. Taxi)
 				FinalFantasylization_HordeTaxi() -- music call for Taxi. ...
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_PlayerIsTaxi = true
-		elseif ( UnitOnTaxi("player") ) and (  factionEnglish == F["Alliance"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Flight == true then
+		elseif ( UnitOnTaxi("player") ) and ( factionEnglish == F["Alliance"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Flight == true then
 			if FinalFantasylization_PlayerIsTaxi == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. F["Alliance"] .. " " .. Taxi)
 				FinalFantasylization_AllianceTaxi() -- music call for Taxi. ...
@@ -913,9 +913,9 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_PlayerIsTaxi = false
 		end
 --'==========================================================================================		
---'  World event: Player in Combat, Mounted
+--'	World event: Player in Combat, Mounted
 --'==========================================================================================
-		if IsMounted("player")  and FinalFantasylization_PlayerIsCombat == true and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Mount == true then
+		if IsMounted("player") and FinalFantasylization_PlayerIsCombat == true and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Mount == true then
 			if FinalFantasylization_PlayerIsEscape == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. MountedEscape)
 				FinalFantasylization_MountedEscape()
@@ -926,9 +926,9 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_PlayerIsEscape = false
 		end
 --'==========================================================================================		
---'  World event: Player in Combat
+--'	World event: Player in Combat
 --'==========================================================================================
-		if FinalFantasylization_PlayerIsCombat == true and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Combat == true then
+		if FinalFantasylization_PlayerIsCombat == true and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Combat == true and UnitExists("target") then
 			--FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombat)
 			local inInstance, instanceType = IsInInstance();
 			if FinalFantasylization_PlayerIsBattling == false then
@@ -942,6 +942,14 @@ function FinalFantasylization_GetMusic()
 							FinalFantasylization_DungeonBoss()
 						else
 							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatDungeonPVE)
+							FinalFantasylization_WorldNormalPVE()
+						end
+					elseif instanceType == "raid" then
+						if LibStub("LibBossIDs-1.0").BossIDs[mobID] then
+							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatRaidBoss .. name)
+							FinalFantasylization_DungeonBoss()
+						else
+							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatRaidPVE)
 							FinalFantasylization_WorldNormalPVE()
 						end
 					elseif instanceType == "pvp" then
@@ -971,7 +979,7 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_PlayerIsBattling = false
 		end
 --'==========================================================================================		
---'  World event: Player is Mounted in Hostile Zone
+--'	World event: Player is Mounted in Hostile Zone
 --'==========================================================================================
 		if IsMounted("player") and ( pvpType == "hostile" ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Mount == true then
 			if FinalFantasylization_PlayerIsHostileMounting == false then
@@ -984,27 +992,27 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_PlayerIsHostileMounting = false
 		end
 --'==========================================================================================		
---'  World event: Player on Flying Mount "Horde and Alliance Varyiant"
+--'	World event: Player on Flying Mount "Horde and Alliance Varyiant"
 --'==========================================================================================
-		if IsFlying() and (  factionEnglish == F["Horde"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Flight == true then
-			if FinalFantasylization_PlayerIsFlying == false then 
+		if IsFlying() and ( factionEnglish == F["Horde"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Flight == true then
+			if FinalFantasylization_PlayerIsFlying == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. Flying .. "(" .. F["Horde"] .. ")")
 				FinalFantasylization_HordeFlying()
-			end 
+			end
 			FinalFantasylization_IsPlaying = true 
 			FinalFantasylization_PlayerIsFlying = true 
-		elseif IsFlying() and (  factionEnglish == F["Alliance"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Flight == true then
-			if FinalFantasylization_PlayerIsFlying == false then 
+		elseif IsFlying() and ( factionEnglish == F["Alliance"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Flight == true then
+			if FinalFantasylization_PlayerIsFlying == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. Flying .. "(" .. F["Alliance"] .. ")")
 				FinalFantasylization_AllianceFlying()
-			end 
+			end
 			FinalFantasylization_IsPlaying = true 
 			FinalFantasylization_PlayerIsFlying = true 
 		else 
 			FinalFantasylization_PlayerIsFlying = false 
 		end
 --'==========================================================================================		
---'  World event: Player is Mounted.. Chocobo!
+--'	World event: Player is Mounted.. Chocobo!
 --'==========================================================================================
 		if IsMounted("player") and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Mount == true then
 			if FinalFantasylization_PlayerIsMounting == false then
@@ -1018,11 +1026,11 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_PlayerIsMounting = false
 		end
 --'==========================================================================================		
---'  World event: Player is Swimming 
+--'	World event: Player is Swimming 
 --'==========================================================================================
 		if IsSwimming() ~= nil and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Swim == true then
 			if FinalFantasylization_PlayerIsSwimming == false then
-				if (  ZoneName == Z["Undercity"] ) or (  SubZoneName == SZ["The Sludge Fen"] ) or (  SubZoneName == SZ["Blackwolf River"] )then
+				if ( ZoneName == Z["Undercity"] ) or ( SubZoneName == SZ["The Sludge Fen"] ) or ( SubZoneName == SZ["Blackwolf River"] ) then
 					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. Swimming2)
 					FinalFantasylization_Swimming(1)
 				else
@@ -1731,7 +1739,7 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InHordeTownCampTunkalo = false
-		end 
+		end
 --'==========================================================================================		
 --' Horde Towns: Camp Winterhoof, Howling Fjord
 --'==========================================================================================
@@ -5607,120 +5615,120 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################
 
 			-- 5 Man Dungeons
-		if IsInInstance() and FinalFantasylization_IsPlaying == false then 
+		if IsInInstance() and FinalFantasylization_IsPlaying == false then
 			local inInstance, instanceType = IsInInstance();
 			
 			if instanceType == "party" and FinalFantasylization_InInstance == false and FinalFantasylizationOptions.Dungeon == true then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInDungeon.. ZoneName)
 					-- Vanilla WoW Dungeons
-				if ( ZoneName == SZ["Ragefire Chasm"] ) then -- Ragefire Chasm Instance
-					FinalFantasylization_Dungeon_RagefireChasmSong()  -- NEW
-				elseif ( ZoneName == SZ["Wailing Caverns"] ) then -- Wailing Caverns Instance
-					FinalFantasylization_Dungeon_WailingCavernsSong()  -- NEW
-				elseif ( ZoneName == SZ["The Deadmines"] ) then -- The Deadmines Instance
-					FinalFantasylization_Dungeon_DeadminesSong()  -- NEW
-				elseif ( ZoneName == SZ["Shadowfang Keep"] ) then -- Shadowfang Keep Instance
-					FinalFantasylization_Dungeon_ShadowfangKeepSong()  -- NEW
-				elseif ( ZoneName == SZ["Blackfathom Deeps"] ) then -- Blackfathom Deeps Instance
-					FinalFantasylization_Dungeon_BlackfathomDeepsSong()  -- NEW
-				elseif ( ZoneName == SZ["The Stockade"] ) then -- Stormwind Stockade Instance (TEST THIS!)
-					FinalFantasylization_Dungeon_StormwindStockadeSong()  -- NEW
-				elseif ( ZoneName == SZ["Gnomeregan"] ) then -- Gnomeregan Instance
-					FinalFantasylization_Dungeon_GnomereganSong()  -- NEW
-				elseif ( ZoneName == SZ["Razorfen Kraul"] ) then -- Razorfen Kraul Instance
-					FinalFantasylization_Dungeon_RazorfenKraulSong()  -- NEW
-				elseif ( ZoneName == SZ["Scarlet Monastery"] ) then -- Scarlet Monastery Instance (TEST if works for all 4)
-					FinalFantasylization_Dungeon_ScarletMonasterySong()  -- NEW
-				elseif ( ZoneName == SZ["Razorfen Downs"] ) then -- Razorfen Downs Instance
-					FinalFantasylization_Dungeon_RazorfenDownsSong()  -- NEW
-				elseif ( ZoneName == SZ["Uldaman"] ) then -- Uldaman Instance
-					FinalFantasylization_Dungeon_UldamanSong()  -- NEW
-				elseif ( ZoneName == SZ["Zul'Farrak"] ) then -- Zul'Farrak Instance
-					FinalFantasylization_Dungeon_ZulFarrakSong()  -- NEW
-				elseif ( ZoneName == SZ["Maraudon"] ) then -- Maraudon Instance
-					FinalFantasylization_Dungeon_MaraudonSong()  -- NEW
-				elseif ( ZoneName == SZ["The Temple of Atal'Hakkar"] ) then -- The Temple of Atal'Hakkar Instance
-					FinalFantasylization_Dungeon_TempleofAtalHakkarSong()  -- NEW
-				elseif ( ZoneName == SZ["Blackrock Depths"] ) then -- Blackrock Depths Instance
-					FinalFantasylization_Dungeon_BlackrockDepthsSong()  -- NEW
-				elseif ( ZoneName == Z["Lower Blackrock Spire"] ) then -- Lower Blackrock Spire Instance
-					FinalFantasylization_Dungeon_LowerBlackrockSpireSong()  -- NEW
-				elseif ( ZoneName == Z["Upper Blackrock Spire"] ) then -- Upper Blackrock Spire Instance
-					FinalFantasylization_Dungeon_UpperBlackrockSpireSong()  -- NEW
-				elseif ( ZoneName == SZ["Dire Maul"] ) then -- Dire Maul Instance
-					FinalFantasylization_Dungeon_DireMaulSong()  -- NEW
-				elseif ( ZoneName == SZ["Stratholme"] ) then -- Stratholme Instance
-					FinalFantasylization_Dungeon_StratholmeSong()  -- NEW
-				elseif ( ZoneName == SZ["Scholomance"] ) then -- Scholomance Instance
-					FinalFantasylization_Dungeon_ScholomanceSong()  -- NEW
+				if ( ZoneName == SZ["Ragefire Chasm"] ) then				-- Ragefire Chasm Instance
+					FinalFantasylization_Dungeon_RagefireChasmSong()
+				elseif ( ZoneName == SZ["Wailing Caverns"] ) then			-- Wailing Caverns Instance
+					FinalFantasylization_Dungeon_WailingCavernsSong()
+				elseif ( ZoneName == SZ["The Deadmines"] ) then				-- The Deadmines Instance
+					FinalFantasylization_Dungeon_DeadminesSong()
+				elseif ( ZoneName == SZ["Shadowfang Keep"] ) then			-- Shadowfang Keep Instance
+					FinalFantasylization_Dungeon_ShadowfangKeepSong()
+				elseif ( ZoneName == SZ["Blackfathom Deeps"] ) then			-- Blackfathom Deeps Instance
+					FinalFantasylization_Dungeon_BlackfathomDeepsSong()
+				elseif ( ZoneName == SZ["The Stockade"] ) then				-- Stormwind Stockade Instance (TEST THIS!)
+					FinalFantasylization_Dungeon_StormwindStockadeSong()
+				elseif ( ZoneName == SZ["Gnomeregan"] ) then				-- Gnomeregan Instance
+					FinalFantasylization_Dungeon_GnomereganSong()
+				elseif ( ZoneName == SZ["Razorfen Kraul"] ) then			-- Razorfen Kraul Instance
+					FinalFantasylization_Dungeon_RazorfenKraulSong()
+				elseif ( ZoneName == SZ["Scarlet Monastery"] ) then			-- Scarlet Monastery Instance (TEST if works for all 4)
+					FinalFantasylization_Dungeon_ScarletMonasterySong()
+				elseif ( ZoneName == SZ["Razorfen Downs"] ) then			-- Razorfen Downs Instance
+					FinalFantasylization_Dungeon_RazorfenDownsSong()
+				elseif ( ZoneName == SZ["Uldaman"] ) then					-- Uldaman Instance
+					FinalFantasylization_Dungeon_UldamanSong()
+				elseif ( ZoneName == SZ["Zul'Farrak"] ) then				-- Zul'Farrak Instance
+					FinalFantasylization_Dungeon_ZulFarrakSong()
+				elseif ( ZoneName == SZ["Maraudon"] ) then					-- Maraudon Instance
+					FinalFantasylization_Dungeon_MaraudonSong()
+				elseif ( ZoneName == SZ["The Temple of Atal'Hakkar"] ) then	-- The Temple of Atal'Hakkar Instance
+					FinalFantasylization_Dungeon_TempleofAtalHakkarSong()
+				elseif ( ZoneName == SZ["Blackrock Depths"] ) then			-- Blackrock Depths Instance
+					FinalFantasylization_Dungeon_BlackrockDepthsSong()
+				elseif ( ZoneName == Z["Lower Blackrock Spire"] ) then		-- Lower Blackrock Spire Instance
+					FinalFantasylization_Dungeon_LowerBlackrockSpireSong()
+				elseif ( ZoneName == Z["Upper Blackrock Spire"] ) then		-- Upper Blackrock Spire Instance
+					FinalFantasylization_Dungeon_UpperBlackrockSpireSong()
+				elseif ( ZoneName == SZ["Dire Maul"] ) then					-- Dire Maul Instance
+					FinalFantasylization_Dungeon_DireMaulSong()
+				elseif ( ZoneName == SZ["Stratholme"] ) then				-- Stratholme Instance
+					FinalFantasylization_Dungeon_StratholmeSong()
+				elseif ( ZoneName == SZ["Scholomance"] ) then				-- Scholomance Instance
+					FinalFantasylization_Dungeon_ScholomanceSong()
 
 					-- Burning Crusade Dungeons
-				elseif ( ZoneName == SZ["Hellfire Ramparts"] ) then -- Hellfire Ramparts Instance
-					FinalFantasylization_Dungeon_HellfireRampartsSong()  -- NEW
-				elseif ( ZoneName == SZ["The Blood Furnace"] ) then -- The Blood Furnace Instance
-					FinalFantasylization_Dungeon_BloodFurnaceSong()  -- NEW
-				elseif ( ZoneName == SZ["The Slave Pens"] ) then -- The Slave Pens Instance
-					FinalFantasylization_Dungeon_SlavePensSong()  -- NEW
-				elseif ( ZoneName == SZ["The Underbog"] ) then -- The Underbog Instance
-					FinalFantasylization_Dungeon_UnderbogSong()  -- NEW
-				elseif ( ZoneName == SZ["Mana-Tombs"] ) then -- Mana-Tombs Instance
-					FinalFantasylization_Dungeon_ManaTombsSong()  -- NEW
-				elseif ( ZoneName == SZ["Auchenai Crypts"] ) then -- Auchenai Crypts Instance
-					FinalFantasylization_Dungeon_AuchenaiCryptsSong()  -- NEW
-				elseif ( ZoneName == SZ["Sethekk Halls"] ) then -- Sethekk Halls Instance
-					FinalFantasylization_Dungeon_SethekkHallsSong()  -- NEW
-				elseif ( ZoneName == SZ["The Steamvault"] ) then -- The Steamvault Instance
-					FinalFantasylization_Dungeon_SteamvaultSong()  -- NEW
-				elseif ( ZoneName == SZ["The Shattered Halls"] ) then -- The Shattered Halls Instance
-					FinalFantasylization_Dungeon_ShatteredHallsSong()  -- NEW
-				elseif ( ZoneName == SZ["Shadow Labyrinth"] ) then -- Shadow Labyrinth Instance
-					FinalFantasylization_Dungeon_ShadowLabyrinthSong()  -- NEW
-				elseif ( ZoneName == SZ["Old Hillsbrad Foothills"] ) then -- The Escape from Durnholde Keep Instance
-					FinalFantasylization_Dungeon_EscapefromDurnholdeKeepSong()  -- NEW
-				elseif ( ZoneName == SZ["The Mechanar"] ) then -- The Mechanar Instance
-					FinalFantasylization_Dungeon_MechanarSong()  -- NEW
-				elseif ( ZoneName == SZ["The Botanica"] ) then -- The Botanica Instance
-					FinalFantasylization_Dungeon_BotanicaSong()  -- NEW
-				elseif ( ZoneName == SZ["The Arcatraz"] ) then -- The Arcatraz Instance
-					FinalFantasylization_Dungeon_ArcatrazSong()  -- NEW
-				elseif ( ZoneName == SZ["The Black Morass"] ) then -- Opening the Dark Portal Instance
-					FinalFantasylization_Dungeon_OpeningtheDarkPortalSong()  -- NEW
-				elseif ( ZoneName == SZ["Magisters' Terrace"] ) then -- Magisters' Terrace Instance
-					FinalFantasylization_Dungeon_MagistersTerraceSong()  -- NEW
+				elseif ( ZoneName == SZ["Hellfire Ramparts"] ) then			-- Hellfire Ramparts Instance
+					FinalFantasylization_Dungeon_HellfireRampartsSong()
+				elseif ( ZoneName == SZ["The Blood Furnace"] ) then			-- The Blood Furnace Instance
+					FinalFantasylization_Dungeon_BloodFurnaceSong()
+				elseif ( ZoneName == SZ["The Slave Pens"] ) then			-- The Slave Pens Instance
+					FinalFantasylization_Dungeon_SlavePensSong()
+				elseif ( ZoneName == SZ["The Underbog"] ) then				-- The Underbog Instance
+					FinalFantasylization_Dungeon_UnderbogSong()
+				elseif ( ZoneName == SZ["Mana-Tombs"] ) then				-- Mana-Tombs Instance
+					FinalFantasylization_Dungeon_ManaTombsSong()
+				elseif ( ZoneName == SZ["Auchenai Crypts"] ) then			-- Auchenai Crypts Instance
+					FinalFantasylization_Dungeon_AuchenaiCryptsSong()
+				elseif ( ZoneName == SZ["Sethekk Halls"] ) then				-- Sethekk Halls Instance
+					FinalFantasylization_Dungeon_SethekkHallsSong()
+				elseif ( ZoneName == SZ["The Steamvault"] ) then			-- The Steamvault Instance
+					FinalFantasylization_Dungeon_SteamvaultSong()
+				elseif ( ZoneName == SZ["The Shattered Halls"] ) then		-- The Shattered Halls Instance
+					FinalFantasylization_Dungeon_ShatteredHallsSong()
+				elseif ( ZoneName == SZ["Shadow Labyrinth"] ) then			-- Shadow Labyrinth Instance
+					FinalFantasylization_Dungeon_ShadowLabyrinthSong()
+				elseif ( ZoneName == SZ["Old Hillsbrad Foothills"] ) then	-- The Escape from Durnholde Keep Instance
+					FinalFantasylization_Dungeon_EscapefromDurnholdeKeepSong()
+				elseif ( ZoneName == SZ["The Mechanar"] ) then				-- The Mechanar Instance
+					FinalFantasylization_Dungeon_MechanarSong()
+				elseif ( ZoneName == SZ["The Botanica"] ) then				-- The Botanica Instance
+					FinalFantasylization_Dungeon_BotanicaSong()
+				elseif ( ZoneName == SZ["The Arcatraz"] ) then				-- The Arcatraz Instance
+					FinalFantasylization_Dungeon_ArcatrazSong()
+				elseif ( ZoneName == SZ["The Black Morass"] ) then			-- Opening the Dark Portal Instance
+					FinalFantasylization_Dungeon_OpeningtheDarkPortalSong()
+				elseif ( ZoneName == SZ["Magisters' Terrace"] ) then		-- Magisters' Terrace Instance
+					FinalFantasylization_Dungeon_MagistersTerraceSong()
 				
 					-- Wrath of the Lich King Dungeons
-				elseif ( ZoneName == SZ["Utgarde Keep"] ) then -- Utgarde Keep Instance
-					FinalFantasylization_Dungeon_UtgardeKeepSong()  -- NEW
-				elseif ( ZoneName == SZ["The Nexus"] ) then -- The Nexus Instance
-					FinalFantasylization_Dungeon_TheNexusSong()  -- NEW
-				elseif ( ZoneName == SZ["Azjol-Nerub"] ) then -- Azjol-Nerub Instance
-					FinalFantasylization_Dungeon_AzjolNerubSong()  -- NEW
-				elseif ( ZoneName == SZ["Ahn'kahet: The Old Kingdom"] ) then -- Ahn'kahet: The Old Kingdom Instance
-					FinalFantasylization_Dungeon_AhnkahetTheOldKingdomSong()  -- NEW
-				elseif ( ZoneName == SZ["Drak'Tharon Keep"] ) then -- Drak'Tharon Keep Instance
-					FinalFantasylization_Dungeon_DrakTharonKeepSong()  -- NEW
-				elseif ( ZoneName == SZ["The Violet Hold"] ) then -- The Violet Hold Instance
-					FinalFantasylization_Dungeon_VioletHoldSong()  -- NEW
-				elseif ( ZoneName == SZ["Gundrak"] ) then -- Gundrak Instance
-					FinalFantasylization_Dungeon_GundrakSong()  -- NEW
-				elseif ( ZoneName == SZ["Halls of Stone"] ) then -- Ulduar: Halls of Stone Instance
-					FinalFantasylization_Dungeon_HallsofStoneSong()  -- NEW
-				elseif ( ZoneName == SZ["Ulduar: Halls of Stone"] ) then -- The Oculus Instance
-					FinalFantasylization_Dungeon_TheOculusSong()  -- NEW
-				elseif ( ZoneName == SZ["Halls of Lightning"] ) then -- Ulduar: Halls of Lightning Instance
-					FinalFantasylization_Dungeon_HallsofLightningSong()  -- NEW
-				elseif ( ZoneName == SZ["Utgarde Pinnacle"] ) then -- Utgarde Pinnacle Instance
-					FinalFantasylization_Dungeon_UtgardePinnacleSong()  -- NEW
-				elseif ( ZoneName == SZ["The Culling of Stratholme"] ) then -- The Culling of Stratholme Instance
-					FinalFantasylization_Dungeon_TheCullingofStratholmeSong()  -- NEW
-				elseif ( ZoneName == SZ["Trial of the Champion"] ) then -- Trial of the Champion Instance
-					FinalFantasylization_Dungeon_TrialoftheChampionSong()  -- NEW
-				elseif ( ZoneName == SZ["The Forge of Souls"] ) then -- The Forge of Souls Instance
-					FinalFantasylization_Dungeon_ForgeofSoulsSong()  -- NEW
-				elseif ( ZoneName == SZ["Pit of Saron"] ) then -- Pit of Saron Instance
-					FinalFantasylization_Dungeon_PitofSaronSong()  -- NEW
-				elseif ( ZoneName == SZ["Halls of Reflection"] ) then -- Halls of Reflection Instance
-					FinalFantasylization_Dungeon_HallsofReflectionSong()  -- NEW
+				elseif ( ZoneName == SZ["Utgarde Keep"] ) then				-- Utgarde Keep Instance
+					FinalFantasylization_Dungeon_UtgardeKeepSong()
+				elseif ( ZoneName == SZ["The Nexus"] ) then					-- The Nexus Instance
+					FinalFantasylization_Dungeon_TheNexusSong()
+				elseif ( ZoneName == SZ["Azjol-Nerub"] ) then				-- Azjol-Nerub Instance
+					FinalFantasylization_Dungeon_AzjolNerubSong()
+				elseif ( ZoneName == SZ["Ahn'kahet: The Old Kingdom"] ) then	-- Ahn'kahet: The Old Kingdom Instance
+					FinalFantasylization_Dungeon_AhnkahetTheOldKingdomSong()
+				elseif ( ZoneName == SZ["Drak'Tharon Keep"] ) then			-- Drak'Tharon Keep Instance
+					FinalFantasylization_Dungeon_DrakTharonKeepSong()
+				elseif ( ZoneName == SZ["The Violet Hold"] ) then			-- The Violet Hold Instance
+					FinalFantasylization_Dungeon_VioletHoldSong()
+				elseif ( ZoneName == SZ["Gundrak"] ) then					-- Gundrak Instance
+					FinalFantasylization_Dungeon_GundrakSong()
+				elseif ( ZoneName == SZ["Halls of Stone"] ) then			-- Ulduar: Halls of Stone Instance
+					FinalFantasylization_Dungeon_HallsofStoneSong()
+				elseif ( ZoneName == SZ["Ulduar: Halls of Stone"] ) then	-- The Oculus Instance
+					FinalFantasylization_Dungeon_TheOculusSong()
+				elseif ( ZoneName == SZ["Halls of Lightning"] ) then		-- Ulduar: Halls of Lightning Instance
+					FinalFantasylization_Dungeon_HallsofLightningSong()
+				elseif ( ZoneName == SZ["Utgarde Pinnacle"] ) then			-- Utgarde Pinnacle Instance
+					FinalFantasylization_Dungeon_UtgardePinnacleSong()
+				elseif ( ZoneName == SZ["The Culling of Stratholme"] ) then	-- The Culling of Stratholme Instance
+					FinalFantasylization_Dungeon_TheCullingofStratholmeSong()
+				elseif ( ZoneName == SZ["Trial of the Champion"] ) then		-- Trial of the Champion Instance
+					FinalFantasylization_Dungeon_TrialoftheChampionSong()
+				elseif ( ZoneName == SZ["The Forge of Souls"] ) then		-- The Forge of Souls Instance
+					FinalFantasylization_Dungeon_ForgeofSoulsSong()
+				elseif ( ZoneName == SZ["Pit of Saron"] ) then				-- Pit of Saron Instance
+					FinalFantasylization_Dungeon_PitofSaronSong()
+				elseif ( ZoneName == SZ["Halls of Reflection"] ) then		-- Halls of Reflection Instance
+					FinalFantasylization_Dungeon_HallsofReflectionSong()
 -- More Instances go here					
 				else
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. "Instance not in FinalFantasylization")
@@ -5748,17 +5756,17 @@ function FinalFantasylization_GetMusic()
 
 			elseif instanceType == "pvp" and FinalFantasylization_InInstance == false and FinalFantasylizationOptions.Battleground == true then
 				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerInBattleground.. ZoneName)
-				if ( ZoneName == Z["Alterac Valley"] ) then -- Alterac Valley Battleground
-					FinalFantasylization_AlteracValleyBG()  
-				elseif ( ZoneName == Z["Arathi Basin"] ) then -- Arathi Basin Battleground
+				if ( ZoneName == Z["Alterac Valley"] ) then				-- Alterac Valley Battleground
+					FinalFantasylization_AlteracValleyBG()
+				elseif ( ZoneName == Z["Arathi Basin"] ) then			-- Arathi Basin Battleground
 					FinalFantasylization_ArathiBasinBG()
-				elseif ( ZoneName == Z["Eye of the Storm"] ) then -- Eye of the Storm Battleground
+				elseif ( ZoneName == Z["Eye of the Storm"] ) then		-- Eye of the Storm Battleground
 					FinalFantasylization_EyeoftheStormBG()
-				elseif ( ZoneName == Z["Strand of the Ancients"] ) then -- Strand of the Ancients Battleground
+				elseif ( ZoneName == Z["Strand of the Ancients"] ) then	-- Strand of the Ancients Battleground
 					FinalFantasylization_StrandsoftheAncientsBG()
-				elseif ( ZoneName == Z["Warsong Gulch"] ) then -- Warsong Gulch Battleground
+				elseif ( ZoneName == Z["Warsong Gulch"] ) then			-- Warsong Gulch Battleground
 					FinalFantasylization_WarsongGulchBG()
-				elseif ( ZoneName == Z["Isle of Conquest"] ) then -- Isle of Conquest Battleground
+				elseif ( ZoneName == Z["Isle of Conquest"] ) then		-- Isle of Conquest Battleground
 					FinalFantasylization_IsleOfConquestBG()
 				else
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. "Battleground not in FinalFantasylization")
@@ -5779,16 +5787,16 @@ function FinalFantasylization_GetMusic()
 --###########################################################################################
 	
 --'==========================================================================================		
---'  World event: Player is Resting
+--'	World event: Player is Resting
 --'==========================================================================================		
-		if ( IsResting() ) and (  factionEnglish == F["Alliance"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Sleep == true and ( pvpType == "friendly" or pvpType == "hostile" or pvpType == "sanctuary" or pvpType == "contested" or pvpType == nil or pvpType == "") then
+		if ( IsResting() ) and ( factionEnglish == F["Alliance"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Sleep == true and ( pvpType == "friendly" or pvpType == "hostile" or pvpType == "sanctuary" or pvpType == "contested" or pvpType == nil or pvpType == "") then
 			if FinalFantasylization_PlayerIsResting == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. AllianceRest)
 				FinalFantasylization_Sleeping()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_PlayerIsResting = true
-		elseif ( IsResting() ) and (  factionEnglish == F["Horde"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Sleep == true and ( pvpType == "friendly" or pvpType == "hostile" or pvpType == "sanctuary" or pvpType == "contested" or pvpType == nil or pvpType == "") then
+		elseif ( IsResting() ) and ( factionEnglish == F["Horde"] ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Sleep == true and ( pvpType == "friendly" or pvpType == "hostile" or pvpType == "sanctuary" or pvpType == "contested" or pvpType == nil or pvpType == "") then
 			if FinalFantasylization_PlayerIsResting == false then
 				FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. HordeRest)
 				FinalFantasylization_Sleeping()
@@ -5804,7 +5812,7 @@ function FinalFantasylization_GetMusic()
 	end
 end
 --'==========================================================================================		
---'  World event: /DANCE
+--'	World event: /DANCE
 --'==========================================================================================
 function FinalFantasylization_DoEmote(emote, msg)
 	FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. 'FinalFantasylization_DoEmote: '..emote);
@@ -5866,7 +5874,7 @@ function FinalFantasylization_DoEmote(emote, msg)
 		elseif FinalFantasylization_DanceSong == "wolf" then FinalFantasylization_WolfDanceSong();
 		else FinalFantasylization_debugMsg("Dance Music error");
 		end
-	end 
+	end
 end
 
 function FinalFantasylization_PlayerMove()
@@ -5940,7 +5948,7 @@ function FinalFantasylization_JumpOrAscendStart()
 		FinalFantasylization_StopDanceSong();
 	end
 --'==========================================================================================		
---'  World event: Chocobo Kweh!!
+--'	World event: Chocobo Kweh!!
 --'==========================================================================================	
 	if IsMounted("player") and FinalFantasylizationOptions.ChocoboKweh == true then
 		local mountcount = GetNumCompanions("MOUNT")
@@ -5951,7 +5959,7 @@ function FinalFantasylization_JumpOrAscendStart()
 			i = i + 1
 			mountName = strlower(creatureName)
 		until ( active ~= nil ) 
-		if string.match(mountName,'strider') then 
+		if string.match(mountName,'strider') then
 			FinalFantasylization_ChocoboKweh();
 		end
 	end
@@ -5973,12 +5981,12 @@ function FinalFantasylization_StopDanceSong()
 end
 
 --'==========================================================================================
---'    END OF EVENTS
+--'		END OF EVENTS
 --'==========================================================================================
 
 -- Initializes FinalFantasylization after all saved variables have been loaded.
 
--- Handles timer updates.  Called once per video frame.
+-- Handles timer updates. Called once per video frame.
 function onUpdate(self, elapsed)
 	TimeSinceLastUpdate = (TimeSinceLastUpdate or 0) + (elapsed or 0); 	
 
@@ -5992,13 +6000,13 @@ end
 ------------------------------------------------------------
 -- FinalFantasylization methods
 ------------------------------------------------------------
--- Resets all FinalFantasylization options.  Used to set the saved variable to a default state.
+-- Resets all FinalFantasylization options. Used to set the saved variable to a default state.
 function FinalFantasylizationResetOptions()
 	FinalFantasylizationOptions = {}
 	FinalFantasylizationFillMissingOptions()
 end
 
--- Adds default values for any FinalFantasylization options that are missing.  This can happen after an upgrade.
+-- Adds default values for any FinalFantasylization options that are missing. This can happen after an upgrade.
 function FinalFantasylizationFillMissingOptions()
 	if not FinalFantasylizationOptions then FinalFantasylizationOptions = {} end
 	
@@ -6030,11 +6038,11 @@ end
 FinalFantasylizationCoreFrame:SetScript("OnUpdate", onUpdate)
 FinalFantasylizationCoreFrame:SetScript("OnEvent", function() FinalFantasylization_OnEvent(event, arg1, arg2, arg3) end)
 
---	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_COMBO_POINTS") --  Fired when there has baan a change in Combo Points
+	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_COMBO_POINTS") -- Fired when there has baan a change in Combo Points
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_ENTERING_WORLD") -- Fired when the player enters the world, enters/leaves an instance, or respawns at a graveyard. Also fires any other time the player sees a loading screen.
---	FinalFantasylizationCoreFrame:RegisterEvent("ADDON_LOADED") -- This event fires whenever an AddOn has finished loading and the SavedVariables for that AddOn have been loaded from their file.
+	FinalFantasylizationCoreFrame:RegisterEvent("ADDON_LOADED") -- This event fires whenever an AddOn has finished loading and the SavedVariables for that AddOn have been loaded from their file.
 	FinalFantasylizationCoreFrame:RegisterEvent("VARIABLES_LOADED") -- This event fires whenever an AddOn is loaded (fires once for each AddOn loaded if multiple AddOns are being loaded), whether that is during the inital Loading Phase or when an AddOn is loaded using the LoadAddOn("addonname") or UIParentLoadAddon("addonname") function. This event always fires after SavedVariables of the AddOn have been loaded from disk and its OnLoad function has been executed.
---	FinalFantasylizationCoreFrame:RegisterEvent("SPELLS_CHANGED") -- This event fires shortly before the PLAYER_LOGIN event and signals that information on the user's spells has been loaded and is available to the UI.
+	FinalFantasylizationCoreFrame:RegisterEvent("SPELLS_CHANGED") -- This event fires shortly before the PLAYER_LOGIN event and signals that information on the user's spells has been loaded and is available to the UI.
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_LOGIN") -- This event fires immediately before PLAYER_ENTERING_WORLD.
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_ENTERING_WORLD") -- This event fires immediately after PLAYER_LOGIN
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_LEAVING_WORLD") -- Fires when the player logs out or exits a world area.
@@ -6042,7 +6050,7 @@ FinalFantasylizationCoreFrame:SetScript("OnEvent", function() FinalFantasylizati
 	FinalFantasylizationCoreFrame:RegisterEvent("WORLD_MAP_UPDATE") -- Fired when the world map should be updated. When entering a battleground, this event won't fire until the zone is changed (i.e. in WSG when you walk outside of Warsong Lumber Mill or Silverwing Hold)
 	FinalFantasylizationCoreFrame:RegisterEvent("ZONE_CHANGED") -- Fired when the player enters a new zone. Zones are the smallest named subdivions of the game world and are contained within areas (also called regions). Whenever the text over the minimap changes, this event is fired. 
 	FinalFantasylizationCoreFrame:RegisterEvent("ZONE_CHANGED_INDOORS") -- Fired when a player enters a new zone within a city. 
---	FinalFantasylizationCoreFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA") -- Fired when the user enters a new zone and a new area. e.g. moving from Duskwood to Stranglethorn Vale.
+	FinalFantasylizationCoreFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA") -- Fired when the user enters a new zone and a new area. e.g. moving from Duskwood to Stranglethorn Vale.
 	FinalFantasylizationCoreFrame:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_ENTER_COMBAT") -- This event fires when the player initiates melee auto-attack.
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_LEAVE_COMBAT") -- This event fires when the player stops melee auto-attack.
@@ -6054,24 +6062,24 @@ FinalFantasylizationCoreFrame:SetScript("OnEvent", function() FinalFantasylizati
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_UPDATE_RESTING") -- Fired when the player starts or stops resting, i.e. when entering/leaving inns/major towns. 
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_CAMPING") -- Fired when the player is camping 
 	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_AURA") -- Fires when a unit loses or gains a buff or debuff.
---	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_MANA") -- Fired whenever a unit's mana changes either by usage or by regeneration. The event is also called when a unit is clicked on.
---	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_HEALTH") -- Fired whenever a units health is affected.
---	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_ENERGY") -- Fired whenever a units energy is affected.  
---	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_MODEL_CHANGED") -- Fired when the unit's 3d model changes. (Shapeshift, Polymorph, etc...)
---	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_SPELLCAST_SENT") -- Fires when a request to cast a spell (on behalf of the player or a unit controlled by the player) is sent to the server
+	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_MANA") -- Fired whenever a unit's mana changes either by usage or by regeneration. The event is also called when a unit is clicked on.
+	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_HEALTH") -- Fired whenever a units health is affected.
+	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_ENERGY") -- Fired whenever a units energy is affected.
+	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_MODEL_CHANGED") -- Fired when the unit's 3d model changes. (Shapeshift, Polymorph, etc...)
+	FinalFantasylizationCoreFrame:RegisterEvent("UNIT_SPELLCAST_SENT") -- Fires when a request to cast a spell (on behalf of the player or a unit controlled by the player) is sent to the server
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_DEAD") -- Fired when the player has died. 
-	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_ALIVE") -- Fired when the player: Releases from death to a graveyard.  Accepts a resurrect before releasing their spirit.
-	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_UNGHOST") -- Fired when the player is alive after being a ghost. Called after one of: Performing a successful corpse run and the player accepts the 'Resurrect Now' box.  Accepting a resurrect from another player after releasing from a death.  Zoning into an instance where the player is dead.  When the player accept a resurrect from a Spirit Healer.
+	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_ALIVE") -- Fired when the player: Releases from death to a graveyard. Accepts a resurrect before releasing their spirit.
+	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_UNGHOST") -- Fired when the player is alive after being a ghost. Called after one of: Performing a successful corpse run and the player accepts the 'Resurrect Now' box. Accepting a resurrect from another player after releasing from a death. Zoning into an instance where the player is dead. When the player accept a resurrect from a Spirit Healer.
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_CONTROL_GAINED") -- Fires after the PLAYER_CONTROL_LOST event, when control has been restored to the player. (Recover from Mindcontrol, Taxi, etc...)
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_CONTROL_LOST") -- Fires whenever the player is unable to control the character. Examples are when afflicted by fear or when using a taxi. (Mindcontrol, Taxi, etc...)
 	FinalFantasylizationCoreFrame:RegisterEvent("CHAT_MSG_BG_SYSTEM_NEUTRAL") -- Fired for non faction specific events in the battlegrounds such as the battle start announcement. 
 	FinalFantasylizationCoreFrame:RegisterEvent("UPDATE_BATTLEFIELD_STATUS") -- Fired whenever joining a queue, leaving a queue, battlefield to join is changed, when you can join a battlefield, or if somebody wins the battleground. 
 	FinalFantasylizationCoreFrame:RegisterEvent("UPDATE_WORLD_STATES") -- Fired within Battlefields when certain things occur such as a flag being captured. 
---	FinalFantasylizationCoreFrame:RegisterEvent("UPDATE_CHAT_WINDOWS") -- Fired when there's a reason to update the chat windows. 
---	FinalFantasylizationCoreFrame:RegisterEvent("CHAT_MSG_CHANNEL") -- Fired when the client receives a channel message. 
---	FinalFantasylizationCoreFrame:RegisterEvent("CHAT_MSG_BATTLEGROUND") -- Fired when a message is received through the battleground group channel.
---	FinalFantasylizationCoreFrame:RegisterEvent("UPDATE_MOUSEOVER_UNIT") -- Fires whenever you mouse over any NPC or PC
---	FinalFantasylizationCoreFrame:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_SELF_DAMAGE") -- Fires when you gain or are affected by a instant or ongoing spell or effect.
+	FinalFantasylizationCoreFrame:RegisterEvent("UPDATE_CHAT_WINDOWS") -- Fired when there's a reason to update the chat windows. 
+	FinalFantasylizationCoreFrame:RegisterEvent("CHAT_MSG_CHANNEL") -- Fired when the client receives a channel message. 
+	FinalFantasylizationCoreFrame:RegisterEvent("CHAT_MSG_BATTLEGROUND") -- Fired when a message is received through the battleground group channel.
+	FinalFantasylizationCoreFrame:RegisterEvent("UPDATE_MOUSEOVER_UNIT") -- Fires whenever you mouse over any NPC or PC
+	FinalFantasylizationCoreFrame:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_SELF_DAMAGE") -- Fires when you gain or are affected by a instant or ongoing spell or effect.
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_LEVEL_UP") -- Fires when player levels up
 	FinalFantasylizationCoreFrame:RegisterEvent("CHAT_MSG_TEXT_EMOTE") -- Fires when a chat emote is used (aka /dance)	
 	FinalFantasylizationCoreFrame:RegisterEvent("PLAYER_GAINS_VEHICLE_DATA") -- Fires when the player gains vehicle-related attributes without necessarily entering a vehicle.

@@ -1,7 +1,7 @@
 ============================
 >>>                      <<<
 >>> FinalFantasylization <<<
->>>  ReadMe for 3.3.1    <<<
+>>>  ReadMe for 3.3.2    <<<
 >>>                      <<<
 ============================
 
@@ -166,6 +166,12 @@ Fix the Fanfare sound issue on world (sometimes doesn't play)
 Add more zone/subzone detections
 
 *********************
+24. November 2016 - FinalFantasylization 3.3.2 - Not Much to Say  >> Darken5 <<
+	- "Fixed?" bug with UnitGUID("target") returning "nil"
+	- Added "Raid" detection to combat music. (Still fires "DungeonBoss()" music, but better than no music) 
+	- More code cleanup. (stray spaces and Tab's)
+	- Removed some "testing" comments blocking "RegisterEvent" calls at the bottom of the .lua now that the 3.2.8 update hasnt shown any bugs other than the ones I missed or typo's.
+
 21. November 2016 - FinalFantasylization 3.3.1 - New Zones & More Typo's  >> Darken5 <<
 	- Found a typo with "IsResting()" (41 instances of "IsResting ()" changed to "IsResting()" without the space)
 	- Towns Added:

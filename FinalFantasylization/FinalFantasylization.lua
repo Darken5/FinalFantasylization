@@ -843,14 +843,14 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================
 --'	Sounds
 --'==========================================================================================
-	if FinalFantasylization_PlayerIsCombat == false and FinalFantasylization_RegenGain == true and FinalFantasylizationOptions.Fanfare == true then
-		FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. Victory)
-		FinalFantasylization_Fanfare() -- Battle fanfare call
-		FinalFantasylization_RegenGain = false
-		if FinalFantasylization_PlayerIsCombat == true then
-			StopMusic();
+		if FinalFantasylization_PlayerIsCombat == false and FinalFantasylization_RegenGain == true and FinalFantasylizationOptions.Fanfare == true then
+			FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. Victory)
+			FinalFantasylization_Fanfare() -- Battle fanfare call
+			FinalFantasylization_RegenGain = false
+			if FinalFantasylization_PlayerIsCombat == true then
+				StopMusic();
+			end
 		end
-	end
 --'==========================================================================================		
 --'	Music
 --'==========================================================================================

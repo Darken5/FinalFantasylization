@@ -1,5 +1,5 @@
 ## Interface: 30300
-## Version: 3.3.0 
+## Version: 3.3.2 
 ## Title: FinalFantasylization [|cff8ec3e6My Soundpack Name|r] |ff33003.3.0|r
 ## Notes: Soundpack for FinalFantasylization based on ------.
 ## Original Author: Nackle on Shadowmoon(EU) - Alliance ; Renewed by: LorDestinY - Ad Aeternum.Horde@Frostmane.EU - http://www.ad-aeternum.org/	 WOTLK By Hellfox; Kilrogg EU - Alliance

@@ -1,6 +1,6 @@
 --#######################################
 --##
---##	   FinalFantasylization 3.3.2 test
+--##	   FinalFantasylization 3.3.2
 --##
 --##	     Final Fantasy 7 
 --##

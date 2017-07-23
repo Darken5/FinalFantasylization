@@ -1,6 +1,6 @@
 --#######################################
 --##
---##	   FinalFantasylization 3.3.0
+--##	   FinalFantasylization 3.3.2
 --##
 --##	     Legend of Zelda 
 --##
@@ -228,6 +228,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		Boss9Song = "Boss9Song.mp3" --
 		Boss10Song = "Boss10Song.mp3" --
 		Boss11Song = "Boss11Song.mp3" --
+		
 		-- Dance Event --
 		BloodElfFemaleDanceSong = "BloodElfFemale.mp3" -- 
 		BloodElfMaleDanceSong = "BloodElfMale.mp3" -- 
@@ -256,6 +257,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		WolfDanceSong = "Wolf.mp3" -- 
 
 		-- Misc Events --
+		ChocoboKweh = "kweh.mp3" -- Chocobo Kweh Sound
 		LevelUpSong = "LevelUpSong.mp3" --
 		SwimSong = "SwimSong.mp3" -- 
 		Swim2Song = "Swim2Song.mp3" --
@@ -295,6 +297,10 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_LevelUpSong()
 		FinalFantasylization_PlayFile( S ..  LevelUpSong );
 		FinalFantasylization_debugMsg("LevelUpSong")
+	end
+	function FinalFantasylization_ChocoboKweh()
+		FinalFantasylization_PlayFile( S ..  ChocoboKweh );
+		FinalFantasylization_debugMsg("Chocobo Kweh!")
 	end
 	
 	--########################
@@ -2648,6 +2654,110 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_PlayMusic( S .. Escape8Song);
 				FinalFantasylization_debugMsg("Escape8Song")
 			end
+	end
+	
+	--###############
+	-- ## DANCE MUSIC
+	--###############
+	function FinalFantasylization_BloodElfFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. BloodElfFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_BloodElfMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. BloodElfMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_DraeneiFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DraeneiFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_DraeneiMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DraeneiMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_DwarfFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DwarfFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_DwarfMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DwarfMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_GnomeFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. GnomeFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_GnomeMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. GnomeMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_HumanFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. HumanFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_HumanMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. HumanMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_NightElfFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. NightElfFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_NightElfMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. NightElfMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_OrcFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. OrcFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_OrcMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. OrcMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_TaurenFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. TaurenFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_TaurenMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. TaurenMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_TrollFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. TrollFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_TrollMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. TrollMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_UndeadFemaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. UndeadFemaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_UndeadMaleDanceSong()
+		FinalFantasylization_PlayMusic( SS .. UndeadMaleDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_DruidBearDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DruidBearDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_DruidCatDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DruidCatDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_DruidOwlBearDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DruidOwlBearDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_DruidTreeFormDanceSong()
+		FinalFantasylization_PlayMusic( SS .. DruidTreeFormDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
+	end
+	function FinalFantasylization_WolfDanceSong()
+		FinalFantasylization_PlayMusic( SS .. WolfDanceSong);
+		FinalFantasylization_debugMsg("Look Ma I'm Dancin!  ")
 	end
 		
 --END of music calls

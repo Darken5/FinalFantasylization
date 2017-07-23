@@ -1,6 +1,6 @@
 --#######################################
 --##
---##	   FinalFantasylization 3.3.0
+--##	   FinalFantasylization 3.3.2
 --##
 --##	     Steven 2016
 --##

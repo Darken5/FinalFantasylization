@@ -1,0 +1,8 @@
+## Interface: 40300
+## Version: 4.0.0
+## Title: FinalFantasylization 4.0.0
+## Notes: FinalFantasylization plays music and sounds based on different in-game events
+## Author: Darken5
+## SavedVariablesPerCharacter: FinalFantasylizationOptions, CoreSavedVariable
+
+FinalFantasylization.xml

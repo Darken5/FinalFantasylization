@@ -8,5 +8,6 @@
 FinalFantasylization.xml
 
 Locales\Locales.xml
+FinalFantasylization.lua
 FinalFantasylizationOptions.lua
 FinalFantasylizationOptions.xml

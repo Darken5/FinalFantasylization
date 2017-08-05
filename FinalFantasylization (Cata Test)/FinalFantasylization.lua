@@ -1,4 +1,4 @@
--- FinalFantasylization by Darken5
+﻿-- FinalFantasylization by Darken5
 -- Version 4.0.0
 ------------------------------------------------------------
 

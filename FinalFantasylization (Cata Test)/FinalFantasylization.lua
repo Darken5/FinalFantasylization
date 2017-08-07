@@ -217,6 +217,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InStarterAreaAmmenVale = false -- Draenei Starting Area
 	FinalFantasylization_InStarterAreaShadowglen = false -- Night Elf Starting Area
 	FinalFantasylization_InStarterAreaScarletEnclave = false -- Death Knight Starting Area
+	FinalFantasylization_InStarterAreaGilneasCity = false
 	-- Capital Cities --
 	FinalFantasylization_InCityOrgrimmar = false
 	FinalFantasylization_InCitySilvermoonCity = false
@@ -1258,6 +1259,20 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InStarterAreaShadowglen = false
+		end
+--'==========================================================================================		
+--' Starting Areas: Gilneas City ( Worgen Starting Area )
+--'==========================================================================================
+		if ( ZoneName == Gilneas City ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InStarterAreaGilneasCity == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. ZoneName)
+				FinalFantasylization_StarterAreaScarletEnclave()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InStarterAreaGilneasCity = true
+			return
+		else
+			FinalFantasylization_InStarterAreaGilneasCity = false
 		end
 --'==========================================================================================		
 --' Starting Areas: Acherus: The Ebon Hold ( Death Knight Starting Area )

@@ -203,44 +203,80 @@ end
 
 function FinalFantasylizationUIFrame_EnableAll_Button_OnClick()
 	FinalFantasylizationUIFrame_EnableCheck:SetChecked(true);
+	FinalFantasylizationOptions.Enabled = true;
+	FinalFantasylizationUIFrame_DisabledWarningLabel:Hide();
 	FinalFantasylizationUIFrame_MusicCheck:SetChecked(true);
+	FinalFantasylizationOptions.Music = true;
 	FinalFantasylizationUIFrame_CombatCheck:SetChecked(true);
+	FinalFantasylizationOptions.Combat = true;
 	FinalFantasylizationUIFrame_MountCheck:SetChecked(true);
+	FinalFantasylizationOptions.Mount = true;
 	FinalFantasylizationUIFrame_DungeonCheck:SetChecked(true);
+	FinalFantasylizationOptions.Dungeon = true;
 	FinalFantasylizationUIFrame_RaidCheck:SetChecked(true);
+	FinalFantasylizationOptions.Raid = true;
 	FinalFantasylizationUIFrame_BattlegroundCheck:SetChecked(true);
+	FinalFantasylizationOptions.Battleground = true;
 	FinalFantasylizationUIFrame_SleepCheck:SetChecked(true);
+	FinalFantasylizationOptions.Sleep = true;
 	FinalFantasylizationUIFrame_DanceCheck:SetChecked(true);
+	FinalFantasylizationOptions.Dance = true;
 	FinalFantasylizationUIFrame_SwimCheck:SetChecked(true);
+	FinalFantasylizationOptions.Swim = true;
 	FinalFantasylizationUIFrame_DeadCheck:SetChecked(true);
+	FinalFantasylizationOptions.Dead = true;
 	FinalFantasylizationUIFrame_FlightCheck:SetChecked(true);
+	FinalFantasylizationOptions.Flight = true;
 	FinalFantasylizationUIFrame_CapitalCheck:SetChecked(true);
+	FinalFantasylizationOptions.Capital = true;
 	FinalFantasylizationUIFrame_SoundCheck:SetChecked(true);
+	FinalFantasylizationOptions.Sound = true;
 	FinalFantasylizationUIFrame_FanfareCheck:SetChecked(true);
+	FinalFantasylizationOptions.Fanfare = true;
 	FinalFantasylizationUIFrame_ChocoboKwehCheck:SetChecked(true);
+	FinalFantasylizationOptions.ChocoboKweh = true;
 	FinalFantasylizationUIFrame_LevelUpCheck:SetChecked(true);
+	FinalFantasylizationOptions.LevelUp = true;
 	FinalFantasylization_ClearMusicState();
-	FinalFantasylization_GetMusic()
+	FinalFantasylization_GetMusic();
 end
 function FinalFantasylizationUIFrame_DisableAll_Button_OnClick()
 	FinalFantasylizationUIFrame_EnableCheck:SetChecked(false);
+	FinalFantasylizationOptions.Enabled = false;
+	FinalFantasylizationUIFrame_DisabledWarningLabel:Show();
 	FinalFantasylizationUIFrame_MusicCheck:SetChecked(false);
+	FinalFantasylizationOptions.Music = false;
 	FinalFantasylizationUIFrame_CombatCheck:SetChecked(false);
+	FinalFantasylizationOptions.Combat = false;
 	FinalFantasylizationUIFrame_MountCheck:SetChecked(false);
+	FinalFantasylizationOptions.Mount = false;
 	FinalFantasylizationUIFrame_DungeonCheck:SetChecked(false);
+	FinalFantasylizationOptions.Dungeon = false;
 	FinalFantasylizationUIFrame_RaidCheck:SetChecked(false);
+	FinalFantasylizationOptions.Raid = false;
 	FinalFantasylizationUIFrame_BattlegroundCheck:SetChecked(false);
+	FinalFantasylizationOptions.Battleground = false;
 	FinalFantasylizationUIFrame_SleepCheck:SetChecked(false);
+	FinalFantasylizationOptions.Sleep = false;
 	FinalFantasylizationUIFrame_DanceCheck:SetChecked(false);
+	FinalFantasylizationOptions.Dance = false;
 	FinalFantasylizationUIFrame_SwimCheck:SetChecked(false);
+	FinalFantasylizationOptions.Swim = false;
 	FinalFantasylizationUIFrame_DeadCheck:SetChecked(false);
+	FinalFantasylizationOptions.Dead = false;
 	FinalFantasylizationUIFrame_FlightCheck:SetChecked(false);
+	FinalFantasylizationOptions.Flight = false;
 	FinalFantasylizationUIFrame_CapitalCheck:SetChecked(false);
+	FinalFantasylizationOptions.Capital = false;
 	FinalFantasylizationUIFrame_SoundCheck:SetChecked(false);
+	FinalFantasylizationOptions.Sound = false;
 	FinalFantasylizationUIFrame_FanfareCheck:SetChecked(false);
+	FinalFantasylizationOptions.Fanfare = false;
 	FinalFantasylizationUIFrame_ChocoboKwehCheck:SetChecked(false);
+	FinalFantasylizationOptions.ChocoboKweh = false;
 	FinalFantasylizationUIFrame_LevelUpCheck:SetChecked(false);
-	StopMusic()
+	FinalFantasylizationOptions.LevelUp = false;
+	StopMusic();
 	FinalFantasylization_ClearMusicState();
 end
 

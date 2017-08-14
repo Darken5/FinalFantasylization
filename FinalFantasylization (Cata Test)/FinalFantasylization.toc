@@ -5,4 +5,9 @@
 ## Author: Hellfire and Darken5
 ## SavedVariablesPerCharacter: FinalFantasylizationOptions, CoreSavedVariable
 
+embeds.xml
+
+Locales\Locales.xml
 FinalFantasylization.xml
+FinalFantasylizationOptions.lua
+FinalFantasylizationOptions.xml

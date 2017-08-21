@@ -1,5 +1,5 @@
 ﻿-- FinalFantasylization by Hellfox and Darken5
--- Version 3.3.3
+-- Version 3.3.4
 ------------------------------------------------------------
 
 -- FinalFantasylization requires this version of FFZlib:
@@ -855,6 +855,9 @@ function FinalFantasylization_GetMusic()
 --'	Music
 --'==========================================================================================
 		FinalFantasylization_IsPlaying = false
+		if not ( IsResting() ) and FinalFantasylization_PlayerIsResting == true then
+			FinalFantasylization_PlayerIsResting = false
+		end
 --###########################################################################################
 --###########################################################################################
 --##
@@ -928,7 +931,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --'	World event: Player in Combat
 --'==========================================================================================
-		if FinalFantasylization_PlayerIsCombat == true and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Combat == true and UnitExists("target") then
+		if FinalFantasylization_PlayerIsCombat == true and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Combat == true and UnitAffectingCombat("player") then
 			--FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombat)
 			local inInstance, instanceType = IsInInstance();
 			if FinalFantasylization_PlayerIsBattling == false then
@@ -1066,6 +1069,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InStarterAreaSunstriderIsle = true
 			end
+			FinalFantasylization_InEasternKingdomsEversongWoods = false
 			return
 		else
 			FinalFantasylization_InStarterAreaSunstriderIsle = false
@@ -1085,6 +1089,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InStarterAreaDeathknell = true
 			end
+			FinalFantasylization_InEasternKingdomsTirisfalGlades = false
 			return
 		else
 			FinalFantasylization_InStarterAreaDeathknell = false
@@ -1104,6 +1109,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InStarterAreaValleyOfTrials = true
 			end
+			FinalFantasylization_InKalimdorDurotar = false
 			return
 		else
 			FinalFantasylization_InStarterAreaValleyOfTrials = false
@@ -1123,6 +1129,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InStarterAreaCampNarache = true
 			end
+			FinalFantasylization_InKalimdorMulgore = false
 			return
 		else
 			FinalFantasylization_InStarterAreaCampNarache = false
@@ -1142,6 +1149,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InStarterAreaColdridgeValley = true
 			end
+			FinalFantasylization_InEasternKingdomsDunMorogh = false
 			return
 		else
 			FinalFantasylization_InStarterAreaColdridgeValley = false
@@ -1161,6 +1169,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InStarterAreaNorthshireValley = true
 			end
+			FinalFantasylization_InEasternKingdomsElwynnForest = false
 			return
 		else
 			FinalFantasylization_InStarterAreaNorthshireValley = false
@@ -1180,6 +1189,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InStarterAreaAmmenVale = true
 			end
+			FinalFantasylization_InKalimdorAzuremystIsle = false
 			return
 		else
 			FinalFantasylization_InStarterAreaAmmenVale = false
@@ -1199,6 +1209,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InStarterAreaShadowglen = true
 			end
+			FinalFantasylization_InKalimdorTeldrassil = false
 			return
 		else
 			FinalFantasylization_InStarterAreaShadowglen = false
@@ -1420,6 +1431,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InCityArea52 = true
+			FinalFantasylization_InOutlandNetherstorm = false
 			return
 		else
 			FinalFantasylization_InCityArea52 = false
@@ -1434,6 +1446,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InCityBootyBay = true
+			FinalFantasylization_InEasternKingdomsStranglethornVale = false
 			return
 		else
 			FinalFantasylization_InCityBootyBay = false
@@ -1462,6 +1475,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InCityEbonHold = true
+			FinalFantasylization_InEasternKingdomsEasternPlaguelands = false
 			return
 		else
 			FinalFantasylization_InCityEbonHold = false
@@ -1476,6 +1490,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InCityEverlook = true
+			FinalFantasylization_InKalimdorWinterspring = false
 			return
 		else
 			FinalFantasylization_InCityEverlook = false
@@ -1490,6 +1505,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InCityGadgetzan = true
+			FinalFantasylization_InKalimdorTanaris = false
 			return
 		else
 			FinalFantasylization_InCityGadgetzan = false
@@ -1504,6 +1520,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InCityRatchet = true
+			FinalFantasylization_InKalimdorTheBarrens = false
 			return
 		else
 			FinalFantasylization_InCityRatchet = false
@@ -1546,6 +1563,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownAgmarsHammer = true
 			end
+			FinalFantasylization_InNorthrendDragonblight = false
 			return
 		else
 			FinalFantasylization_InHordeTownAgmarsHammer = false
@@ -1565,6 +1583,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownApothecaryCamp = true
 			end
+			FinalFantasylization_InNorthrendHowlingFjord = false
 			return
 		else
 			FinalFantasylization_InHordeTownApothecaryCamp = false
@@ -1584,6 +1603,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownBloodhoofVillage = true
 			end
+			FinalFantasylization_InKalimdorMulgore = false
 			return
 		else
 			FinalFantasylization_InHordeTownBloodhoofVillage = false
@@ -1603,6 +1623,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownBloodvenomPost = true
 			end
+			FinalFantasylization_InKalimdorFelwood = false
 			return
 		else
 			FinalFantasylization_InHordeTownBloodvenomPost = false
@@ -1622,6 +1643,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownBrackenwallVillage = true
 			end
+			FinalFantasylization_InKalimdorDustwallowMarsh = false
 			return
 		else
 			FinalFantasylization_InHordeTownBrackenwallVillage = false
@@ -1641,6 +1663,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownBrill = true
 			end
+			FinalFantasylization_InEasternKingdomsTirisfalGlades = false
 			return
 		else
 			FinalFantasylization_InHordeTownBrill = false
@@ -1660,6 +1683,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownBorgorokOutpost = true
 			end
+			FinalFantasylization_InNorthrendBoreanTundra = false
 			return
 		else
 			FinalFantasylization_InHordeTownBorgorokOutpost = false
@@ -1679,6 +1703,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownCampMojache = true
 			end
+			FinalFantasylization_InKalimdorFeralas = false
 			return
 		else
 			FinalFantasylization_InHordeTownCampMojache = false
@@ -1698,6 +1723,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownCampOneqwah = true
 			end
+			FinalFantasylization_InNorthrendGrizzlyHills = false
 			return
 		else
 			FinalFantasylization_InHordeTownCampOneqwah = false
@@ -1717,6 +1743,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownCampTaurajo = true
 			end
+			FinalFantasylization_InKalimdorTheBarrens = false
 			return
 		else
 			FinalFantasylization_InHordeTownCampTaurajo = false
@@ -1736,6 +1763,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownCampTunkalo = true
 			end
+			FinalFantasylization_InNorthrendStormPeaks = false
 			return
 		else
 			FinalFantasylization_InHordeTownCampTunkalo = false
@@ -1755,6 +1783,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownCampWinterhoof = true
 			end
+			FinalFantasylization_InNorthrendHowlingFjord = false
 			return
 		else
 			FinalFantasylization_InHordeTownCampWinterhoof = false
@@ -1774,6 +1803,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownConquestHold = true
 			end
+			FinalFantasylization_InNorthrendGrizzlyHills = false
 			return
 		else
 			FinalFantasylization_InHordeTownConquestHold = false
@@ -1793,6 +1823,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownCrossroads = true
 			end
+			FinalFantasylization_InKalimdorTheBarrens = false
 			return
 		else
 			FinalFantasylization_InHordeTownCrossroads = false
@@ -1812,6 +1843,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownFairbreezeVillage = true
 			end
+			FinalFantasylization_InEasternKingdomsEversongWoods = false
 			return
 		else
 			FinalFantasylization_InHordeTownFairbreezeVillage = false
@@ -1831,6 +1863,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownFalconWatch = true
 			end
+			FinalFantasylization_InOutlandHellfirePeninsula = false
 			return
 		else
 			FinalFantasylization_InHordeTownFalconWatch = false
@@ -1850,6 +1883,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownFalconwingSquare = true
 			end
+			FinalFantasylization_InEasternKingdomsEversongWoods = false
 			return
 		else
 			FinalFantasylization_InHordeTownFalconwingSquare = false
@@ -1869,6 +1903,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownFlameCrest = true
 			end
+			FinalFantasylization_InEasternKingdomsBurningSteppes = false
 			return
 		else
 			FinalFantasylization_InHordeTownFlameCrest = false
@@ -1888,6 +1923,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownFreewindPost = true
 			end
+			FinalFantasylization_InKalimdorThousandNeedles = false
 			return
 		else
 			FinalFantasylization_InHordeTownFreewindPost = false
@@ -1907,6 +1943,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownGaradar = true
 			end
+			FinalFantasylization_InOutlandNagrand = false
 			return
 		else
 			FinalFantasylization_InHordeTownGaradar = false
@@ -1926,6 +1963,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownGhostWalkerPost = true
 			end
+			FinalFantasylization_InKalimdorDesolace = false
 			return
 		else
 			FinalFantasylization_InHordeTownGhostWalkerPost = false
@@ -1945,6 +1983,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownGromarshCrashSite = true
 			end
+			FinalFantasylization_InNorthrendStormPeaks = false
 			return
 		else
 			FinalFantasylization_InHordeTownGromarshCrashSite = false
@@ -1964,6 +2003,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownGromgolBaseCamp = true
 			end
+			FinalFantasylization_InEasternKingdomsStranglethornVale = false
 			return
 		else
 			FinalFantasylization_InHordeTownGromgolBaseCamp = false
@@ -1983,6 +2023,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownHammerfall = true
 			end
+			FinalFantasylization_InEasternKingdomsArathiHighlands = false
 			return
 		else
 			FinalFantasylization_InHordeTownHammerfall = false
@@ -2002,6 +2043,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownKargath = true
 			end
+			FinalFantasylization_InEasternKingdomsBadlands = false
 			return
 		else
 			FinalFantasylization_InHordeTownKargath = false
@@ -2021,6 +2063,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownKorkronVanguard = true
 			end
+			FinalFantasylization_InNorthrendDragonblight = false
 			return
 		else
 			FinalFantasylization_InHordeTownKorkronVanguard = false
@@ -2040,6 +2083,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownMokNathalVillage = true
 			end
+			FinalFantasylization_InOutlandBladesEdgeMountains = false
 			return
 		else
 			FinalFantasylization_InHordeTownMokNathalVillage = false
@@ -2059,6 +2103,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownNewAgamand = true
 			end
+			FinalFantasylization_InNorthrendHowlingFjord = false
 			return
 		else
 			FinalFantasylization_InHordeTownNewAgamand = false
@@ -2078,6 +2123,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownRazorHill = true
 			end
+			FinalFantasylization_InKalimdorDurotar = false
 			return
 		else
 			FinalFantasylization_InHordeTownRazorHill = false
@@ -2097,6 +2143,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownRevantuskVillage = true
 			end
+			FinalFantasylization_InEasternKingdomsTheHinterlands = false
 			return
 		else
 			FinalFantasylization_InHordeTownRevantuskVillage = false
@@ -2116,6 +2163,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownSenjinVillage = true
 			end
+			FinalFantasylization_InKalimdorDurotar = false
 			return
 		else
 			FinalFantasylization_InHordeTownSenjinVillage = false
@@ -2135,6 +2183,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownSepulcher = true
 			end
+			FinalFantasylization_InEasternKingdomsSilverpineForest = false
 			return
 		else
 			FinalFantasylization_InHordeTownSepulcher = false
@@ -2154,6 +2203,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownShadowmoonVillage = true
 			end
+			FinalFantasylization_InOutlandShadowmoonValley = false
 			return
 		else
 			FinalFantasylization_InHordeTownShadowmoonVillage = false
@@ -2173,6 +2223,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownShadowpreyVillage = true
 			end
+			FinalFantasylization_InKalimdorDesolace = false
 			return
 		else
 			FinalFantasylization_InHordeTownShadowpreyVillage = false
@@ -2192,6 +2243,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownSplintertreePost = true
 			end
+			FinalFantasylization_InKalimdorAshenvale = false
 			return
 		else
 			FinalFantasylization_InHordeTownSplintertreePost = false
@@ -2211,6 +2263,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownStonard = true
 			end
+			FinalFantasylization_InEasternKingdomsSwampOfSorrows = false
 			return
 		else
 			FinalFantasylization_InHordeTownStonard = false
@@ -2230,6 +2283,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownStonebreakerHold = true
 			end
+			FinalFantasylization_InOutlandTerokkarForest = false
 			return
 		else
 			FinalFantasylization_InHordeTownStonebreakerHold = false
@@ -2249,6 +2303,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownSunreaversCommand = true
 			end
+			FinalFantasylization_InNorthrendCrystalsongForest = false
 			return
 		else
 			FinalFantasylization_InHordeTownSunreaversCommand = false
@@ -2268,6 +2323,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownSunRockRetreat = true
 			end
+			FinalFantasylization_InKalimdorStonetalonMountains = false
 			return
 		else
 			FinalFantasylization_InHordeTownSunRockRetreat = false
@@ -2287,6 +2343,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownSwampratPost = true
 			end
+			FinalFantasylization_InOutlandZangarmarsh = false
 			return
 		else
 			FinalFantasylization_InHordeTownSwampratPost = false
@@ -2306,6 +2363,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownTarrenMill = true
 			end
+			FinalFantasylization_InEasternKingdomsHillsbradFoothills = false
 			return
 		else
 			FinalFantasylization_InHordeTownTarrenMill = false
@@ -2325,6 +2383,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownTaunkaleVillage = true
 			end
+			FinalFantasylization_InNorthrendBoreanTundra = false
 			return
 		else
 			FinalFantasylization_InHordeTownTaunkaleVillage = false
@@ -2344,6 +2403,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownThrallmar = true
 			end
+			FinalFantasylization_InOutlandHellfirePeninsula = false
 			return
 		else
 			FinalFantasylization_InHordeTownThrallmar = false
@@ -2363,6 +2423,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownThunderlordStronghold = true
 			end
+			FinalFantasylization_InOutlandBladesEdgeMountains = false
 			return
 		else
 			FinalFantasylization_InHordeTownThunderlordStronghold = false
@@ -2382,6 +2443,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownTranquillien = true
 			end
+			FinalFantasylization_InEasternKingdomsGhostlands = false
 			return
 		else
 			FinalFantasylization_InHordeTownTranquillien = false
@@ -2401,6 +2463,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownValormok = true
 			end
+			FinalFantasylization_InKalimdorAzshara = false
 			return
 		else
 			FinalFantasylization_InHordeTownValormok = false
@@ -2420,6 +2483,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownVengeanceLanding = true
 			end
+			FinalFantasylization_InNorthrendHowlingFjord = false
 			return
 		else
 			FinalFantasylization_InHordeTownVengeanceLanding = false
@@ -2439,6 +2503,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownVenomspite = true
 			end
+			FinalFantasylization_InNorthrendDragonblight = false
 			return
 		else
 			FinalFantasylization_InHordeTownVenomspite = false
@@ -2458,6 +2523,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownWarsongHold = true
 			end
+			FinalFantasylization_InNorthrendBoreanTundra = false
 			return
 		else
 			FinalFantasylization_InHordeTownWarsongHold = false
@@ -2477,6 +2543,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownZabrajin = true
 			end
+			FinalFantasylization_InOutlandZangarmarsh = false
 			return
 		else
 			FinalFantasylization_InHordeTownZabrajin = false
@@ -2496,6 +2563,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InHordeTownZoramgarOutpost = true
 			end
+			FinalFantasylization_InKalimdorAshenvale = false
 			return
 		else
 			FinalFantasylization_InHordeTownZoramgarOutpost = false
@@ -2524,6 +2592,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownAeriePeak = true
 			end
+			FinalFantasylization_InEasternKingdomsTheHinterlands = false
 			return
 		else
 			FinalFantasylization_InAllianceTownAeriePeak = false
@@ -2543,6 +2612,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownAllerianStronghold = true
 			end
+			FinalFantasylization_InOutlandTerokkarForest = false
 			return
 		else
 			FinalFantasylization_InAllianceTownAllerianStronghold = false
@@ -2562,6 +2632,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownAmberpineLodge = true
 			end
+			FinalFantasylization_InNorthrendGrizzlyHills = false
 			return
 		else
 			FinalFantasylization_InAllianceTownAmberpineLodge = false
@@ -2581,6 +2652,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownAstranaar = true
 			end
+			FinalFantasylization_InKalimdorAshenvale = false
 			return
 		else
 			FinalFantasylization_InAllianceTownAstranaar = false
@@ -2600,6 +2672,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownAuberdine = true
 			end
+			FinalFantasylization_InKalimdorDarkshore = false
 			return
 		else
 			FinalFantasylization_InAllianceTownAuberdine = false
@@ -2619,6 +2692,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownAzureWatch = true
 			end
+			FinalFantasylization_InKalimdorAzuremystIsle = false
 			return
 		else
 			FinalFantasylization_InAllianceTownAzureWatch = false
@@ -2638,6 +2712,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownBaelModan = true
 			end
+			FinalFantasylization_InKalimdorTheBarrens = false
 			return
 		else
 			FinalFantasylization_InAllianceTownBaelModan = false
@@ -2657,6 +2732,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownBloodWatch = true
 			end
+			FinalFantasylization_InKalimdorBloodmystIsle = false
 			return
 		else
 			FinalFantasylization_InAllianceTownBloodWatch = false
@@ -2676,6 +2752,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownBrackwellPumpkinPatch = true
 			end
+			FinalFantasylization_InEasternKingdomsElwynnForest = false
 			return
 		else
 			FinalFantasylization_InAllianceTownBrackwellPumpkinPatch = false
@@ -2695,6 +2772,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownBrewnallVillage = true
 			end
+			FinalFantasylization_InEasternKingdomsDunMorogh = false
 			return
 		else
 			FinalFantasylization_InAllianceTownBrewnallVillage = false
@@ -2714,6 +2792,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownChillwindCamp = true
 			end
+			FinalFantasylization_InEasternKingdomsWesternPlaguelands = false
 			return
 		else
 			FinalFantasylization_InAllianceTownChillwindCamp = false
@@ -2721,7 +2800,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Alliance Towns: Darkshire, Duskwood
 --'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Duskwood"] ) and ( SubZoneName == SZ["Darkshire"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Duskwood"] ) and (( SubZoneName == SZ["Darkshire"] ) or ( MinimapZoneName == SZ["Darkshire Town Hall"] )) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownDarkshire == false then
 				if ( factionEnglish == "Alliance" ) then
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
@@ -2733,6 +2812,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownDarkshire = true
 			end
+			FinalFantasylization_InEasternKingdomsDuskwood = false
 			return
 		else
 			FinalFantasylization_InAllianceTownDarkshire = false
@@ -2752,6 +2832,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownDolanaar = true
 			end
+			FinalFantasylization_InKalimdorTeldrassil = false
 			return
 		else
 			FinalFantasylization_InAllianceTownDolanaar = false
@@ -2771,6 +2852,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownEastvaleLoggingCamp = true
 			end
+			FinalFantasylization_InEasternKingdomsElwynnForest = false
 			return
 		else
 			FinalFantasylization_InAllianceTownEastvaleLoggingCamp = false
@@ -2790,6 +2872,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownExplorersLeagueOutpost = true
 			end
+			FinalFantasylization_InNorthrendHowlingFjord = false
 			return
 		else
 			FinalFantasylization_InAllianceTownExplorersLeagueOutpost = false
@@ -2809,6 +2892,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownFeathermoonStronghold = true
 			end
+			FinalFantasylization_InKalimdorFeralas = false
 			return
 		else
 			FinalFantasylization_InAllianceTownFeathermoonStronghold = false
@@ -2828,6 +2912,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownFizzcrankAirstrip = true
 			end
+			FinalFantasylization_InNorthrendBoreanTundra = false
 			return
 		else
 			FinalFantasylization_InAllianceTownFizzcrankAirstrip = false
@@ -2847,6 +2932,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownFordragonHold = true
 			end
+			FinalFantasylization_InNorthrendDragonblight = false
 			return
 		else
 			FinalFantasylization_InAllianceTownFordragonHold = false
@@ -2866,6 +2952,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownForestSong = true
 			end
+			FinalFantasylization_InKalimdorAshenvale = false
 			return
 		else
 			FinalFantasylization_InAllianceTownForestSong = false
@@ -2885,6 +2972,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownFortWildervar = true
 			end
+			FinalFantasylization_InNorthrendHowlingFjord = false
 			return
 		else
 			FinalFantasylization_InAllianceTownFortWildervar = false
@@ -2904,6 +2992,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownFrosthold = true
 			end
+			FinalFantasylization_InNorthrendStormPeaks = false
 			return
 		else
 			FinalFantasylization_InAllianceTownFrosthold = false
@@ -2923,6 +3012,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownGoldshire = true
 			end
+			FinalFantasylization_InEasternKingdomsElwynnForest = false
 			return
 		else
 			FinalFantasylization_InAllianceTownGoldshire = false
@@ -2942,6 +3032,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownHillsbradFields = true
 			end
+			FinalFantasylization_InEasternKingdomsHillsbradFoothills = false
 			return
 		else
 			FinalFantasylization_InAllianceTownHillsbradFields = false
@@ -2961,6 +3052,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownHonorHold = true
 			end
+			FinalFantasylization_InOutlandHellfirePeninsula = false
 			return
 		else
 			FinalFantasylization_InAllianceTownHonorHold = false
@@ -2968,7 +3060,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Alliance Towns: Kharanos, Dun Morogh
 --'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Dun Morogh"] ) and ( SubZoneName == SZ["Kharanos"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Dun Morogh"] ) and (( SubZoneName == SZ["Kharanos"] ) or ( MinimapZoneName == SZ["Steelgrill's Depot"] )) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownKharanos == false then
 				if ( factionEnglish == "Alliance" ) then
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
@@ -2980,6 +3072,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownKharanos = true
 			end
+			FinalFantasylization_InEasternKingdomsDunMorogh = false
 			return
 		else
 			FinalFantasylization_InAllianceTownKharanos = false
@@ -2987,7 +3080,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Alliance Towns: Lakeshire, Redridge Mountains
 --'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Redridge Mountains"] ) and ( SubZoneName == SZ["Lakeshire"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Redridge Mountains"] ) and (( SubZoneName == SZ["Lakeshire"] ) or ( MinimapZoneName == SZ["Lakeshire Town Hall"] )) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownLakeshire == false then
 				if ( factionEnglish == "Alliance" ) then
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
@@ -2999,6 +3092,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownLakeshire = true
 			end
+			FinalFantasylization_InEasternKingdomsRedridgeMountains = false
 			return
 		else
 			FinalFantasylization_InAllianceTownLakeshire = false
@@ -3018,6 +3112,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownMaclureVineyards = true
 			end
+			FinalFantasylization_InEasternKingdomsElwynnForest = false
 			return
 		else
 			FinalFantasylization_InAllianceTownMaclureVineyards = false
@@ -3037,6 +3132,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownMenethilHarbor = true
 			end
+			FinalFantasylization_InEasternKingdomsWetlands = false
 			return
 		else
 			FinalFantasylization_InAllianceTownMenethilHarbor = false
@@ -3056,6 +3152,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownMorgansVigil = true
 			end
+			FinalFantasylization_InEasternKingdomsBurningSteppes = false
 			return
 		else
 			FinalFantasylization_InAllianceTownMorgansVigil = false
@@ -3075,6 +3172,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownNethergardeKeep = true
 			end
+			FinalFantasylization_InEasternKingdomsTheBlastedLands = false
 			return
 		else
 			FinalFantasylization_InAllianceTownNethergardeKeep = false
@@ -3094,6 +3192,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownNijelsPoint = true
 			end
+			FinalFantasylization_InKalimdorDesolace = false
 			return
 		else
 			FinalFantasylization_InAllianceTownNijelsPoint = false
@@ -3113,6 +3212,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownOreborHarborage = true
 			end
+			FinalFantasylization_InOutlandZangarmarsh = false
 			return
 		else
 			FinalFantasylization_InAllianceTownOreborHarborage = false
@@ -3132,6 +3232,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownPyrewoodVillage = true
 			end
+			FinalFantasylization_InEasternKingdomsSilverpineForest = false
 			return
 		else
 			FinalFantasylization_InAllianceTownPyrewoodVillage = false
@@ -3151,6 +3252,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownRebelCamp = true
 			end
+			FinalFantasylization_InEasternKingdomsStranglethornVale = false
 			return
 		else
 			FinalFantasylization_InAllianceTownRebelCamp = false
@@ -3170,6 +3272,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownRefugePointe = true
 			end
+			FinalFantasylization_InEasternKingdomsArathiHighlands = false
 			return
 		else
 			FinalFantasylization_InAllianceTownRefugePointe = false
@@ -3189,6 +3292,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownRuttheranVillage = true
 			end
+			FinalFantasylization_InKalimdorTeldrassil = false
 			return
 		else
 			FinalFantasylization_InAllianceTownRuttheranVillage = false
@@ -3196,7 +3300,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Alliance Towns: Sentinel Hill, Westfall
 --'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Westfall"] ) and ( SubZoneName == SZ["Sentinel Hill"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Westfall"] ) and (( SubZoneName == SZ["Sentinel Hill"] ) or ( MinimapZoneName == SZ["Sentinel Tower"] )) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownSentinelHill == false then
 				if ( factionEnglish == "Alliance" ) then
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
@@ -3208,6 +3312,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownSentinelHill = true
 			end
+			FinalFantasylization_InEasternKingdomsWestfall = false
 			return
 		else
 			FinalFantasylization_InAllianceTownSentinelHill = false
@@ -3227,6 +3332,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownSouthshore = true
 			end
+			FinalFantasylization_InEasternKingdomsHillsbradFoothills = false
 			return
 		else
 			FinalFantasylization_InAllianceTownSouthshore = false
@@ -3246,6 +3352,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownStarfallVillage = true
 			end
+			FinalFantasylization_InKalimdorWinterspring = false
 			return
 		else
 			FinalFantasylization_InAllianceTownStarfallVillage = false
@@ -3265,6 +3372,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownStarsRest = true
 			end
+			FinalFantasylization_InNorthrendDragonblight = false
 			return
 		else
 			FinalFantasylization_InAllianceTownStarsRest = false
@@ -3284,14 +3392,15 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownSteelgrillsDepot = true
 			end
+			FinalFantasylization_InEasternKingdomsDunMorogh = false
 			return
 		else
 			FinalFantasylization_InAllianceTownSteelgrillsDepot = false
 		end
 --'==========================================================================================		
---' Alliance Towns: Stonefield Farm, Elwynn Forest
+--' Alliance Towns: The Stonefield Farm, Elwynn Forest
 --'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and ( SubZoneName == SZ["Stonefield Farm"] ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and ( SubZoneName == SZ["The Stonefield Farm"] ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InAllianceTownStonefieldFarm == false then
 				if ( factionEnglish == "Alliance" ) then
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
@@ -3303,6 +3412,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownStonefieldFarm = true
 			end
+			FinalFantasylization_InEasternKingdomsElwynnForest = false
 			return
 		else
 			FinalFantasylization_InAllianceTownStonefieldFarm = false
@@ -3322,6 +3432,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownStonetalonPeak = true
 			end
+			FinalFantasylization_InKalimdorStonetalonMountains = false
 			return
 		else
 			FinalFantasylization_InAllianceTownStonetalonPeak = false
@@ -3341,6 +3452,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownSylvanaar = true
 			end
+			FinalFantasylization_InOutlandBladesEdgeMountains = false
 			return
 		else
 			FinalFantasylization_InAllianceTownSylvanaar = false
@@ -3360,6 +3472,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownTalonbranchGlade = true
 			end
+			FinalFantasylization_InKalimdorFelwood = false
 			return
 		else
 			FinalFantasylization_InAllianceTownTalonbranchGlade = false
@@ -3379,6 +3492,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownTalrendisPoint = true
 			end
+			FinalFantasylization_InKalimdorAzshara = false
 			return
 		else
 			FinalFantasylization_InAllianceTownTalrendisPoint = false
@@ -3398,6 +3512,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownTelaar = true
 			end
+			FinalFantasylization_InOutlandNagrand = false
 			return
 		else
 			FinalFantasylization_InAllianceTownTelaar = false
@@ -3417,6 +3532,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownTelredor = true
 			end
+			FinalFantasylization_InOutlandZangarmarsh = false
 			return
 		else
 			FinalFantasylization_InAllianceTownTelredor = false
@@ -3436,6 +3552,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownTempleOfTelhamat = true
 			end
+			FinalFantasylization_InOutlandHellfirePeninsula = false
 			return
 		else
 			FinalFantasylization_InAllianceTownTempleOfTelhamat = false
@@ -3455,6 +3572,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownThalanaar = true
 			end
+			FinalFantasylization_InKalimdorFeralas = false
 			return
 		else
 			FinalFantasylization_InAllianceTownThalanaar = false
@@ -3474,6 +3592,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownThelsamar = true
 			end
+			FinalFantasylization_InEasternKingdomsLochModan = false
 			return
 		else
 			FinalFantasylization_InAllianceTownThelsamar = false
@@ -3493,6 +3612,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownTheramoreIsle = true
 			end
+			FinalFantasylization_InKalimdorDustwallowMarsh = false
 			return
 		else
 			FinalFantasylization_InAllianceTownTheramoreIsle = false
@@ -3512,6 +3632,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownToshleysStation = true
 			end
+			FinalFantasylization_InOutlandBladesEdgeMountains = false
 			return
 		else
 			FinalFantasylization_InAllianceTownToshleysStation = false
@@ -3531,6 +3652,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownValianceKeep = true
 			end
+			FinalFantasylization_InNorthrendBoreanTundra = false
 			return
 		else
 			FinalFantasylization_InAllianceTownValianceKeep = false
@@ -3550,6 +3672,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownValgarde = true
 			end
+			FinalFantasylization_InNorthrendHowlingFjord = false
 			return
 		else
 			FinalFantasylization_InAllianceTownValgarde = false
@@ -3569,6 +3692,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownWestfallBrigadeEncampment = true
 			end
+			FinalFantasylization_InNorthrendGrizzlyHills = false
 			return
 		else
 			FinalFantasylization_InAllianceTownWestfallBrigadeEncampment = false
@@ -3588,6 +3712,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownWestguardKeep = true
 			end
+			FinalFantasylization_InNorthrendHowlingFjord = false
 			return
 		else
 			FinalFantasylization_InAllianceTownWestguardKeep = false
@@ -3607,6 +3732,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownWildhammerStronghold = true
 			end
+			FinalFantasylization_InOutlandShadowmoonValley = false
 			return
 		else
 			FinalFantasylization_InAllianceTownWildhammerStronghold = false
@@ -3626,6 +3752,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownWindrunnersOverlook = true
 			end
+			FinalFantasylization_InNorthrendCrystalsongForest = false
 			return
 		else
 			FinalFantasylization_InAllianceTownWindrunnersOverlook = false
@@ -3645,6 +3772,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_IsPlaying = true
 				FinalFantasylization_InAllianceTownWintergardeKeep = true
 			end
+			FinalFantasylization_InNorthrendDragonblight = false
 			return
 		else
 			FinalFantasylization_InAllianceTownWintergardeKeep = false
@@ -3668,6 +3796,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownAerisLanding = true
+			FinalFantasylization_InOutlandNagrand = false
 			return
 		else
 			FinalFantasylization_InNeutralTownAerisLanding = false
@@ -3682,6 +3811,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownAltarOfShatar = true
+			FinalFantasylization_InOutlandShadowmoonValley = false
 			return
 		else
 			FinalFantasylization_InNeutralTownAltarOfShatar = false
@@ -3696,6 +3826,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownAmberLedge = true
+			FinalFantasylization_InNorthrendBoreanTundra = false
 			return
 		else
 			FinalFantasylization_InNeutralTownAmberLedge = false
@@ -3710,6 +3841,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownTheArgentStand = true
+			FinalFantasylization_InNorthrendZulDrak = false
 			return
 		else
 			FinalFantasylization_InNeutralTownTheArgentStand = false
@@ -3724,6 +3856,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownArgentTournamentGrounds = true
+			FinalFantasylization_InNorthrendIcecrown = false
 			return
 		else
 			FinalFantasylization_InNeutralTownArgentTournamentGrounds = false
@@ -3738,6 +3871,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownArgentVanguard = true
+			FinalFantasylization_InNorthrendIcecrown = false
 			return
 		else
 			FinalFantasylization_InNeutralTownArgentVanguard = false
@@ -3752,6 +3886,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownBlackwatch = true
+			FinalFantasylization_InNorthrendIcecrown = false
 			return
 		else
 			FinalFantasylization_InNeutralTownBlackwatch = false
@@ -3766,6 +3901,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownBouldercragsRefuge = true
+			FinalFantasylization_InNorthrendStormPeaks = false
 			return
 		else
 			FinalFantasylization_InNeutralTownBouldercragsRefuge = false
@@ -3780,6 +3916,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownCenarionHold = true
+			FinalFantasylization_InKalimdorSilithus = false
 			return
 		else
 			FinalFantasylization_InNeutralTownCenarionHold = false
@@ -3794,6 +3931,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownCenarionRefuge = true
+			FinalFantasylization_InOutlandZangarmarsh = false
 			return
 		else
 			FinalFantasylization_InNeutralTownCenarionRefuge = false
@@ -3808,6 +3946,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownCosmowrench = true
+			FinalFantasylization_InOutlandNetherstorm = false
 			return
 		else
 			FinalFantasylization_InNeutralTownCosmowrench = false
@@ -3822,6 +3961,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownCrusadersPinnacle = true
+			FinalFantasylization_InNorthrendIcecrown = false
 			return
 		else
 			FinalFantasylization_InNeutralTownCrusadersPinnacle = false
@@ -3836,6 +3976,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownDarrowshire = true
+			FinalFantasylization_InEasternKingdomsEasternPlaguelands = false
 			return
 		else
 			FinalFantasylization_InNeutralTownDarrowshire = false
@@ -3850,6 +3991,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownDawnsReach = true
+			FinalFantasylization_InNorthrendDragonblight = false
 			return
 		else
 			FinalFantasylization_InNeutralTownDawnsReach = false
@@ -3864,6 +4006,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownDeathsRise = true
+			FinalFantasylization_InNorthrendIcecrown = false
 			return
 		else
 			FinalFantasylization_InNeutralTownDeathsRise = false
@@ -3878,6 +4021,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownDoriansOutpost = true
+			FinalFantasylization_InNorthrendSholazarBasin = false
 			return
 		else
 			FinalFantasylization_InNeutralTownDoriansOutpost = false
@@ -3892,6 +4036,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownDubraJin = true
+			FinalFantasylization_InNorthrendZulDrak = false
 			return
 		else
 			FinalFantasylization_InNeutralTownDubraJin = false
@@ -3906,6 +4051,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownDunNiffelem = true
+			FinalFantasylization_InNorthrendStormPeaks = false
 			return
 		else
 			FinalFantasylization_InNeutralTownDunNiffelem = false
@@ -3920,6 +4066,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownEbonWatch = true
+			FinalFantasylization_InNorthrendZulDrak = false
 			return
 		else
 			FinalFantasylization_InNeutralTownEbonWatch = false
@@ -3934,6 +4081,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownEmeraldSanctuary = true
+			FinalFantasylization_InKalimdorFelwood = false
 			return
 		else
 			FinalFantasylization_InNeutralTownEmeraldSanctuary = false
@@ -3948,6 +4096,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownEvergrove = true
+			FinalFantasylization_InOutlandBladesEdgeMountains = false
 			return
 		else
 			FinalFantasylization_InNeutralTownEvergrove = false
@@ -3962,6 +4111,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownFrenzyheartHill = true
+			FinalFantasylization_InNorthrendSholazarBasin = false
 			return
 		else
 			FinalFantasylization_InNeutralTownFrenzyheartHill = false
@@ -3976,6 +4126,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownGraniteSprings = true
+			FinalFantasylization_InNorthrendGrizzlyHills = false
 			return
 		else
 			FinalFantasylization_InNeutralTownGraniteSprings = false
@@ -3990,6 +4141,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownHalaa = true
+			FinalFantasylization_InOutlandNagrand = false
 			return
 		else
 			FinalFantasylization_InNeutralTownHalaa = false
@@ -4004,6 +4156,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownTheHarborage = true
+			FinalFantasylization_InEasternKingdomsSwampOfSorrows = false
 			return
 		else
 			FinalFantasylization_InNeutralTownTheHarborage = false
@@ -4018,6 +4171,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownK3 = true
+			FinalFantasylization_InNorthrendStormPeaks = false
 			return
 		else
 			FinalFantasylization_InNeutralTownK3 = false
@@ -4032,6 +4186,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownKamagua = true
+			FinalFantasylization_InNorthrendHowlingFjord = false
 			return
 		else
 			FinalFantasylization_InNeutralTownKamagua = false
@@ -4046,6 +4201,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownKartaksHold = true
+			FinalFantasylization_InNorthrendSholazarBasin = false
 			return
 		else
 			FinalFantasylization_InNeutralTownKartaksHold = false
@@ -4060,6 +4216,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownKirinVarVillage = true
+			FinalFantasylization_InOutlandNetherstorm = false
 			return
 		else
 			FinalFantasylization_InNeutralTownKirinVarVillage = false
@@ -4074,6 +4231,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownLakesideLanding = true
+			FinalFantasylization_InNorthrendSholazarBasin = false
 			return
 		else
 			FinalFantasylization_InNeutralTownLakesideLanding = false
@@ -4088,6 +4246,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownLightsBreach = true
+			FinalFantasylization_InNorthrendZulDrak = false
 			return
 		else
 			FinalFantasylization_InNeutralTownLightsBreach = false
@@ -4102,6 +4261,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownLightsHopeChapel = true
+			FinalFantasylization_InEasternKingdomsEasternPlaguelands = false
 			return
 		else
 			FinalFantasylization_InNeutralTownLightsHopeChapel = false
@@ -4116,6 +4276,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownLightsTrust = true
+			FinalFantasylization_InNorthrendDragonblight = false
 			return
 		else
 			FinalFantasylization_InNeutralTownLightsTrust = false
@@ -4130,6 +4291,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownMarshalsRefuge = true
+			FinalFantasylization_InKalimdorUngoroCrater = false
 			return
 		else
 			FinalFantasylization_InNeutralTownMarshalsRefuge = false
@@ -4144,6 +4306,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownMidrealmPost = true
+			FinalFantasylization_InOutlandNetherstorm = false
 			return
 		else
 			FinalFantasylization_InNeutralTownMidrealmPost = false
@@ -4158,6 +4321,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownMirageRaceway = true
+			FinalFantasylization_InKalimdorThousandNeedles = false
 			return
 		else
 			FinalFantasylization_InNeutralTownMirageRaceway = false
@@ -4172,6 +4336,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownMistwhisperRefuge = true
+			FinalFantasylization_InNorthrendSholazarBasin = false
 			return
 		else
 			FinalFantasylization_InNeutralTownMistwhisperRefuge = false
@@ -4186,6 +4351,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownMoakiHarbor = true
+			FinalFantasylization_InNorthrendDragonblight = false
 			return
 		else
 			FinalFantasylization_InNeutralTownMoakiHarbor = false
@@ -4200,6 +4366,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownMudsprocket = true
+			FinalFantasylization_InKalimdorDustwallowMarsh = false
 			return
 		else
 			FinalFantasylization_InNeutralTownMudsprocket = false
@@ -4214,6 +4381,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownNesingwaryBaseCamp = true
+			FinalFantasylization_InNorthrendSholazarBasin = false
 			return
 		else
 			FinalFantasylization_InNeutralTownNesingwaryBaseCamp = false
@@ -4228,6 +4396,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownNesingwaryExpedition = true
+			FinalFantasylization_InEasternKingdomsStranglethornVale = false
 			return
 		else
 			FinalFantasylization_InNeutralTownNesingwaryExpedition = false
@@ -4242,6 +4411,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownNighthaven = true
+			FinalFantasylization_InKalimdorMoonglade = false
 			return
 		else
 			FinalFantasylization_InNeutralTownNighthaven = false
@@ -4256,6 +4426,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownOgrila = true
+			FinalFantasylization_InOutlandBladesEdgeMountains = false
 			return
 		else
 			FinalFantasylization_InNeutralTownOgrila = false
@@ -4270,6 +4441,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownProtectorateWatchPost = true
+			FinalFantasylization_InOutlandNetherstorm = false
 			return
 		else
 			FinalFantasylization_InNeutralTownProtectorateWatchPost = false
@@ -4285,6 +4457,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownRainspeakerCanopy = true
+			FinalFantasylization_InNorthrendSholazarBasin = false
 			return
 		else
 			FinalFantasylization_InNeutralTownRainspeakerCanopy = false
@@ -4299,6 +4472,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownRiversHeart = true
+			FinalFantasylization_InNorthrendSholazarBasin = false
 			return
 		else
 			FinalFantasylization_InNeutralTownRiversHeart = false
@@ -4313,6 +4487,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownSanctumOfTheStars = true
+			FinalFantasylization_InOutlandShadowmoonValley = false
 			return
 		else
 			FinalFantasylization_InNeutralTownSanctumOfTheStars = false
@@ -4327,6 +4502,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownScalawagPoint = true
+			FinalFantasylization_InNorthrendHowlingFjord = false
 			return
 		else
 			FinalFantasylization_InNeutralTownScalawagPoint = false
@@ -4341,6 +4517,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownShadowVault = true
+			FinalFantasylization_InNorthrendIcecrown = false
 			return
 		else
 			FinalFantasylization_InNeutralTownShadowVault = false
@@ -4355,6 +4532,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownSparktouchedHaven = true
+			FinalFantasylization_InNorthrendSholazarBasin = false
 			return
 		else
 			FinalFantasylization_InNeutralTownSparktouchedHaven = false
@@ -4369,6 +4547,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownSpearbornEncampment = true
+			FinalFantasylization_InNorthrendSholazarBasin = false
 			return
 		else
 			FinalFantasylization_InNeutralTownSpearbornEncampment = false
@@ -4383,6 +4562,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownSporeggar = true
+			FinalFantasylization_InOutlandZangarmarsh = false
 			return
 		else
 			FinalFantasylization_InNeutralTownSporeggar = false
@@ -4397,6 +4577,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownSteamwheedlePort = true
+			FinalFantasylization_InKalimdorTanaris = false
 			return
 		else
 			FinalFantasylization_InNeutralTownSteamwheedlePort = false
@@ -4411,6 +4592,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownStormspire = true
+			FinalFantasylization_InOutlandNetherstorm = false
 			return
 		else
 			FinalFantasylization_InNeutralTownStormspire = false
@@ -4425,6 +4607,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownSunsReach = true
+			FinalFantasylization_InEasternKingdomsIsleofQuelDanas = false
 			return
 		else
 				FinalFantasylization_InNeutralTownSunsReach = false
@@ -4439,6 +4622,10 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownTimbermawHold = true
+			FinalFantasylization_InKalimdorAzshara = false
+			FinalFantasylization_InKalimdorFelwood = false
+			FinalFantasylization_InKalimdorMoonglade = false
+			FinalFantasylization_InKalimdorWinterspring = false
 			return
 		else
 			FinalFantasylization_InNeutralTownTimbermawHold = false
@@ -4453,6 +4640,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownThoriumPoint = true
+			FinalFantasylization_InEasternKingdomsSearingGorge = false
 			return
 		else
 			FinalFantasylization_InNeutralTownThoriumPoint = false
@@ -4467,6 +4655,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownTransitusShield = true
+			FinalFantasylization_InNorthrendBoreanTundra = false
 			return
 		else
 			FinalFantasylization_InNeutralTownTransitusShield = false
@@ -4481,6 +4670,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownUnupe = true
+			FinalFantasylization_InNorthrendBoreanTundra = false
 			return
 		else
 			FinalFantasylization_InNeutralTownUnupe = false
@@ -4495,6 +4685,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownValorsRest = true
+			FinalFantasylization_InKalimdorSilithus = false
 			return
 		else
 			FinalFantasylization_InNeutralTownValorsRest = false
@@ -4509,6 +4700,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownVentureBay = true
+			FinalFantasylization_InNorthrendGrizzlyHills = false
 			return
 		else
 			FinalFantasylization_InNeutralTownVentureBay = false
@@ -4523,6 +4715,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownWyrmrestTemple = true
+			FinalFantasylization_InNorthrendDragonblight = false
 			return
 		else
 			FinalFantasylization_InNeutralTownWyrmrestTemple = false
@@ -4537,6 +4730,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InNeutralTownZimTorga = true
+			FinalFantasylization_InNorthrendZulDrak = false
 			return
 		else
 			FinalFantasylization_InNeutralTownZimTorga = false
@@ -4658,6 +4852,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InMiscAreaCavernsOfTime = true
+			FinalFantasylization_InKalimdorTanaris = false
 			return
 		else
 			FinalFantasylization_InMiscAreaCavernsOfTime = false
@@ -5791,22 +5986,21 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 		if ( IsResting() ) and ( factionEnglish == "Alliance" ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Sleep == true and ( pvpType == "friendly" or pvpType == "hostile" or pvpType == "sanctuary" or pvpType == "contested" or pvpType == nil or pvpType == "") then
 			if FinalFantasylization_PlayerIsResting == false then
+				FinalFantasylization_IsPlaying = true
+				FinalFantasylization_PlayerIsResting = true
 				FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. AllianceRest)
 				FinalFantasylization_Sleeping()
 			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_PlayerIsResting = true
 		elseif ( IsResting() ) and ( factionEnglish == "Horde" ) and FinalFantasylization_IsPlaying == false and FinalFantasylizationOptions.Sleep == true and ( pvpType == "friendly" or pvpType == "hostile" or pvpType == "sanctuary" or pvpType == "contested" or pvpType == nil or pvpType == "") then
 			if FinalFantasylization_PlayerIsResting == false then
+				FinalFantasylization_IsPlaying = true
+				FinalFantasylization_PlayerIsResting = true
 				FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. HordeRest)
 				FinalFantasylization_Sleeping()
 			end
-			FinalFantasylization_IsPlaying = true
-			FinalFantasylization_PlayerIsResting = true
 		else
 			FinalFantasylization_PlayerIsResting = false
 		end
-		
 	else
 		StopMusic();
 	end

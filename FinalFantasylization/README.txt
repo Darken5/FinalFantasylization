@@ -1,7 +1,7 @@
 ============================
 >>>                      <<<
 >>> FinalFantasylization <<<
->>>  ReadMe for 3.3.2    <<<
+>>>  ReadMe for 3.3.4    <<<
 >>>                      <<<
 ============================
 
@@ -166,6 +166,12 @@ Fix the Fanfare sound issue on world (sometimes doesn't play)
 Add more zone/subzone detections
 
 *********************
+7. August 2017 - FinalFantasylization 3.3.4 - Interface Buttons Fix
+	- They do what there supposed to do now...
+
+5. August 2017 - FinalFantasylization 3.3.3 - Locale Bug  >> Darken5 <<
+	- Fixed bug with FFz only working with an English client. Bit of a earlier oops on my part when incorporating LibBabble-Faction-3.0
+
 24. November 2016 - FinalFantasylization 3.3.2 - Not Much to Say  >> Darken5 <<
 	- "Fixed?" bug with UnitGUID("target") returning "nil"
 	- Added "Raid" detection to combat music. (Still fires "DungeonBoss()" music, but better than no music) 

@@ -1157,7 +1157,7 @@ function FinalFantasylization_GetMusic()
 --'==========================================================================================		
 --' Starting Areas: Northshire Valley, Elwynn Forest ( Human Starting Area )
 --'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and ( ( SubZoneName == SZ["Northshire Valley"] ) or ( SubZoneName == SZ["Northshire Abbey"] ) or ( SubZoneName == SZ["Echo Ridge Mine"] ) or ( SubZoneName == SZ["Northshire Vineyards"] ) ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and ( ( SubZoneName == SZ["Northshire Valley"] ) or ( SubZoneName == SZ["Northshire Abbey"] ) or ( SubZoneName == SZ["Echo Ridge Mine"] ) or ( SubZoneName == SZ["Main Hall"] ) or ( SubZoneName == SZ["Library Wing"] ) or ( SubZoneName == SZ["Northshire Vineyards"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InStarterAreaNorthshireValley == false then
 				if ( factionEnglish == "Alliance" ) then
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
@@ -4824,6 +4824,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InMiscAreaTheDeadmines = true
+			FinalFantasylization_InEasternKingdomsWestfall = false
 			return
 		else
 			FinalFantasylization_InMiscAreaTheDeadmines = false

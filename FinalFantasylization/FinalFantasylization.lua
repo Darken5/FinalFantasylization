@@ -4768,6 +4768,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InMiscAreaScarletMonastery = true
+			FinalFantasylization_InEasternKingdomsTirisfalGlades = false
 			return
 		else
 			FinalFantasylization_InMiscAreaScarletMonastery = false
@@ -4782,6 +4783,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InMiscAreaRazorfenKraul = true
+			FinalFantasylization_InKalimdorTheBarrens = false
 			return
 		else
 			FinalFantasylization_InMiscAreaRazorfenKraul = false
@@ -4796,6 +4798,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InMiscAreaRazorfenDowns = true
+			FinalFantasylization_InKalimdorTheBarrens = false
 			return
 		else
 			FinalFantasylization_InMiscAreaRazorfenDowns = false
@@ -4810,6 +4813,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InMiscAreaWailingCaverns = true
+			FinalFantasylization_InKalimdorTheBarrens = false
 			return
 		else
 			FinalFantasylization_InMiscAreaWailingCaverns = false
@@ -4839,6 +4843,7 @@ function FinalFantasylization_GetMusic()
 			end
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_InMiscAreaGnomeregan = true
+			FinalFantasylization_InEasternKingdomsDunMorogh = false
 			return
 		else
 			FinalFantasylization_InMiscAreaGnomeregan = false

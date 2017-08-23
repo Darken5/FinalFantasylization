@@ -157,7 +157,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InStarterAreaValleyOfTrials = false -- Orc and Troll Starting Area
 	FinalFantasylization_InStarterAreaCampNarache = false -- Tauren Starting Area
 	FinalFantasylization_InStarterAreaColdridgeValley = false -- Dwarf and Gnome Starting Area
-	FinalFantasylization_InStarterAreaNorthshireAbbey == false -- Human Starting Area
+	FinalFantasylization_InStarterAreaNorthshireAbbey = false -- Human Starting Area
 	FinalFantasylization_InStarterAreaNorthshireValley = false -- Human Starting Area
 	FinalFantasylization_InStarterAreaAmmenVale = false -- Draenei Starting Area
 	FinalFantasylization_InStarterAreaShadowglen = false -- Night Elf Starting Area
@@ -1186,7 +1186,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_InStarterAreaNorthshireAbbey = true
 			end
 			FinalFantasylization_InEasternKingdomsElwynnForest = false
-			FinalFantasylization_InStarterAreaNorthshireValley == false
+			FinalFantasylization_InStarterAreaNorthshireValley = false
 			return
 		else
 			FinalFantasylization_InStarterAreaNorthshireAbbey = false
@@ -1207,7 +1207,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_InStarterAreaNorthshireValley = true
 			end
 			FinalFantasylization_InEasternKingdomsElwynnForest = false
-			FinalFantasylization_InStarterAreaNorthshireAbbey == false
+			FinalFantasylization_InStarterAreaNorthshireAbbey = false
 			return
 		else
 			FinalFantasylization_InStarterAreaNorthshireValley = false

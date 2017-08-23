@@ -124,6 +124,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		MorgansVigilSong = "MorgansVigilSong.mp3" --
 		NethergardeKeepSong = "NethergardeKeepSong.mp3" --
 		NijelsPointSong = "NijelsPointSong.mp3" --
+		NorthshireAbbeySong = "NorthshireAbbeySong.mp3" --
 		OreborHarborageSong = "OreborHarborageSong.mp3" --
 		RebelCampSong = "RebelCampSong.mp3" --
 		RefugePointeSong = "RefugePointeSong.mp3" --
@@ -1325,7 +1326,8 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_debugMsg("DeathknellSong Legend of Zelda A Link to the Past Sanctuary Dungeon")
 	end
 	function FinalFantasylization_StarterAreaNorthshireAbbey()
-		FinalFantasylization_AllianceTowns();
+		FinalFantasylization_PlayMusic( S .. NorthshireAbbeySong);
+		FinalFantasylization_debugMsg("NorthshireAbbeySong Halo Theme (Choir Mix)")
 	end
 	function FinalFantasylization_StarterAreaNorthshireValley()
 		FinalFantasylization_PlayMusic( S .. NorthshireValleySong);

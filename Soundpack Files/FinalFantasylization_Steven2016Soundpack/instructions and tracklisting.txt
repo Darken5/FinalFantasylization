@@ -57,6 +57,7 @@ Final Fantasy 14
 Final Fantasy 15 
 Final Fantasy Type-0
 Guild Wars 2
+Halo
 Justice Monsters Five
 Kingdom Hearts 1
 Kingdom Hearts 2
@@ -204,6 +205,7 @@ MenethilHarborSong = Assassin Creed 4 Black Flag - The Islands of the West Indie
 MorgansVigilSong = Final Fantasy 7 Crisis Core - Dreams and Honor
 NethergardeKeepSong = Diablo - Town
 NijelsPointSong = Final Fantasy 7 - Mark of a Traitor
+NorthshireAbbeySong = Halo - Halo Theme (Choir Mix)
 OreborHarborageSong = Final Fantasy 12 - Rabanastre Lowtown
 RebelCampSong = Kingdom Hearts 2 - Sora
 RefugePointeSong = Legaia 2 Duel Saga - Everyday Tranquility

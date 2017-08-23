@@ -1327,7 +1327,7 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_StarterAreaNorthshireAbbey()
 		FinalFantasylization_PlayMusic( S .. NorthshireAbbeySong);
-		FinalFantasylization_debugMsg("NorthshireAbbeySong Halo Theme (Choir Mix)")
+		FinalFantasylization_debugMsg("NorthshireAbbeySong Halo Theme Choir Mix")
 	end
 	function FinalFantasylization_StarterAreaNorthshireValley()
 		FinalFantasylization_PlayMusic( S .. NorthshireValleySong);

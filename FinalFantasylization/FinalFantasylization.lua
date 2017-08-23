@@ -157,6 +157,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InStarterAreaValleyOfTrials = false -- Orc and Troll Starting Area
 	FinalFantasylization_InStarterAreaCampNarache = false -- Tauren Starting Area
 	FinalFantasylization_InStarterAreaColdridgeValley = false -- Dwarf and Gnome Starting Area
+	FinalFantasylization_InStarterAreaNorthshireAbbey == false -- Human Starting Area
 	FinalFantasylization_InStarterAreaNorthshireValley = false -- Human Starting Area
 	FinalFantasylization_InStarterAreaAmmenVale = false -- Draenei Starting Area
 	FinalFantasylization_InStarterAreaShadowglen = false -- Night Elf Starting Area
@@ -170,7 +171,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InCityExodar = false
 	FinalFantasylization_InCityIronforge = false
 	FinalFantasylization_InCityStormwind = false
-	FinalFantasylization_InCityShattrathCity = false --' Sanctuary Territory
+	FinalFantasylization_InCityShattrathCity = false -- Sanctuary Territory
 	FinalFantasylization_InCityArea52 = false
 	FinalFantasylization_InCityBootyBay = false
 	FinalFantasylization_InCityEbonHold = false
@@ -1170,9 +1171,30 @@ function FinalFantasylization_GetMusic()
 			FinalFantasylization_InStarterAreaColdridgeValley = false
 		end
 --'==========================================================================================		
+--' Starting Areas: Northshire Abbey, Elwynn Forest ( Human Starting Area )
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and ( ( SubZoneName == SZ["Northshire Abbey"] ) or ( SubZoneName == SZ["Main Hall"] ) or ( SubZoneName == SZ["Library Wing"] ) ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InStarterAreaNorthshireAbbey == false then
+				if ( factionEnglish == "Alliance" ) then
+					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+					FinalFantasylization_StarterAreaNorthshireAbbey()
+				else
+					FinalFantasylization_debugMsg(FFZlib.Color.Crimson .. PlayerInHostileTown .. SubZoneName..", "..ZoneName.. PlayerInHostile)
+					FinalFantasylization_HostileTowns() -- Music call for all towns you are hostile in.
+				end
+				FinalFantasylization_IsPlaying = true
+				FinalFantasylization_InStarterAreaNorthshireAbbey = true
+			end
+			FinalFantasylization_InEasternKingdomsElwynnForest = false
+			FinalFantasylization_InStarterAreaNorthshireValley == false
+			return
+		else
+			FinalFantasylization_InStarterAreaNorthshireAbbey = false
+		end
+--'==========================================================================================		
 --' Starting Areas: Northshire Valley, Elwynn Forest ( Human Starting Area )
 --'==========================================================================================
-		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and ( ( SubZoneName == SZ["Northshire Valley"] ) or ( SubZoneName == SZ["Northshire Abbey"] ) or ( SubZoneName == SZ["Echo Ridge Mine"] ) or ( SubZoneName == SZ["Main Hall"] ) or ( SubZoneName == SZ["Library Wing"] ) or ( SubZoneName == SZ["Northshire Vineyards"] ) ) and FinalFantasylization_IsPlaying == false then
+		if not ( IsResting() ) and ( ZoneName == Z["Elwynn Forest"] ) and ( ( SubZoneName == SZ["Northshire Valley"] ) or ( SubZoneName == SZ["Echo Ridge Mine"] ) or ( SubZoneName == SZ["Northshire Vineyards"] ) ) and FinalFantasylization_IsPlaying == false then
 			if FinalFantasylization_InStarterAreaNorthshireValley == false then
 				if ( factionEnglish == "Alliance" ) then
 					FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
@@ -1185,6 +1207,7 @@ function FinalFantasylization_GetMusic()
 				FinalFantasylization_InStarterAreaNorthshireValley = true
 			end
 			FinalFantasylization_InEasternKingdomsElwynnForest = false
+			FinalFantasylization_InStarterAreaNorthshireAbbey == false
 			return
 		else
 			FinalFantasylization_InStarterAreaNorthshireValley = false

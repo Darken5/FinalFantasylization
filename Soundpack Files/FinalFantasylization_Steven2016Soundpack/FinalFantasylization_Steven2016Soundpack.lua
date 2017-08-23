@@ -1324,6 +1324,9 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_PlayMusic( S .. DeathknellSong);
 		FinalFantasylization_debugMsg("DeathknellSong Legend of Zelda A Link to the Past Sanctuary Dungeon")
 	end
+	function FinalFantasylization_StarterAreaNorthshireAbbey()
+		FinalFantasylization_AllianceTowns();
+	end
 	function FinalFantasylization_StarterAreaNorthshireValley()
 		FinalFantasylization_PlayMusic( S .. NorthshireValleySong);
 		FinalFantasylization_debugMsg("NorthshireValleySong Elders Scroll 4 Oblivion Watchmans Ease")

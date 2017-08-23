@@ -212,6 +212,9 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	function FinalFantasylization_StarterAreaColdridgeValley()
 		FinalFantasylization_SnowSong();
 	end
+	function FinalFantasylization_StarterAreaNorthshireAbbey()
+		FinalFantasylization_AllianceTowns();
+	end
 	function FinalFantasylization_StarterAreaNorthshireValley()
 		FinalFantasylization_ForestSong();
 	end

@@ -19,6 +19,7 @@ Also, don't forget to customize your options in the Addons section of the Interf
 
 Video Games:
 Arcania Gothic 4
+Assassin's Creed - Revelations
 Assassin's Creed 4 - Black Flag
 Baldur's Gate
 Baldur's Gate 2
@@ -28,13 +29,14 @@ Chrono Cross
 Chrono Trigger
 Diablo
 Diablo 2
+Dissidia Final Fantasy
+Donkey Kong Country
 Dragon Age Origins
 Dragon Age 2
 Dragon Age Inquisition
 Dragon's Crown
 Dragon's Dogma
 Dragon Quest VIII
-Dissidia Final Fantasy
 Elder's Scroll 4 - Oblivion
 Elder's Scroll 5 - Skyrim
 Final Fantasy Brave Exvius
@@ -52,7 +54,7 @@ Final Fantasy 12
 Final Fantasy 13
 Final Fantasy 13-2
 Final Fantasy 14
-Final Fantasy 15
+Final Fantasy 15 
 Final Fantasy Type-0
 Guild Wars 2
 Justice Monsters Five
@@ -220,7 +222,7 @@ ThelsamarSong = Final Fantasy 7 - Ahead on our Way
 TheramoreIsleSong = Final Fantasy 7 - Rufus's Welcoming Ceremony
 ToshleysStationSong = Final Fantasy 7 - Wall Market
 ValianceKeepSong = Final Fantasy 8 - Balamb Garden
-ValgardeSong = Kingdom Hearts 1 - Under the Sea
+ValgardeSong = Sword Coast Legends - The Fury of Dawn (Main Theme)
 WestfallBrigadeEncampmentSong = Breath of Fire 4 - Brave Heart
 WestguardKeepSong = Legend of Dragoon - Royal Castle
 WildhammerStrongholdSong = Final Fantasy 7 Crisis Core - A Closed off Village
@@ -231,7 +233,6 @@ PyrewoodVillageSong = WoW Cataclysm - Curse of the Worgen
 RuttheranVillageSong = Dissidia Final Fantasy - Main Theme (FF1)
 BaelModanSong = Breath of Fire 3 - Life's a Beach
 StarfallVillageSong = Legend of Dragoon - Whispering of the Trees
-MaclureVineyardsSong = Baldur's Gate - Exploring the Plains
 HillsbradFieldsSong = Final Fantasy 7 - Farm Boy
 
 -- Neutral Towns Events --
@@ -376,6 +377,14 @@ StormPeaksSong = Dragon Age Inquisition - Adamant Fortress
 WintergraspSong = Battlegrounds
 ZulDrakSong = Chrono Cross - Lizard Dance
 
+-- Misc Zones --
+DeeprunTramSong = Resident Evil Main Theme
+CavernsOfTimeSong = The Last Remnant - Dark Secrets
+ScarletMonasterySong = Final Fantasy 11 - Repression Memoro de La Stono
+RazorfenSong = Final Fantasy 12 - Abyss
+WailingCavernsSong = Final Fantasy 12 - Dark Night (imperial version)
+Mo'grosh Stronghold = Dragon's Dogma - Pride and Belief
+
 -- Dungeons Events --
 RagefireChasmSong = Dragon Age 2 - Blightlands
 WailingCavernsDungeonSong = Rogue Galaxy - Insectron (Strategy)
@@ -412,13 +421,14 @@ BattleGround10 = Final Fantasy 7 - JENOVA
 
 -- Raid Events --
 RaidSong =  Final Fantasy 7 - Bombing Mission
-Raid2Song = Final Fantasy Type-0 - War: Recapture
-Raid3Song = White Knight Chronicles - An Opponent Draws Near
+Raid2Song = White Knight Chronicles - An Opponent Draws Near
+Raid3Song = Final Fantasy Type-0 - War: Recapture
 Raid4Song = Final Fantasy 9 - Ambush Attack
-Raid5Song = King of Dragons - The Orc Village
-Raid6Song = Tales of Xillia - Life or Death
+Raid5Song = Tales of Xillia - Life or Death
+Raid6Song = King of Dragons - The Orc Village
 Raid7Song = Kingdom Hearts 1 - Shrouding Dark Cloud
-Raid8Song - Dissidia Final Fantasy - Dungeon FF1
+Raid8Song = Dissidia Final Fantasy - Dungeon FF1
+Raid9Song = Final Fantasy 15 - Horrors of the Night
 
 -- Normal Mount Events --
 Mounted1Song = Legend of Zelda Ocarina of Time - Horse Race
@@ -438,6 +448,7 @@ Escape6Song = Shining Force 2 - Boss Attack
 Escape7Song = Dragon's Crown - A Decision has to be made
 Escape8Song = Dragon's Dogma - Tense Combat
 Escape9Song = Chrono Trigger - A Shot of Crisis
+Escape10Song = Final Fantasy 15 - No  Time Left
 		
 -- Flying Mount Events --
 FP1Song = Final Fantasy 7 - Steal the Tiny Bronco
@@ -451,10 +462,12 @@ HordeFP2Song = Final Fantasy 9 - Kuja's theme
 HordeFP3Song = Assassin Creed 4 Black Flag - Pyrates Beware
 HordeFP4Song = The Witcher 3 - Hunt or Be Hunted
 HordeFP5Song = Dragon's Crown - Mage's Tower
+HordeFP6Song = Final Fantasy 15 - The Aggressors
 FlyingMountSong = Final Fantasy 7 - Highwind Takes to the Sky
 FlyingMount2Song = Shining Force 2 - Battle 2
 FlyingMount3Song = Final Fantasy Type-0 - Soar
 FlyingMount4Song = Final Fantasy 6 - Terra
+FlyingMount5Song = Final Fantasy 15 - Sky Smilin' Down on Me
 
 -- Dead/Ghost Events --
 Dead1Song = Legend of Zelda Ocarina of Time - Temple of Time
@@ -465,6 +478,7 @@ Dead5Song = Tomb Raider 2 Incident Glory of Nature
 Dead6Song = Shining Force 2 Sad Theme
 Dead7Song = Shining Force 2 Sad Theme 2
 Dead8Song = Chrono Trigger - Manoria Cathedral
+Dead9Song = Final Fantasy 15 - Tenebrae
 DieSong = Legend of Zelda Ocarina of Time - Title theme
 Die2Song = Legend of Zelda Ocarina of Time - Deku Tree
 Die3Song = Final Fantasy 7 - Great Warrior
@@ -473,6 +487,7 @@ Die5Song = Legend of Zelda Ocarina of Time - Shiek's theme
 Die6Song = Legend of Zelda Ocarina of Time - Nocturne of Shadow
 Die7Song = Legend of Zelda Ocarina of Time - Requiem of Spirit
 Die8Song = Shining Force 2 - Shrine
+Die9Song = Final Fantasy 15 - End of the Road
 
 -- Fighting Events --
 LevelUpSong = Final Fantasy 12 - LevelUp
@@ -483,7 +498,7 @@ Fanfare = Dissidia Final Fantasy - Victory Fanfare Chaos
 Fanfare2 = Dissidia Final Fantasy - Victory Fanfare Cosmos
 Fighting1Song = Legend of Legaia - Brand of the Holy Knuckles
 Fighting2Song = Legend of Zelda Ocarina of Time - Middle Boss Battle
-Fighting3Song = Final Fantasy 15 - Battle Theme (Night & Cave)
+Fighting3Song = Final Fantasy 15 - Stand Your Ground
 Fighting4Song = King of Dragons - Battle on a Mountain Peak
 Fighting5Song = Breath of Fire 3 - Fight
 Fighting6Song = Final Fantasy 13 - Blinded by Light
@@ -500,6 +515,7 @@ Fighting16Song = Final Fantasy 13-2 - Knight of the Goddess
 Fighting17Song = Final Fantasy 6 - Battle Theme
 Fighting18Song = Baldur's Gate - Attacked by Assassins
 Fighting19Song = Chrono Trigger - Battle 1
+Fighting20Song = Final Fantasy 15 - Reel Rumble
 
 BossSong = LRFF13 - Chaos 
 Boss2Song = Final Fantasy 7 - Jenova Absolute
@@ -513,14 +529,42 @@ Boss9Song = King of Dragons - To the Castle
 Boss10Song = Arcania Gothic 4 - Combat 1
 Boss11Song = Final Fantasy 6 - The Decisive Battle
 Boss12Song = Chrono Trigger - Boss Battle 1
+Boss13Song = Final Fantasy 15 - Ravus Aeterna
 
 -- PvP Events --
-HostileSong = Legend of Dragoon - Boss Battle 3
+HostileSong = Final Fantasy 15 - Hunt or Be Hunted
+
+-- Dance Events --
+BloodElfMale = Dragon Age 2 - Tavern Music
+BloodElfFemale = Legend of Legaia - Wanna Wanna
+DraeneiMale = 
+DraeneiFemale = Legend of Legaia - Mei 
+DwarfMale = 
+DwarfFemale =  
+GnomeMale = 
+GnomeFemale = Assassin Creed Revelations - Party Hard
+HumanMale = Final Fantasy 6 - Johnny C Bad
+HumanFemale = Final Fantasy 8 - Waltz of the Moon
+NightElfMale = 
+NightElfFemale = Final Fantasy 9 - Eternal Harvest
+OrcMale = 
+OrcFemale =  
+TaurenMale = 
+TaurenFemale = 
+TrollMale = 
+TrollFemale =  
+UndeadMale = 
+UndeadFemale =  
+DruidGhostWolf = 
+DruidBear = 
+DruidCat = Final Fantasy 7 - Waltz de Chocobo (Re-Orchestrated) 
+DruidMoonkin = 
+DruidTreeofLife = 
 
 -- Misc Events --
 SwimSong = FF7 - A Secret, Sleeping in the Deep Sea
 Swim2Song = Shining Force 2 - Mithril Diggers
-Swim3Song = Kingdom Hearts - Under the Sea
+Swim3Song = Donkey Kong Country - Aquatic Ambiance
 DarkSwimSong = Final Fantasy 7 - Who Are You
 SleepSong = Arcania Gothic 4 - Tavern
 Sleep2Song = Derek Fiechter - The Captain's Inn
@@ -531,16 +575,13 @@ Sleep6Song = Radiata Stories - Artisan
 Sleep7Song = Dragon's Crown - Memories To Be Told
 Sleep8Song = Dragon's Dogma - Witch Selene
 Sleep9Song = Lunar 2 - Village Town
-Sleep10Song = Final Fantasy 15 - Camping Theme
+Sleep10Song = Final Fantasy 15 - Relax and Reflect
 Sleep11Song = Elder's Scroll 5 (Skyrim) - Around the Fire
 Sleep12Song = The Witcher 3 - The VagaBond
 Sleep13Song = Rogue Galaxy - Swinging
 KillSound = Final Fantasy 7 Kill Sound
 CombatSound = Final Fantasy 7 Enter Combat Sound
-DeeprunTramSong = Resident Evil Main Theme
-CavernsOfTimeSong = The Last Remnant - Dark Secrets
-ScarletMonasterySong = Final Fantasy 11 - Repression Memoro de La Stono
-RazorfenSong = Final Fantasy 12 - Abyss
-WailingCavernsSong = Final Fantasy 12 - Dark Night (imperial version)
-TheDeadminesSong = Final Fantasy 11 - Castle Zvahl
+
+
+
 

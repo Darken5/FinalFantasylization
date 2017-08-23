@@ -936,47 +936,61 @@ function FinalFantasylization_GetMusic()
 			--FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombat)
 			local inInstance, instanceType = IsInInstance();
 			if FinalFantasylization_PlayerIsBattling == false then
-				local GUID = UnitGUID("target")
-				local name = UnitName("target")
-				local mobID = tonumber(GUID:sub(9, 12), 16)
-				if IsInInstance() then
-					if instanceType == "party" then
-						if LibStub("LibBossIDs-1.0").BossIDs[mobID] then
-							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatDungeonBoss .. name)
-							FinalFantasylization_DungeonBoss()
-						else
+				if UnitExists("target") ~= nil then
+					local GUID = UnitGUID("target")
+					local name = UnitName("target")
+					local mobID = tonumber(GUID:sub(9, 12), 16)
+					if IsInInstance() then
+						if instanceType == "party" then
+							if LibStub("LibBossIDs-1.0").BossIDs[mobID] then
+								FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatDungeonBoss .. name)
+								FinalFantasylization_DungeonBoss()
+							else
+								FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatDungeonPVE)
+								FinalFantasylization_WorldNormalPVE()
+							end
+						elseif instanceType == "raid" then
+							if LibStub("LibBossIDs-1.0").BossIDs[mobID] then
+								FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatRaidBoss .. name)
+								FinalFantasylization_RaidBoss()				-- <-- NEW	FinalFantasylization_RaidBoss()
+							else
+								FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatRaidPVE)
+								FinalFantasylization_WorldNormalPVE()
+							end
+						elseif instanceType == "pvp" then
+							if LibStub("LibBossIDs-1.0").BossIDs[mobID] then
+								FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatBGBoss .. name)
+								FinalFantasylization_BattlegroundBoss()
+							elseif UnitIsPlayer("target") and UnitIsEnemy("player", "target") and UnitHealth("target") > 0 then
+								FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatBGPVP)
+								FinalFantasylization_BattlegroundPVP()
+							end
+						end
+					elseif LibStub("LibBossIDs-1.0").BossIDs[mobID] then
+						FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldBoss .. name)
+						FinalFantasylization_WorldBoss()
+					elseif 	UnitIsPlayer("target") and UnitIsEnemy("player", "target") and UnitHealth("target") > 0 then
+						FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVP)
+						FinalFantasylization_WorldPVP()
+					else
+						FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVE)
+						FinalFantasylization_WorldNormalPVE()
+					end		
+				else
+					if IsInInstance() then
+						if instanceType == "party" then
 							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatDungeonPVE)
 							FinalFantasylization_WorldNormalPVE()
-						end
-					elseif instanceType == "raid" then
-						if LibStub("LibBossIDs-1.0").BossIDs[mobID] then
-							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatRaidBoss .. name)
-							FinalFantasylization_DungeonBoss()
-						else
+						elseif instanceType == "raid" then
 							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatRaidPVE)
 							FinalFantasylization_WorldNormalPVE()
 						end
-					elseif instanceType == "pvp" then
-						if LibStub("LibBossIDs-1.0").BossIDs[mobID] then
-							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatBGBoss .. name)
-							FinalFantasylization_BattlegroundBoss()
-						elseif UnitIsPlayer("target") and UnitIsEnemy("player", "target") and UnitHealth("target") > 0 then
-							FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatBGPVP)
-							FinalFantasylization_BattlegroundPVP()
-						end
+					else
+						FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVE)
+						FinalFantasylization_WorldNormalPVE()
 					end
-				elseif LibStub("LibBossIDs-1.0").BossIDs[mobID] then
-					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldBoss .. name)
-					FinalFantasylization_WorldBoss()
-				elseif 	UnitIsPlayer("target") and UnitIsEnemy("player", "target") and UnitHealth("target") > 0 then
-					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVP)
-					FinalFantasylization_WorldPVP()
-				else
-					FinalFantasylization_debugMsg(FFZlib.Color.Yellow .. InCombatWorldPVE)
-					FinalFantasylization_WorldNormalPVE()
 				end
 			end
-
 			FinalFantasylization_IsPlaying = true
 			FinalFantasylization_PlayerIsBattling = true
 		else

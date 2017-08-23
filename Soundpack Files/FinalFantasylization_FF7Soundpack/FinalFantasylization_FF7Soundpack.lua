@@ -881,7 +881,15 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 				FinalFantasylization_ContestedSong()
 			end
 	end
-
+	function FinalFantasylization_MiscAreaMogroshStronghold()
+		local x = math.random(1, 2);
+			if x == 1 then
+				FinalFantasylization_ForestSong()
+			else
+				FinalFantasylization_HostileSong()
+			end
+	end
+	
 	--########################
 	--##   EASTERN KINGDOMS ZONES
 	--########################

@@ -1,5 +1,5 @@
 ﻿-- FinalFantasylization by Hellfox and Darken5
--- Version 3.3.5
+-- Version 3.3.6
 ------------------------------------------------------------
 
 -- FinalFantasylization requires this version of FFZlib:
@@ -433,6 +433,7 @@ function FinalFantasylization_ClearMusicState()
 	FinalFantasylization_InMiscAreaDeeprunTram = false
 	FinalFantasylization_InMiscEbonHold = false
 	FinalFantasylization_InMiscAreaCavernsOfTime = false
+	FinalFantasylization_InMiscAreaMogroshStronghold = false
 	-- General Events --
 	FinalFantasylization_PlayerIsSwimming = false
 	FinalFantasylization_PlayerIsWorlding = false
@@ -4862,6 +4863,21 @@ function FinalFantasylization_GetMusic()
 			return
 		else
 			FinalFantasylization_InMiscAreaCavernsOfTime = false
+		end
+--'==========================================================================================		
+--' Misc Areas: Mo'grosh Stronghold, Loch Modan
+--'==========================================================================================
+		if not ( IsResting() ) and ( ZoneName == Z["Loch Modan"] ) and ( SubZoneName == SZ["Mo'grosh Stronghold"] ) and FinalFantasylization_IsPlaying == false then
+			if FinalFantasylization_InMiscAreaMogroshStronghold == false then
+				FinalFantasylization_debugMsg(FFZlib.Color.Aqua .. PlayerIn.. SubZoneName..", "..ZoneName)
+				FinalFantasylization_MiscAreaMogroshStronghold()
+			end
+			FinalFantasylization_IsPlaying = true
+			FinalFantasylization_InMiscAreaMogroshStronghold = true
+			FinalFantasylization_InEasternKingdomsLochModan = false
+			return
+		else
+			FinalFantasylization_InMiscAreaMogroshStronghold = false
 		end
 
 --###########################################################################################

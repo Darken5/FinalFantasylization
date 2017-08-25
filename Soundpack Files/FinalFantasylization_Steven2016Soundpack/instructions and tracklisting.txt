@@ -382,21 +382,23 @@ ZulDrakSong = Chrono Cross - Lizard Dance
 -- Misc Zones --
 DeeprunTramSong = Resident Evil Main Theme
 CavernsOfTimeSong = The Last Remnant - Dark Secrets
-ScarletMonasterySong = Final Fantasy 11 - Repression Memoro de La Stono
+ScarletMonasterySong = Derek Fiechter - Raven Princess
 RazorfenSong = Final Fantasy 12 - Abyss
 WailingCavernsSong = Final Fantasy 12 - Dark Night (imperial version)
 Mo'grosh Stronghold = Dragon's Dogma - Pride and Belief
+TheDeadmines = Dragon's Crown - Bilbaron Subterranean Fortress
+Gnomeregan = Final Fantasy 7 - Mako Reactor
 
 -- Dungeons Events --
 RagefireChasmSong = Dragon Age 2 - Blightlands
 WailingCavernsDungeonSong = Rogue Galaxy - Insectron (Strategy)
 DeadminesSong = Dragon's Crown - Bilbaron Subterranean Fortress
-ShadowfangKeepSong = 
-BlackfathomDeepsSong = 
+ShadowfangKeepSong = Derek Fiechter - Vampire Bite
+BlackfathomDeepsSong = Final Fantasy 15 - Unsettling Aura
 StormwindStockadeSong = 
 GnomereganSong = Final Fantasy 7 - Mako Reactor
 RazorfenKraulSong = 
-ScarletMonasterySong = 
+ScarletMonasterySong = Derek Fiechter - Raven Princess
 RazorfenDownsSong = 
 UldamanSong = 
 ZulFarrakSong = 

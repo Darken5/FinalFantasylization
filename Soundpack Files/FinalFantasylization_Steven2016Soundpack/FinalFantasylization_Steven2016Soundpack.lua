@@ -304,6 +304,8 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		WailingCavernsDungeonSong = "WailingCavernsDungeonSong.mp3" --
 		DeadminesSong = "DeadminesSong.mp3" --
 		GnomereganSong = "GnomereganSong.mp3" --
+		ShadowfangKeepSong = "ShadowfangKeepSong.mp3" --
+		BlackfathomDeepsSong = "BlackfathomDeepsSong.mp3" --
 
 		-- Battlegrounds Events --
 		BattleGround1 = "BattleGround1.mp3" -- 
@@ -1632,12 +1634,12 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	-- ##   MISCELANEOUS ZONES
 	--########################
 	function FinalFantasylization_MiscAreaGnomeregan()
-		FinalFantasylization_PlayMusic( S .. ScarletMonasterySong);
-		FinalFantasylization_debugMsg("ScarletMonasterySong Final Fantasy XI Repression Memoro de la Stono")
+		FinalFantasylization_PlayMusic( S .. GnomereganSong);
+		FinalFantasylization_debugMsg("GnomereganSong Final Fantasy 7 Mako Reactor")
 	end
 	function FinalFantasylization_MiscAreaScarletMonastery()
 		FinalFantasylization_PlayMusic( S .. ScarletMonasterySong);
-		FinalFantasylization_debugMsg("ScarletMonasterySong Final Fantasy XI Repression Memoro de la Stono")
+		FinalFantasylization_debugMsg("ScarletMonasterySong Derek Fiechter Raven Princess")
 	end
 	function FinalFantasylization_MiscAreaRazorfenKraul()
 		FinalFantasylization_PlayMusic( S .. RazorfenSong);
@@ -1685,12 +1687,12 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 		FinalFantasylization_debugMsg("DeadminesSong Dragons Crown Bilbaron Subterranean Fortress")
 	end
 	function FinalFantasylization_Dungeon_ShadowfangKeepSong()
-		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
-		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+		FinalFantasylization_PlayMusic( S .. ShadowfangKeepSong);
+		FinalFantasylization_debugMsg("ShadowfangKeepSong Derek Fiechter Vampire Bite")
 	end
 	function FinalFantasylization_Dungeon_BlackfathomDeepsSong()
-		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
-		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+		FinalFantasylization_PlayMusic( S .. BlackfathomDeepsSong);
+		FinalFantasylization_debugMsg("BlackfathomDeepsSong Final Fantasy 15 Unsettling Aura")
 	end
 	function FinalFantasylization_Dungeon_StormwindStockadeSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
@@ -1698,15 +1700,15 @@ _G["SoundPack" .. soundPackID  .. "_SetEnabled"] = function(enabled)
 	end
 	function FinalFantasylization_Dungeon_GnomereganSong()
 		FinalFantasylization_PlayMusic( S .. GnomereganSong);
-		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 7 Mako Reactor")
+		FinalFantasylization_debugMsg("GnomereganSong Final Fantasy 7 Mako Reactor")
 	end
 	function FinalFantasylization_Dungeon_RazorfenKraulSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
 		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
 	end
 	function FinalFantasylization_Dungeon_ScarletMonasterySong()
-		FinalFantasylization_PlayMusic( S .. HordeFP1Song);
-		FinalFantasylization_debugMsg("HordeFP1Song Final Fantasy 6 Wild West")
+		FinalFantasylization_PlayMusic( S .. ScarletMonasterySong);
+		FinalFantasylization_debugMsg("ScarletMonasterySong Derek Fiechter Raven Princess")
 	end
 	function FinalFantasylization_Dungeon_RazorfenDownsSong()
 		FinalFantasylization_PlayMusic( S .. HordeFP1Song);

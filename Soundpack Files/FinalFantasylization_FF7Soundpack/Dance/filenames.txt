@@ -1,0 +1,54 @@
+These are the filenames that should be used for the MP3 files.
+
+
+BloodElfFemale.mp3
+BloodElfMale.mp3
+
+DraeneiFemale.mp3
+DraeneiMale.mp3
+
+DwarfFemale.mp3
+DwarfMale.mp3
+
+GnomeFemale.mp3
+GnomeMale.mp3
+
+HumanFemale.mp3
+HumanMale.mp3
+
+NightElfFemale.mp3
+NightElfMale.mp3
+
+OrcFemale.mp3
+OrcMale.mp3
+
+TaurenFemale.mp3
+TaurenMale.mp3
+
+TrollFemale.mp3
+TrollMale.mp3
+
+UndeadFemale.mp3
+UndeadMale.mp3
+
+DruidBear.mp3
+DruidCat.mp3
+DruidOwlBear.mp3  (Moonkin)
+DruidTreeForm.mp3
+
+Wolf.mp3  (Ghost Wolf)
+
+Tiger.mp3  (Travel)
+
+DruidBear.mp3  (Night Elf Bear)
+DruidBearTauren.mp3  (Tauren Bear)
+DruidBearTroll.mp3  (Troll Bear)
+DruidBearWorgen.mp3  (Worgen Bear)
+
+DruidCat.mp3  (Night Elf Cat)
+DruidCatTauren.mp3  (Tauren Cat)
+DruidCatTroll.mp3  (Troll Cat)
+DruidCatWorgen.mp3  (Worgen Cat)
+
+DruidOwlBear.mp3  (Night Elf & Worgen Moonkin)
+DruidOwlBearTauren.mp3  (Tauren & Troll Moonkin)
